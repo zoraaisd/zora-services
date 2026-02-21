@@ -2,6 +2,7 @@
 import React, { useMemo, useState } from "react";
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
+import { NON_IT_HERO_IMAGES } from "../data/nonItHeroImages";
 
 const NonITServiceCategoryPage: React.FC = () => {
   const { categorySlug } = useParams();
@@ -26,6 +27,10 @@ const NonITServiceCategoryPage: React.FC = () => {
   }, [category, activeSlug]);
 
   if (!category) return <Navigate to="/services/non-it" replace />;
+
+  const heroImage =
+    (activeItem ? NON_IT_HERO_IMAGES[activeItem.slug] : undefined) ??
+    "/non-it-hero/default.png";
 
   return (
     <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden">
@@ -112,9 +117,18 @@ const NonITServiceCategoryPage: React.FC = () => {
           {/* RIGHT CONTENT */}
           <main className="lg:col-span-8">
             <div className="rounded-3xl bg-white/5 border border-white/10 overflow-hidden">
-              <div className="relative">
-                <div className="h-52 md:h-60 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.30),transparent_55%),radial-gradient(circle_at_70%_70%,rgba(168,85,247,0.22),transparent_55%)]" />
-                <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:60px_60px]" />
+              {/* ✅ IMAGE BANNER */}
+              <div className="relative h-52 md:h-60">
+                <img
+                  src={heroImage}
+                  alt={activeItem?.title ?? "Service"}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src =
+                      "/non-it-hero/default.png";
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/20 via-[#050816]/40 to-[#050816]/90" />
               </div>
 
               <div className="p-8 md:p-10">
@@ -168,18 +182,7 @@ const NonITServiceCategoryPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Extra section */}
-            <div className="mt-10 rounded-3xl bg-white/5 border border-white/10 p-8">
-              <h3 className="text-xl font-bold text-purple-200">
-                How this page works
-              </h3>
-              <p className="text-gray-400 mt-3 leading-relaxed">
-                Select a service on the left to preview details here. Click{" "}
-                <span className="text-gray-200 font-semibold">View Service</span>{" "}
-                to open the dedicated detailed page (long content + contact
-                form).
-              </p>
-            </div>
+            
           </main>
         </div>
       </div>

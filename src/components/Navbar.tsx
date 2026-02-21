@@ -7,38 +7,50 @@ const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className="bg-[#0b0618] text-white border-b border-white/10 fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-wide">
-          <span className="text-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.6)]">
-            Zora
-          </span>
-          <span className="text-purple-500 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">
-            Global
-          </span>
+        {/* ✅ Logo Image Only */}
+        <Link to="/" className="flex items-center" onClick={scrollTop}>
+          <img
+            src="/logo.png"
+            alt="ZoraGlobalAI"
+            className="h-10 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-
-          <Link to="/" className="hover:text-purple-400 transition">
+          <Link
+            to="/"
+            className="hover:text-purple-400 transition"
+            onClick={scrollTop}
+          >
             Home
           </Link>
 
-          <Link to="/about" className="hover:text-purple-400 transition">
+          <Link
+            to="/about"
+            className="hover:text-purple-400 transition"
+            onClick={scrollTop}
+          >
             About
           </Link>
 
-          {/* Services with Dropdown */}
+          {/* Services Dropdown */}
           <div className="relative">
             <div className="flex items-center gap-1">
               <Link
                 to="/services"
                 className="hover:text-purple-400 transition"
-                onClick={() => setDropdownOpen(false)}
+                onClick={() => {
+                  setDropdownOpen(false);
+                  scrollTop();
+                }}
               >
                 Services
               </Link>
@@ -61,7 +73,10 @@ const Navbar: React.FC = () => {
                 <Link
                   to="/services/it"
                   className="block px-4 py-3 hover:bg-purple-600/20 transition"
-                  onClick={() => setDropdownOpen(false)}
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    scrollTop();
+                  }}
                 >
                   IT Services
                 </Link>
@@ -69,7 +84,10 @@ const Navbar: React.FC = () => {
                 <Link
                   to="/services/non-it"
                   className="block px-4 py-3 hover:bg-purple-600/20 transition"
-                  onClick={() => setDropdownOpen(false)}
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    scrollTop();
+                  }}
                 >
                   Non-IT Services
                 </Link>
@@ -77,23 +95,25 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
-          <Link to="/products" className="hover:text-purple-400 transition">
+          <Link
+            to="/products"
+            className="hover:text-purple-400 transition"
+            onClick={scrollTop}
+          >
             Products
           </Link>
 
           <Link
             to="/book-appointment"
             className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition"
+            onClick={scrollTop}
           >
             Book Appointment
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -101,11 +121,13 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-[#1a1a40] px-6 py-6 space-y-4 border-t border-white/10">
-
           <Link
             to="/"
             className="block hover:text-purple-400"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollTop();
+            }}
           >
             Home
           </Link>
@@ -113,7 +135,10 @@ const Navbar: React.FC = () => {
           <Link
             to="/about"
             className="block hover:text-purple-400"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollTop();
+            }}
           >
             About
           </Link>
@@ -122,7 +147,10 @@ const Navbar: React.FC = () => {
             <Link
               to="/services"
               className="block hover:text-purple-400"
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                setMenuOpen(false);
+                scrollTop();
+              }}
             >
               Services
             </Link>
@@ -145,7 +173,10 @@ const Navbar: React.FC = () => {
                 <Link
                   to="/services/it"
                   className="block hover:text-purple-400"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    scrollTop();
+                  }}
                 >
                   IT Services
                 </Link>
@@ -153,7 +184,10 @@ const Navbar: React.FC = () => {
                 <Link
                   to="/services/non-it"
                   className="block hover:text-purple-400"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    scrollTop();
+                  }}
                 >
                   Non-IT Services
                 </Link>
@@ -164,7 +198,10 @@ const Navbar: React.FC = () => {
           <Link
             to="/products"
             className="block hover:text-purple-400"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollTop();
+            }}
           >
             Products
           </Link>
@@ -172,7 +209,10 @@ const Navbar: React.FC = () => {
           <Link
             to="/book-appointment"
             className="block bg-purple-600 px-4 py-2 rounded-lg text-center hover:bg-purple-700 transition"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              scrollTop();
+            }}
           >
             Book Appointment
           </Link>

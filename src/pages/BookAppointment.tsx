@@ -1,3 +1,5 @@
+import React from "react";
+
 const BookAppointment: React.FC = () => {
   return (
     <section className="bg-[#0b0618] text-white pt-28 pb-20 px-6">
@@ -25,8 +27,9 @@ const BookAppointment: React.FC = () => {
             to discuss your business needs.
           </p>
 
+          {/* ✅ UPDATED CALENDLY LINK */}
           <a
-            href="https://calendly.com/"
+            href="https://calendly.com/zoraglobalai/15?month=2026-02"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-purple-600 hover:bg-purple-700 transition px-8 py-3 rounded-lg font-medium"

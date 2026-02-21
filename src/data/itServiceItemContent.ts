@@ -623,4 +623,164 @@ export const IT_SERVICE_ITEM_CONTENT: Record<
       submitLabel: "Submit Project",
     },
   },
+  /* =========================================================
+   CUSTOM ENTERPRISE SOFTWARE (ADDED CONTENT)
+========================================================= */
+
+"custom-enterprise-software": {
+  "custom-enterprise-software-development": {
+    heroTitle: "Custom Enterprise Software Development",
+    heroSubtitle:
+      "Scalable CRM, ERP, HRMS, and internal enterprise systems engineered for performance, security, and long-term business growth.",
+    primaryCta: "Get Started",
+    topBlocks: [
+      {
+        title: "Enterprise CRM & Business Applications",
+        desc: "Centralize customer data, automate workflows, and improve operational visibility with custom-built CRM systems.",
+      },
+      {
+        title: "ERP & Process Automation",
+        desc: "Finance, inventory, supply chain, and operational ERP solutions built using agile engineering practices.",
+      },
+      {
+        title: "HRMS & Internal Systems",
+        desc: "Secure HRMS platforms supporting payroll, compliance, employee management, and performance tracking.",
+      },
+    ],
+    overview:
+      "Our enterprise software solutions help organizations streamline operations, automate workflows, and improve decision-making through scalable and secure custom-built systems.",
+    deliverySteps: [
+      { title: "Requirements Analysis", desc: "Business analysis, architecture planning, and technology selection." },
+      { title: "Design & Development", desc: "Modern architecture with secure coding and agile delivery." },
+      { title: "Testing & Deployment", desc: "Quality assurance, monitoring, and lifecycle optimization." },
+    ],
+    whyChoose: [
+      { title: "Enterprise Expertise", desc: "Proven enterprise SDLC and scalable architectures." },
+      { title: "Secure & Scalable", desc: "Compliance-ready systems built for long-term growth." },
+      { title: "Business-Driven Development", desc: "Solutions aligned with operational efficiency and ROI." },
+    ],
+    contactTitle: "Discuss Your Enterprise Software",
+    contactSubtitle: "Tell us about your enterprise requirements and our experts will connect with you.",
+    messageLabel: "Tell us about your project...",
+    submitLabel: "Submit Project",
+  },
+
+  "crm-services": {
+    heroTitle: "CRM Services",
+    heroSubtitle:
+      "Centralized CRM solutions that improve customer engagement, sales pipelines, and data-driven decision-making.",
+    primaryCta: "Build Your CRM",
+    topBlocks: [
+      { title: "Sales CRM", desc: "Lead management, forecasting, and deal tracking systems." },
+      { title: "Marketing Automation", desc: "Campaign automation and personalized customer journeys." },
+      { title: "Customer Support CRM", desc: "Centralized ticketing and interaction tracking." },
+    ],
+    overview:
+      "Our CRM platforms help businesses manage relationships, automate workflows, and improve customer experiences through scalable CRM systems.",
+    deliverySteps: [
+      { title: "Discovery", desc: "Analyze workflows and define CRM strategy." },
+      { title: "Configuration", desc: "Customize modules, dashboards, and integrations." },
+      { title: "Optimization", desc: "Deploy, train users, and continuously improve adoption." },
+    ],
+    whyChoose: [
+      { title: "Tailored CRM", desc: "Designed around real business workflows." },
+      { title: "Workflow Automation", desc: "Improve efficiency across departments." },
+      { title: "Customer-Centric", desc: "Enhance engagement and long-term loyalty." },
+    ],
+    contactTitle: "Start Your CRM Project",
+    contactSubtitle: "Talk to our CRM experts today.",
+    messageLabel: "Tell us about your CRM requirements...",
+    submitLabel: "Request CRM Consultation",
+  },
+
+  "it-staff-augmentation": {
+    heroTitle: "IT Staff Augmentation Services",
+    heroSubtitle:
+      "Scale development teams quickly with experienced engineers across web, mobile, cloud, and enterprise projects.",
+    primaryCta: "Get Started",
+    topBlocks: [
+      { title: "Software Developers", desc: "Frontend, backend, and full-stack engineers." },
+      { title: "Mobile Teams", desc: "Android, iOS, and cross-platform experts." },
+      { title: "Specialized Talent", desc: "DevOps, AI specialists, QA automation, and cloud engineers." },
+    ],
+    overview:
+      "Our staff augmentation model enables rapid onboarding of vetted developers who integrate seamlessly with your internal teams.",
+    deliverySteps: [
+      { title: "Planning", desc: "Assess project scope and required skills." },
+      { title: "Onboarding", desc: "Rapid hiring and developer integration." },
+      { title: "Delivery", desc: "Agile collaboration and scalable team growth." },
+    ],
+    whyChoose: [
+      { title: "Top Talent", desc: "Access experienced engineers quickly." },
+      { title: "Flexible Engagement", desc: "Scale teams based on project needs." },
+      { title: "Faster Delivery", desc: "Accelerate timelines without compromising quality." },
+    ],
+    contactTitle: "Hire Dedicated Developers",
+    contactSubtitle: "Scale your team with our augmentation services.",
+    messageLabel: "Tell us about your staffing needs...",
+    submitLabel: "Submit Project",
+  },
+},
+
+/* =========================================================
+   CLOUD & INFRASTRUCTURE SERVICES (ADDED CONTENT)
+========================================================= */
+
+"cloud-infrastructure-services": {
+  "cloud-migration-services": {
+    heroTitle: "Cloud Migration Services",
+    heroSubtitle:
+      "Secure migration of applications, infrastructure, and data to modern cloud environments.",
+    primaryCta: "Start Your Migration",
+    topBlocks: [
+      { title: "Application Migration", desc: "Rehost, refactor, or re-architect applications." },
+      { title: "Data Migration", desc: "Secure database migration with validation and backups." },
+      { title: "Infrastructure Modernization", desc: "Move on-premise workloads to scalable cloud platforms." },
+    ],
+    overview:
+      "We help organizations modernize legacy systems and adopt cloud-native architectures across AWS, Azure, and Google Cloud.",
+    deliverySteps: [
+      { title: "Assessment", desc: "Define migration strategy and readiness." },
+      { title: "Migration", desc: "Secure execution with minimal downtime." },
+      { title: "Optimization", desc: "Performance and cost optimization." },
+    ],
+    whyChoose: [
+      { title: "Multi-Cloud Expertise", desc: "AWS, Azure, and Google Cloud specialists." },
+      { title: "Secure Migration", desc: "Best practices for compliance and continuity." },
+      { title: "Business Alignment", desc: "Strategies aligned with growth goals." },
+    ],
+    contactTitle: "Start Your Cloud Journey",
+    contactSubtitle: "Talk to our cloud experts today.",
+    messageLabel: "Tell us about your migration needs...",
+    submitLabel: "Submit Inquiry",
+  },
+
+  "application-integrations": {
+    heroTitle: "Application Integrations",
+    heroSubtitle:
+      "Connect enterprise systems and applications for seamless data flow and automation.",
+    primaryCta: "Get Started",
+    topBlocks: [
+      { title: "API Integrations", desc: "Secure API and third-party integrations." },
+      { title: "Enterprise Integration", desc: "Connect ERP, CRM, and business platforms." },
+      { title: "Process Automation", desc: "Automate workflows through synchronized data." },
+    ],
+    overview:
+      "We unify enterprise systems into a connected ecosystem enabling real-time data exchange and operational efficiency.",
+    deliverySteps: [
+      { title: "Assessment", desc: "Design optimal integration architecture." },
+      { title: "Integration", desc: "Implement APIs and synchronization workflows." },
+      { title: "Optimization", desc: "Monitoring and continuous improvement." },
+    ],
+    whyChoose: [
+      { title: "Integration Expertise", desc: "Deep enterprise system experience." },
+      { title: "Secure & Scalable", desc: "Built for growth and compliance." },
+      { title: "Operational Efficiency", desc: "Reduce manual work and errors." },
+    ],
+    contactTitle: "Connect Your Systems",
+    contactSubtitle: "Talk to our integration specialists.",
+    messageLabel: "Tell us about your integration needs...",
+    submitLabel: "Submit Project",
+  },
+},
 };

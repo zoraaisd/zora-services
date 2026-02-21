@@ -1,7 +1,7 @@
-// src/components/MasterDetailServicePage.tsx
 import React, { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
-import type { ServiceCategory } from "../data/itServicesData";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import type { ServiceCategory, ServiceItem } from "../data/itServicesData";
+import { IT_HERO_IMAGES } from "../data/itHeroImages";
 
 type Props = {
   category: ServiceCategory;
@@ -9,104 +9,139 @@ type Props = {
 };
 
 const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const navigate = useNavigate();
+  const { itemSlug } = useParams();
 
-  const active = useMemo(
-    () => category.items[activeIndex],
-    [category.items, activeIndex]
+  const initialItem: ServiceItem =
+    category.items.find((i) => i.slug === itemSlug) ?? category.items[0];
+
+  const [selectedSlug, setSelectedSlug] = useState(initialItem.slug);
+
+  const selectedItem = useMemo(
+    () => category.items.find((i) => i.slug === selectedSlug) ?? category.items[0],
+    [category.items, selectedSlug]
   );
 
+  const heroImage = IT_HERO_IMAGES[selectedItem.slug];
+
   return (
-    <section className="relative min-h-screen bg-[#050816] text-white pt-32 pb-24 px-6 overflow-hidden">
-      {/* Unique Zora Background */}
+    <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-16 px-6">
+      {/* Background Glow (UNCHANGED) */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute -top-56 -left-56 w-[720px] h-[720px] bg-purple-700/25 blur-[180px] rounded-full animate-pulse" />
-        <div className="absolute -bottom-56 -right-56 w-[720px] h-[720px] bg-blue-700/25 blur-[180px] rounded-full animate-pulse" />
-        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:90px_90px]" />
+        <div className="absolute w-[900px] h-[900px] bg-purple-800/25 blur-[180px] rounded-full top-[-260px] left-[-260px]" />
+        <div className="absolute w-[850px] h-[850px] bg-blue-700/25 blur-[170px] rounded-full bottom-[-280px] right-[-280px]" />
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <Link
-            to={backTo}
-            className="inline-flex items-center text-purple-300 hover:text-purple-200 transition mb-6"
-          >
-            ← Back to IT Services
+        {/* ================= BREADCRUMB ================= */}
+        <div className="text-sm text-gray-400 mb-6">
+          <Link to="/services" className="hover:text-purple-300">
+            Services
           </Link>
+          <span className="mx-2">/</span>
+          <Link to={backTo} className="hover:text-purple-300">
+            IT Services
+          </Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-200">{category.title}</span>
+        </div>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+        {/* ================= ✅ CATEGORY HEADER (FIX ADDED) ================= */}
+        <div className="mb-14">
+          <h1 className="text-4xl md:text-6xl font-extrabold">
             {category.title}
           </h1>
 
-          <p className="text-gray-400 mt-4 max-w-3xl text-lg">
+          <p className="mt-4 text-lg text-gray-400 max-w-3xl leading-relaxed">
             {category.desc}
           </p>
+
+          <div className="mt-6 w-24 h-[3px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
         </div>
 
-        {/* Layout */}
-        <div className="grid lg:grid-cols-12 gap-10 items-start">
-          {/* Left list */}
-          <div className="lg:col-span-4 space-y-4">
-            {category.items.map((item, idx) => {
-              const isActive = idx === activeIndex;
-
-              return (
-                <button
-                  key={item.slug}
-                  onClick={() => setActiveIndex(idx)}
-                  className={`w-full text-left p-6 rounded-2xl border transition-all duration-300
-                    ${
-                      isActive
-                        ? "bg-gradient-to-r from-purple-600/25 to-blue-600/15 border-purple-400/50 shadow-[0_0_30px_rgba(168,85,247,0.25)]"
-                        : "bg-white/5 border-white/10 hover:bg-white/10"
-                    }`}
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <h3 className="font-semibold text-lg">{item.title}</h3>
-                    <span
-                      className={`text-sm ${
-                        isActive ? "text-purple-200" : "text-gray-500"
-                      }`}
-                    >
-                      View
-                    </span>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Right detail */}
-          <div className="lg:col-span-8">
-            <div className="rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl">
-              {/* Top banner */}
-              <div className="h-48 md:h-56 relative">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(168,85,247,0.35),transparent_45%),radial-gradient(circle_at_80%_70%,rgba(59,130,246,0.25),transparent_45%)]" />
-                <div className="absolute inset-0 opacity-[0.12] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:50px_50px]" />
-                <div className="absolute bottom-5 left-6 right-6">
-                  <p className="text-sm text-gray-300 tracking-widest uppercase">
-                    Zora Global AI
-                  </p>
-                  <h2 className="text-2xl md:text-3xl font-bold mt-2">
-                    {active.title}
-                  </h2>
-                </div>
+        {/* ================= LAYOUT ================= */}
+        <div className="grid lg:grid-cols-12 gap-8">
+          {/* LEFT PANEL */}
+          <aside className="lg:col-span-4">
+            <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl overflow-hidden">
+              <div className="p-6 border-b border-white/10">
+                <p className="text-sm text-gray-300">
+                  Select a service to view details
+                </p>
               </div>
 
-              {/* Content */}
-              <div className="p-8 md:p-10">
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  {active.description}
+              <div className="p-3 space-y-3">
+                {category.items.map((item) => {
+                  const active = item.slug === selectedSlug;
+
+                  return (
+                    <button
+                      key={item.slug}
+                      onClick={() => setSelectedSlug(item.slug)}
+                      className={`w-full text-left rounded-2xl px-6 py-5 transition border ${
+                        active
+                          ? "bg-gradient-to-r from-blue-600/25 to-purple-600/25 border-white/10"
+                          : "bg-[#0b1220]/60 border-white/5 hover:bg-[#0b1220]"
+                      }`}
+                    >
+                      <div className="text-lg font-semibold text-gray-100">
+                        {item.title}
+                      </div>
+                      <div className="text-sm text-gray-400 mt-1">
+                        {item.description}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="p-6 border-t border-white/10">
+                <Link
+                  to={backTo}
+                  className="text-sm text-gray-300 hover:text-purple-300"
+                >
+                  ← Back to IT Services
+                </Link>
+              </div>
+            </div>
+          </aside>
+
+          {/* RIGHT PANEL */}
+          <main className="lg:col-span-8 space-y-8">
+            <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl overflow-hidden">
+              {/* ===== TOP IMAGE BANNER ===== */}
+              <div className="relative h-[240px] md:h-[280px]">
+                {heroImage && (
+                  <img
+                    src={heroImage}
+                    alt={selectedItem.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+
+                <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/20 via-[#050816]/40 to-[#050816]/90" />
+              </div>
+
+              {/* ===== CONTENT ===== */}
+              <div className="p-10">
+                <p className="text-xs tracking-[0.25em] text-gray-300">
+                  ZORA GLOBAL AI
                 </p>
 
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {active.features.map((f) => (
+                <h2 className="text-3xl md:text-5xl font-extrabold mt-3">
+                  {selectedItem.title}
+                </h2>
+
+                <p className="text-gray-300 mt-5 text-lg leading-relaxed">
+                  {selectedItem.description}
+                </p>
+
+                {/* Feature Chips */}
+                <div className="mt-7 flex flex-wrap gap-3">
+                  {selectedItem.features?.map((f, i) => (
                     <span
-                      key={f}
-                      className="px-4 py-2 rounded-full text-sm
-                      bg-purple-600/15 border border-purple-400/30
-                      text-purple-100"
+                      key={i}
+                      className="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-sm"
                     >
                       {f}
                     </span>
@@ -115,32 +150,30 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
 
                 {/* Buttons */}
                 <div className="mt-10 flex flex-wrap gap-4">
-                  {/* ✅ NOW GOES TO RESPECTIVE SERVICE PAGE */}
                   <Link
-                    to={`/services/it/${category.slug}/${active.slug}`}
-                    className="px-7 py-3 rounded-2xl font-semibold
-                    bg-purple-600 hover:bg-purple-700 transition
-                    shadow-[0_0_30px_rgba(168,85,247,0.35)]"
+                    to={`/services/it/${category.slug}/${selectedItem.slug}`}
+                    className="px-10 py-4 rounded-2xl bg-purple-600 hover:bg-purple-700 font-semibold"
                   >
                     View Service
                   </Link>
 
                   <Link
-                    to={backTo}
-                    className="px-7 py-3 rounded-2xl font-semibold
-                    bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                    to="/book-appointment"
+                    className="px-10 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 font-semibold"
                   >
-                    Back to IT Services
+                    Book Appointment
                   </Link>
+
+                  <button
+                    onClick={() => navigate(-1)}
+                    className="px-10 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10"
+                  >
+                    Go Back
+                  </button>
                 </div>
               </div>
             </div>
-
-            <p className="text-gray-500 text-sm mt-5">
-              Click any item on the left to view its details instantly — no page
-              reload.
-            </p>
-          </div>
+          </main>
         </div>
       </div>
     </section>

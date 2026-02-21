@@ -3,6 +3,7 @@ import React, { useMemo, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
 import { NON_IT_SERVICE_ITEM_CONTENT } from "../data/nonItServiceItemContent";
+import { NON_IT_HERO_IMAGES } from "../data/nonItHeroImages";
 
 const NonITServiceItemPage: React.FC = () => {
   const { categorySlug, itemSlug } = useParams();
@@ -19,7 +20,10 @@ const NonITServiceItemPage: React.FC = () => {
 
   if (!category || !item) return <Navigate to="/services/non-it" replace />;
 
-  const content = NON_IT_SERVICE_ITEM_CONTENT?.[category.slug]?.[item.slug] ?? null;
+  const content =
+    NON_IT_SERVICE_ITEM_CONTENT?.[category.slug]?.[item.slug] ?? null;
+
+  const heroImage = NON_IT_HERO_IMAGES[item.slug] ?? "/non-it-hero/default.png";
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
@@ -47,7 +51,10 @@ const NonITServiceItemPage: React.FC = () => {
               Services
             </Link>
             <span className="mx-2">/</span>
-            <Link to="/services/non-it" className="hover:text-purple-300 transition">
+            <Link
+              to="/services/non-it"
+              className="hover:text-purple-300 transition"
+            >
               Non-IT Services
             </Link>
             <span className="mx-2">/</span>
@@ -62,8 +69,21 @@ const NonITServiceItemPage: React.FC = () => {
           </div>
 
           <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
-            <div className="relative px-8 py-16 md:px-14 md:py-20">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.22),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(168,85,247,0.18),transparent_50%)]" />
+            {/* ✅ IMAGE BANNER */}
+            <div className="relative h-56 md:h-72">
+              <img
+                src={heroImage}
+                alt={item.title}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src =
+                    "/non-it-hero/default.png";
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/25 via-[#050816]/55 to-[#050816]/95" />
+            </div>
+
+            <div className="relative px-8 py-12 md:px-14 md:py-14">
               <div className="relative text-center">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
                   {content?.heroTitle ?? item.title}
@@ -209,7 +229,9 @@ const NonITServiceItemPage: React.FC = () => {
                   key={w.title}
                   className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
                 >
-                  <h3 className="text-lg font-bold text-purple-200">{w.title}</h3>
+                  <h3 className="text-lg font-bold text-purple-200">
+                    {w.title}
+                  </h3>
                   <p className="text-gray-400 mt-2 leading-relaxed">{w.desc}</p>
                 </div>
               ))}
@@ -257,8 +279,7 @@ const NonITServiceItemPage: React.FC = () => {
 
               <div className="md:col-span-2">
                 <label className="text-sm text-gray-300">
-                  {content?.messageLabel ??
-                    "Tell us about your requirements..."}
+                  {content?.messageLabel ?? "Tell us about your requirements..."}
                 </label>
                 <textarea
                   value={form.message}
@@ -288,7 +309,8 @@ const NonITServiceItemPage: React.FC = () => {
             </form>
 
             <p className="text-gray-500 text-sm mt-6">
-              Explore our complete range of Non-IT Services for business growth and operations excellence.
+              Explore our complete range of Non-IT Services for business growth
+              and operations excellence.
             </p>
           </div>
         </div>
