@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar"; // ✅ FIXED PATH
+import Footer from "../components/Footer"; // ✅ ADDED (missing)
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactPage: React.FC = () => {
@@ -86,7 +87,80 @@ const ContactPage: React.FC = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  {/* Email */}
+                  {/* ✅ ADDED: Full Name */}
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Full Name
+                    </label>
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Your full name"
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/40 focus:border-cyan-400/40"
+                    />
+                  </div>
+
+                  {/* ✅ ADDED: Age */}
+                  <div>
+                    <label
+                      htmlFor="age"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Age
+                    </label>
+                    <input
+                      id="age"
+                      type="number"
+                      name="age"
+                      min={18}
+                      required
+                      placeholder="18+"
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400/40 focus:border-cyan-400/40"
+                    />
+                  </div>
+
+                  {/* ✅ ADDED: Company */}
+                  <div>
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Company
+                    </label>
+                    <input
+                      id="company"
+                      type="text"
+                      name="company"
+                      required
+                      placeholder="Company name"
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400/30 focus:border-purple-400/30"
+                    />
+                  </div>
+
+                  {/* ✅ ADDED: Phone Number */}
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      required
+                      placeholder="+91 XXXXX XXXXX"
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400/30 focus:border-purple-400/30"
+                    />
+                  </div>
+
+                  {/* Email (your original) */}
                   <div>
                     <label
                       htmlFor="email"
@@ -109,7 +183,7 @@ const ContactPage: React.FC = () => {
                     />
                   </div>
 
-                  {/* Message */}
+                  {/* Message (your original) */}
                   <div>
                     <label
                       htmlFor="message"
@@ -132,7 +206,7 @@ const ContactPage: React.FC = () => {
                     />
                   </div>
 
-                  {/* Submit */}
+                  {/* Submit (your original) */}
                   <button
                     type="submit"
                     disabled={state.submitting}
@@ -205,6 +279,9 @@ const ContactPage: React.FC = () => {
 
         <div className="h-16" />
       </div>
+
+      {/* ✅ ADDED: Footer (missing) */}
+      <Footer />
     </div>
   );
 };

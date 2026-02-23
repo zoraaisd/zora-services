@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const COOKIE_KEY = "zora_cookie_consent_v1";
 
-const CookieNotice: React.FC = () => {
+interface CookieNoticeProps {
+  onAccept?: () => void;
+}
+
+const CookieNotice: React.FC<CookieNoticeProps> = ({ onAccept }) => {
   const [visible, setVisible] = useState(false);
 
   // 🔥 TEMPORARY TEST MODE (Always Show)
@@ -22,6 +26,7 @@ const CookieNotice: React.FC = () => {
 
     localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
     setVisible(false);
+    onAccept?.();
   };
 
   const handleManage = () => {

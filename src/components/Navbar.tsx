@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
 
           {/* ✅ UPDATED LABEL */}
           <Link to="/contact" className="hover:text-purple-400 transition" onClick={scrollTop}>
-            ContactUs
+            Contact Us
           </Link>
 
           <Link
@@ -208,7 +208,7 @@ const Navbar: React.FC = () => {
               scrollTop();
             }}
           >
-            ContactUs
+            Contact Us
           </Link>
 
           <Link

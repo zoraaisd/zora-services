@@ -39,7 +39,7 @@ const BookAppointment: React.FC = () => {
 
           {/* ✅ UPDATED CALENDLY LINK */}
           <a
-            href="https://calendly.com/zoraglobalai/15?month=2026-02"
+            href="https://calendly.com/zoraglobalai/30"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-purple-600 hover:bg-purple-700 transition px-8 py-3 rounded-lg font-medium"
