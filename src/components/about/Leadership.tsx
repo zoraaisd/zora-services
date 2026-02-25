@@ -81,12 +81,12 @@ const Leadership: React.FC = () => {
           <div className="relative h-full flex flex-col bg-[#1b1033]/90 backdrop-blur-3xl border border-purple-700/30 rounded-[32px] p-10 text-center transform group-hover:-translate-y-3 transition duration-500 shadow-[0_0_40px_rgba(124,58,237,0.25)]">
             
             {/* Image */}
-            <div className="relative w-44 h-44 mx-auto mb-8 flex items-center justify-center">
+            <div className="relative w-44 h-44 mx-auto mb-8 flex items-center justify-center pl-4">
               <div className="absolute inset-0 bg-purple-600/35 blur-2xl rounded-full" />
               <img
                 src="/founders/ceo.jpg"
                 alt="CEO"
-                className="w-full h-full object-cover object-center rounded-full border border-purple-500/40 shadow-[0_0_25px_rgba(124,58,237,0.35)] relative"
+                className="w-full h-full object-cover object-left rounded-full border border-purple-500/40 shadow-[0_0_25px_rgba(124,58,237,0.35)] relative"
               />
             </div>
 

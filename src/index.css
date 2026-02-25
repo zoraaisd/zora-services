@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -12,7 +14,14 @@ body {
   color: white;
 }
 
-
+/* ✅ IMPORTANT: ensure React root is full width and not constrained */
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
 
 @layer base {
   :root {
@@ -42,6 +51,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

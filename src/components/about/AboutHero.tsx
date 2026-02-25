@@ -20,11 +20,11 @@ const AboutHero: React.FC = () => {
           />
         </div>
 
-        {/* optional soft overlay so lines look premium */}
+        {/* soft overlay */}
         <div className="absolute inset-0 bg-[#140a28]/40 pointer-events-none" />
       </div>
 
-      {/* ✅ HERO DEPTH GLOW (above lines, behind text) */}
+      {/* ✅ HERO DEPTH GLOW */}
       <div className="absolute inset-0 z-10 flex justify-center pointer-events-none">
         <div
           className="w-[980px] h-[540px] blur-[150px] rounded-full"
@@ -35,18 +35,11 @@ const AboutHero: React.FC = () => {
         />
       </div>
 
-      {/* ✅ CONTENT (top layer) */}
+      {/* ✅ CONTENT */}
       <div className="relative z-20 px-6 max-w-6xl mx-auto">
-        <h1 className="mt-6 text-6xl md:text-8xl font-black leading-tight tracking-tight">
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
-            }}
-          >
-            Redefining Intelligence
-          </span>
+        {/* ✅ HEADING */}
+        <h1 className="mt-6 text-6xl md:text-8xl font-black leading-tight tracking-tight text-white">
+          Redefining Intelligence
         </h1>
 
         <p className="mt-8 text-white/80 text-xl max-w-4xl mx-auto leading-relaxed">
@@ -55,27 +48,38 @@ const AboutHero: React.FC = () => {
           into one seamless transformation platform.
         </p>
 
+        {/* ✅ BUTTON WITH WHITE OUTER SURROUND */}
         <div className="mt-12 flex justify-center gap-8 flex-wrap">
-          <Link
-            to="/services"
-            className="relative px-10 py-4 rounded-2xl font-semibold group overflow-hidden"
-          >
-            <span
-              className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-95 transition"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgba(42,237,243,0.9), rgba(125,69,150,0.9), rgba(124,58,237,0.9))",
-              }}
-            />
-            <span
-              className="absolute inset-0 rounded-2xl"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
-              }}
-            />
-            <span className="relative z-10 text-[#140a28]">Explore Services</span>
-          </Link>
+          {/* white outer border layer */}
+          <div className="inline-flex rounded-[18px] p-[2px] bg-white/95 shadow-[0_0_20px_rgba(255,255,255,0.25)]">
+            <Link
+              to="/services"
+              className="relative px-10 py-4 rounded-2xl font-semibold group overflow-hidden"
+            >
+              {/* glow */}
+              <span
+                className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-95 transition"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(90deg, rgba(42,237,243,0.9), rgba(125,69,150,0.9), rgba(124,58,237,0.9))",
+                }}
+              />
+
+              {/* gradient button */}
+              <span
+                className="absolute inset-0 rounded-2xl"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
+                }}
+              />
+
+              {/* text */}
+              <span className="relative z-10 text-[#140a28]">
+                Explore Services
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

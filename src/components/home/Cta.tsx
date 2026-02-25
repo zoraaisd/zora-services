@@ -49,26 +49,28 @@ const Cta: React.FC = () => {
           day one.
         </p>
 
-        {/* ✅ SMALLER CTA BUTTON (ONLY CHANGE) */}
-        <Link
-          to="/services"
-          className="
-            inline-flex items-center justify-center
-            px-8 md:px-9 py-3.5 md:py-4   /* reduced padding */
-            bg-blue-700
-            rounded-xl                    /* slightly tighter */
-            font-semibold                 /* lighter weight */
-            text-sm md:text-base          /* smaller text */
-            text-white
-            shadow-[0_0_28px_rgba(37,99,235,0.5)]
-            hover:bg-blue-600
-            hover:shadow-[0_0_45px_rgba(37,99,235,0.8)]
-            hover:scale-[1.03]
-            transition-all duration-300
-          "
-        >
-          Explore Our Solutions
-        </Link>
+        {/* ✅ BUTTON WITH WHITE OUTER BORDER */}
+        <div className="inline-flex rounded-2xl p-[2px] bg-white/95 shadow-[0_0_18px_rgba(255,255,255,0.25)]">
+          <Link
+            to="/services"
+            className="
+              inline-flex items-center justify-center
+              px-8 md:px-9 py-3.5 md:py-4
+              bg-blue-700
+              rounded-[14px]
+              font-semibold
+              text-sm md:text-base
+              text-white
+              shadow-[0_0_28px_rgba(37,99,235,0.5)]
+              hover:bg-blue-600
+              hover:shadow-[0_0_45px_rgba(37,99,235,0.8)]
+              hover:scale-[1.03]
+              transition-all duration-300
+            "
+          >
+            Explore Our Solutions
+          </Link>
+        </div>
       </div>
     </section>
   );

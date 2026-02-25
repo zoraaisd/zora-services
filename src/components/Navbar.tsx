@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -9,21 +9,43 @@ const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
-  // ✅ close dropdown when clicking outside (desktop)
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  // ✅ NEW: navbar ref for measuring height
+  const navRef = useRef<HTMLElement | null>(null);
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  // ✅ Close menus automatically on route change (Products/Contact/etc)
   useEffect(() => {
     setDropdownOpen(false);
     setMenuOpen(false);
     setMobileDropdownOpen(false);
   }, [location.pathname]);
 
-  // ✅ Close desktop dropdown on outside click + ESC
+  // ✅ IMPORTANT: useLayoutEffect so height is set BEFORE paint
+  useLayoutEffect(() => {
+    const el = navRef.current;
+    if (!el) return;
+
+    const setVar = () => {
+      const h = Math.ceil(el.getBoundingClientRect().height);
+      document.documentElement.style.setProperty("--nav-h", `${h}px`);
+    };
+
+    setVar();
+
+    const ro = new ResizeObserver(setVar);
+    ro.observe(el);
+
+    window.addEventListener("resize", setVar);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", setVar);
+    };
+  }, []);
+
   useEffect(() => {
     const onDown = (e: MouseEvent) => {
       if (!dropdownRef.current) return;
@@ -48,7 +70,6 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  // ✅ helper: close everything before navigating
   const closeAll = () => {
     setDropdownOpen(false);
     setMobileDropdownOpen(false);
@@ -56,9 +77,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#0b0618] text-white border-b border-white/10 fixed w-full z-50">
+    <nav
+      ref={navRef}
+      className="bg-[#0b0618] text-white border-b border-white/10 fixed w-full z-50"
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link
           to="/"
           className="flex items-center"
@@ -74,7 +97,7 @@ const Navbar: React.FC = () => {
           />
         </Link>
 
-        {/* ================= DESKTOP MENU ================= */}
+        {/* ================= DESKTOP NAV ================= */}
         <div className="hidden md:flex items-center space-x-8">
           <Link
             to="/"
@@ -98,14 +121,12 @@ const Navbar: React.FC = () => {
             About
           </Link>
 
-          {/* Services Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <div className="flex items-center gap-1">
               <Link
                 to="/services"
                 className="hover:text-purple-400 transition"
                 onClick={() => {
-                  // ✅ close dropdown if open when clicking Services
                   setDropdownOpen(false);
                   scrollTop();
                 }}
@@ -121,9 +142,7 @@ const Navbar: React.FC = () => {
               >
                 <ChevronDown
                   size={16}
-                  className={`transition-transform ${
-                    dropdownOpen ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform ${dropdownOpen ? "rotate-180" : ""}`}
                 />
               </button>
             </div>
@@ -140,7 +159,6 @@ const Navbar: React.FC = () => {
                 >
                   IT Services
                 </Link>
-
                 <Link
                   to="/services/non-it"
                   className="block px-4 py-3 hover:bg-purple-600/20 transition"
@@ -155,17 +173,19 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
-          <Link
-            to="/products"
+          {/* ✅ UPDATED: Products opens external site */}
+          <a
+            href="https://www.zoraai.us/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-purple-400 transition"
             onClick={() => {
-              // ✅ auto close services dropdown when going to Products
               closeAll();
               scrollTop();
             }}
           >
             Products
-          </Link>
+          </a>
 
           <Link
             to="/contact"
@@ -190,11 +210,10 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* ================= MOBILE TOGGLE ================= */}
         <button
           className="md:hidden"
           onClick={() => {
-            // ✅ closing dropdowns if hamburger toggled
             setDropdownOpen(false);
             setMobileDropdownOpen(false);
             setMenuOpen((v) => !v);
@@ -230,21 +249,32 @@ const Navbar: React.FC = () => {
             About
           </Link>
 
-          {/* ✅ Mobile Services (same concept as desktop, NO "More Options") */}
+          {/* ✅ FIX: In mobile, "Services" must navigate to /services (previously it was only a button) */}
           <div>
-            <button
-              type="button"
-              onClick={() => setMobileDropdownOpen((v) => !v)}
-              className="flex items-center justify-between w-full hover:text-purple-400"
-            >
-              <span>Services</span>
-              <ChevronDown
-                size={16}
-                className={`transition-transform ${
-                  mobileDropdownOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+            <div className="flex items-center justify-between w-full">
+              <Link
+                to="/services"
+                className="block hover:text-purple-400"
+                onClick={() => {
+                  closeAll();
+                  scrollTop();
+                }}
+              >
+                Services
+              </Link>
+
+              <button
+                type="button"
+                onClick={() => setMobileDropdownOpen((v) => !v)}
+                className="p-1 hover:text-purple-400 transition"
+                aria-label="Toggle services submenu"
+              >
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+            </div>
 
             {mobileDropdownOpen && (
               <div className="ml-4 mt-3 space-y-2">
@@ -258,7 +288,6 @@ const Navbar: React.FC = () => {
                 >
                   IT Services
                 </Link>
-
                 <Link
                   to="/services/non-it"
                   className="block hover:text-purple-400"
@@ -273,8 +302,11 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
-          <Link
-            to="/products"
+          {/* ✅ UPDATED: Products opens external site */}
+          <a
+            href="https://www.zoraai.us/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block hover:text-purple-400"
             onClick={() => {
               closeAll();
@@ -282,7 +314,7 @@ const Navbar: React.FC = () => {
             }}
           >
             Products
-          </Link>
+          </a>
 
           <Link
             to="/contact"

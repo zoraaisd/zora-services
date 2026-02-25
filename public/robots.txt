@@ -1,0 +1,21 @@
+# =====================================
+# Zora Global AI - robots.txt
+# =====================================
+
+User-agent: *
+
+# ✅ Allow all public pages
+Allow: /
+
+# 🚫 Block development & system folders (if exposed)
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+
+# 🚫 Block temporary or build files
+Disallow: *.json$
+Disallow: *.map$
+
+# ✅ Sitemap location
+Sitemap: http://localhost:5174/sitemap.xml

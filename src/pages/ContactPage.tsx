@@ -1,241 +1,363 @@
-import React, { useEffect } from "react";
+// src/pages/ContactPage.tsx
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useForm, ValidationError } from "@formspree/react";
+import { Mail, Phone, MapPin, Send, Sparkles, CheckCircle } from "lucide-react";
 
 const ContactPage: React.FC = () => {
-  // ✅ Always start from top
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
   }, []);
 
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const response = await fetch("https://formspree.io/f/mpqjodrv", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setSubmitSuccess(true);
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const contactInfo = [
     {
-      icon: "📧",
+      icon: Mail,
       title: "Email",
-      details: "contact@zora.com",
+      details: "info@zoraglobalai.com",
       description: "Send us an email anytime!",
+      color: "from-purple-500 to-pink-500",
     },
     {
-      icon: "📞",
+      icon: Phone,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "+91 9087000345",
       description: "Mon-Fri from 8am to 5pm.",
+      color: "from-blue-500 to-cyan-500",
     },
     {
-      icon: "📍",
+      icon: MapPin,
       title: "Office",
-      details: "123 Tech Street, Silicon Valley, CA 94043",
-      description: "Come say hello at our HQ.",
+      details:
+        "Ground Floor, 12, Rajiv Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096",
+      description: "",
+      color: "from-emerald-500 to-teal-500",
     },
   ];
 
-  const [state, handleSubmit] = useForm("xreaoegz");
-
   return (
-    <div className="bg-black text-white">
-      <div className="pt-24 px-4 md:px-6 max-w-7xl mx-auto pb-24 md:pb-0">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden w-full">
+      {/* Background Effects */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 blur-[150px] rounded-full" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,black_70%)]" />
+      </div>
 
-        {/* ================= HEADER ================= */}
+      {/* Animated Grid Pattern */}
+      <div className="fixed inset-0 -z-10 opacity-20">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(rgba(139,92,246,0.1) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(139,92,246,0.1) 1px, transparent 1px)`,
+            backgroundSize: "50px 50px",
+          }}
+        />
+      </div>
+
+      {/* ✅ Container + padding exactly like your code */}
+      <div className="pt-24 md:pt-32 px-4 md:px-6 max-w-7xl mx-auto relative z-10 w-full">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-16 md:mb-20"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
-            Contact Us
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-2 mb-6"
+          >
+            <Sparkles className="w-4 h-4 text-purple-400" />
+            <span className="text-sm text-purple-300 font-medium">
+              Get in Touch
+            </span>
+          </motion.div>
+
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6">
+            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+              Contact Us
+            </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Ready to transform your business with AI? Get in touch with our
             experts.
           </p>
         </motion.div>
 
-        {/* ================= MAIN GRID ================= */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
-
-          {/* ---------- LEFT : FORM ---------- */}
+        {/* Split Section */}
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-20">
+          {/* LEFT SIDE — FORM */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative"
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative group"
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/30 via-blue-600/20 to-cyan-600/25 blur-2xl rounded-2xl" />
+            {/* Glow Effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition duration-500" />
 
-            <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 p-8 md:p-10 rounded-2xl border border-white/10">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                Send us a message
-              </h2>
+            <div className="relative bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-white/10">
+              {submitSuccess ? (
+                <div className="flex flex-col items-center justify-center py-12 text-center">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                    className="mb-6"
+                  >
+                    <CheckCircle className="w-16 h-16 text-green-500 mx-auto" />
+                  </motion.div>
 
-              <p className="text-gray-400 mb-8">
-                Fill the form and our team will get back to you.
-              </p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                    Message Sent!
+                  </h2>
 
-              {state.succeeded ? (
-                <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-6">
-                  <p className="text-emerald-200 font-semibold text-lg">
-                    Thanks! Your message has been sent ✅
+                  <p className="text-gray-400 mb-2">Thank you for reaching out!</p>
+
+                  <p className="text-purple-300 font-medium text-lg">
+                    Our team will reach you soon
                   </p>
+
+                  <motion.button
+                    onClick={() => setSubmitSuccess(false)}
+                    whileHover={{ scale: 1.05 }}
+                    className="mt-8 px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold transition-all duration-300"
+                  >
+                    Send Another Message
+                  </motion.button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <>
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                      <Send className="w-5 h-5 text-white" />
+                    </div>
 
-                  {/* Name */}
-                  <Input label="Full Name" name="name" placeholder="Your full name" />
-
-                  {/* Phone */}
-                  <Input label="Phone Number" name="phone" placeholder="Enter Your number" />
-
-                  {/* Email */}
-                  <div>
-                    <Label>Email Address</Label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      placeholder="Enter your email address"
-                      className={inputStyle}
-                    />
-                    <ValidationError prefix="Email" field="email" errors={state.errors} />
+                    <h2 className="text-xl md:text-2xl font-bold text-white">
+                      Send Us a Message
+                    </h2>
                   </div>
 
-                  {/* Message */}
-                  <div>
-                    <Label>Message</Label>
-                    <textarea
-                      name="message"
-                      rows={6}
-                      required
-                      placeholder="Tell us what you need..."
-                      className={inputStyle}
-                    />
-                    <ValidationError prefix="Message" field="message" errors={state.errors} />
-                  </div>
+                  <form onSubmit={handleFormSubmit} className="space-y-5">
+                    {/* Name & Phone Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          required
+                          className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
+                          placeholder="Enter Your Name"
+                        />
+                      </div>
 
-                  {/* ✅ Smaller Submit Button */}
-                  <button
-                    type="submit"
-                    disabled={state.submitting}
-                    className="
-                      w-full
-                      bg-gradient-to-r from-purple-600 to-blue-600
-                      hover:from-purple-700 hover:to-blue-700
-                      font-semibold
-                      text-sm
-                      py-2.5
-                      rounded-lg
-                      transition-all
-                    "
-                  >
-                    {state.submitting ? "Sending..." : "Submit"}
-                  </button>
+                      <div>
+                        <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">
+                          Phone
+                        </label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          required
+                          className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
+                          placeholder="Mobile no"
+                        />
+                      </div>
+                    </div>
 
-                  <p className="text-xs text-gray-500 text-center">
-                    By submitting, you agree to be contacted by Zora Global AI.
-                  </p>
-                </form>
+                    {/* Email */}
+                    <div>
+                      <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+
+                    {/* Message */}
+                    <div>
+                      <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">
+                        Your Message
+                      </label>
+                      <textarea
+                        name="message"
+                        required
+                        rows={4}
+                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300 resize-none"
+                        placeholder="Leave a message "
+                      />
+                    </div>
+
+                    <motion.button
+                      type="submit"
+                      disabled={isSubmitting}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="w-full relative overflow-hidden bg-gradient-to-r from-purple-600 to-blue-600 py-4 rounded-xl font-semibold text-white shadow-lg shadow-purple-500/25 transition-all duration-300 group disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <span className="relative z-10 flex items-center justify-center gap-2">
+                        {isSubmitting ? "Sending..." : "Send Message"}
+                        {!isSubmitting && (
+                          <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        )}
+                      </span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-blue-700 opacity-0 hover:opacity-100 transition-opacity" />
+                    </motion.button>
+                  </form>
+                </>
               )}
             </div>
           </motion.div>
 
-          {/* ---------- RIGHT : INFO + CTA ---------- */}
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-8 mb-10"
-            >
-              {contactInfo.map((info, i) => (
-                <div
-                  key={i}
-                  className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-purple-500/20"
+          {/* RIGHT SIDE — CONTACT DETAILS */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="space-y-6 flex flex-col justify-center"
+          >
+            {contactInfo.map((info, index) => {
+              const Icon = info.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 + index * 0.1 }}
+                  whileHover={{ scale: 1.02, x: 8 }}
+                  className="relative group cursor-pointer"
                 >
-                  <div className="text-3xl mb-4">{info.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2 text-purple-400">
-                    {info.title}
-                  </h3>
-                  <p className="text-white font-medium">{info.details}</p>
-                  <p className="text-gray-400 text-sm">{info.description}</p>
-                </div>
-              ))}
-            </motion.div>
+                  <div
+                    className={`absolute -inset-1 bg-gradient-to-r ${info.color} rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-500`}
+                  />
 
-            {/* CTA */}
+                  <div className="relative bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-xl p-6 rounded-2xl border border-white/10 group-hover:border-white/20 transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div
+                        className={`w-12 h-12 rounded-xl bg-gradient-to-br ${info.color} flex items-center justify-center shrink-0 shadow-lg`}
+                      >
+                        <Icon className="w-6 h-6 text-white" />
+                      </div>
+
+                      <div className="min-w-0">
+                        <h3 className="text-lg font-bold text-white mb-1">
+                          {info.title}
+                        </h3>
+                        <p className="text-purple-300 font-medium mb-1 break-words">
+                          {info.details}
+                        </p>
+                        {info.description ? (
+                          <p className="text-gray-500 text-sm">
+                            {info.description}
+                          </p>
+                        ) : null}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </div>
+
+        {/* CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="relative mb-20"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-transparent to-blue-600/20 blur-3xl" />
+
+          <div className="relative text-center py-16 px-6 rounded-3xl border border-white/10 bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-xl">
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
-              className="text-center bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 rounded-2xl p-8 md:p-10"
+              animate={{ y: [-5, 5, -5] }}
+              transition={{ duration: 3, repeat: Infinity }}
+              className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready for a{" "}
-                <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                  Free Consultation
-                </span>
-                ?
-              </h2>
-
-              <p className="text-gray-300 mb-8">
-                Let's discuss how our AI solutions can help your business grow.
-              </p>
-
-              <a
-                href="https://calendly.com/zoraglobalai/30?month=2026-02"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-lg"
-              >
-                Get an Appointment
-              </a>
+              <Sparkles className="w-8 h-8 text-white" />
             </motion.div>
-          </div>
-        </div>
 
-        {/* Footer spacing */}
-        <div className="mt-16 hidden md:block">
-          <div className="h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-          <div className="h-16" />
-        </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6">
+              Ready for a{" "}
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+                Free Consultation
+              </span>
+              ?
+            </h2>
+
+            <p className="text-gray-400 mb-8 max-w-2xl mx-auto text-lg">
+              Let's discuss how our AI solutions can help your business grow and
+              scale.
+            </p>
+
+            <motion.a
+              href="https://calendly.com/zoraglobalai/30?month=2026-02"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg shadow-purple-500/30 transition-all duration-300"
+            >
+              Get an Appointment
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </motion.a>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
 };
-
-/* ---------- Helpers ---------- */
-
-const inputStyle =
-  "w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-400/30";
-
-const Label = ({ children }: { children: React.ReactNode }) => (
-  <label className="block text-sm font-medium text-gray-300 mb-2">
-    {children}
-  </label>
-);
-
-const Input = ({
-  label,
-  name,
-  placeholder,
-  type = "text",
-}: {
-  label: string;
-  name: string;
-  placeholder: string;
-  type?: string;
-}) => (
-  <div>
-    <Label>{label}</Label>
-    <input
-      type={type}
-      name={name}
-      required
-      placeholder={placeholder}
-      className={inputStyle}
-    />
-  </div>
-);
 
 export default ContactPage;

@@ -14,7 +14,7 @@ const WhyChooseUs: React.FC = () => {
         />
       </div>
 
-      {/* Outer glow - CLIPPED to prevent overflow */}
+      {/* Outer glow */}
       <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden rounded-[44px]">
         <div
           className="absolute -inset-1 blur-2xl opacity-25"
@@ -40,11 +40,13 @@ const WhyChooseUs: React.FC = () => {
         <div
           className="absolute top-0 left-0 right-0 h-[2px] opacity-80 pointer-events-none"
           style={{
-            backgroundImage: "linear-gradient(90deg, #2aedf3, #7d4596, #7c3aed)",
+            backgroundImage:
+              "linear-gradient(90deg, #2aedf3, #7d4596, #7c3aed)",
           }}
         />
 
         <div className="relative">
+          {/* Header */}
           <div className="text-center mb-10 md:mb-12">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight break-words">
               <span className="text-white">Why Choose </span>
@@ -66,6 +68,7 @@ const WhyChooseUs: React.FC = () => {
             </p>
           </div>
 
+          {/* Cards */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {[
               {
@@ -94,7 +97,6 @@ const WhyChooseUs: React.FC = () => {
               },
             ].map((item, index) => (
               <div key={index} className="relative group overflow-visible">
-                {/* Card glow - safe */}
                 <div
                   className="absolute -inset-1 rounded-[28px] blur-xl opacity-25 group-hover:opacity-55 transition pointer-events-none"
                   style={{
@@ -104,15 +106,10 @@ const WhyChooseUs: React.FC = () => {
                 />
 
                 <div className="relative bg-[#0f0b1d]/55 border border-white/10 backdrop-blur-xl rounded-[28px] p-7 sm:p-8 transform group-hover:-translate-y-2 transition duration-500 overflow-hidden">
-                  <div
-                    className="absolute -top-24 -right-24 w-56 h-56 rounded-full blur-2xl pointer-events-none"
-                    style={{
-                      background:
-                        "radial-gradient(circle, rgba(125,69,150,0.20), transparent 70%)",
-                    }}
-                  />
-
-                  <h3 className="text-lg sm:text-xl font-extrabold" style={{ color: "#e9d7ff" }}>
+                  <h3
+                    className="text-lg sm:text-xl font-extrabold"
+                    style={{ color: "#e9d7ff" }}
+                  >
                     {item.title}
                   </h3>
 
@@ -143,30 +140,32 @@ const WhyChooseUs: React.FC = () => {
               </p>
             </div>
 
-            {/* Buttons wrap safely on mobile */}
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-              <Link
-                to="/services"
-                className="relative px-6 py-3 rounded-2xl font-semibold group overflow-hidden w-full sm:w-auto text-center"
-              >
-                <span
-                  className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-100 transition"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(90deg, rgba(42,237,243,0.85), rgba(125,69,150,0.85), rgba(124,58,237,0.85))",
-                  }}
-                />
-                <span
-                  className="absolute inset-0 rounded-2xl"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
-                  }}
-                />
-                <span className="relative z-10 text-[#140a28]">
-                  Explore Services
-                </span>
-              </Link>
+              {/* ✅ WHITE BORDER BUTTON */}
+              <div className="inline-flex rounded-2xl p-[2px] bg-white/95 shadow-[0_0_18px_rgba(255,255,255,0.25)] w-full sm:w-auto">
+                <Link
+                  to="/services"
+                  className="relative px-6 py-3 rounded-2xl font-semibold group overflow-hidden w-full text-center"
+                >
+                  <span
+                    className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-100 transition"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg, rgba(42,237,243,0.85), rgba(125,69,150,0.85), rgba(124,58,237,0.85))",
+                    }}
+                  />
+                  <span
+                    className="absolute inset-0 rounded-2xl"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(90deg, #2aedf3 0%, #7d4596 55%, #7c3aed 100%)",
+                    }}
+                  />
+                  <span className="relative z-10 text-[#140a28]">
+                    Explore Services
+                  </span>
+                </Link>
+              </div>
 
               <Link
                 to="/book-appointment"

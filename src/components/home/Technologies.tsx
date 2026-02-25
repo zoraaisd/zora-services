@@ -7,7 +7,7 @@ const TECH_STACK = [
   "Google Cloud Platform (GCP)",
   "Kubernetes",
   "Firebase",
-  "Zora Global AI Intelligence Platform", // ✅ ADDED (company technology)
+  "Zora Global AI Intelligence Platform",
 ];
 
 const Technologies: React.FC = () => {
@@ -66,7 +66,8 @@ const Technologies: React.FC = () => {
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-purple-400 mb-6">
+        {/* ✅ CHANGED TO WHITE */}
+        <h2 className="text-4xl font-bold text-white mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
           Built on a Foundation of Trusted Technologies
         </h2>
 

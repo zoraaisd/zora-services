@@ -31,15 +31,22 @@ const services = [
   },
 ];
 
+const imageMap: Record<string, string> = {
+  "business-strategy-consulting": "/non-it-hero/business-process-optimisation.png",
+  "branding-creative-services": "/non-it-hero/brand-identity-positioning.png",
+  "accounting-financial-operations": "/non-it-hero/accounting-management.png",
+  "digital-marketing-services": "/non-it-hero/lead-generation-campaigns.png",
+  "staff-augmentation-workforce-solutions": "/non-it-hero/non-it-staff-augmentation.png",
+};
+
 const NonITServices: React.FC = () => {
-  // ✅ Keep your existing behavior (not changing logic)
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, []);
 
   return (
     <section className="relative bg-[#050510] text-white min-h-screen overflow-hidden">
-      {/* Animated Background Glow */}
+      {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute w-[700px] h-[700px] bg-indigo-700 opacity-30 blur-[180px] rounded-full top-[-200px] left-[-200px] animate-pulse" />
         <div className="absolute w-[600px] h-[600px] bg-purple-700 opacity-25 blur-[150px] rounded-full bottom-[-150px] right-[-150px] animate-pulse" />
@@ -52,7 +59,7 @@ const NonITServices: React.FC = () => {
       </h1>
 
       <div className="relative max-w-7xl mx-auto pt-24 sm:pt-32 pb-24 sm:pb-32 px-5 sm:px-8">
-        {/* Hero Title */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,54 +67,80 @@ const NonITServices: React.FC = () => {
           className="text-center mb-16 sm:mb-24 md:mb-32"
         >
           <h2 className="text-3xl sm:text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Elite Business Division
+            Business Solutions
           </h2>
+
+          <p className="text-gray-400 mt-6 max-w-3xl mx-auto text-lg">
+            Comprehensive services designed to strengthen your organization's operations, growth, and market position.
+          </p>
 
           <div className="w-24 sm:w-32 md:w-40 h-[3px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 mx-auto mt-6 sm:mt-8 rounded-full" />
         </motion.div>
 
-        {/* Vertical Flow Layout */}
-        <div className="space-y-16 sm:space-y-24 md:space-y-40">
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
           {services.map((service, index) => (
             <motion.div
               key={service.slug}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -200 : 200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={[
-                "relative flex justify-center",
-                index % 2 === 0 ? "md:justify-start" : "md:justify-end",
-              ].join(" ")}
+              className="group relative"
             >
-              <div className="relative w-full md:w-2/3">
-                {/* Glow Border */}
-                <div className="absolute inset-0 rounded-[32px] sm:rounded-[40px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 blur-xl opacity-40" />
+              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 blur-2xl opacity-40 group-hover:opacity-70 transition duration-500" />
 
-                <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[32px] sm:rounded-[40px] p-7 sm:p-10 md:p-14 shadow-[0_0_80px_rgba(79,70,229,0.4)] hover:shadow-[0_0_140px_rgba(59,130,246,0.6)] transition duration-700 group">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-indigo-300 to-blue-400 bg-clip-text text-transparent">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                    {service.desc}
-                  </p>
-
-                  {/* View More Button */}
-                  <div className="mt-7 sm:mt-10">
-                    <Link
-                      to={`/services/non-it/${service.slug}`}
-                      className="inline-block px-7 sm:px-8 py-3 rounded-full bg-white/10 border border-white/15 hover:bg-white/20 transition duration-500 text-white font-medium"
-                    >
-                      View more →
-                    </Link>
-                  </div>
-
-                  {/* Energy Line */}
-                  <div className="mt-7 sm:mt-10 h-[2px] w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-white opacity-20 animate-pulse" />
-                  </div>
+              <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(79,70,229,0.3)] hover:shadow-[0_0_100px_rgba(59,130,246,0.5)] transition duration-500 h-full flex flex-col">
+                
+                {/* Image */}
+                <div className="relative h-56 sm:h-64 overflow-hidden bg-black/40">
+                  <img
+                    src={imageMap[service.slug]}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
+
+                {/* Content */}
+                <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 text-white group-hover:text-indigo-300 transition duration-300">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6">
+                      {service.desc}
+                    </p>
+                  </div>
+
+                  {/* ✅ WHITE BORDER ONLY ADDED */}
+                  <Link
+                    to={`/services/non-it/${service.slug}`}
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full
+                    border border-white
+                    bg-gradient-to-r from-indigo-600 to-blue-600
+                    hover:from-indigo-500 hover:to-blue-500
+                    text-white font-semibold text-sm transition duration-300 w-fit"
+                  >
+                    Learn More
+                    <svg
+                      className="w-4 h-4 group-hover:translate-x-1 transition"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+
+                <div className="h-[2px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition duration-500" />
               </div>
             </motion.div>
           ))}

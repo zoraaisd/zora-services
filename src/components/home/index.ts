@@ -6,3 +6,5 @@ export { default as Technologies } from "./Technologies";
 export { default as ImpactMetrics } from "./ImpactMetrics";
 export { default as Cta } from "./Cta";
 export { default as Counter } from "./Counter";
+export { default as GlobalImpact } from "./GlobalImpact";
+export { default as CoreServices } from "./CoreServices";

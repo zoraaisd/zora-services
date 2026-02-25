@@ -23,11 +23,10 @@ const TRUSTED_BY = [
 ];
 
 const TrustedBy: React.FC = () => {
-  // ✅ duplicate list for seamless marquee
   const items = [...TRUSTED_BY, ...TRUSTED_BY];
 
   return (
-    <section className="relative py-24 px-6 border-b border-blue-900/40 overflow-hidden isolate">
+    <section className="relative py-12 sm:py-14 px-6 border-b border-blue-900/40 overflow-hidden isolate">
       {/* ✅ Background Image */}
       <div
         className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat"
@@ -46,7 +45,7 @@ const TrustedBy: React.FC = () => {
         }}
       />
 
-      {/* ✅ Stronger Brand tint overlay */}
+      {/* ✅ Brand tint overlay */}
       <div
         className="absolute inset-0 z-[3] pointer-events-none"
         style={{
@@ -57,29 +56,20 @@ const TrustedBy: React.FC = () => {
         }}
       />
 
-      {/* ✅ Smaller blur */}
+      {/* ✅ Small blur */}
       <div className="absolute inset-0 z-[4] pointer-events-none backdrop-blur-[0.6px]" />
-
-      {/* ✅ Keyframes */}
-      <style>{`
-        @keyframes zora-marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
 
       {/* ✅ Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h2 className="text-4xl font-bold text-purple-400 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-purple-400 mb-3">
           Trusted By Forward-Thinking Enterprises
         </h2>
 
-        <p className="text-gray-200/85 max-w-3xl mx-auto mb-14 leading-relaxed">
+        <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-relaxed">
           Teams that value reliability, security, and scalable engineering choose
           us to build systems that grow with their business.
         </p>
 
-        {/* ✅ Marquee (FULLY FIXED) */}
         <div
           className="relative overflow-hidden"
           style={{
@@ -89,11 +79,9 @@ const TrustedBy: React.FC = () => {
               "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
           }}
         >
-          {/* edge fade (kept as visual polish) */}
           <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#020010] to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#020010] to-transparent z-10" />
 
-          {/* ✅ Track */}
           <div
             className="
               flex w-max gap-3 px-6

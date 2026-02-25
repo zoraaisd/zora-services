@@ -24,7 +24,7 @@ import NonITServiceCategoryPage from "./pages/NonITServiceCategoryPage";
 import NonITServiceItemPage from "./pages/NonITServiceItemPage";
 
 /* ================= OTHER PAGES ================= */
-import Products from "./pages/Products";
+// import Products from "./pages/Products";
 import BookAppointment from "./pages/BookAppointment";
 import ContactPage from "./pages/ContactPage";
 
@@ -73,7 +73,7 @@ const App: React.FC = () => {
             />
 
             {/* ---------- OTHER ---------- */}
-            <Route path="/products" element={<Products />} />
+            {/* <Route path="/products" element={<Products />} /> */}
             <Route path="/book-appointment" element={<BookAppointment />} />
           </Routes>
         </main>
