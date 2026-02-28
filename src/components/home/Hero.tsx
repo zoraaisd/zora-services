@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
               hero-heading mx-auto 
               max-w-[90vw] sm:max-w-[18ch] 
               whitespace-pre-line 
-              text-[1.95rem] sm:text-5xl md:text-6xl lg:text-7xl
+              text-[1.78rem] sm:text-5xl md:text-6xl lg:text-7xl
               mt-20 sm:mt-10 md:mt-28 lg:mt-20
               px-0 sm:px-0
               leading-[1.5] sm:leading-[1.08] md:leading-[1.04]
