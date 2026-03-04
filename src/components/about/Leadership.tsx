@@ -35,9 +35,8 @@ const Leadership: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-2xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">Dr. Adv. S. Ansar Ali
-Managing Director | Corporate & Legal Advisor</h3>
-            <p className="text-purple-400 mb-4">Managing Director</p>
+            <h3 className="text-2xl font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">Dr. Adv. S. Ansar Ali</h3>
+            <p className="text-purple-400 mb-4">Corporate & Legal Advisor</p>
 
             <p className="text-purple-200 text-sm leading-relaxed">
               Leads operational excellence and execution strategy, ensuring

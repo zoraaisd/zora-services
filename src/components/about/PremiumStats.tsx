@@ -11,9 +11,9 @@ const PremiumStats: React.FC = () => {
 
       <div className="grid md:grid-cols-4 gap-12">
         {[
-          { number: "150+", label: "Enterprise Clients" },
-          { number: "400+", label: "AI Projects Delivered" },
-          { number: "99%", label: "Client Satisfaction" },
+          { number: "800+", label: "Projects Delivered" },
+          { number: "11+", label: "years of excellence" },
+          { number: "900+", label: "Clients" },
           { number: "24/7", label: "Global Operations" },
         ].map((stat, index) => (
           <div key={index} className="relative group">

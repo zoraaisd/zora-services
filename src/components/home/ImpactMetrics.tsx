@@ -2,10 +2,10 @@ import Counter from "./Counter";
 
 const ImpactMetrics: React.FC = () => {
   const metrics = [
-    { target: 40, suffix: "%+", label: "Operational Cost Reduction" },
+    { target: 40, suffix: "%", label: "Operational Cost Reduction" },
     { target: 3, suffix: "x", label: "Faster Decision Making" },
     { target: 99.9, suffix: "%", label: "Platform Uptime" },
-    { target: 60, suffix: "%+", label: "Customer Satisfaction Increase" },
+    { target: 60, suffix: "%", label: "Customer Satisfaction Increase" },
   ];
 
   return (
