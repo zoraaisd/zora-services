@@ -11,7 +11,7 @@ const PremiumStats: React.FC = () => {
 
       <div className="grid md:grid-cols-4 gap-12">
         {[
-          { number: "800+", label: "Projects Delivered" },
+          { number: "850+", label: "Projects Delivered" },
           { number: "11+", label: "years of excellence" },
           { number: "900+", label: "Clients" },
           { number: "24/7", label: "Global Operations" },
