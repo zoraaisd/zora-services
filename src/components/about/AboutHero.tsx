@@ -5,11 +5,39 @@ import FloatingLines from "../FloatingLines";
 const AboutHero: React.FC = () => {
   return (
     <section className="relative min-h-[100svh] flex items-center justify-center text-center overflow-hidden">
+      <style>{`
+        @keyframes heroRise {
+          0% {
+            opacity: 0;
+            transform: translateY(18px) scale(0.985);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes heroGlow {
+          0%,
+          100% {
+            text-shadow:
+              0 0 18px rgba(125, 211, 252, 0.26),
+              0 0 34px rgba(199, 210, 254, 0.14);
+          }
+          50% {
+            text-shadow:
+              0 0 28px rgba(125, 211, 252, 0.42),
+              0 0 54px rgba(199, 210, 254, 0.22);
+          }
+        }
+      `}</style>
+
       {/* ✅ FULLSCREEN ANIMATION LAYER */}
       <div className="absolute inset-0 z-0">
         <div className="w-full h-full will-change-transform">
           <FloatingLines
-            linesGradient={["#E945F5", "#2F4BC0", "#E945F5"]}
+            linesGradient={["#FFB3FB", "#BFD1FF", "#FFB3FB"]}
+            enabledWaves={["top", "bottom"]}
             animationSpeed={1}
             interactive
             bendRadius={5}
@@ -45,12 +73,12 @@ const AboutHero: React.FC = () => {
             mt-20 sm:mt-10 md:mt-12
             leading-[1.5] sm:leading-[1.08] md:leading-[1.04]
             font-serif font-semibold text-center tracking-tight
-            bg-gradient-to-r from-violet-300 via-violet-500 to-indigo-700 bg-clip-text text-transparent
-            [text-shadow:0_0_24px_rgba(76,29,149,0.25)]
+            text-slate-100
             transition-all duration-[400ms] ease-in-out
             sm:hover:scale-[1.02] sm:hover:brightness-110
             will-change-transform
           "
+          style={{ animation: "heroRise 700ms ease-out, heroGlow 2.8s ease-in-out infinite" }}
         >
           Redefining Intelligence
         </h1>
@@ -63,36 +91,31 @@ const AboutHero: React.FC = () => {
 
         {/* ✅ BUTTON WITH WHITE OUTER SURROUND */}
         <div className="mt-12 flex justify-center gap-8 flex-wrap">
-          {/* white outer border layer */}
-          <div className="inline-flex rounded-[18px] p-[2px] bg-white/95 shadow-[0_0_20px_rgba(255,255,255,0.25)]">
-            <Link
-              to="/services"
-              className="relative px-10 py-4 rounded-2xl font-semibold group overflow-hidden"
-            >
-              {/* glow */}
-              <span
-                className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-95 transition"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, rgba(59,130,246,0.9), rgba(99,102,241,0.9), rgba(147,51,234,0.9))",
-                }}
-              />
+          <Link
+            to="/services"
+            className="relative px-7 py-3 rounded-2xl font-semibold group overflow-hidden"
+          >
+            {/* glow */}
+            <span
+              className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-95 transition"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, rgba(59,130,246,0.9), rgba(99,102,241,0.9), rgba(147,51,234,0.9))",
+              }}
+            />
 
-              {/* gradient button */}
-              <span
-                className="absolute inset-0 rounded-2xl"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #3b82f6 0%, #6366f1 55%, #9333ea 100%)",
-                }}
-              />
+            {/* gradient button */}
+            <span
+              className="absolute inset-0 rounded-2xl"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #3b82f6 0%, #6366f1 55%, #9333ea 100%)",
+              }}
+            />
 
-              {/* text */}
-              <span className="relative z-10 text-white">
-                Explore Services
-              </span>
-            </Link>
-          </div>
+            {/* text */}
+            <span className="relative z-10 text-white">Explore Services</span>
+          </Link>
         </div>
       </div>
     </section>

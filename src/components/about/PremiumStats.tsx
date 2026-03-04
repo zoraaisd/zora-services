@@ -25,10 +25,10 @@ const PremiumStats: React.FC = () => {
               }}
             />
             <div className="relative bg-[#0f0b1d]/70 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 text-center transform group-hover:-translate-y-2 transition duration-500">
-              <h3 className="text-6xl font-serif font-extrabold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+              <h3 className="text-[50px] font-serif font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
                 {stat.number}
               </h3>
-              <p className="text-white/75 mt-4">{stat.label}</p>
+              <p className="text-base text-white/75 mt-4">{stat.label}</p>
             </div>
           </div>
         ))}
