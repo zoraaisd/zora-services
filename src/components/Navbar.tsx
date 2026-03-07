@@ -86,8 +86,11 @@ const Navbar: React.FC = () => {
   const mobileBtnActive = "bg-[#fffcf0] text-black border border-white/75 shadow-[0_8px_20px_rgba(0,0,0,0.25)]";
 
   return (
-    <nav ref={navRef} className="bg-black/90 backdrop-blur-md text-white fixed w-full z-50">
-      <div className="w-full px-10 py-5 flex justify-between items-center">
+    <nav
+      ref={navRef}
+      className="fixed top-0 w-full z-50 text-white transition-all duration-300 bg-gradient-to-r from-black via-purple-550 to-purple-950 backdrop-blur-lg border-b border-purple-500/30"
+    >
+      <div className="w-full px-10 py-3 md:py-3 flex justify-between items-center">
         <Link
           to="/"
           className="flex items-center"
@@ -99,7 +102,7 @@ const Navbar: React.FC = () => {
           <img
             src="/logo.png"
             alt="ZoraGlobalAI"
-            className="h-12 w-30 object-contain"
+            className="h-10 md:h-12 w-auto object-contain"
           />
         </Link>
 
@@ -199,7 +202,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/book-appointment"
-            className="bg-violet-500 text-white px-4 py-2 rounded-lg transition-all duration-300 transform-gpu shadow-[0_4px_0px_rgb(0,0,0,0.25)] hover:bg-violet-400 hover:-translate-y-0.5 hover:shadow-[0_6px_0px_rgb(0,0,0,0.22),0_0_26px_rgba(192,132,252,0.55)] active:translate-y-0.5 active:shadow-[0_1px_0px_rgb(0,0,0,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 animate-[navPulse_3s_ease-in-out_infinite]"
+            className="bg-violet-500 text-white px-4 py-2 rounded-lg transition-all duration-300 transform-gpu shadow-[0_4px_0px_rgb(0,0,0,0.25)] hover:bg-violet-400 hover:-translate-y-0.5 hover:shadow-[0_6px_0px_rgb(0,0,0,0.22),0_0_26px_rgba(192,132,252,0.55)] active:translate-y-0.5 active:shadow-[0_1px_0px_rgb(0,0,0,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90"
             onClick={() => {
               closeAll();
               scrollTop();
@@ -353,7 +356,7 @@ const Navbar: React.FC = () => {
             <motion.div initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.24 }}>
               <Link
                 to="/book-appointment"
-                className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center transition-all duration-300 transform-gpu shadow-[0_3px_0px_rgb(0,0,0,0.25)] hover:bg-violet-400 active:scale-[0.98] active:translate-y-0.5 active:shadow-[0_1px_0px_rgb(0,0,0,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 animate-[navPulse_3s_ease-in-out_infinite]"
+                className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center transition-all duration-300 transform-gpu shadow-[0_3px_0px_rgb(0,0,0,0.25)] hover:bg-violet-400 active:scale-[0.98] active:translate-y-0.5 active:shadow-[0_1px_0px_rgb(0,0,0,0.25)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90"
                 onClick={() => {
                   closeAll();
                   scrollTop();
@@ -365,12 +368,6 @@ const Navbar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <style>{`
-        @keyframes navPulse {
-          0%, 100% { box-shadow: 0 4px 0 rgba(0,0,0,0.25), 0 0 0 rgba(192,132,252,0.0); }
-          50% { box-shadow: 0 4px 0 rgba(0,0,0,0.25), 0 0 24px rgba(192,132,252,0.5); }
-        }
-      `}</style>
     </nav>
   );
 };
