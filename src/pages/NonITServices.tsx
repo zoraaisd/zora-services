@@ -91,7 +91,7 @@ const NonITServices: React.FC = () => {
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 blur-2xl opacity-40 group-hover:opacity-70 transition duration-500" />
 
               <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(79,70,229,0.3)] hover:shadow-[0_0_100px_rgba(59,130,246,0.5)] transition duration-500 h-full flex flex-col">
-                
+
                 {/* Image */}
                 <div className="relative h-56 sm:h-64 overflow-hidden bg-black/40">
                   <img
