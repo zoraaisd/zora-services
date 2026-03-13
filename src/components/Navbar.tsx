@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
     "flex items-center gap-3 px-5 py-3 rounded-full text-base font-semibold transition-all transform-gpu active:scale-[0.99] backdrop-blur-md min-h-[52px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90";
   const mobileBtnInactive =
     "text-[#fffcf0] bg-[#fffcf0]/14 border border-white/35 shadow-[0_10px_24px_rgba(0,0,0,0.3)]";
-    
+
   return (
     <nav
       ref={navRef}
@@ -174,6 +174,8 @@ const Navbar: React.FC = () => {
               </div>
             )}
           </div>
+
+          
 
           <a
             href="https://www.zoraai.us/"
