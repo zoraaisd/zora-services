@@ -1,7 +1,19 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clock, Calendar, ArrowRight, Tag } from "lucide-react";
-import { blogIndex } from "../data/blogIndex";
+import { client } from "../lib/sanityClient";
+
+interface Post {
+  _id: string;
+  title: string;
+  slug: { current: string };
+  publishedAt: string;
+  description?: string;
+  category?: string;
+  readTime?: string;
+  featured?: boolean;
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -12,9 +24,29 @@ const fadeUp = {
   }),
 };
 
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
 export default function Blog() {
-  const featured = blogIndex.find((b) => b.featured);
-  const rest = blogIndex.filter((b) => !b.featured);
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+    client
+      .fetch<Post[]>(
+        `*[_type == "post"] | order(publishedAt desc) {
+          _id, title, slug, publishedAt, description, category, readTime, featured
+        }`
+      )
+      .then(setPosts);
+  }, []);
+
+  const featured = posts.find((p) => p.featured);
+  const rest = posts.filter((p) => !p.featured);
 
   return (
     <div className="min-h-screen bg-[#0b0618] text-white">
@@ -58,29 +90,35 @@ export default function Blog() {
               Featured Article
             </p>
             <Link
-              to={`/blog/${featured.slug}`}
+              to={`/blog/${featured.slug.current}`}
               className="group block relative rounded-2xl overflow-hidden border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-[#110b22] to-[#0b0618] p-8 md:p-12 hover:border-purple-500/50 transition-all duration-300"
             >
               <div className="absolute top-0 right-0 w-72 h-72 bg-purple-600/10 blur-[80px] rounded-full pointer-events-none" />
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/15 border border-purple-500/25 text-purple-300 mb-6">
-                <Tag size={11} />
-                {featured.category}
-              </span>
+              {featured.category && (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/15 border border-purple-500/25 text-purple-300 mb-6">
+                  <Tag size={11} />
+                  {featured.category}
+                </span>
+              )}
               <h2 className="text-3xl md:text-4xl font-bold leading-snug text-white group-hover:text-purple-200 transition-colors duration-300 mb-4 max-w-3xl">
                 {featured.title}
               </h2>
-              <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-2xl mb-8">
-                {featured.description}
-              </p>
+              {featured.description && (
+                <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-2xl mb-8">
+                  {featured.description}
+                </p>
+              )}
               <div className="flex flex-wrap items-center gap-5 text-sm text-gray-500">
                 <span className="flex items-center gap-1.5">
                   <Calendar size={14} className="text-purple-400" />
-                  {featured.date}
+                  {formatDate(featured.publishedAt)}
                 </span>
-                <span className="flex items-center gap-1.5">
-                  <Clock size={14} className="text-purple-400" />
-                  {featured.readTime}
-                </span>
+                {featured.readTime && (
+                  <span className="flex items-center gap-1.5">
+                    <Clock size={14} className="text-purple-400" />
+                    {featured.readTime}
+                  </span>
+                )}
                 <span className="ml-auto flex items-center gap-1.5 text-purple-400 font-semibold group-hover:gap-3 transition-all duration-300">
                   Read article <ArrowRight size={15} />
                 </span>
@@ -96,38 +134,44 @@ export default function Blog() {
               More Articles
             </p>
             <div className="grid md:grid-cols-2 gap-6">
-              {rest.map((blog, i) => (
+              {rest.map((post, i) => (
                 <motion.div
-                  key={blog.slug}
+                  key={post._id}
                   custom={i}
                   initial="hidden"
                   animate="show"
                   variants={fadeUp}
                 >
                   <Link
-                    to={`/blog/${blog.slug}`}
+                    to={`/blog/${post.slug.current}`}
                     className="group flex flex-col h-full rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:border-purple-500/40 hover:bg-purple-500/5 transition-all duration-300 p-6"
                   >
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 border border-purple-500/20 text-purple-300 w-fit mb-4">
-                      <Tag size={11} />
-                      {blog.category}
-                    </span>
+                    {post.category && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 border border-purple-500/20 text-purple-300 w-fit mb-4">
+                        <Tag size={11} />
+                        {post.category}
+                      </span>
+                    )}
                     <h2 className="text-xl font-semibold text-white group-hover:text-purple-300 transition-colors duration-300 mb-2 leading-snug">
-                      {blog.title}
+                      {post.title}
                     </h2>
-                    <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-5">
-                      {blog.description}
-                    </p>
+                    {post.description && (
+                      <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-5">
+                        {post.description}
+                      </p>
+                    )}
                     <div className="flex items-center justify-between text-xs text-gray-500 mt-auto">
                       <div className="flex items-center gap-4">
                         <span className="flex items-center gap-1">
                           <Calendar size={12} className="text-purple-400" />
-                          {blog.date}
+                          {formatDate(post.publishedAt)}
                         </span>
-                        <span className="flex items-center gap-1">
-                          <Clock size={12} className="text-purple-400" />
-                          {blog.readTime}
-                        </span>
+                        {post.readTime && (
+                          <span className="flex items-center gap-1">
+                            <Clock size={12} className="text-purple-400" />
+                            {post.readTime}
+                          </span>
+                        )}
                       </div>
                       <ArrowRight
                         size={14}
@@ -139,6 +183,10 @@ export default function Blog() {
               ))}
             </div>
           </>
+        )}
+
+        {posts.length === 0 && (
+          <p className="text-center text-gray-500 mt-20">Loading posts...</p>
         )}
       </div>
     </div>
