@@ -243,7 +243,7 @@ export default function BlogPost() {
         transition={{ duration: 0.55, delay: 0.25 }}
         className="max-w-3xl mx-auto px-6 pb-32"
       >
-        <PortableText value={post.body} components={ptComponents} />
+        <PortableText value={post.body as import("@portabletext/types").TypedObject[]} components={ptComponents} />
 
         {/* End CTA */}
         <div className="mt-16 rounded-2xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-[#110b22] to-[#0b0618] p-8 text-center">
