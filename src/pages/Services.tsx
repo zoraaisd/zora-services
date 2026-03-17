@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PageSEO from "../components/PageSEO";
 import { ServicesHero, ITServicesCard, NonITServicesCard } from "../components/services";
 
 const Services: React.FC = () => {
@@ -12,6 +13,11 @@ const Services: React.FC = () => {
 
   return (
     <section className="relative min-h-screen bg-[#020010] text-white overflow-hidden">
+      <PageSEO
+        title="IT & Business Services — Software, AI, Marketing & More | Zora Global AI"
+        description="Explore Zora Global AI's full range of IT and non-IT services: web development, AI automation, mobile apps, branding, digital marketing, and business consulting."
+        canonical="/services"
+      />
       {/* ===== BACKGROUND ===== */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(67,56,202,0.5),transparent_45%),radial-gradient(circle_at_80%_30%,rgba(124,58,237,0.45),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(37,99,235,0.4),transparent_45%)]"></div>
 

@@ -3,6 +3,8 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
 import { NON_IT_HERO_IMAGES } from "../data/nonItHeroImages";
+import PageSEO from "../components/PageSEO";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 const NonITServiceCategoryPage: React.FC = () => {
   const { categorySlug } = useParams();
@@ -55,6 +57,19 @@ const NonITServiceCategoryPage: React.FC = () => {
 
   return (
     <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden">
+      <PageSEO
+        title={`${category.title} | Zora Global AI`}
+        description={category.desc}
+        canonical={`/services/non-it/${category.slug}`}
+      />
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+          { name: "Non-IT Services", path: "/services/non-it" },
+          { name: category.title, path: `/services/non-it/${category.slug}` },
+        ]}
+      />
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[900px] h-[900px] bg-blue-700/16 blur-[180px] rounded-full top-[-280px] left-[-280px]" />

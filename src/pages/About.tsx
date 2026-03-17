@@ -1,5 +1,6 @@
 // src/pages/About.tsx
 import React, { useEffect } from "react";
+import PageSEO from "../components/PageSEO";
 import {
   AboutHero,
   WhoWeAre,
@@ -17,6 +18,11 @@ const About: React.FC = () => {
 
   return (
     <section className="relative min-h-screen bg-[#140a28] text-white overflow-x-hidden">
+      <PageSEO
+        title="About Us — AI & Technology Consulting Firm | Zora Global AI"
+        description="Learn about Zora Global AI — our mission, leadership team, culture, and vision for helping businesses grow through AI automation and intelligent software."
+        canonical="/about"
+      />
       {/* ✅ Background system for the whole page (behind everything) */}
       <div
         className="absolute inset-0 -z-30"

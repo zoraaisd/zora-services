@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import PageSEO from "../components/PageSEO";
 
 const services = [
   {
@@ -46,6 +47,11 @@ const NonITServices: React.FC = () => {
 
   return (
     <section className="relative bg-[#050510] text-white min-h-screen overflow-hidden">
+      <PageSEO
+        title="Business & Marketing Services — Strategy, Branding & Finance | Zora Global AI"
+        description="Business strategy consulting, staff augmentation, branding, digital marketing, accounting, and financial operations services for growing companies."
+        canonical="/services/non-it"
+      />
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute w-[700px] h-[700px] bg-indigo-700 opacity-30 blur-[180px] rounded-full top-[-200px] left-[-200px] animate-pulse" />
@@ -54,9 +60,9 @@ const NonITServices: React.FC = () => {
       </div>
 
       {/* Background Typography */}
-      <h1 className="absolute text-[22vw] sm:text-[18vw] font-black text-white/5 top-24 sm:top-20 left-1/2 -translate-x-1/2 select-none tracking-widest">
+      <div className="absolute text-[22vw] sm:text-[18vw] font-black text-white/5 top-24 sm:top-20 left-1/2 -translate-x-1/2 select-none tracking-widest" aria-hidden="true">
         BUSINESS
-      </h1>
+      </div>
 
       <div className="relative max-w-7xl mx-auto pt-24 sm:pt-32 pb-24 sm:pb-32 px-5 sm:px-8">
         {/* Header */}
@@ -66,9 +72,9 @@ const NonITServices: React.FC = () => {
           transition={{ duration: 1 }}
           className="text-center mb-16 sm:mb-24 md:mb-32"
         >
-          <h2 className="text-3xl sm:text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Business Solutions
-          </h2>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+            Business & Marketing Services
+          </h1>
 
           <p className="text-gray-400 mt-6 max-w-3xl mx-auto text-lg">
             Comprehensive services designed to strengthen your organization's operations, growth, and market position.

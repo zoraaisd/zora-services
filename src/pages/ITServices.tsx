@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IT_SERVICE_CATEGORIES } from "../data/itServicesData";
+import PageSEO from "../components/PageSEO";
 
 const ITServices: React.FC = () => {
   const navigate = useNavigate();
@@ -30,6 +31,11 @@ const ITServices: React.FC = () => {
 
   return (
     <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-24 px-4 sm:px-6 lg:px-0">
+      <PageSEO
+        title="IT Services — Web, Mobile, AI, Cloud & Cybersecurity | Zora Global AI"
+        description="Expert IT services including website development, mobile apps, AI automation, cloud infrastructure, custom enterprise software, and cybersecurity solutions."
+        canonical="/services/it"
+      />
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute -top-60 -left-60 w-[800px] h-[800px] bg-[#7d4596]/30 blur-[180px] rounded-full" />

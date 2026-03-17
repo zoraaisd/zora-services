@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
         "
       >
         <div className="max-w-7xl mx-auto text-center w-full">
-          <motion.div
+          <motion.h1
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
@@ -144,7 +144,7 @@ const Hero: React.FC = () => {
             textAlign="center"
             showCallback
           />
-          </motion.div>
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}

@@ -1,5 +1,6 @@
 // src/pages/Home.tsx
 import { useEffect } from "react";
+import PageSEO from "../components/PageSEO";
 import {
   Hero,
   EnterpriseDifferentiators,
@@ -30,6 +31,11 @@ const Home: React.FC = () => {
 
   return (
     <main className="relative bg-[#010409] text-white overflow-hidden">
+      <PageSEO
+        title="AI Automation & Software Development Company | Zora Global AI"
+        description="Zora Global AI delivers AI automation, custom software, web and mobile development, cloud infrastructure, and cybersecurity solutions for modern businesses."
+        canonical="/"
+      />
       {/* ================= GLOBAL STYLES ================= */}
       <style>{`
         @keyframes zora-marquee {

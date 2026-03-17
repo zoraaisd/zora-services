@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PageSEO from "../components/PageSEO";
 
 const BookAppointment: React.FC = () => {
 
@@ -13,6 +14,11 @@ const BookAppointment: React.FC = () => {
 
   return (
     <section className="bg-[#0b0618] text-white pt-28 pb-20 px-6">
+      <PageSEO
+        title="Book a Free Consultation | Zora Global AI"
+        description="Schedule a free consultation with Zora Global AI's experts to explore how AI automation and software development can accelerate your business growth."
+        canonical="/book-appointment"
+      />
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Heading */}

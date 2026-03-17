@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Sparkles, CheckCircle } from "lucide-react";
+import { Helmet } from "react-helmet";
+import PageSEO from "../components/PageSEO";
 
 const ContactPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -62,6 +64,43 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden w-full">
+      <PageSEO
+        title="Contact Us — Get in Touch | Zora Global AI"
+        description="Contact Zora Global AI to discuss your AI automation, software development, or digital transformation project. Our team responds within 24 hours."
+        canonical="/contact"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Zora Global AI",
+            url: "https://www.zoraglobalai.com",
+            logo: "https://www.zoraglobalai.com/logo.png",
+            email: "info@zoraglobalai.com",
+            telephone: "+91-9087000345",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Ground Floor, 12, Rajiv Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi",
+              addressLocality: "Chennai",
+              addressRegion: "Tamil Nadu",
+              postalCode: "600096",
+              addressCountry: "IN",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+91-9087000345",
+              contactType: "customer service",
+              email: "info@zoraglobalai.com",
+              hoursAvailable: "Mo-Fr 08:00-17:00",
+              availableLanguage: "English",
+            },
+            sameAs: [
+              "https://www.linkedin.com/company/zora-global-ai",
+            ],
+          })}
+        </script>
+      </Helmet>
       {/* Background Effects */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />

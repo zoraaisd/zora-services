@@ -120,7 +120,7 @@ const ServicesHero: React.FC = () => {
               will-change-transform
             "
           >
-            Advanced Service Architecture
+            IT & Business Services
           </motion.h1>
 
           <motion.p

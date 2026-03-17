@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
+import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { ArrowLeft, Clock, Calendar, Tag, ArrowRight } from "lucide-react";
 import { client } from "../lib/sanityClient";
+import PageSEO from "../components/PageSEO";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
+
+const BASE_URL = "https://www.zoraglobalai.com";
 
 interface Post {
   _id: string;
   title: string;
   slug: { current: string };
   publishedAt: string;
+  description?: string;
   category?: string;
   readTime?: string;
   body: unknown[];
@@ -104,7 +110,7 @@ export default function BlogPost() {
     client
       .fetch<Post>(
         `*[_type == "post" && slug.current == $slug][0] {
-          _id, title, slug, publishedAt, category, readTime, body
+          _id, title, slug, publishedAt, description, category, readTime, body
         }`,
         { slug }
       )
@@ -121,6 +127,50 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-[#0b0618] text-white">
+      <PageSEO
+        title={`${post.title} | Zora Global AI`}
+        description={post.description ?? `${post.title} — read the full article on the Zora Global AI blog.`}
+        canonical={`/blog/${post.slug.current}`}
+        ogType="article"
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description: post.description ?? post.title,
+            datePublished: post.publishedAt,
+            dateModified: post.publishedAt,
+            url: `${BASE_URL}/blog/${post.slug.current}`,
+            author: {
+              "@type": "Organization",
+              name: "Zora Global AI",
+              url: BASE_URL,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Zora Global AI",
+              url: BASE_URL,
+              logo: {
+                "@type": "ImageObject",
+                url: `${BASE_URL}/logo.png`,
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${BASE_URL}/blog/${post.slug.current}`,
+            },
+          })}
+        </script>
+      </Helmet>
+      <BreadcrumbSchema
+        crumbs={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug.current}` },
+        ]}
+      />
       {/* Hero */}
       <section className="relative pt-40 pb-16 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
