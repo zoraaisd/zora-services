@@ -3,7 +3,15 @@
   publish = "dist"
   base = "/"
 
+# ── Fix: HTTP apex → canonical in one hop ──────────────────────────────────
+[[redirects]]
+  from   = "http://zoraglobalai.com/*"
+  to     = "https://www.zoraglobalai.com/:splat"
+  status = 301
+  force  = true
+
+# ── SPA fallback (keep this LAST — it catches everything else) ─────────────
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to   = "/index.html"
   status = 200
