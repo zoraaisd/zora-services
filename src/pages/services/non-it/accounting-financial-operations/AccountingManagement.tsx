@@ -2,86 +2,386 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const category = {
-  "slug": "accounting-financial-operations",
-  "title": "Accounting & Financial Operations"
+  slug: "accounting-financial-operations",
+  title: "Accounting & Financial Operations",
 };
+
 const item = {
-  "slug": "accounting-management",
-  "title": "Accounting Management",
-  "shortDesc": "End-to-end accounting management: books, compliance, financial reporting, and audit-ready accuracy."
+  slug: "accounting-management",
+  title: "Accounting Management",
+  shortDesc:
+    "End-to-end accounting management services for bookkeeping, financial reporting, compliance, reconciliations, and audit-ready financial operations.",
 };
+
 const heroImage = "/non-it-hero/accounting-management.png";
+
+const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
+  const strokeClass =
+    accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";
+
+  const commonProps = {
+    className: `h-7 w-7 ${strokeClass}`,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.8",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+
+  switch (icon) {
+    case "strategy":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7 15.5V10" />
+          <path d="M12 15.5V6.5" />
+          <path d="M17 15.5V12" />
+          <path d="M6.5 9.5 12 6l5.5 5" />
+        </svg>
+      );
+    case "finance":
+      return (
+        <svg {...commonProps}>
+          <rect x="4.5" y="5" width="15" height="14" rx="2.5" />
+          <path d="M8 9.5h8" />
+          <path d="M8 13h3" />
+          <path d="M14.5 12.5c0-1 .8-1.8 1.8-1.8s1.7.5 1.7 1.3c0 .7-.4 1.1-1.1 1.4l-1.2.4c-.8.3-1.2.7-1.2 1.4 0 .9.7 1.6 1.8 1.6s1.8-.7 1.8-1.7" />
+        </svg>
+      );
+    case "analytics":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7.5 16V11" />
+          <path d="M12 16V7.5" />
+          <path d="M16.5 16V9.5" />
+          <path d="M6.5 8.5 10 6l3 2 4.5-3" />
+        </svg>
+      );
+    case "operations":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="2.5" />
+          <path d="M12 4.5v2.2" />
+          <path d="M12 17.3v2.2" />
+          <path d="m6.7 6.7 1.6 1.6" />
+          <path d="m15.7 15.7 1.6 1.6" />
+          <path d="M4.5 12h2.2" />
+          <path d="M17.3 12h2.2" />
+          <path d="m6.7 17.3 1.6-1.6" />
+          <path d="m15.7 8.3 1.6-1.6" />
+        </svg>
+      );
+    case "compliance":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 3.5 6 6v5.5c0 4 2.8 6.8 6 8 3.2-1.2 6-4 6-8V6Z" />
+          <path d="m9.5 11.8 1.6 1.6 3.4-3.8" />
+        </svg>
+      );
+    case "collaboration":
+      return (
+        <svg {...commonProps}>
+          <path d="M8.5 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+          <path d="M15.8 12a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" />
+          <path d="M4.8 18.5v-.7A3.3 3.3 0 0 1 8.1 14.5h.8a3.3 3.3 0 0 1 3.3 3.3v.7" />
+          <path d="M13.8 18.5v-.6a2.8 2.8 0 0 1 2.8-2.8h.4a2.8 2.8 0 0 1 2.8 2.8v.6" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="7" />
+        </svg>
+      );
+  }
+};
+
 const content: any = {
-  "heroTitle": "Accounting Management Services",
-  "heroSubtitle": "Zora Global AI provides end-to-end accounting management services that help businesses maintain accurate financial records, ensure compliance, and gain complete visibility into financial performance.",
-  "primaryCta": "Get Accounting Support",
-  "secondaryCta": "Talk to Us",
-  "topBlocks": [
+  heroTitle: "Accounting Management Services",
+  heroSubtitle:
+    "Zora Global AI delivers professional accounting management services that help businesses maintain accurate books, streamline financial operations, improve reporting accuracy, and stay compliant with day-to-day accounting and regulatory requirements.",
+
+  primaryCta: "Get Accounting Support",
+  secondaryCta: "Talk to Us",
+
+  topBlocks: [
     {
-      "title": "Bookkeeping & General Ledger",
-      "desc": "Systematic bookkeeping, journal entries, and ledger maintenance for accurate and real-time financial tracking."
+      title: "Bookkeeping & General Ledger Management",
+      desc: "We manage day-to-day bookkeeping, journal entries, ledger updates, and account categorization to keep your financial records accurate, organized, and ready for reporting.",
     },
     {
-      "title": "Accounts Payable & Receivable",
-      "desc": "Invoice processing, billing, collections, vendor payments, and receivable management."
+      title: "Accounts Payable & Receivable Support",
+      desc: "Our accounting team handles invoice tracking, receivables follow-up, payment processing, vendor coordination, and cash flow-related accounting tasks with better control and visibility.",
     },
     {
-      "title": "Financial Reporting & Compliance",
-      "desc": "Balance sheets, income statements, cash flow reports, and regulatory compliance."
-    }
+      title: "Financial Reporting & Compliance Support",
+      desc: "We prepare structured financial reports, maintain documentation, support reconciliations, and help businesses stay aligned with compliance, audit, and internal accounting standards.",
+    },
   ],
-  "overview": "Our accounting management services cover the complete financial lifecycle of a business — from bookkeeping and ledger management to financial reporting and compliance — keeping your accounts accurate and audit-ready.",
-  "deliverTitle": "Our Accounting Management Process",
-  "deliverySteps": [
+
+  overview:
+    "Our accounting management services are designed to support businesses with reliable, structured, and scalable financial operations. From bookkeeping and ledger maintenance to reconciliations, payable and receivable management, reporting, and compliance support, we help organizations improve financial accuracy and operational efficiency. With disciplined accounting workflows and timely financial visibility, businesses can reduce errors, strengthen control, support audits, and make better financial decisions with confidence.",
+
+  projectDuration: {
+    title: "Project Execution Excellence",
+    subtitle:
+      "We deliver strategy-led accounting solutions focused on financial accuracy, compliance, and scalable operational control.",
+    cards: [
+      {
+        title: "Fast & Strategic Execution",
+        label: "Best suited for",
+        desc:
+          "Structured execution that helps businesses improve accounting control, reduce errors, and strengthen reporting speed.",
+      },
+      {
+        title: "What Our Execution Covers",
+        label: "What is Included",
+        desc:
+          "Bookkeeping, reconciliations, payable and receivable support, compliance workflows, and reporting delivery.",
+      },
+      {
+        title: "Why Businesses Choose Zora",
+        label: "Requirement Condition",
+        desc:
+          "Expert financial operations guidance, transparent delivery, and scalable accounting systems built for long-term reliability.",
+      },
+    ],
+  },
+
+  deliverTitle: "How We Deliver",
+  deliverySteps: [
     {
-      "title": "Setup — Accounting Setup & Review",
-      "desc": "Review records, chart of accounts, and systems to establish a compliant foundation."
+      title: "Requirement Gathering",
+      desc:
+        "Understand business operations, accounting structure, reporting needs, and compliance requirements from the start.",
     },
     {
-      "title": "Processing — Daily Accounting Operations",
-      "desc": "Handle bookkeeping, reconciliations, payroll accounting, and ledger updates."
+      title: "Analysis",
+      desc:
+        "Review current accounting gaps, process issues, financial controls, and reporting priorities to shape the right support model.",
     },
     {
-      "title": "Reporting — Financial Reporting & Review",
-      "desc": "Prepare financial statements and management reports for decision-making."
-    }
+      title: "Planning & Strategy",
+      desc:
+        "Define accounting workflows, review structure, control checkpoints, and a clear execution roadmap for delivery.",
+    },
   ],
-  "whyChooseTitle": "Accounting Management Transformation",
-  "whyChoose": [
+
+  whoWeAreTitle: "Who We Are",
+  whoWeAreText:
+    "Zora Global AI Technologies delivers structured non-IT accounting and financial operations services that improve control, reporting accuracy, and long-term business reliability. We combine financial discipline, operational clarity, and practical execution to support stronger accounting performance.",
+  whoWeAreCards: [
     {
-      "title": "Accuracy + control",
-      "desc": "Clean books and disciplined processes that reduce risk."
+      title: "Finance-Led Execution",
+      desc:
+        "We align every accounting engagement with business requirements, compliance needs, and measurable financial outcomes.",
     },
     {
-      "title": "Compliance-ready",
-      "desc": "Structured records aligned with standards and audit needs."
+      title: "Reporting & Control Expertise",
+      desc:
+        "Our team combines bookkeeping accuracy, reconciliation discipline, and reporting structure to support dependable financial management.",
     },
     {
-      "title": "Clear visibility",
-      "desc": "Reports that improve financial decision-making."
-    }
+      title: "Long-Term Operational Stability",
+      desc:
+        "We support sustainable finance operations through process discipline, documentation, and continuous accounting improvement.",
+    },
   ],
-  "frameworkTitle": "Accounting Management Transformation",
-  "frameworkSubtitle": "From manual accounting challenges to structured and compliant financial management.",
-  "beforePoints": [
-    "Inconsistent financial records",
-    "Delayed reconciliations",
-    "Compliance risks",
-    "Limited financial visibility"
+
+  technologiesTitle: "Business Analysis, Platforms & Operational Tools",
+  technologiesSubtitle:
+    "We use proven accounting systems, compliance workflows, reporting tools, and operational methods to deliver practical, scalable, and measurable financial management solutions.",
+  technologies: [
+    {
+      icon: "finance",
+      title: "Accounting & Bookkeeping Tools",
+      desc:
+        "We use practical accounting systems to manage ledgers, bookkeeping, transaction control, and financial records with accuracy.",
+      items: ["Tally", "Zoho Books", "QuickBooks"],
+    },
+    {
+      icon: "analytics",
+      title: "Reporting & Financial Insight Tools",
+      desc:
+        "We build reporting structures and dashboards that improve visibility into financial performance, liabilities, and cash flow.",
+      items: ["Excel Reports", "MIS Dashboards", "Financial Statement Templates"],
+    },
+    {
+      icon: "compliance",
+      title: "Compliance & Documentation Systems",
+      desc:
+        "We support financial documentation, reconciliation workflows, and audit-ready record management through structured control systems.",
+      items: ["Reconciliation Checklists", "Audit Support Files", "Compliance Documentation"],
+    },
+    {
+      icon: "operations",
+      title: "Process Control & Workflow Tools",
+      desc:
+        "We use accounting process workflows and review checkpoints that help businesses improve accuracy and reduce manual risk.",
+      items: ["Approval Workflows", "SOPs", "Control Checklists"],
+    },
+    {
+      icon: "strategy",
+      title: "Financial Planning & Analysis Tools",
+      desc:
+        "We use structured planning and review methods to support budgeting, cost control, and better financial decision-making.",
+      items: ["Budget Models", "Cost Tracking Systems", "Variance Analysis"],
+    },
+    {
+      icon: "collaboration",
+      title: "Team Coordination & Review Systems",
+      desc:
+        "We use shared workflows and review systems that keep accounting teams, approvers, and business stakeholders aligned.",
+      items: ["Google Workspace", "Microsoft Office", "Shared Review Templates"],
+    },
   ],
-  "afterPoints": [
-    "Clean and accurate accounts",
-    "Timely financial statements",
-    "Improved compliance",
-    "Better decision-making"
+
+  architecture: {
+    title: "Non-IT Service Delivery Framework",
+    intro:
+      "Our structured delivery model helps businesses move from accounting assessment to execution, reporting, control, and ongoing support with clear milestones and measurable progress.",
+    processSteps: [
+      {
+        icon: "01",
+        title: "Requirement gathering",
+        desc: "Understand accounting needs, business structure, reporting priorities, and compliance expectations",
+      },
+      {
+        icon: "02",
+        title: "Analysis",
+        desc: "Assess current records, control gaps, reporting delays, and accounting workflow issues",
+      },
+      {
+        icon: "03",
+        title: "Planning & strategy",
+        desc: "Define workflow structure, review process, reporting cycle, and financial control priorities",
+      },
+      {
+        icon: "04",
+        title: "Resource allocation",
+        desc: "Assign the right accounting specialists, reporting resources, and review support",
+      },
+    ],
+    deliveryCards: [
+      {
+        icon: "05",
+        title: "Execution",
+        desc: "Execute bookkeeping, reconciliations, reporting, and accounting control tasks efficiently",
+      },
+      {
+        icon: "06",
+        title: "Monitoring & optimization",
+        desc: "Continuously review reporting quality, compliance alignment, and process efficiency",
+      },
+    ],
+    closureCard: {
+      icon: "07",
+      title: "Reporting & support",
+      desc: "Provide financial insights, documentation, and ongoing support for stable accounting operations",
+    },
+  },
+
+  maintenanceSupport: {
+    title: "Continuous Business Growth & Support",
+    subtitle:
+      "We support long-term financial stability through continuous accounting refinement, reporting improvement, and strategic guidance that strengthens control and business confidence.",
+    cards: [
+      {
+        title: "Accounting Optimization & Financial Accuracy",
+        desc:
+          "Improve financial workflows, reduce reporting errors, and maintain high accounting accuracy across operations.",
+      },
+      {
+        title: "Strategic Refinement & Financial Alignment",
+        desc:
+          "Refine accounting workflows based on business needs, reporting demands, and compliance priorities.",
+      },
+      {
+        title: "Performance Monitoring & Financial Insights",
+        desc:
+          "Track reporting quality, financial trends, and accounting performance to support better decisions.",
+      },
+      {
+        title: "Consultation & Operational Excellence",
+        desc:
+          "Provide expert accounting guidance to improve execution quality, documentation, and financial process strength.",
+      },
+      {
+        title: "Compliance & Control Support",
+        desc:
+          "Support reconciliations, documentation, and control systems that improve readiness, reliability, and audit confidence.",
+      },
+    ],
+  },
+
+  whyChooseTitle: "Accounting Management Transformation",
+  whyChoose: [
+    {
+      title: "Accurate books and stronger financial control",
+      desc: "We help maintain clean and well-structured accounting records that improve internal control, reduce manual errors, and support stable day-to-day financial operations.",
+    },
+    {
+      title: "Compliance-focused accounting support",
+      desc: "Our structured accounting processes support documentation, reconciliations, reporting consistency, and readiness for internal reviews, audits, and regulatory expectations.",
+    },
+    {
+      title: "Clear reporting for smarter decisions",
+      desc: "With timely financial statements and organized accounting data, your business gets better visibility into performance, cash flow, liabilities, and overall financial health.",
+    },
   ],
-  "contactTitle": "Talk to Our Accounting Experts",
-  "contactSubtitle": "Need reliable accounting management for your business? Our experts are here to help.",
-  "messageLabel": "Tell us about your accounting requirements...",
-  "submitLabel": "Request Accounting Consultation"
+
+  zoraWhyTitle: "Why Zora Global AI Technologies",
+  zoraWhy: [
+    {
+      title: "Scalable & Business-Aligned Solutions",
+      desc:
+        "We deliver scalable accounting solutions aligned with business needs, financial controls, and long-term operational stability.",
+    },
+    {
+      title: "Structured & Transparent Execution",
+      desc:
+        "Our process combines milestone-based delivery, reporting clarity, and quality-driven execution for dependable outcomes.",
+    },
+    {
+      title: "Long-Term Growth & Partnership",
+      desc:
+        "We support continuous accounting improvement, operational reliability, and long-term business confidence through a customer-focused approach.",
+    },
+  ],
+
+  frameworkTitle: "Accounting Management Transformation",
+  frameworkSubtitle:
+    "From disconnected accounting activities and reporting delays to accurate, compliant, and insight-driven financial management.",
+
+  beforePoints: [
+    "Inconsistent bookkeeping and record maintenance",
+    "Delayed reconciliations and reporting cycles",
+    "Vendor payment and receivable tracking issues",
+    "Higher compliance and audit preparation risk",
+    "Limited visibility into financial performance",
+  ],
+
+  afterPoints: [
+    "Accurate books and organized accounting records",
+    "Timely reconciliations and financial reporting",
+    "Improved payable and receivable management",
+    "Stronger compliance and audit readiness",
+    "Better financial visibility for decision-making",
+  ],
+
+  contactTitle: "Talk to Our Accounting Experts",
+  contactSubtitle:
+    "Looking for reliable accounting management services for your business? Share your requirements and our team will help you build a more accurate, compliant, and efficient finance operation.",
+
+  messageLabel: "Tell us about your accounting requirements...",
+  submitLabel: "Request Accounting Consultation",
 };
 
 const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
+  const technologies = content?.technologies ?? [];
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -91,6 +391,7 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
   }, []);
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [activeTechnology, setActiveTechnology] = useState<number | null>(null);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -124,10 +425,7 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
             </Link>
             <span className="mx-2">/</span>
             <Link
-              to={
-                "/services/non-it/" +
-                category.slug
-              }
+              to={"/services/non-it/" + category.slug}
               className="hover:text-purple-300 transition"
             >
               {category.title}
@@ -137,7 +435,6 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
           </div>
 
           <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
-            {/* ✅ IMAGE BANNER */}
             <div className="relative h-56 md:h-72">
               <img
                 src={heroImage}
@@ -182,15 +479,18 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
 
           {/* Quick blocks */}
           <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {(content?.topBlocks ?? []).map((b: { title: string; desc: string }) => (
-              <div
-                key={b.title}
-                className="p-7 rounded-2xl bg-white/5 border border-white/10"
-              >
-                <h3 className="text-xl font-bold text-blue-300">{b.title}</h3>
-                <p className="text-gray-400 mt-3 leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
+            {(content?.topBlocks ?? []).map(
+              (b: { title: string; desc: string }) => (
+                <div
+                  key={b.title}
+                  className="group relative overflow-hidden p-7 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                >
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <h3 className="relative text-xl font-bold text-blue-300 transition-colors duration-300 group-hover:text-white">{b.title}</h3>
+                  <p className="relative text-gray-400 mt-3 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">{b.desc}</p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -209,29 +509,302 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
             </p>
           </div>
 
-          {/* How we deliver */}
-          <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
-              {content?.deliverTitle ?? "How We Deliver"}
-            </h2>
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.projectDuration?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.projectDuration?.subtitle}
+              </p>
+            </div>
 
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.deliverySteps ?? []).map((s: { title: string; desc: string }, idx: number) => (
-                <div
-                  key={s.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold">
-                    {idx + 1}
+            <div className="mt-10 grid md:grid-cols-3 gap-6 items-stretch">
+              {(content?.projectDuration?.cards ?? []).map(
+                (card: { title: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-2xl md:text-[2rem] font-bold leading-tight text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-5 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-bold text-gray-100">{s.title}</h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{s.desc}</p>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
 
-          {/* Framework (optional) */}
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+              {content?.deliverTitle}
+            </h2>
+
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              {(content?.deliverySteps ?? []).map(
+                (step: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={step.title}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-sm font-bold text-white">
+                      {idx + 1}
+                    </div>
+                    <h3 className="relative mt-6 text-2xl font-bold text-white">
+                      {step.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {step.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-purple-200">
+                {content?.whoWeAreTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-5xl mx-auto text-base md:text-lg leading-8">
+                {content?.whoWeAreText}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              {(content?.whoWeAreCards ?? []).map(
+                (card: { title: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-2xl font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.technologiesTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-5xl mx-auto text-base md:text-lg leading-8">
+                {content?.technologiesSubtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-6 items-start">
+              {technologies.map(
+                (
+                  tech: {
+                    icon: string;
+                    title: string;
+                    desc: string;
+                    items: string[];
+                  },
+                  idx: number
+                ) => {
+                  const isOpen = activeTechnology === idx;
+
+                  return (
+                    <div
+                      key={tech.title}
+                      onMouseEnter={() => setActiveTechnology(idx)}
+                      onMouseLeave={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : current
+                        )
+                      }
+                      onClick={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : idx
+                        )
+                      }
+                      className={`group relative self-start overflow-hidden rounded-[28px] border bg-[#0b1220] p-5 md:p-6 transition-all duration-300 cursor-pointer ${
+                        isOpen
+                          ? "border-blue-300/60 shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                          : "border-white/10 hover:border-blue-300/40"
+                      }`}
+                      aria-expanded={isOpen}
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[16px] border border-blue-300/20 bg-blue-500/10">
+                          {renderTechnologyIcon(tech.icon, "blue")}
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold leading-tight text-blue-200">
+                          {tech.title}
+                        </h3>
+                      </div>
+
+                      <div
+                        className={`grid transition-all duration-300 ease-out ${
+                          isOpen
+                            ? "grid-rows-[1fr] opacity-100 mt-5"
+                            : "grid-rows-[0fr] opacity-0 mt-0"
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <p className="text-base md:text-lg leading-8 text-gray-400">
+                            {tech.desc}
+                          </p>
+                          <div className="mt-5 grid grid-cols-2 gap-3">
+                            {tech.items.map((tool) => (
+                              <span
+                                key={tool}
+                                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm md:text-base text-white"
+                              >
+                                {tool}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.architecture?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-5xl mx-auto text-base md:text-lg leading-8">
+                {content?.architecture?.intro}
+              </p>
+            </div>
+
+            <div className="mt-10 grid xl:grid-cols-[1.1fr_1.2fr] gap-8 items-start">
+              <div className="space-y-4">
+                {(content?.architecture?.processSteps ?? []).map(
+                  (step: { icon: string; title: string; desc: string }, idx: number) => (
+                    <React.Fragment key={step.title}>
+                      <div className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[#0b1220] p-6 transition-all duration-300 hover:border-blue-300/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.14)]">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                        <div className="flex items-start gap-4">
+                          <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-blue-300/20 bg-blue-500/10 text-sm font-bold text-blue-200">
+                            {step.icon}
+                          </div>
+                          <div className="relative">
+                            <h3 className="text-xl font-bold text-blue-100 transition-colors duration-300 group-hover:text-white">
+                              {step.title}
+                            </h3>
+                            <p className="mt-2 text-base leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                        <div className="text-center text-2xl text-blue-200">↓</div>
+                      ) : null}
+                    </React.Fragment>
+                  )
+                )}
+              </div>
+
+              <div className="space-y-8">
+                <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-base font-bold text-white">
+                    Delivery
+                  </div>
+                  <div className="mt-6 grid md:grid-cols-2 gap-4">
+                    {(content?.architecture?.deliveryCards ?? []).map(
+                      (card: { icon: string; title: string; desc: string }) => (
+                        <div
+                          key={card.title}
+                          className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5 transition-all duration-300 hover:border-purple-300/40 hover:shadow-[0_0_30px_rgba(139,92,246,0.14)]"
+                        >
+                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_58%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                          <div className="relative text-base font-bold text-purple-300">{card.icon}</div>
+                          <div className="relative mt-3 text-xl font-bold text-blue-100 transition-colors duration-300 group-hover:text-white">
+                            {card.title}
+                          </div>
+                          <p className="relative mt-2 text-base leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                            {card.desc}
+                          </p>
+                        </div>
+                      )
+                  )} 
+                  </div>
+
+                    <div className="mt-6 border-t border-dashed border-white/10 pt-3 text-center text-[16px] text-blue-200/70">
+                      review & updates
+                    </div>
+                    <div className="text-center text-[28px] text-blue-200">↓</div>
+                  </div>
+
+                  <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-purple-400 to-blue-400 px-6 py-2 text-base font-bold text-slate-950">
+                    Closure
+                  </div>
+                  <div className="group relative mt-5 overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5 transition-all duration-300 hover:border-blue-300/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.14)]">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative text-base font-bold text-blue-300">
+                      {content?.architecture?.closureCard?.icon}
+                    </div>
+                    <div className="relative mt-3 text-xl font-bold text-blue-100 transition-colors duration-300 group-hover:text-white">
+                      {content?.architecture?.closureCard?.title}
+                    </div>
+                    <p className="relative mt-2 text-base leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {content?.architecture?.closureCard?.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.maintenanceSupport?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.maintenanceSupport?.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-6 gap-6 items-stretch">
+              {(content?.maintenanceSupport?.cards ?? []).map(
+                (card: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={card.title}
+                    className={`group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60 ${
+                      idx < 3 ? "xl:col-span-2" : "xl:col-span-3"
+                    }`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                    <h3 className="relative text-xl md:text-2xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-3 text-base leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Framework */}
           {(content?.frameworkTitle ||
             content?.beforePoints ||
             content?.afterPoints) && (
@@ -244,9 +817,10 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
               )}
 
               <div className="mt-8 grid md:grid-cols-3 gap-6 items-stretch">
-                <div className="rounded-2xl bg-[#0b1220] border border-white/10 p-7">
+                <div className="group relative overflow-hidden rounded-2xl bg-[#0b1220] border border-white/10 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <h3 className="text-lg font-bold text-red-300">Before</h3>
-                  <ul className="mt-4 space-y-3 text-gray-300">
+                  <ul className="relative mt-4 space-y-3 text-gray-300 transition-colors duration-300 group-hover:text-gray-200">
                     {(content?.beforePoints ?? []).map((p: string) => (
                       <li key={p} className="flex gap-3">
                         <span className="text-red-300">•</span>
@@ -256,23 +830,26 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
                   </ul>
                 </div>
 
-                <div className="rounded-2xl bg-[linear-gradient(135deg,rgba(59,130,246,0.25),rgba(168,85,247,0.20))] border border-white/10 p-7 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-sm uppercase tracking-widest text-gray-200/80">
+                <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(180deg,rgba(77,91,160,0.45),rgba(58,44,98,0.65))] p-7 shadow-[0_10px_24px_rgba(15,23,42,0.2)] flex items-center justify-center">
+                  <div className="text-center max-w-sm">
+                    <div className="text-sm md:text-base uppercase tracking-[0.2em] text-gray-200/90">
                       Transformation
                     </div>
-                    <div className="mt-2 text-xl font-bold">
-                      Strategy • Technology • Operations
+                    <div className="mt-4 flex flex-col items-center gap-2 text-3xl md:text-[2.1rem] font-bold leading-tight text-white">
+                      <span>Accuracy</span>
+                      <span>Compliance</span>
+                      <span>Visibility</span>
                     </div>
-                    <div className="text-gray-200/80 mt-2">
-                      Governance + measurable KPIs
+                    <div className="mt-4 text-lg md:text-xl text-gray-200/90">
+                      Structured accounting with measurable control
                     </div>
                   </div>
                 </div>
 
-                <div className="rounded-2xl bg-[#0b1220] border border-white/10 p-7">
+                <div className="group relative overflow-hidden rounded-2xl bg-[#0b1220] border border-white/10 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <h3 className="text-lg font-bold text-green-300">After</h3>
-                  <ul className="mt-4 space-y-3 text-gray-300">
+                  <ul className="relative mt-4 space-y-3 text-gray-300 transition-colors duration-300 group-hover:text-gray-200">
                     {(content?.afterPoints ?? []).map((p: string) => (
                       <li key={p} className="flex gap-3">
                         <span className="text-green-300">•</span>
@@ -292,17 +869,50 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
             </h2>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.whyChoose ?? []).map((w: { title: string; desc: string }) => (
-                <div
-                  key={w.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <h3 className="text-lg font-bold text-purple-200">
-                    {w.title}
-                  </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{w.desc}</p>
-                </div>
-              ))}
+              {(content?.whyChoose ?? []).map(
+                (w: { title: string; desc: string }) => (
+                  <div
+                    key={w.title}
+                    className="group relative overflow-hidden p-7 rounded-2xl bg-[#0b1220] border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-lg font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {w.title}
+                    </h3>
+                    <p className="relative text-gray-400 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">
+                      {w.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-purple-200">
+              {content?.zoraWhyTitle}
+            </h2>
+
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {(content?.zoraWhy ?? []).map(
+                (w: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={w.title}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative text-sm font-semibold text-blue-300/80">
+                      0{idx + 1}
+                    </div>
+                    <h3 className="relative mt-4 text-xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {w.title}
+                    </h3>
+                    <p className="relative mt-3 text-base md:text-lg leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {w.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -368,10 +978,7 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
                 </button>
 
                 <Link
-                  to={
-                    "/services/non-it/" +
-                    category.slug
-                  }
+                  to={"/services/non-it/" + category.slug}
                   className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition font-semibold"
                 >
                   Back to {category.title}

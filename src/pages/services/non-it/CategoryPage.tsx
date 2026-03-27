@@ -1,16 +1,14 @@
-// src/pages/NonITServiceCategoryPage.tsx
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
-import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
-import { NON_IT_HERO_IMAGES } from "../data/nonItHeroImages";
-import PageSEO from "../components/PageSEO";
-import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import { NON_IT_SERVICE_CATEGORIES } from "../../../data/nonItServicesData";
+import { NON_IT_HERO_IMAGES } from "../../../data/nonItHeroImages";
+import PageSEO from "../../../components/PageSEO";
+import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 
 const NonITServiceCategoryPage: React.FC = () => {
   const { categorySlug } = useParams();
   const navigate = useNavigate();
 
-  // ✅ scroll helper (works for window + common scroll containers)
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.documentElement.scrollTop = 0;
@@ -28,12 +26,23 @@ const NonITServiceCategoryPage: React.FC = () => {
     [categorySlug]
   );
 
+  const heroDescription =
+    category?.slug === "business-strategy-consulting"
+      ? "Strategic advisory services designed to optimize business operations, improve efficiency, and drive sustainable long-term growth. We help organizations align processes, technology, and decision-making to achieve measurable performance improvements and scalable success."
+      : category?.slug === "branding-creative-services"
+        ? "Brand identity systems and creative solutions designed to strengthen market presence, improve brand recognition, and ensure visual consistency. We help businesses build impactful brand identities through strategic design, creative execution, and consistent messaging to drive engagement, trust, and long-term growth."
+        : category?.slug === "accounting-financial-operations"
+          ? "Reliable financial operations support designed to improve accuracy, ensure regulatory compliance, and enhance financial reporting. We help businesses streamline accounting processes, maintain data integrity, and gain clear financial insights to support better decision-making and sustainable growth."
+          : category?.slug === "digital-marketing-services"
+            ? "Performance-driven marketing systems designed to accelerate business growth and deliver measurable ROI. We help businesses execute data-driven campaigns, optimize marketing channels, and improve conversion performance to maximize visibility, engagement, and long-term revenue growth."
+            : category?.slug === "staff-augmentation-workforce-solutions"
+              ? "Flexible staffing solutions designed to help businesses scale non-IT teams quickly with skilled and qualified professionals. We support efficient workforce expansion through reliable talent sourcing, seamless onboarding, and scalable staffing models to improve productivity and meet evolving business demands."
+      : category?.desc;
+
   const [activeSlug, setActiveSlug] = useState<string>("");
 
-  // ✅ when category changes, reset active item + scroll to top
   useEffect(() => {
     setActiveSlug("");
-    // category page navigation should start at top
     scrollToTop();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categorySlug]);
@@ -48,6 +57,26 @@ const NonITServiceCategoryPage: React.FC = () => {
       null
     );
   }, [category, activeSlug]);
+
+  const categorySlugValue = category?.slug ?? "";
+  const hasGradientActiveCard =
+    categorySlugValue === "business-strategy-consulting" ||
+    categorySlugValue === "branding-creative-services" ||
+    categorySlugValue === "accounting-financial-operations" ||
+    categorySlugValue === "digital-marketing-services" ||
+    categorySlugValue === "staff-augmentation-workforce-solutions";
+
+  const activeCardClass =
+    hasGradientActiveCard
+      ? "bg-gradient-to-r from-blue-600/25 to-purple-600/25 text-white border-blue-300/40 shadow-[0_0_25px_rgba(59,130,246,0.35)]"
+      : "bg-white text-[#050816] border-blue-400 shadow-[0_0_25px_rgba(59,130,246,0.35)]";
+
+  const inactiveCardClass = "bg-white/5 text-gray-200 border-white/10 hover:bg-white/10";
+
+  const activeDescriptionClass =
+    hasGradientActiveCard
+      ? "text-white/80 mt-1 text-sm"
+      : "text-[#0b1220]/80 mt-1 text-sm";
 
   if (!category) return <Navigate to="/services/non-it" replace />;
 
@@ -81,19 +110,11 @@ const NonITServiceCategoryPage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           {/* Breadcrumb */}
           <div className="text-sm text-gray-400 mb-6">
-            <Link
-              to="/services"
-              className="hover:text-purple-300 transition"
-              onClick={scrollToTop}
-            >
+            <Link to="/services" className="hover:text-purple-300 transition" onClick={scrollToTop}>
               Services
             </Link>
             <span className="mx-2">/</span>
-            <Link
-              to="/services/non-it"
-              className="hover:text-purple-300 transition"
-              onClick={scrollToTop}
-            >
+            <Link to="/services/non-it" className="hover:text-purple-300 transition" onClick={scrollToTop}>
               Non-IT Services
             </Link>
             <span className="mx-2">/</span>
@@ -103,12 +124,12 @@ const NonITServiceCategoryPage: React.FC = () => {
           <div className="rounded-[28px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
             <div className="relative px-8 py-12 md:px-12 md:py-14">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.22),transparent_55%),radial-gradient(circle_at_80%_70%,rgba(168,85,247,0.18),transparent_55%)]" />
-              <div className="relative">
+              <div className="relative text-center">
                 <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight">
                   {category.title}
                 </h1>
-                <p className="text-gray-300 mt-4 max-w-4xl text-lg leading-relaxed">
-                  {category.desc}
+                <p className="text-gray-300 mt-4 max-w-4xl mx-auto text-lg leading-relaxed">
+                  {heroDescription}
                 </p>
               </div>
             </div>
@@ -132,23 +153,17 @@ const NonITServiceCategoryPage: React.FC = () => {
                       key={item.slug}
                       onClick={() => {
                         setActiveSlug(item.slug);
-
-                        // ✅ MAIN FIX: same route → force scroll to top
                         requestAnimationFrame(() => scrollToTop());
                       }}
-                      className={[
+                        className={[
                         "w-full text-left px-5 py-4 rounded-2xl border transition",
-                        isActive
-                          ? "bg-white text-[#050816] border-blue-400 shadow-[0_0_25px_rgba(59,130,246,0.35)]"
-                          : "bg-white/5 text-gray-200 border-white/10 hover:bg-white/10",
+                        isActive ? activeCardClass : inactiveCardClass,
                       ].join(" ")}
                     >
                       <div className="font-semibold">{item.title}</div>
                       <div
                         className={
-                          isActive
-                            ? "text-[#0b1220]/80 mt-1 text-sm"
-                            : "text-gray-400 mt-1 text-sm"
+                          isActive ? activeDescriptionClass : "text-gray-400 mt-1 text-sm"
                         }
                       >
                         {item.shortDesc}
@@ -163,15 +178,13 @@ const NonITServiceCategoryPage: React.FC = () => {
           {/* RIGHT CONTENT */}
           <main className="lg:col-span-8">
             <div className="rounded-3xl bg-white/5 border border-white/10 overflow-hidden">
-              {/* ✅ IMAGE BANNER */}
               <div className="relative h-52 md:h-60">
                 <img
                   src={heroImage}
                   alt={activeItem?.title ?? "Service"}
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src =
-                      "/non-it-hero/default.png";
+                    (e.currentTarget as HTMLImageElement).src = "/non-it-hero/default.png";
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/20 via-[#050816]/40 to-[#050816]/90" />
@@ -202,12 +215,8 @@ const NonITServiceCategoryPage: React.FC = () => {
                   <button
                     onClick={() => {
                       if (!activeItem) return;
-
-                      // ✅ ensure top after navigation
                       scrollToTop();
-                      navigate(
-                        `/services/non-it/${category.slug}/${activeItem.slug}`
-                      );
+                      navigate(`/services/non-it/${category.slug}/${activeItem.slug}`);
                     }}
                     className="px-8 py-4 rounded-2xl font-semibold bg-blue-600 hover:bg-blue-700 transition shadow-[0_0_40px_rgba(37,99,235,0.35)]"
                   >

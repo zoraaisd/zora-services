@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import PageSEO from "../components/PageSEO";
-import { ServicesHero, ITServicesCard, NonITServicesCard } from "../components/services";
+import PageSEO from "../../components/PageSEO";
+import { ServicesHero, ITServicesCard, NonITServicesCard } from "../../components/services";
 
 const Services: React.FC = () => {
   useEffect(() => {

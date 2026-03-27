@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 /* ================= MAIN PAGES ================= */
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
-const Services = lazy(() => import("./pages/Services"));
+const Services = lazy(() => import("./pages/services"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const BookAppointment = lazy(() => import("./pages/BookAppointment"));
 
@@ -18,14 +18,14 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 /* ================= IT SERVICES ================= */
-const ITServices = lazy(() => import("./pages/ITServices"));
-const ITServiceCategoryPage = lazy(() => import("./pages/ITServiceCategoryPage"));
-const ITServiceItemPage = lazy(() => import("./pages/ITServiceItemPage"));
+const ITServices = lazy(() => import("./pages/services/it"));
+const ITServiceCategoryPage = lazy(() => import("./pages/services/it/CategoryPage"));
+const ITServiceItemPage = lazy(() => import("./pages/services/it/ItemPage"));
 
 /* ================= NON-IT SERVICES ================= */
-const NonITServices = lazy(() => import("./pages/NonITServices"));
-const NonITServiceCategoryPage = lazy(() => import("./pages/NonITServiceCategoryPage"));
-const NonITServiceItemPage = lazy(() => import("./pages/NonITServiceItemPage"));
+const NonITServices = lazy(() => import("./pages/services/non-it"));
+const NonITServiceCategoryPage = lazy(() => import("./pages/services/non-it/CategoryPage"));
+const NonITServiceItemPage = lazy(() => import("./pages/services/non-it/ItemPage"));
 
 const App: React.FC = () => {
   return (

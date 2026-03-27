@@ -74,11 +74,14 @@ const AboutHero: React.FC = () => {
             leading-[1.5] sm:leading-[1.08] md:leading-[1.04]
             font-serif font-semibold text-center tracking-tight
             text-slate-100
-            transition-all duration-[400ms] ease-in-out
+            transition-all ease-in-out
             sm:hover:scale-[1.02] sm:hover:brightness-110
             will-change-transform
           "
-          style={{ animation: "heroRise 700ms ease-out, heroGlow 2.8s ease-in-out infinite" }}
+          style={{
+            animation: "heroRise 700ms ease-out, heroGlow 2.8s ease-in-out infinite",
+            transitionDuration: "400ms",
+          }}
         >
           Redefining Intelligence
         </h1>

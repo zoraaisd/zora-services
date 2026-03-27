@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { NON_IT_SERVICE_PAGES } from "./nonItServicePages";
-import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
-import PageSEO from "../components/PageSEO";
-import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import { NON_IT_SERVICE_PAGE_LOADERS, type NonITServicePageKey } from "../../../data/nonItServicePages";
+import { NON_IT_SERVICE_CATEGORIES } from "../../../data/nonItServicesData";
+import PageSEO from "../../../components/PageSEO";
+import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 
 const NonITServiceItemPage: React.FC = () => {
   const { categorySlug, itemSlug } = useParams();
   const key = `${categorySlug}/${itemSlug}`;
-  const Page = NON_IT_SERVICE_PAGES[key as keyof typeof NON_IT_SERVICE_PAGES];
+  const loader = NON_IT_SERVICE_PAGE_LOADERS[key as NonITServicePageKey];
+  const [Page, setPage] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!loader) {
+      setPage(null);
+      return;
+    }
+
+    setPage(null);
+    loader().then((module) => {
+      if (!cancelled) {
+        setPage(() => module.default);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [loader, key]);
+
+  if (!loader) {
+    return <Navigate to="/services/non-it" replace />;
+  }
 
   if (!Page) {
-    return <Navigate to="/services/non-it" replace />;
+    return null;
   }
 
   const category = NON_IT_SERVICE_CATEGORIES.find((c) => c.slug === categorySlug);

@@ -2,72 +2,359 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const category = {
-  "slug": "branding-creative-services",
-  "title": "Branding & Creative Services"
-};
-const item = {
-  "slug": "content-management-support",
-  "title": "Content Management Support",
-  "shortDesc": "End-to-end content management services to organize, publish, maintain, and optimize digital content."
-};
-const heroImage = "/non-it-hero/content-management-support.png";
-const content: any = {
-  "heroTitle": "Content Management Services",
-  "heroSubtitle": "Zora Global AIprovides end-to-end content management services to help businesses organize, manage, publish, and optimize digital content across platforms with accuracy and consistency.",
-  "primaryCta": "Manage Content Effectively",
-  "secondaryCta": "Talk to Us",
-  "topBlocks": [
-    {
-      "title": "Content Strategy & Planning",
-      "desc": "Define frameworks, workflows, and governance models aligned with business goals and audience needs."
-    },
-    {
-      "title": "Content Publishing & Maintenance",
-      "desc": "Manage updates, formatting, publishing schedules, and version control across platforms."
-    },
-    {
-      "title": "Content Optimization & Governance",
-      "desc": "Ensure accuracy, compliance, SEO optimization, and lifecycle management for long-term value."
-    }
-  ],
-  "overview": "Our content management services ensure your digital content remains structured, relevant, up-to-date, and optimized across websites, applications, and marketing channels.",
-  "deliverTitle": "Our Content Management Workflow",
-  "deliverySteps": [
-    {
-      "title": "Planning — Content Structuring & Strategy",
-      "desc": "Define content architecture, workflows, and publishing guidelines."
-    },
-    {
-      "title": "Execution — Publishing & Updates",
-      "desc": "Publish, update, and manage content across digital platforms efficiently."
-    },
-    {
-      "title": "Optimization — Content Review & Improvement",
-      "desc": "Monitor content performance, ensure compliance, and continuously improve quality."
-    }
-  ],
-  "whyChooseTitle": "Why Content Management Support",
-  "whyChoose": [
-    {
-      "title": "Operational consistency",
-      "desc": "Structured workflows and version control to avoid errors."
-    },
-    {
-      "title": "Always up-to-date",
-      "desc": "Maintenance-driven approach to keep content current."
-    },
-    {
-      "title": "Governed quality",
-      "desc": "Compliance + SEO + accuracy built into the process."
-    }
-  ],
-  "contactTitle": "Talk to Our Content Specialists",
-  "contactSubtitle": "Looking for reliable content management support? Let our experts handle your content lifecycle.",
-  "messageLabel": "Tell us about your content management needs...",
-  "submitLabel": "Request Content Support"
+  slug: "branding-creative-services",
+  title: "Branding & Creative Services",
 };
 
+const item = {
+  slug: "content-management-support",
+  title: "Content Management Support",
+  shortDesc:
+    "End-to-end content management services to organize, publish, maintain, and optimize digital content.",
+};
+
+const heroImage = "/non-it-hero/content-management-support.png";
+
+const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
+  const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";
+
+  const commonProps = {
+    className: `h-7 w-7 ${strokeClass}`,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.8",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+
+  switch (icon) {
+    case "strategy":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7 15.5V10" />
+          <path d="M12 15.5V6.5" />
+          <path d="M17 15.5V12" />
+          <path d="M6.5 9.5 12 6l5.5 5" />
+        </svg>
+      );
+    case "marketing":
+      return (
+        <svg {...commonProps}>
+          <path d="M4.5 14.5V9.8a1.8 1.8 0 0 1 1.8-1.8h2.1l6.9-3v14l-6.9-3H6.3a1.8 1.8 0 0 1-1.8-1.8Z" />
+          <path d="M8.5 16.2 10 20" />
+          <path d="M17.5 9.5a3.5 3.5 0 0 1 0 5" />
+          <path d="M19.2 8a6 6 0 0 1 0 8" />
+        </svg>
+      );
+    case "finance":
+      return (
+        <svg {...commonProps}>
+          <rect x="4.5" y="5" width="15" height="14" rx="2.5" />
+          <path d="M8 9.5h8" />
+          <path d="M8 13h3" />
+          <path d="M14.5 12.5c0-1 .8-1.8 1.8-1.8s1.7.5 1.7 1.3c0 .7-.4 1.1-1.1 1.4l-1.2.4c-.8.3-1.2.7-1.2 1.4 0 .9.7 1.6 1.8 1.6s1.8-.7 1.8-1.7" />
+        </svg>
+      );
+    case "hr":
+      return (
+        <svg {...commonProps}>
+          <path d="M16.5 18.5v-1.2a3.3 3.3 0 0 0-3.3-3.3H8.8a3.3 3.3 0 0 0-3.3 3.3v1.2" />
+          <circle cx="11" cy="8.5" r="3" />
+          <path d="M18.5 9.5h3" />
+          <path d="M20 8v3" />
+        </svg>
+      );
+    case "operations":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="2.5" />
+          <path d="M12 4.5v2.2" />
+          <path d="M12 17.3v2.2" />
+          <path d="m6.7 6.7 1.6 1.6" />
+          <path d="m15.7 15.7 1.6 1.6" />
+          <path d="M4.5 12h2.2" />
+          <path d="M17.3 12h2.2" />
+          <path d="m6.7 17.3 1.6-1.6" />
+          <path d="m15.7 8.3 1.6-1.6" />
+        </svg>
+      );
+    case "analytics":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7.5 16V11" />
+          <path d="M12 16V7.5" />
+          <path d="M16.5 16V9.5" />
+          <path d="M6.5 8.5 10 6l3 2 4.5-3" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="7" />
+        </svg>
+      );
+  }
+};
+
+const content: any = {
+  heroTitle: "Content Management Services",
+  heroSubtitle:
+    "Zora Global AI provides end-to-end content management services that help businesses organize, manage, publish, maintain, and optimize digital content across websites, portals, applications, and marketing channels. Our approach focuses on structured workflows, content accuracy, publishing consistency, SEO readiness, and long-term governance so your digital presence stays relevant, professional, and easy to scale.",
+
+  primaryCta: "Manage Content Effectively",
+  secondaryCta: "Talk to Us",
+
+  topBlocks: [
+    {
+      title: "Content Strategy & Planning",
+      desc: "We create structured content frameworks, editorial guidelines, publishing plans, taxonomy, and governance models that align with business goals, audience expectations, and long-term digital growth.",
+    },
+    {
+      title: "Content Publishing & Maintenance",
+      desc: "Our team manages content uploads, page updates, formatting, scheduling, metadata handling, and version control to keep content consistent, current, and professionally maintained across platforms.",
+    },
+    {
+      title: "Content Optimization & Governance",
+      desc: "We improve content quality through SEO alignment, compliance checks, review workflows, performance monitoring, and lifecycle governance to ensure every content asset delivers ongoing value.",
+    },
+  ],
+
+  overview:
+    "Our content management services help businesses maintain a well-structured and high-quality digital presence across websites, portals, e-commerce platforms, knowledge bases, and marketing channels. We support the complete content lifecycle, from planning and organization to publishing, updating, optimization, and governance. This ensures your content remains accurate, brand-aligned, easy to navigate, search-friendly, and valuable for both users and business operations.",
+
+  projectDuration: {
+    title: "Project Execution Excellence",
+    subtitle:
+      "We deliver strategy-led non-IT solutions focused on business process optimization, operational efficiency, and scalable growth.",
+    cards: [
+      {
+        title: "Fast & Strategic Execution",
+        label: "Best suited for",
+        desc:
+          "Structured execution that helps businesses move faster, improve decisions, and achieve better performance.",
+      },
+      {
+        title: "What Our Execution Covers",
+        label: "What is Included",
+        desc:
+          "Business analysis, strategic planning, workflow optimization, and performance tracking for efficient delivery.",
+      },
+      {
+        title: "Why Businesses Choose Zora",
+        label: "Requirement Condition",
+        desc:
+          "Expert consulting, transparent approach, and scalable solutions that drive growth and long-term success.",
+      },
+    ],
+  },
+
+  deliverTitle: "How We Deliver",
+  deliverySteps: [
+    {
+      title: "Requirement Gathering",
+      desc:
+        "Understand business objectives, service requirements, and expected outcomes so the execution path is aligned from the beginning.",
+    },
+    {
+      title: "Analysis",
+      desc:
+        "Analyze business needs, market context, current process gaps, and key service priorities to define the right improvement direction.",
+    },
+    {
+      title: "Planning & Strategy",
+      desc:
+        "Define execution strategy, workflow, responsibilities, and a structured action plan that keeps implementation practical and measurable.",
+    },
+  ],
+
+  whoWeAreTitle: "Who We Are",
+  whoWeAreText:
+    "Zora Global AI Technologies delivers structured non-IT consulting and implementation services that improve operations, execution quality, and long-term business performance. We combine strategy, process discipline, and domain expertise to create clear, measurable business progress.",
+  whoWeAreCards: [
+    {
+      title: "Business-Led Execution",
+      desc:
+        "We align each engagement with business goals, operational priorities, and measurable outcomes instead of generic advisory work.",
+    },
+    {
+      title: "Cross-Functional Expertise",
+      desc:
+        "Our work spans strategy, marketing, HR, finance, operations, and execution planning to support real business change across departments.",
+    },
+    {
+      title: "Long-Term Partnership",
+      desc:
+        "We stay focused on sustainable improvement through reporting, support, optimization, and practical implementation guidance.",
+    },
+  ],
+
+  technologiesTitle: "Business Analysis, Platforms & Operational Tools",
+  technologiesSubtitle:
+    "We use proven business frameworks, marketing platforms, finance tools, HR systems, and operational optimization methods to deliver practical, scalable, and measurable non-IT business solutions.",
+  technologies: [
+    {
+      icon: "strategy",
+      title: "Business Analysis & Strategy Tools",
+      desc:
+        "We use structured analysis, planning, and process-design frameworks to evaluate business position, risks, opportunities, and measurable performance direction.",
+      items: ["SWOT Analysis", "PESTLE Analysis", "Business Model Canvas"],
+    },
+    {
+      icon: "marketing",
+      title: "Marketing & Branding Platforms",
+      desc:
+        "We support campaign planning, reporting, visibility analysis, and creative execution using common business marketing platforms.",
+      items: ["Google Ads", "Meta Ads Manager", "Google Analytics"],
+    },
+    {
+      icon: "finance",
+      title: "Financial & Accounting Tools",
+      desc:
+        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting, and cost control.",
+      items: ["Tally", "Zoho Books", "QuickBooks"],
+    },
+    {
+      icon: "hr",
+      title: "HR & Workforce Management",
+      desc:
+        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes, and employee performance tracking.",
+      items: [
+        "Custom HRMS Platform (Zora HRMS)",
+        "Recruitment & Candidate Tracking (ATS)",
+        "Payroll, Attendance & Leave Management",
+      ],
+    },
+    {
+      icon: "operations",
+      title: "Operations & Process Optimization",
+      desc:
+        "We apply operational improvement methods and standardization approaches to streamline workflows and improve business efficiency.",
+      items: [
+        "Lean Methodology",
+        "Six Sigma Principles",
+        "Business Process Re-engineering (BPR)",
+      ],
+    },
+    {
+      icon: "analytics",
+      title: "Reporting & Analytics Tools",
+      desc:
+        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights, and decision-ready business intelligence.",
+      items: ["Power BI", "Tableau", "Business Intelligence (BI) Tools"],
+    },
+  ],
+
+  architecture: {
+    title: "Non-IT Service Delivery Framework",
+    intro:
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+    processSteps: [
+      {
+        icon: "01",
+        title: "Requirement gathering",
+        desc: "Understand business objectives, service requirements, and expected outcomes",
+      },
+      {
+        icon: "02",
+        title: "Analysis",
+        desc: "Analyze business needs, market context, and key service priorities",
+      },
+      {
+        icon: "03",
+        title: "Planning & strategy",
+        desc: "Define execution strategy, workflow, and structured action plan",
+      },
+      {
+        icon: "04",
+        title: "Resource allocation",
+        desc: "Assign the right team, specialists, and operational resources",
+      },
+    ],
+    deliveryCards: [
+      {
+        icon: "05",
+        title: "Execution",
+        desc: "Execute services, campaigns, or operational processes efficiently",
+      },
+      {
+        icon: "06",
+        title: "Monitoring & optimization",
+        desc: "Continuously monitor performance, evaluate results, and optimize delivery",
+      },
+    ],
+    closureCard: {
+      icon: "07",
+      title: "Reporting & support",
+      desc: "Provide performance insights, reporting, and ongoing support",
+    },
+  },
+
+  maintenanceSupport: {
+    title: "Continuous Business Growth & Support",
+    subtitle:
+      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+    cards: [
+      {
+        title: "Process Optimization & Business Efficiency",
+        desc:
+          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+      },
+      {
+        title: "Strategic Refinement & Growth Alignment",
+        desc:
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+      },
+      {
+        title: "Performance Monitoring & Business Insights",
+        desc:
+          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+      },
+      {
+        title: "Consultation & Operational Excellence",
+        desc:
+          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+      },
+      {
+        title: "Brand & Market Positioning Support",
+        desc:
+          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+      },
+    ],
+  },
+
+  whyChooseTitle: "Why Content Management Support",
+  whyChoose: [
+    {
+      title: "Structured content operations",
+      desc: "We build organized workflows, approval paths, and version control practices that reduce content errors, improve collaboration, and keep publishing operations streamlined.",
+    },
+    {
+      title: "Reliable publishing consistency",
+      desc: "From regular updates to large-scale content maintenance, we help ensure your information stays current, properly formatted, and consistent across all digital touchpoints.",
+    },
+    {
+      title: "SEO-ready and quality-governed delivery",
+      desc: "Our content support combines accuracy, search optimization, governance, and performance-focused improvements to strengthen visibility, usability, and long-term brand trust.",
+    },
+  ],
+
+  contactTitle: "Talk to Our Content Specialists",
+  contactSubtitle:
+    "Looking for reliable content management support for your website, portal, or digital platform? Share your requirements with our team and we will help you plan, maintain, and optimize your content operations effectively.",
+  messageLabel:
+    "Tell us about your content management needs, platforms, update frequency, or optimization goals...",
+  submitLabel: "Request Content Support",
+};
+
+const cardBaseClass =
+  "group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2";
+
 const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
+  const technologies = content?.technologies ?? [];
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -77,6 +364,7 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
   }, []);
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [activeTechnology, setActiveTechnology] = useState<number | null>(null);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -110,10 +398,7 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
             </Link>
             <span className="mx-2">/</span>
             <Link
-              to={
-                "/services/non-it/" +
-                category.slug
-              }
+              to={"/services/non-it/" + category.slug}
               className="hover:text-purple-300 transition"
             >
               {category.title}
@@ -123,7 +408,6 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
           </div>
 
           <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
-            {/* ✅ IMAGE BANNER */}
             <div className="relative h-56 md:h-72">
               <img
                 src={heroImage}
@@ -168,15 +452,22 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
 
           {/* Quick blocks */}
           <div className="mt-10 grid md:grid-cols-3 gap-6">
-            {(content?.topBlocks ?? []).map((b: { title: string; desc: string }) => (
-              <div
-                key={b.title}
-                className="p-7 rounded-2xl bg-white/5 border border-white/10"
-              >
-                <h3 className="text-xl font-bold text-blue-300">{b.title}</h3>
-                <p className="text-gray-400 mt-3 leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
+            {(content?.topBlocks ?? []).map(
+              (b: { title: string; desc: string }) => (
+                <div
+                  key={b.title}
+                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.16)]"
+                >
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <h3 className="relative text-xl font-bold text-blue-300 transition-colors duration-300 group-hover:text-white">
+                    {b.title}
+                  </h3>
+                  <p className="relative mt-3 leading-relaxed text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                    {b.desc}
+                  </p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -195,25 +486,394 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
             </p>
           </div>
 
-          {/* How we deliver */}
           <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
-              {content?.deliverTitle ?? "How We Deliver"}
-            </h2>
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-purple-300">
+                {content?.projectDuration?.title}
+              </h2>
+              <p className="text-gray-300 mt-4 max-w-3xl mx-auto leading-relaxed text-lg">
+                {content?.projectDuration?.subtitle}
+              </p>
+            </div>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.deliverySteps ?? []).map((s: { title: string; desc: string }, idx: number) => (
-                <div
-                  key={s.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold">
-                    {idx + 1}
+              {(content?.projectDuration?.cards ?? []).map(
+                (card: { title: string; label: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className={`${cardBaseClass} hover:border-purple-300/50 hover:shadow-[0_0_32px_rgba(168,85,247,0.18)]`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative text-sm font-semibold uppercase tracking-[0.18em] text-blue-300/80">
+                      {card.label}
+                    </div>
+                    <h3 className="relative mt-4 text-xl font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-3 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-bold text-gray-100">{s.title}</h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{s.desc}</p>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
+                {content?.deliverTitle}
+              </h2>
+            </div>
+
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {(content?.deliverySteps ?? []).map(
+                (step: { title: string; desc: string }, index: number) => (
+                  <div
+                    key={step.title}
+                    className={`${cardBaseClass} hover:border-blue-300/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.16)]`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative text-sm font-semibold text-blue-300/80">
+                      0{index + 1}
+                    </div>
+                    <h3 className="relative mt-4 text-xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {step.title}
+                    </h3>
+                    <p className="relative mt-3 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {step.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-purple-300">
+                {content?.whoWeAreTitle}
+              </h2>
+              <p className="text-gray-300 mt-4 max-w-4xl mx-auto leading-relaxed text-lg">
+                {content?.whoWeAreText}
+              </p>
+            </div>
+
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {(content?.whoWeAreCards ?? []).map(
+                (card: { title: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className={`${cardBaseClass} hover:border-purple-300/50 hover:shadow-[0_0_32px_rgba(168,85,247,0.18)]`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-xl font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-3 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
+                {content?.technologiesTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-xl leading-8">
+                {content?.technologiesSubtitle}
+              </p>
+            </div>
+
+            <div className="mt-12 grid items-start md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {technologies.map(
+                (
+                  tech: {
+                    icon: string;
+                    title: string;
+                    desc: string;
+                    items: string[];
+                  },
+                  idx: number
+                ) => {
+                  const isActive = activeTechnology === idx;
+
+                  return (
+                    <button
+                      key={tech.title}
+                      type="button"
+                      onMouseEnter={() => setActiveTechnology(idx)}
+                      onMouseLeave={() =>
+                        setActiveTechnology((current) => (current === idx ? null : current))
+                      }
+                      onFocus={() => setActiveTechnology(idx)}
+                      onBlur={() =>
+                        setActiveTechnology((current) => (current === idx ? null : current))
+                      }
+                      onClick={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : idx
+                        )
+                      }
+                      aria-expanded={isActive}
+                      className={`group relative flex min-h-[132px] self-start flex-col overflow-hidden rounded-[24px] border bg-[#0b1220]/95 p-5 text-left transition-all duration-300 shadow-[0_0_30px_rgba(76,29,149,0.08)] ${
+                        isActive
+                          ? "border-blue-400/60 -translate-y-1 shadow-[0_0_35px_rgba(59,130,246,0.16)] xl:min-h-[300px]"
+                          : "border-white/10 hover:-translate-y-1 hover:border-blue-300/40"
+                      }`}
+                    >
+                      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 min-w-11 items-center justify-center rounded-xl border border-blue-300/30 bg-blue-500/10 text-blue-200 shadow-[0_0_24px_rgba(59,130,246,0.12)] transition-all duration-300">
+                          {renderTechnologyIcon(tech.icon, "blue")}
+                        </div>
+                        <div className="flex min-h-[56px] items-center">
+                          <h3 className="text-lg font-extrabold leading-tight text-blue-200 transition-colors">
+                            {tech.title}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isActive
+                            ? "mt-5 max-h-[420px] opacity-100"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <p className="text-gray-400 leading-7 text-base md:text-lg">
+                          {tech.desc}
+                        </p>
+
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          {tech.items.map((itemName: string) => (
+                            <span
+                              key={itemName}
+                              className="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-sm md:text-base text-gray-200"
+                            >
+                              {itemName}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                }
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-purple-200">
+                {content?.architecture?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-xl leading-8">
+                {content?.architecture?.intro}
+              </p>
+            </div>
+
+            <div className="mt-10 hidden xl:block">
+              <div className="mx-auto max-w-[1280px] rounded-[34px] border border-white/10 bg-[linear-gradient(180deg,rgba(16,24,42,0.96),rgba(10,16,28,0.98))] p-8 shadow-[0_20px_70px_rgba(15,23,42,0.45)]">
+                <div className="grid grid-cols-[0.9fr_1.1fr] gap-6">
+                  <div className="space-y-5">
+                    {(content?.architecture?.processSteps ?? []).map(
+                      (step: { icon: string; title: string; desc: string }, idx: number) => (
+                        <React.Fragment key={step.title}>
+                          <div className="group relative overflow-hidden rounded-[26px] border border-white/10 bg-[#0b1220] px-6 py-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)] transition-all duration-300 hover:border-blue-300/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.16)]">
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                            <div className="flex items-start gap-4">
+                              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-[18px] border border-blue-300/20 bg-blue-500/10 text-xl font-bold text-blue-200">
+                                {step.icon}
+                              </div>
+                              <div className="relative">
+                                <div className="text-[20px] font-bold leading-tight text-blue-100">
+                                  {step.title}
+                                </div>
+                                <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                                  {step.desc}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                            <div className="text-center text-[28px] leading-none text-blue-200">
+                              ↓
+                            </div>
+                          ) : null}
+                        </React.Fragment>
+                      )
+                    )}
+                  </div>
+
+                    <div className="space-y-8">
+                    <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                      <div className="w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 text-xl font-bold text-white shadow-[0_0_28px_rgba(59,130,246,0.2)]">
+                        Delivery
+                      </div>
+
+                      <div className="mt-6 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+                        {(content?.architecture?.deliveryCards ?? []).map(
+                          (card: { icon: string; title: string; desc: string }, index: number) => (
+                            <React.Fragment key={card.title}>
+                              <div className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-6 transition-all duration-300 hover:border-purple-300/40 hover:shadow-[0_0_30px_rgba(139,92,246,0.14)]">
+                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_58%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                <div className="text-[18px] font-bold text-purple-300">{card.icon}</div>
+                                <div className="mt-3 text-[22px] font-bold leading-tight text-blue-100">
+                                  {card.title}
+                                </div>
+                                <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                                  {card.desc}
+                                </div>
+                              </div>
+                              {index === 0 ? (
+                                <div className="text-3xl text-blue-300/80">→</div>
+                              ) : null}
+                            </React.Fragment>
+                          )
+                        )}
+                      </div>
+
+                      <div className="mt-6 border-t border-dashed border-white/10 pt-3 text-center text-[16px] text-blue-200/70">
+                        review & updates
+                      </div>
+                      <div className="text-center text-[28px] text-blue-200">↓</div>
+                    </div>
+
+                    <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                      <div className="w-fit rounded-full bg-gradient-to-r from-purple-400 to-blue-400 px-8 py-3 text-xl font-bold text-slate-950 shadow-[0_0_28px_rgba(96,165,250,0.16)]">
+                        Closure
+                      </div>
+
+                      <div className="mt-6 rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-6">
+                        <div className="text-[18px] font-bold text-blue-300">
+                          {content?.architecture?.closureCard?.icon}
+                        </div>
+                        <div className="mt-3 text-[22px] font-bold leading-tight text-blue-100">
+                          {content?.architecture?.closureCard?.title}
+                        </div>
+                        <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                          {content?.architecture?.closureCard?.desc}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              ))}
+              </div>
+            </div>
+
+            <div className="mt-10 xl:hidden">
+              <div className="space-y-4">
+                {(content?.architecture?.processSteps ?? []).map(
+                  (step: { icon: string; title: string; desc: string }, idx: number) => (
+                    <React.Fragment key={step.title}>
+                      <div className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[#0b1220] p-5 shadow-[0_10px_24px_rgba(15,23,42,0.2)] transition-all duration-300 hover:border-blue-300/40">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                        <div className="flex items-start gap-4">
+                          <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-blue-300/20 bg-blue-500/10 text-sm font-bold text-blue-200">
+                            {step.icon}
+                          </div>
+                          <div className="relative">
+                            <h3 className="text-lg font-semibold text-blue-100">
+                              {step.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-6 text-gray-400">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                        <div className="text-center text-xl text-blue-200">↓</div>
+                      ) : null}
+                    </React.Fragment>
+                  )
+                )}
+              </div>
+
+              <div className="mt-6 space-y-5">
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-base font-bold text-white">
+                    Delivery
+                  </div>
+                  <div className="mt-5 grid gap-4 md:grid-cols-2">
+                    {(content?.architecture?.deliveryCards ?? []).map(
+                      (card: { icon: string; title: string; desc: string }) => (
+                        <div
+                          key={card.title}
+                          className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5 transition-all duration-300 hover:border-purple-300/40 hover:shadow-[0_0_30px_rgba(139,92,246,0.14)]"
+                        >
+                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_58%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                          <div className="relative text-base font-bold text-purple-300">{card.icon}</div>
+                          <div className="relative mt-3 text-xl font-bold text-blue-100">
+                            {card.title}
+                          </div>
+                          <p className="relative mt-2 text-base leading-7 text-gray-400">
+                            {card.desc}
+                          </p>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+
+                <div className="text-center text-2xl text-blue-200">↓</div>
+
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-purple-400 to-blue-400 px-6 py-2 text-base font-bold text-slate-950">
+                    Closure
+                  </div>
+                  <div className="mt-5 rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5">
+                    <div className="text-base font-bold text-blue-300">
+                      {content?.architecture?.closureCard?.icon}
+                    </div>
+                    <div className="mt-3 text-xl font-bold text-blue-100">
+                      {content?.architecture?.closureCard?.title}
+                    </div>
+                    <p className="mt-2 text-base leading-7 text-gray-400">
+                      {content?.architecture?.closureCard?.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-300">
+                {content?.maintenanceSupport?.title}
+              </h2>
+              <p className="text-gray-300 mt-4 max-w-4xl mx-auto leading-relaxed text-base md:text-lg">
+                {content?.maintenanceSupport?.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-6 gap-6 items-stretch">
+              {(content?.maintenanceSupport?.cards ?? []).map(
+                (card: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={card.title}
+                    className={`group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60 ${
+                      idx < 3 ? "xl:col-span-2" : "xl:col-span-3"
+                    }`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                    <h3 className="relative text-xl md:text-2xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-3 text-base leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -278,17 +938,22 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
             </h2>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.whyChoose ?? []).map((w: { title: string; desc: string }) => (
-                <div
-                  key={w.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <h3 className="text-lg font-bold text-purple-200">
-                    {w.title}
-                  </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{w.desc}</p>
-                </div>
-              ))}
+              {(content?.whyChoose ?? []).map(
+                (w: { title: string; desc: string }) => (
+                  <div
+                    key={w.title}
+                    className={`${cardBaseClass} hover:border-purple-300/50 hover:shadow-[0_0_32px_rgba(168,85,247,0.18)]`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-lg font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {w.title}
+                    </h3>
+                    <p className="relative text-gray-400 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">
+                      {w.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -333,7 +998,8 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
 
               <div className="md:col-span-2">
                 <label className="text-sm text-gray-300">
-                  {content?.messageLabel ?? "Tell us about your requirements..."}
+                  {content?.messageLabel ??
+                    "Tell us about your requirements..."}
                 </label>
                 <textarea
                   value={form.message}
@@ -354,10 +1020,7 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
                 </button>
 
                 <Link
-                  to={
-                    "/services/non-it/" +
-                    category.slug
-                  }
+                  to={"/services/non-it/" + category.slug}
                   className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition font-semibold"
                 >
                   Back to {category.title}

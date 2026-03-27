@@ -1,13 +1,11 @@
-// src/pages/ITServices.tsx
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { IT_SERVICE_CATEGORIES } from "../data/itServicesData";
-import PageSEO from "../components/PageSEO";
+import { IT_SERVICE_CATEGORIES } from "../../../data/itServicesData";
+import PageSEO from "../../../components/PageSEO";
 
 const ITServices: React.FC = () => {
   const navigate = useNavigate();
 
-  // Image mapping for each service category
   const imageMap: Record<string, string> = {
     "website-web-application-services": "/it-hero/website.jpg",
     "mobile-application-development": "/it-hero/android.jpg",
@@ -18,7 +16,6 @@ const ITServices: React.FC = () => {
     "staff-augmentation-it-consulting": "/it-hero/integrations.jpg",
   };
 
-  // ✅ Always open page from TOP
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -90,7 +87,6 @@ const ITServices: React.FC = () => {
 
                 {/* Content */}
                 <div className="p-7 sm:p-9 md:p-10">
-                  {/* Title */}
                   <h3
                     className={[
                       "text-2xl font-bold mb-4",
@@ -102,12 +98,10 @@ const ITServices: React.FC = () => {
                     {cat.title}
                   </h3>
 
-                  {/* Description */}
                   <p className="text-gray-400 leading-relaxed">
                     {cat.desc}
                   </p>
 
-                  {/* ✅ View More Button — WHITE BORDER ONLY */}
                   <button
                     onClick={() => {
                       setActiveSlug(cat.slug);
@@ -123,7 +117,6 @@ const ITServices: React.FC = () => {
                     View more →
                   </button>
 
-                  {/* bottom glow line */}
                   <div
                     className={[
                       "mt-6 h-[2px] transition-all duration-500",

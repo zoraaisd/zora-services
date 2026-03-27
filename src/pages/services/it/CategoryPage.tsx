@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-import MasterDetailServicePage from "../components/MasterDetailServicePage";
-import { IT_SERVICE_CATEGORIES } from "../data/itServicesData";
-import PageSEO from "../components/PageSEO";
-import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import MasterDetailServicePage from "../../../components/MasterDetailServicePage";
+import { IT_SERVICE_CATEGORIES } from "../../../data/itServicesData";
+import PageSEO from "../../../components/PageSEO";
+import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 
 const ITServiceCategoryPage: React.FC = () => {
   const { categorySlug } = useParams();

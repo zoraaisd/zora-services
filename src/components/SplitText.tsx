@@ -6,6 +6,7 @@ type SplitType = "chars" | "words" | "lines";
 interface SplitTextProps {
   text: string;
   className?: string;
+  style?: React.CSSProperties;
   delay?: number;
   duration?: number;
   ease?: string;
@@ -32,6 +33,7 @@ const splitContent = (text: string, splitType: SplitType): string[] => {
 const SplitText: React.FC<SplitTextProps> = ({
   text,
   className = "",
+  style,
   delay = 50,
   duration = 1.25,
   ease = "power3.out",
@@ -78,7 +80,7 @@ const SplitText: React.FC<SplitTextProps> = ({
   const resolvedEase = easeMap[ease] ?? [0.22, 1, 0.36, 1];
 
   return (
-    <div ref={ref} className={className} style={{ textAlign }}>
+    <div ref={ref} className={className} style={{ textAlign, ...style }}>
       {chunks.map((chunk, index) => {
         if (chunk === "\n") {
           return <br key={`br-${index}`} />;

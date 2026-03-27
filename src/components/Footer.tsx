@@ -6,10 +6,15 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaYoutube,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const MAP_QUERY = "Zora Global AI Technologies Chennai";
+  const HEADQUARTERS_ADDRESS =
+    "128 City Road, London, United Kingdom, EC1V 2NX";
+  const OFFICE_ADDRESS =
+     "No:12,Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096";
 
   const LINKEDIN_URL =
     "https://www.linkedin.com/company/zora-global-ai-technologies/?viewAsMember=true";
@@ -27,7 +32,7 @@ const Footer: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-14">
         {/* ✅ MAIN GRID */}
-        <div className="grid gap-12 lg:grid-cols-5 lg:gap-10">
+        <div className="grid gap-12 lg:grid-cols-6 lg:gap-10">
           {/* ================================================= */}
           {/* 1️⃣ Company + Contact (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
@@ -38,6 +43,28 @@ const Footer: React.FC = () => {
               Empowering enterprises with AI-driven solutions, cloud
               transformation, and strategic consulting.
             </p>
+
+            <div className="mb-6 space-y-4">
+              <div>
+                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-white">
+                  <FaMapMarkerAlt className="text-purple-400" />
+                  <span>Headquarters</span>
+                </h4>
+                <p className="text-sm leading-6 text-gray-300 max-w-md">
+                  {HEADQUARTERS_ADDRESS}
+                </p>
+              </div>
+
+              <div>
+                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-white">
+                  <FaMapMarkerAlt className="text-purple-400" />
+                  <span>Regional Office</span>
+                </h4>
+                <p className="text-sm leading-6 text-gray-300 max-w-md">
+                  {OFFICE_ADDRESS}
+                </p>
+              </div>
+            </div>
 
             <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
 
@@ -218,7 +245,7 @@ const Footer: React.FC = () => {
           {/* ================================================= */}
           {/* 5️⃣ Location */}
           {/* ================================================= */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold text-white mb-4">Location</h3>
 
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
@@ -227,17 +254,18 @@ const Footer: React.FC = () => {
                 src={`https://www.google.com/maps?output=embed&q=${encodeURIComponent(
                   MAP_QUERY
                 )}`}
-                className="w-full h-[220px] sm:h-[240px] lg:h-[200px]"
+                className="w-full h-[240px] sm:h-[280px] lg:h-[260px]"
                 loading="lazy"
               />
             </div>
 
             <p className="mt-3 text-xs text-gray-500">
-              Zora Global AI Technologies, Chennai
+              Zora Global AI Technologies, London and Chennai
             </p>
 
           </div>
         </div>
+
       </div>
 
       {/* Copyright */}

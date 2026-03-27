@@ -9,6 +9,7 @@ const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const dropdownCloseTimeoutRef = useRef<number | null>(null);
 
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -65,9 +66,40 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (dropdownCloseTimeoutRef.current !== null) {
+        window.clearTimeout(dropdownCloseTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const closeAll = () => {
+    if (dropdownCloseTimeoutRef.current !== null) {
+      window.clearTimeout(dropdownCloseTimeoutRef.current);
+      dropdownCloseTimeoutRef.current = null;
+    }
     setDropdownOpen(false);
     setMenuOpen(false);
+  };
+
+  const openDropdown = () => {
+    if (dropdownCloseTimeoutRef.current !== null) {
+      window.clearTimeout(dropdownCloseTimeoutRef.current);
+      dropdownCloseTimeoutRef.current = null;
+    }
+    setDropdownOpen(true);
+  };
+
+  const scheduleDropdownClose = () => {
+    if (dropdownCloseTimeoutRef.current !== null) {
+      window.clearTimeout(dropdownCloseTimeoutRef.current);
+    }
+
+    dropdownCloseTimeoutRef.current = window.setTimeout(() => {
+      setDropdownOpen(false);
+      dropdownCloseTimeoutRef.current = null;
+    }, 180);
   };
 
   const desktopBtn =
@@ -141,10 +173,10 @@ const Navbar: React.FC = () => {
           </Link>
 
           <div
-            className="relative"
+            className="relative pb-3 -mb-3"
             ref={dropdownRef}
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onMouseEnter={openDropdown}
+            onMouseLeave={scheduleDropdownClose}
           >
             <Link
               to="/services"
@@ -158,16 +190,18 @@ const Navbar: React.FC = () => {
             </Link>
 
             {dropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-52 bg-[#1a1a40]/90 backdrop-blur-xl rounded-xl shadow-[0_18px_40px_rgba(0,0,0,0.45)] border border-white/10 overflow-hidden">
+              <div className="absolute top-full left-0 mt-0 w-52 bg-[#1a1a40]/90 backdrop-blur-xl rounded-xl shadow-[0_18px_40px_rgba(0,0,0,0.45)] border border-white/10 overflow-hidden">
                 <Link
                   to="/services/it"
                   className="block px-4 py-3 hover:bg-purple-600/20 transition"
+                  onClick={closeAll}
                 >
                   IT Services
                 </Link>
                 <Link
                   to="/services/non-it"
                   className="block px-4 py-3 hover:bg-purple-600/20 transition"
+                  onClick={closeAll}
                 >
                   Non-IT Services
                 </Link>

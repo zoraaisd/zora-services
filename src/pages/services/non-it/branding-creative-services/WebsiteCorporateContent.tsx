@@ -2,86 +2,395 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const category = {
-  "slug": "branding-creative-services",
-  "title": "Branding & Creative Services"
+  slug: "branding-creative-services",
+  title: "Branding & Creative Services",
 };
+
 const item = {
-  "slug": "website-corporate-content",
-  "title": "Website & Corporate Content",
-  "shortDesc": "SEO-optimized, brand-aligned website content that ranks higher and converts visitors into customers."
+  slug: "website-corporate-content",
+  title: "Website & Corporate Content",
+  shortDesc:
+    "SEO-optimized, brand-aligned website content that ranks higher and converts visitors into customers.",
 };
+
 const heroImage = "/non-it-hero/website-corporate-content.png";
+
+const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
+  const strokeClass =
+    accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";
+
+  const commonProps = {
+    className: `h-7 w-7 ${strokeClass}`,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.8",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+
+  switch (icon) {
+    case "strategy":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7 15.5V10" />
+          <path d="M12 15.5V6.5" />
+          <path d="M17 15.5V12" />
+          <path d="M6.5 9.5 12 6l5.5 5" />
+        </svg>
+      );
+    case "marketing":
+      return (
+        <svg {...commonProps}>
+          <path d="M4.5 14.5V9.8a1.8 1.8 0 0 1 1.8-1.8h2.1l6.9-3v14l-6.9-3H6.3a1.8 1.8 0 0 1-1.8-1.8Z" />
+          <path d="M8.5 16.2 10 20" />
+          <path d="M17.5 9.5a3.5 3.5 0 0 1 0 5" />
+          <path d="M19.2 8a6 6 0 0 1 0 8" />
+        </svg>
+      );
+    case "content":
+      return (
+        <svg {...commonProps}>
+          <rect x="4.5" y="4.5" width="15" height="15" rx="2.5" />
+          <path d="M8 9h8" />
+          <path d="M8 12.5h8" />
+          <path d="M8 16h5" />
+        </svg>
+      );
+    case "seo":
+      return (
+        <svg {...commonProps}>
+          <circle cx="10.5" cy="10.5" r="4.5" />
+          <path d="m14 14 5 5" />
+          <path d="M8.5 10.5h4" />
+          <path d="M10.5 8.5v4" />
+        </svg>
+      );
+    case "operations":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="2.5" />
+          <path d="M12 4.5v2.2" />
+          <path d="M12 17.3v2.2" />
+          <path d="m6.7 6.7 1.6 1.6" />
+          <path d="m15.7 15.7 1.6 1.6" />
+          <path d="M4.5 12h2.2" />
+          <path d="M17.3 12h2.2" />
+          <path d="m6.7 17.3 1.6-1.6" />
+          <path d="m15.7 8.3 1.6-1.6" />
+        </svg>
+      );
+    case "analytics":
+      return (
+        <svg {...commonProps}>
+          <path d="M5 18.5h14" />
+          <path d="M7.5 16V11" />
+          <path d="M12 16V7.5" />
+          <path d="M16.5 16V9.5" />
+          <path d="M6.5 8.5 10 6l3 2 4.5-3" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="7" />
+        </svg>
+      );
+  }
+};
+
 const content: any = {
-  "heroTitle": "Website Content Services",
-  "heroSubtitle": "Zora Global AI delivers professional website content services that help businesses communicate clearly, rank higher on search engines, and convert visitors into customers with SEO-optimized, brand-aligned content.",
-  "primaryCta": "Get Content Started",
-  "secondaryCta": "Talk to Us",
-  "topBlocks": [
+  heroTitle: "Website Content Services",
+  heroSubtitle:
+    "Zora Global AI delivers professional website content services that help businesses improve search visibility, communicate their value clearly, and convert website visitors into enquiries, leads, and customers through SEO-optimized, brand-aligned, and conversion-focused content.",
+
+  primaryCta: "Get Content Started",
+  secondaryCta: "Talk to Us",
+
+  topBlocks: [
     {
-      "title": "Website Copywriting",
-      "desc": "Clear, compelling website copy that reflects your brand voice and guides users through the journey."
+      title: "Website Copywriting",
+      desc:
+        "We create clear, persuasive, and professionally structured website copy that reflects your brand voice, explains your services effectively, and guides users toward meaningful action across key pages.",
     },
     {
-      "title": "SEO Content Writing",
-      "desc": "Keyword-driven content that improves rankings, organic traffic, and long-term visibility."
+      title: "SEO Content Writing",
+      desc:
+        "Our SEO content writing helps improve keyword relevance, organic search performance, and long-term visibility with content that is optimized for both search engines and real users.",
     },
     {
-      "title": "Blogs & Landing Pages",
-      "desc": "Informative blogs and high-converting landing pages designed to support marketing and lead generation."
-    }
+      title: "Blogs & Landing Pages",
+      desc:
+        "We develop informative blog content and conversion-focused landing pages that support digital marketing campaigns, strengthen authority, and improve lead generation performance.",
+    },
   ],
-  "overview": "Our website content services focus on clarity, relevance, and search visibility. From homepage copy and service pages to blogs and landing pages, we create content that drives engagement and conversions.",
-  "deliverTitle": "Our Website Content Process",
-  "deliverySteps": [
+
+  overview:
+    "Our website content services are designed to help businesses build a stronger digital presence through clear messaging, better SEO performance, and more engaging website experiences. From homepage content and service pages to landing pages, company profiles, and blog articles, we create content that improves clarity, builds trust, supports search engine rankings, and helps users understand your value quickly. Every piece of content is aligned with your brand identity, business goals, and audience expectations to deliver both visibility and conversion impact.",
+
+  projectDuration: {
+    title: "Project Execution Excellence",
+    subtitle:
+      "We deliver strategy-led content solutions focused on SEO visibility, clear communication, and scalable digital growth.",
+    cards: [
+      {
+        title: "Fast & Strategic Execution",
+        label: "Best suited for",
+        desc:
+          "Structured execution that helps businesses publish stronger website content faster and improve digital performance.",
+      },
+      {
+        title: "What Our Execution Covers",
+        label: "What is Included",
+        desc:
+          "Content planning, SEO alignment, messaging structure, and page-focused writing for efficient delivery.",
+      },
+      {
+        title: "Why Businesses Choose Zora",
+        label: "Requirement Condition",
+        desc:
+          "Expert content guidance, transparent collaboration, and scalable messaging systems built for long-term growth.",
+      },
+    ],
+  },
+
+  deliverTitle: "How We Deliver",
+  deliverySteps: [
     {
-      "title": "Discovery — Research & Planning",
-      "desc": "Understand business goals, audience needs, competitors, and SEO opportunities."
+      title: "Requirement Gathering",
+      desc:
+        "Understand business goals, website objectives, audience expectations, and page priorities from the beginning.",
     },
     {
-      "title": "Creation — Content Writing & Optimization",
-      "desc": "Craft SEO-friendly, engaging, and brand-consistent content."
+      title: "Analysis",
+      desc:
+        "Review user intent, market context, keyword focus, and current messaging gaps to shape the right content direction.",
     },
     {
-      "title": "Refinement — Review & Improvement",
-      "desc": "Refine content for clarity, performance, and alignment with business objectives."
-    }
+      title: "Planning & Strategy",
+      desc:
+        "Define content structure, SEO priorities, page hierarchy, and a clear execution roadmap for delivery.",
+    },
   ],
-  "whyChooseTitle": "Content That Converts",
-  "whyChoose": [
+
+  whoWeAreTitle: "Who We Are",
+  whoWeAreText:
+    "Zora Global AI Technologies delivers structured non-IT content and branding services that improve digital clarity, search visibility, and long-term communication performance. We combine content strategy, SEO thinking, and practical execution to build website messaging systems that support business growth.",
+  whoWeAreCards: [
     {
-      "title": "SEO + clarity",
-      "desc": "Content optimized for search and for real users."
+      title: "Business-Led Content Execution",
+      desc:
+        "We align every content engagement with business goals, user intent, and measurable website outcomes.",
     },
     {
-      "title": "Brand-aligned tone",
-      "desc": "Consistent voice across pages and campaigns."
+      title: "SEO & Messaging Expertise",
+      desc:
+        "Our team combines search optimization, content clarity, and brand-aligned writing to create effective website communication.",
     },
     {
-      "title": "Conversion-focused structure",
-      "desc": "Clear messaging that improves engagement and outcomes."
-    }
+      title: "Long-Term Content Consistency",
+      desc:
+        "We support sustainable digital growth through structured messaging, content refinement, and consistent communication standards.",
+    },
   ],
-  "frameworkTitle": "Content That Converts",
-  "frameworkSubtitle": "Turning unclear messaging into structured, engaging, and conversion-focused content.",
-  "beforePoints": [
-    "Unclear messaging",
-    "Low engagement",
-    "Poor search visibility",
-    "Inconsistent brand voice"
+
+  technologiesTitle: "Business Analysis, Platforms & Operational Tools",
+  technologiesSubtitle:
+    "We use proven content planning frameworks, SEO platforms, collaboration tools, and analytics systems to deliver practical, scalable, and measurable website content solutions.",
+  technologies: [
+    {
+      icon: "strategy",
+      title: "Content Strategy & Planning Tools",
+      desc:
+        "We use structured planning methods to align page content with business goals, user intent, and communication priorities.",
+      items: [
+        "Content Frameworks",
+        "Page Messaging Maps",
+        "Audience Persona Mapping",
+      ],
+    },
+    {
+      icon: "seo",
+      title: "SEO & Search Visibility Tools",
+      desc:
+        "We use SEO platforms and keyword analysis systems to improve search relevance, structure, and long-term visibility.",
+      items: ["Google Search Console", "SEMrush", "Keyword Research Tools"],
+    },
+    {
+      icon: "content",
+      title: "Website Content Systems",
+      desc:
+        "We organize headlines, service messaging, page structure, and brand voice through clear content systems and templates.",
+      items: ["Service Page Templates", "Brand Voice Guidelines", "Content Calendars"],
+    },
+    {
+      icon: "marketing",
+      title: "Marketing & Landing Page Platforms",
+      desc:
+        "We align content delivery with digital campaigns, landing pages, and business communication platforms.",
+      items: ["Google Ads", "Meta Ads Manager", "Mailchimp"],
+    },
+    {
+      icon: "operations",
+      title: "Workflow & Content Governance",
+      desc:
+        "We use practical workflows and review systems that keep approvals, revisions, and content delivery efficient.",
+      items: ["Approval Workflows", "Content Review Systems", "Brand Guidelines"],
+    },
+    {
+      icon: "analytics",
+      title: "Reporting & Performance Insights",
+      desc:
+        "We track search visibility, page engagement, and content performance through insight systems that support better decisions.",
+      items: ["Google Analytics", "Performance Dashboards", "Engagement Reports"],
+    },
   ],
-  "afterPoints": [
-    "Clear messaging",
-    "Improved rankings",
-    "Higher engagement",
-    "Better conversions"
+
+  architecture: {
+    title: "Non-IT Service Delivery Framework",
+    intro:
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+    processSteps: [
+      {
+        icon: "01",
+        title: "Requirement gathering",
+        desc: "Understand website goals, audience needs, page priorities, and content requirements",
+      },
+      {
+        icon: "02",
+        title: "Analysis",
+        desc: "Assess current messaging, SEO gaps, user intent, and key communication priorities",
+      },
+      {
+        icon: "03",
+        title: "Planning & strategy",
+        desc: "Define page structure, keyword direction, message hierarchy, and a structured content roadmap",
+      },
+      {
+        icon: "04",
+        title: "Resource allocation",
+        desc: "Assign the right content strategists, writers, and optimization resources",
+      },
+    ],
+    deliveryCards: [
+      {
+        icon: "05",
+        title: "Execution",
+        desc: "Create website pages, SEO content, and landing page messaging with structured implementation",
+      },
+      {
+        icon: "06",
+        title: "Monitoring & optimization",
+        desc: "Review performance, clarity, and search alignment to refine content delivery",
+      },
+    ],
+    closureCard: {
+      icon: "07",
+      title: "Reporting & support",
+      desc: "Provide content recommendations, reporting insights, and ongoing support for website improvement",
+    },
+  },
+
+  maintenanceSupport: {
+    title: "Continuous Business Growth & Support",
+    subtitle:
+      "We support long-term digital growth through continuous content refinement, SEO improvement, and strategic guidance that strengthens visibility, engagement, and conversion quality.",
+    cards: [
+      {
+        title: "Content Optimization & Message Clarity",
+        desc:
+          "Improve page messaging, strengthen clarity, and maintain high-quality website communication across digital touchpoints.",
+      },
+      {
+        title: "Strategic Refinement & SEO Alignment",
+        desc:
+          "Refine website content based on business goals, search trends, and audience needs to support better visibility.",
+      },
+      {
+        title: "Performance Monitoring & Content Insights",
+        desc:
+          "Track page performance, engagement patterns, and content effectiveness to support better content decisions.",
+      },
+      {
+        title: "Consultation & Content Excellence",
+        desc:
+          "Provide expert guidance to improve website communication, SEO structure, and content execution quality.",
+      },
+      {
+        title: "Engagement & Conversion Support",
+        desc:
+          "Support page-level improvements that strengthen trust, user action, and long-term conversion performance.",
+      },
+    ],
+  },
+
+  whyChooseTitle: "Content That Converts",
+  whyChoose: [
+    {
+      title: "SEO + clarity",
+      desc:
+        "We write content that is optimized for search visibility while staying clear, readable, and useful for real users, helping your pages perform better in both rankings and engagement.",
+    },
+    {
+      title: "Brand-aligned tone",
+      desc:
+        "Our content maintains a consistent tone of voice across website pages, campaigns, and business communication so your brand feels professional, trustworthy, and unified.",
+    },
+    {
+      title: "Conversion-focused structure",
+      desc:
+        "We structure content to improve readability, guide visitors through the page journey, highlight your value clearly, and support stronger enquiry, lead, and conversion outcomes.",
+    },
   ],
-  "contactTitle": "Talk to Our Content Experts",
-  "contactSubtitle": "Looking to improve your website content? Our specialists are ready to help.",
-  "messageLabel": "Tell us about your content requirements...",
-  "submitLabel": "Request Content Consultation"
+
+  zoraWhyTitle: "Why Zora Global AI Technologies",
+  zoraWhy: [
+    {
+      title: "Scalable & Business-Aligned Solutions",
+      desc:
+        "We create scalable content systems aligned with business goals, search priorities, and long-term digital growth.",
+    },
+    {
+      title: "Structured & Transparent Execution",
+      desc:
+        "Our process combines milestone-based delivery, content clarity, and quality-driven execution for dependable outcomes.",
+    },
+    {
+      title: "Long-Term Growth & Partnership",
+      desc:
+        "We support continuous content refinement, SEO consistency, and strategic growth through a customer-focused partnership approach.",
+    },
+  ],
+
+  frameworkTitle: "Content That Converts",
+  frameworkSubtitle:
+    "Turning unclear website messaging into structured, SEO-friendly, engaging, and conversion-focused content that improves visibility, user trust, and business outcomes.",
+
+  beforePoints: [
+    "Unclear messaging that confuses visitors and weakens brand communication",
+    "Low user engagement caused by generic or poorly structured content",
+    "Poor search visibility due to limited keyword relevance and weak on-page content",
+    "Inconsistent brand voice across website pages and marketing materials",
+  ],
+
+  afterPoints: [
+    "Clear and professional messaging that communicates value more effectively",
+    "Improved keyword relevance and stronger organic search visibility",
+    "Higher engagement through better readability, structure, and page flow",
+    "Better conversion support with content aligned to user intent and business goals",
+  ],
+
+  contactTitle: "Talk to Our Content Experts",
+  contactSubtitle:
+    "Looking to improve your website content, service page messaging, SEO visibility, or landing page performance? Our content specialists are ready to help you create high-quality website content that supports rankings, engagement, and conversions.",
+  messageLabel: "Tell us about your content requirements...",
+  submitLabel: "Request Content Consultation",
 };
 
 const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
+  const technologies = content?.technologies ?? [];
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -91,6 +400,7 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
   }, []);
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [activeTechnology, setActiveTechnology] = useState<number | null>(null);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -124,10 +434,7 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
             </Link>
             <span className="mx-2">/</span>
             <Link
-              to={
-                "/services/non-it/" +
-                category.slug
-              }
+              to={"/services/non-it/" + category.slug}
               className="hover:text-purple-300 transition"
             >
               {category.title}
@@ -137,7 +444,7 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
           </div>
 
           <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
-            {/* ✅ IMAGE BANNER */}
+            {/* IMAGE BANNER */}
             <div className="relative h-56 md:h-72">
               <img
                 src={heroImage}
@@ -185,10 +492,11 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
             {(content?.topBlocks ?? []).map((b: { title: string; desc: string }) => (
               <div
                 key={b.title}
-                className="p-7 rounded-2xl bg-white/5 border border-white/10"
+                className="group relative overflow-hidden p-7 rounded-2xl bg-white/5 border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
               >
-                <h3 className="text-xl font-bold text-blue-300">{b.title}</h3>
-                <p className="text-gray-400 mt-3 leading-relaxed">{b.desc}</p>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <h3 className="relative text-xl font-bold text-blue-300 transition-colors duration-300 group-hover:text-white">{b.title}</h3>
+                <p className="relative text-gray-400 mt-3 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">{b.desc}</p>
               </div>
             ))}
           </div>
@@ -209,73 +517,434 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
             </p>
           </div>
 
-          {/* How we deliver */}
-          <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
-              {content?.deliverTitle ?? "How We Deliver"}
-            </h2>
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.projectDuration?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.projectDuration?.subtitle}
+              </p>
+            </div>
 
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.deliverySteps ?? []).map((s: { title: string; desc: string }, idx: number) => (
-                <div
-                  key={s.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold">
-                    {idx + 1}
+            <div className="mt-10 grid md:grid-cols-3 gap-6 items-stretch">
+              {(content?.projectDuration?.cards ?? []).map(
+                (card: { title: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-2xl md:text-[2rem] font-bold leading-tight text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-5 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-bold text-gray-100">{s.title}</h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{s.desc}</p>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
 
-          {/* Framework (optional) */}
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+              {content?.deliverTitle}
+            </h2>
+
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              {(content?.deliverySteps ?? []).map(
+                (step: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={step.title}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-sm font-bold text-white">
+                      {idx + 1}
+                    </div>
+                    <h3 className="relative mt-6 text-2xl font-bold text-white">
+                      {step.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {step.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-purple-200">
+                {content?.whoWeAreTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-5xl mx-auto text-base md:text-lg leading-8">
+                {content?.whoWeAreText}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              {(content?.whoWeAreCards ?? []).map(
+                (card: { title: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-2xl font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-8 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.technologiesTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-5xl mx-auto text-base md:text-lg leading-8">
+                {content?.technologiesSubtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-6 items-start">
+              {technologies.map(
+                (
+                  tech: {
+                    icon: string;
+                    title: string;
+                    desc: string;
+                    items: string[];
+                  },
+                  idx: number
+                ) => {
+                  const isOpen = activeTechnology === idx;
+
+                  return (
+                    <div
+                      key={tech.title}
+                      onMouseEnter={() => setActiveTechnology(idx)}
+                      onMouseLeave={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : current
+                        )
+                      }
+                      onClick={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : idx
+                        )
+                      }
+                      className={`group relative self-start overflow-hidden rounded-[28px] border bg-[#0b1220] p-5 md:p-6 transition-all duration-300 cursor-pointer ${
+                        isOpen
+                          ? "border-blue-300/60 shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                          : "border-white/10 hover:border-blue-300/40"
+                      }`}
+                      aria-expanded={isOpen}
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[16px] border border-blue-300/20 bg-blue-500/10">
+                          {renderTechnologyIcon(tech.icon, "blue")}
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold leading-tight text-blue-200">
+                          {tech.title}
+                        </h3>
+                      </div>
+
+                      <div
+                        className={`grid transition-all duration-300 ease-out ${
+                          isOpen
+                            ? "grid-rows-[1fr] opacity-100 mt-5"
+                            : "grid-rows-[0fr] opacity-0 mt-0"
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <p className="text-base md:text-lg leading-8 text-gray-400">
+                            {tech.desc}
+                          </p>
+                          <div className="mt-5 grid grid-cols-2 gap-3">
+                            {tech.items.map((tool) => (
+                              <span
+                                key={tool}
+                                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm md:text-base text-white"
+                              >
+                                {tool}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-purple-200">
+                {content?.architecture?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-xl leading-8">
+                {content?.architecture?.intro}
+              </p>
+            </div>
+
+            <div className="mt-10 hidden xl:block">
+              <div className="mx-auto max-w-[1280px] rounded-[34px] border border-white/10 bg-[linear-gradient(180deg,rgba(16,24,42,0.96),rgba(10,16,28,0.98))] p-8 shadow-[0_20px_70px_rgba(15,23,42,0.45)]">
+                <div className="grid grid-cols-[0.9fr_1.1fr] gap-6">
+                  <div className="space-y-5">
+                    {(content?.architecture?.processSteps ?? []).map(
+                      (step: { icon: string; title: string; desc: string }, idx: number) => (
+                        <React.Fragment key={step.title}>
+                          <div className="group relative overflow-hidden rounded-[26px] border border-white/10 bg-[#0b1220] px-6 py-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)] transition-all duration-300 hover:border-blue-300/40 hover:shadow-[0_0_30px_rgba(59,130,246,0.16)]">
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                            <div className="flex items-start gap-4">
+                              <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-[18px] border border-blue-300/20 bg-blue-500/10 text-xl font-bold text-blue-200">
+                                {step.icon}
+                              </div>
+                              <div className="relative">
+                                <div className="text-[20px] font-bold leading-tight text-blue-100">
+                                  {step.title}
+                                </div>
+                                <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                                  {step.desc}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                            <div className="text-center text-[28px] leading-none text-blue-200">
+                              ↓
+                            </div>
+                          ) : null}
+                        </React.Fragment>
+                      )
+                    )}
+                  </div>
+
+                  <div className="space-y-6">
+                    <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                      <div className="w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 text-xl font-bold text-white shadow-[0_0_28px_rgba(59,130,246,0.2)]">
+                        Delivery
+                      </div>
+
+                      <div className="mt-6 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+                        {(content?.architecture?.deliveryCards ?? []).map(
+                          (card: { icon: string; title: string; desc: string }, index: number) => (
+                            <React.Fragment key={card.title}>
+                              <div className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-6 transition-all duration-300 hover:border-purple-300/40 hover:shadow-[0_0_30px_rgba(139,92,246,0.14)]">
+                                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_58%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                <div className="text-[18px] font-bold text-purple-300">{card.icon}</div>
+                                <div className="mt-3 text-[22px] font-bold leading-tight text-blue-100">
+                                  {card.title}
+                                </div>
+                                <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                                  {card.desc}
+                                </div>
+                              </div>
+                              {index === 0 ? (
+                                <div className="text-3xl text-blue-300/80">→</div>
+                              ) : null}
+                            </React.Fragment>
+                          )
+                        )}
+                      </div>
+
+                      <div className="mt-6 border-t border-dashed border-white/10 pt-3 text-center text-[16px] text-blue-200/70">
+                        review & updates
+                      </div>
+                      <div className="text-center text-[28px] text-blue-200">↓</div>
+                    </div>
+
+                    <div className="rounded-[30px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                      <div className="w-fit rounded-full bg-gradient-to-r from-purple-400 to-blue-400 px-8 py-3 text-xl font-bold text-slate-950 shadow-[0_0_28px_rgba(96,165,250,0.16)]">
+                        Closure
+                      </div>
+
+                      <div className="mt-6 rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-6">
+                        <div className="text-[18px] font-bold text-blue-300">
+                          {content?.architecture?.closureCard?.icon}
+                        </div>
+                        <div className="mt-3 text-[22px] font-bold leading-tight text-blue-100">
+                          {content?.architecture?.closureCard?.title}
+                        </div>
+                        <div className="mt-2 text-[16px] leading-7 text-gray-400">
+                          {content?.architecture?.closureCard?.desc}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 xl:hidden">
+              <div className="space-y-4">
+                {(content?.architecture?.processSteps ?? []).map(
+                  (step: { icon: string; title: string; desc: string }, idx: number) => (
+                    <React.Fragment key={step.title}>
+                      <div className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-[#0b1220] p-5 shadow-[0_10px_24px_rgba(15,23,42,0.2)] transition-all duration-300 hover:border-blue-300/40">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                        <div className="flex items-start gap-4">
+                          <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-blue-300/20 bg-blue-500/10 text-sm font-bold text-blue-200">
+                            {step.icon}
+                          </div>
+                          <div className="relative">
+                            <h3 className="text-lg font-semibold text-blue-100">
+                              {step.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-6 text-gray-400">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                        <div className="text-center text-xl text-blue-200">↓</div>
+                      ) : null}
+                    </React.Fragment>
+                  )
+                )}
+              </div>
+
+              <div className="mt-6 space-y-5">
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-base font-bold text-white shadow-[0_0_28px_rgba(59,130,246,0.2)]">
+                    Delivery
+                  </div>
+                  <div className="mt-5 grid gap-4 md:grid-cols-2">
+                    {(content?.architecture?.deliveryCards ?? []).map(
+                      (card: { icon: string; title: string; desc: string }) => (
+                        <div
+                          key={card.title}
+                          className="rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5"
+                        >
+                          <div className="text-base font-bold text-purple-300">{card.icon}</div>
+                          <div className="mt-3 text-xl font-bold text-blue-100">
+                            {card.title}
+                          </div>
+                          <p className="mt-2 text-base leading-7 text-gray-400">
+                            {card.desc}
+                          </p>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+
+                <div className="text-center text-2xl text-blue-200">↓</div>
+
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <div className="w-fit rounded-full bg-gradient-to-r from-purple-400 to-blue-400 px-6 py-2 text-base font-bold text-slate-950">
+                    Closure
+                  </div>
+                  <div className="mt-5 rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.98))] p-5">
+                    <div className="text-base font-bold text-blue-300">
+                      {content?.architecture?.closureCard?.icon}
+                    </div>
+                    <div className="mt-3 text-xl font-bold text-blue-100">
+                      {content?.architecture?.closureCard?.title}
+                    </div>
+                    <p className="mt-2 text-base leading-7 text-gray-400">
+                      {content?.architecture?.closureCard?.desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.maintenanceSupport?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.maintenanceSupport?.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-6 gap-6">
+              {(content?.maintenanceSupport?.cards ?? []).map(
+                (card: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={card.title}
+                    className={`group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] ${
+                      idx < 3 ? "xl:col-span-2" : "xl:col-span-3"
+                    }`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <h3 className="relative text-xl md:text-2xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Framework */}
           {(content?.frameworkTitle ||
             content?.beforePoints ||
             content?.afterPoints) && (
-            <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-purple-300">
-                {content?.frameworkTitle ?? "Framework"}
-              </h2>
-              {content?.frameworkSubtitle && (
-                <p className="text-gray-400 mt-3">{content.frameworkSubtitle}</p>
-              )}
+            <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+              <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-purple-200">
+                  {content?.frameworkTitle ?? "Framework"}
+                </h2>
+                {content?.frameworkSubtitle && (
+                  <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                    {content.frameworkSubtitle}
+                  </p>
+                )}
+              </div>
 
-              <div className="mt-8 grid md:grid-cols-3 gap-6 items-stretch">
-                <div className="rounded-2xl bg-[#0b1220] border border-white/10 p-7">
-                  <h3 className="text-lg font-bold text-red-300">Before</h3>
-                  <ul className="mt-4 space-y-3 text-gray-300">
+              <div className="mt-10 grid md:grid-cols-3 gap-6 items-stretch">
+                <div className="rounded-[26px] border border-white/10 bg-[#071224] p-7 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <h3 className="text-2xl font-bold text-[#ff9d9d]">Before</h3>
+                  <ul className="mt-6 space-y-5 text-gray-200 text-base md:text-lg leading-8">
                     {(content?.beforePoints ?? []).map((p: string) => (
-                      <li key={p} className="flex gap-3">
-                        <span className="text-red-300">•</span>
+                      <li key={p} className="flex items-start gap-3">
                         <span>{p}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="rounded-2xl bg-[linear-gradient(135deg,rgba(59,130,246,0.25),rgba(168,85,247,0.20))] border border-white/10 p-7 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-sm uppercase tracking-widest text-gray-200/80">
+                <div className="rounded-[26px] border border-white/10 bg-[linear-gradient(180deg,rgba(77,91,160,0.45),rgba(58,44,98,0.65))] p-7 shadow-[0_10px_24px_rgba(15,23,42,0.2)] flex items-center justify-center">
+                  <div className="text-center max-w-sm">
+                    <div className="text-sm md:text-base uppercase tracking-[0.2em] text-gray-200/90">
                       Transformation
                     </div>
-                    <div className="mt-2 text-xl font-bold">
-                      Strategy • Technology • Operations
+                    <div className="mt-4 text-3xl md:text-[2.1rem] font-bold leading-tight text-white">
+                      Research <br />
+                      Design <br />
+                      Validate
                     </div>
-                    <div className="text-gray-200/80 mt-2">
-                      Governance + measurable KPIs
+                    <div className="mt-4 text-lg md:text-xl text-gray-200/90">
+                      Clear messaging and stronger website performance
                     </div>
                   </div>
                 </div>
 
-                <div className="rounded-2xl bg-[#0b1220] border border-white/10 p-7">
-                  <h3 className="text-lg font-bold text-green-300">After</h3>
-                  <ul className="mt-4 space-y-3 text-gray-300">
+                <div className="rounded-[26px] border border-white/10 bg-[#071224] p-7 shadow-[0_10px_24px_rgba(15,23,42,0.2)]">
+                  <h3 className="text-2xl font-bold text-[#8dffbf]">After</h3>
+                  <ul className="mt-6 space-y-5 text-gray-200 text-base md:text-lg leading-8">
                     {(content?.afterPoints ?? []).map((p: string) => (
-                      <li key={p} className="flex gap-3">
-                        <span className="text-green-300">•</span>
+                      <li key={p} className="flex items-start gap-3">
                         <span>{p}</span>
                       </li>
                     ))}
@@ -295,14 +964,43 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
               {(content?.whyChoose ?? []).map((w: { title: string; desc: string }) => (
                 <div
                   key={w.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
+                  className="group relative overflow-hidden p-7 rounded-2xl bg-[#0b1220] border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
                 >
-                  <h3 className="text-lg font-bold text-purple-200">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <h3 className="relative text-lg font-bold text-purple-200 transition-colors duration-300 group-hover:text-white">
                     {w.title}
                   </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{w.desc}</p>
+                  <p className="relative text-gray-400 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">{w.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-purple-200">
+              {content?.zoraWhyTitle}
+            </h2>
+
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              {(content?.zoraWhy ?? []).map(
+                (w: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={w.title}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="relative text-sm font-semibold text-blue-300/80">
+                      0{idx + 1}
+                    </div>
+                    <h3 className="relative mt-4 text-xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {w.title}
+                    </h3>
+                    <p className="relative mt-3 text-base md:text-lg leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {w.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 

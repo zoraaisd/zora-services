@@ -115,10 +115,11 @@ const ServicesHero: React.FC = () => {
               font-serif font-extrabold text-center tracking-tight
               bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent
               [text-shadow:0_0_30px_rgba(168,85,247,0.25)]
-              transition-all duration-[400ms] ease-in-out
+              transition-all ease-in-out
               sm:hover:scale-[1.02] sm:hover:brightness-110
               will-change-transform
             "
+            style={{ transitionDuration: "400ms" }}
           >
             IT & Business Services
           </motion.h1>

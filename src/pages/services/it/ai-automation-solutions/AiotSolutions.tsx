@@ -2,68 +2,402 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const category = {
-  "slug": "ai-automation-solutions",
-  "title": "AI & Automation Solutions"
+  slug: "ai-automation-solutions",
+  title: "AI & Automation Solutions",
 };
+
 const item = {
-  "slug": "aiot-solutions",
-  "title": "AIoT Solutions"
+  slug: "aiot-solutions",
+  title: "AIoT Solutions",
 };
+
 const heroImage = "/it-hero/aiot.jpg";
+
+const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
+  const strokeClass = accent === "purple" ? "stroke-purple-200" : "stroke-blue-200";
+
+  const commonProps = {
+    className: `h-7 w-7 ${strokeClass}`,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: "1.8",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+  };
+
+  switch (icon) {
+    case "frontend":
+      return (
+        <svg {...commonProps}>
+          <rect x="3.5" y="5" width="17" height="12" rx="2.5" />
+          <path d="M8 20h8" />
+          <path d="M10 17v3" />
+          <path d="M14 17v3" />
+          <path d="m10 9-2 2 2 2" />
+          <path d="m14 9 2 2-2 2" />
+        </svg>
+      );
+    case "backend":
+      return (
+        <svg {...commonProps}>
+          <rect x="5" y="4" width="14" height="6" rx="2" />
+          <rect x="5" y="14" width="14" height="6" rx="2" />
+          <path d="M8 7h.01" />
+          <path d="M8 17h.01" />
+          <path d="M11 7h5" />
+          <path d="M11 17h5" />
+          <path d="M12 10v4" />
+        </svg>
+      );
+    case "database":
+      return (
+        <svg {...commonProps}>
+          <ellipse cx="12" cy="6.5" rx="6.5" ry="2.8" />
+          <path d="M5.5 6.5v5c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8v-5" />
+          <path d="M5.5 11.5v5c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8v-5" />
+        </svg>
+      );
+    case "cloud":
+      return (
+        <svg {...commonProps}>
+          <path d="M7.5 18.5h9a4 4 0 0 0 .4-8A5.5 5.5 0 0 0 6.3 9 3.5 3.5 0 0 0 7.5 18.5Z" />
+          <path d="m12 11.5 0 6" />
+          <path d="m9.5 15 2.5 2.5 2.5-2.5" />
+        </svg>
+      );
+    case "mobile":
+      return (
+        <svg {...commonProps}>
+          <rect x="7" y="3.5" width="10" height="17" rx="2.5" />
+          <path d="M10.5 6.5h3" />
+          <path d="M11.8 17.5h.4" />
+          <path d="M8.8 9.5h6.4" />
+          <path d="M8.8 12.5h6.4" />
+        </svg>
+      );
+    case "ai":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 4.5 8 6.7v4.6l4 2.2 4-2.2V6.7Z" />
+          <path d="M8 11.3 5.5 12.7v3.1L8 17.2l2.5-1.4" />
+          <path d="m16 11.3 2.5 1.4v3.1L16 17.2l-2.5-1.4" />
+          <path d="M12 13.5v4" />
+          <path d="M12 2.5v2" />
+          <path d="M4.5 9.5h2" />
+          <path d="M17.5 9.5h2" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="7" />
+        </svg>
+      );
+  }
+};
+
 const content: any = {
-  "heroTitle": "AIoT Development Solutions",
-  "heroSubtitle": "AI + IoT integrated systems — real-time insights, automation, and predictive intelligence across connected devices.",
-  "primaryCta": "Get Started",
-  "topBlocks": [
+  heroTitle: "AIoT Development Solutions",
+  heroSubtitle:
+    "Transform your business with powerful AI + IoT integration — enabling real-time intelligence, predictive insights, automation, and smart decision-making across connected ecosystems.",
+
+  primaryCta: "Get Started",
+  secondaryCta: "Talk to Us",
+
+  topBlocks: [
     {
-      "title": "Device & Sensor Integration",
-      "desc": "Connect sensors, gateways, and devices to capture real-time data."
+      title: "Device & Sensor Integration",
+      desc: "Seamlessly connect IoT devices, sensors, and gateways to collect real-time operational data across environments.",
     },
     {
-      "title": "Edge AI & Analytics",
-      "desc": "Low-latency AI at the edge for fast decisions and reduced cloud load."
+      title: "Edge AI & Analytics",
+      desc: "Process data at the edge using AI models to enable faster decision-making with minimal latency and bandwidth usage.",
     },
     {
-      "title": "Predictive Automation",
-      "desc": "Predictive maintenance, anomaly detection, and automated actions."
-    }
+      title: "Predictive Automation",
+      desc: "Leverage AI to predict failures, detect anomalies, and trigger automated actions for improved efficiency.",
+    },
   ],
-  "overview": "We build secure AIoT ecosystems combining edge computing, cloud platforms, and AI models for scalable and reliable connected operations.",
-  "deliverySteps": [
+
+  overview:
+    "Our AIoT solutions combine Artificial Intelligence and Internet of Things technologies to build intelligent, connected systems that enhance operational efficiency, reduce downtime, and unlock new business value. We design scalable ecosystems that integrate devices, data pipelines, and AI models — enabling organizations to gain real-time insights, automate processes, and make smarter decisions. From industrial automation to smart cities, we help businesses harness the full potential of AI-driven IoT systems.",
+
+  projectDuration: {
+    title: "Project Duration",
+    subtitle:
+      "For fast-launch website requirements, our standard delivery timeline can be completed within 48 hours based on finalized content and clear scope.",
+    cards: [
+      {
+        title: "48 Hours",
+        label: "Standard Fast Delivery",
+        desc:
+          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+      },
+      {
+        title: "Design + Development",
+        label: "What is Included",
+        desc:
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+      },
+      {
+        title: "Finalized Content",
+        label: "Requirement Condition",
+        desc:
+          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+      },
+    ],
+  },
+
+  deliverySteps: [
     {
-      "title": "Discovery & Architecture",
-      "desc": "Define the AIoT strategy, device ecosystem, and data flows."
+      title: "Discovery & Architecture",
+      desc: "We analyze your business requirements, identify use cases, and design a scalable AIoT architecture including devices, connectivity, and data flow.",
     },
     {
-      "title": "Development",
-      "desc": "Build IoT platform, data pipelines, and edge AI model workflows."
+      title: "Development & Integration",
+      desc: "Develop IoT platforms, integrate sensors and devices, and build AI models for analytics, prediction, and automation.",
     },
     {
-      "title": "Deployment & Scale",
-      "desc": "Deploy, monitor, update models, and optimize performance continuously."
-    }
+      title: "Deployment & Optimization",
+      desc: "Deploy solutions in production, monitor system performance, retrain models, and continuously optimize for efficiency and scalability.",
+    },
   ],
-  "whyChoose": [
+
+  technologiesTitle: "Technologies We Use",
+  technologiesSubtitle:
+    "We use modern, reliable, and scalable technologies to build connected AIoT ecosystems that enable device intelligence, secure communication, predictive analytics, real-time monitoring, and automation across industrial, enterprise, and smart infrastructure environments.",
+
+  technologies: [
     {
-      "title": "AIoT Expertise",
-      "desc": "Deep expertise in edge AI, IoT platforms, and real-time analytics."
+      icon: "frontend",
+      title: "AIoT Dashboards & Interfaces",
+      desc:
+        "We build responsive dashboards and control interfaces to visualize device data, alerts, analytics, and operational insights in real time.",
+      items: [
+        "React",
+        "Next.js",
+        "Dashboard UI",
+        "Control Panels",
+        "Data Visualization",
+        "Real-Time Views",
+      ],
     },
     {
-      "title": "Secure & Scalable",
-      "desc": "Enterprise-grade architectures designed for reliability and growth."
+      icon: "backend",
+      title: "Backend & Device Communication",
+      desc:
+        "We develop secure backend systems, APIs, and communication services that connect devices, platforms, and automation workflows.",
+      items: [
+        "Node.js",
+        "Python",
+        "Spring Boot",
+        "REST APIs",
+        "MQTT",
+        "Device Services",
+      ],
     },
     {
-      "title": "Industry Focus",
-      "desc": "Use cases across manufacturing, logistics, healthcare, energy, and smart cities."
-    }
+      icon: "database",
+      title: "Data Storage & Processing",
+      desc:
+        "We manage time-series, event, and operational data using scalable databases and structured storage for analytics and reporting.",
+      items: [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Time-Series Data",
+        "Event Storage",
+        "Analytics Data",
+      ],
+    },
+    {
+      icon: "cloud",
+      title: "Cloud, Edge & Deployment",
+      desc:
+        "We deploy AIoT workloads across cloud and edge environments to support scalability, resilience, monitoring, and low-latency intelligence.",
+      items: [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Edge Deployment",
+        "Cloud Infrastructure",
+        "IoT Platforms",
+      ],
+    },
+    {
+      icon: "mobile",
+      title: "Connected Devices & Mobility",
+      desc:
+        "We support connected mobile experiences, remote access, smart device integration, and on-field operational visibility.",
+      items: [
+        "Mobile Apps",
+        "Flutter",
+        "React Native",
+        "Remote Monitoring",
+        "Device Connectivity",
+        "Field Access",
+      ],
+    },
+    {
+      icon: "ai",
+      title: "AI Models & Automation",
+      desc:
+        "We integrate AI capabilities for anomaly detection, prediction, automation, computer vision, and intelligent decision-making across IoT systems.",
+      items: [
+        "Machine Learning",
+        "Predictive Models",
+        "Anomaly Detection",
+        "Computer Vision",
+        "Automation Logic",
+        "AI Analytics",
+      ],
+    },
   ],
-  "contactTitle": "Contact Zora Global AI",
-  "contactSubtitle": "Tell us about your AIoT requirements.",
-  "messageLabel": "Tell us about your AIoT requirements...",
-  "submitLabel": "Submit Project"
+
+  architecture: {
+    title: "AIoT Solution Architecture",
+    intro:
+      "We design scalable AIoT architectures that combine connected devices, real-time data pipelines, edge intelligence, cloud processing, and AI-driven automation. This approach helps businesses capture operational data, generate actionable insights, automate responses, and create intelligent ecosystems that are secure, efficient, and future-ready.",
+    processSteps: [
+      {
+        icon: "01",
+        title: "Device & Data Capture",
+        desc: "Collect real-time data from sensors, gateways, and connected endpoints",
+      },
+      {
+        icon: "02",
+        title: "Connectivity & Ingestion",
+        desc: "Transmit and process data securely across edge and cloud environments",
+      },
+      {
+        icon: "03",
+        title: "AI Analysis & Decisioning",
+        desc: "Apply prediction, anomaly detection, and analytics for smart outcomes",
+      },
+      {
+        icon: "04",
+        title: "Automation & Optimization",
+        desc: "Trigger actions, improve workflows, and continuously optimize performance",
+      },
+    ],
+    layers: {
+      top: {
+        icon: "</>",
+        title: "Devices & Edge Layer",
+        stack: "Sensors / Gateways / Controllers",
+        desc: "Connected devices collect signals, machine data, and environmental inputs from real-world operations.",
+      },
+      middle: [
+        {
+          icon: "[]",
+          title: "Connectivity Layer",
+          desc: "Communication channels securely transmit device data between edge, applications, and cloud platforms.",
+        },
+        {
+          icon: "{}",
+          title: "AI Processing Engine",
+          desc: "AI models, analytics logic, and rule-based services convert raw data into intelligent decisions.",
+        },
+        {
+          icon: "O",
+          title: "Monitoring & Control",
+          desc: "Dashboards, alerts, device controls, and orchestration workflows manage ongoing operations.",
+        },
+      ],
+      services: {
+        icon: "++",
+        title: "Automation & Business Logic",
+        desc: "Operational workflows trigger automated actions, predictions, alerts, and business responses.",
+      },
+      database: {
+        icon: "()",
+        title: "Data & Event Repository",
+        stack: "Operational Data / Logs / Analytics",
+        desc: "Structured storage supports reporting, model improvement, historical analysis, and performance tracking.",
+      },
+      bottom: {
+        icon: "<>",
+        title: "Cloud / Deployment / Optimization",
+        desc: "Cloud services, deployment systems, and optimization processes ensure scale, resilience, and continuous improvement.",
+      },
+      sideCards: [
+        {
+          icon: "CDN",
+          title: "Secure Connectivity",
+          desc: "Reliable communication and controlled data movement across distributed AIoT environments.",
+        },
+        {
+          icon: "R",
+          title: "Real-Time Intelligence",
+          desc: "Immediate insights, anomaly alerts, and predictive outputs improve operational response.",
+        },
+        {
+          icon: "M",
+          title: "Monitoring & Maintenance",
+          desc: "Continuous tracking, diagnostics, and updates keep systems stable and efficient over time.",
+        },
+      ],
+    },
+  },
+
+  maintenanceSupport: {
+    title: "Maintenance Support",
+    subtitle: "Free 6 Months Website Maintenance Support Included",
+    cards: [
+      {
+        title: "Bug Fixing",
+        desc:
+          "Quick identification and resolution of issues to ensure smooth functionality.",
+      },
+      {
+        title: "Minor Technical Corrections",
+        desc:
+          "Small updates and adjustments to maintain system stability and performance.",
+      },
+      {
+        title: "Performance Monitoring",
+        desc:
+          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+      },
+      {
+        title: "Basic Support Assistance",
+        desc:
+          "Guidance and support for minor updates and operational queries.",
+      },
+      {
+        title: "Ongoing Technical Support",
+        desc:
+          "Reliable and responsive support to ensure your website continues to perform effectively.",
+      },
+    ],
+  },
+
+  whyChoose: [
+    {
+      title: "Deep AIoT Expertise",
+      desc: "Strong experience in AI, IoT platforms, edge computing, and real-time analytics for building advanced connected systems.",
+    },
+    {
+      title: "Scalable & Secure Solutions",
+      desc: "Enterprise-grade architecture designed for scalability, high performance, and robust security across devices and networks.",
+    },
+    {
+      title: "Industry-Focused Use Cases",
+      desc: "Proven solutions across manufacturing, healthcare, logistics, energy, agriculture, and smart city ecosystems.",
+    },
+  ],
+
+  contactTitle: "Contact Zora Global AI",
+  contactSubtitle:
+    "Tell us about your AIoT requirements and use cases — our experts will help design the right solution.",
+  messageLabel: "Describe your AIoT project, devices, or automation needs...",
+  submitLabel: "Submit Project",
 };
 
 const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
+  const technologies = content?.technologies ?? [];
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -78,6 +412,8 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
     message: "",
   });
 
+  const [activeTechnology, setActiveTechnology] = useState<number | null>(null);
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert("✅ Submitted (frontend demo). Connect backend/API later.");
@@ -86,7 +422,6 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
 
   return (
     <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden">
-
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[900px] h-[900px] bg-blue-700/20 blur-[180px] rounded-full top-[-280px] left-[-280px]" />
@@ -97,7 +432,6 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
       {/* ================= HERO ================= */}
       <div className="pt-28 pb-16 px-6 border-b border-white/10">
         <div className="max-w-6xl mx-auto">
-
           {/* Breadcrumb */}
           <div className="text-sm text-gray-400 mb-6">
             <Link to="/services" className="hover:text-purple-300 transition">
@@ -111,10 +445,7 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             <span className="mx-2">/</span>
 
             <Link
-              to={
-                "/services/it/" +
-                category.slug
-              }
+              to={"/services/it/" + category.slug}
               className="hover:text-purple-300 transition"
             >
               {category.title}
@@ -124,8 +455,7 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             <span className="text-gray-200">{item.title}</span>
           </div>
 
-          <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl">
-
+          <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 shadow-[0_30px_100px_rgba(37,99,235,0.12)] backdrop-blur-2xl">
             {/* Image Banner */}
             <div className="relative h-56 md:h-72">
               <img
@@ -174,10 +504,16 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             {(content?.topBlocks ?? []).map((b: { title: string; desc: string }) => (
               <div
                 key={b.title}
-                className="p-7 rounded-2xl bg-white/5 border border-white/10"
+                className="group relative overflow-hidden p-7 rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(14,23,43,0.95),rgba(8,13,24,0.96))] transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] active:-translate-y-1 active:border-blue-300/60 active:shadow-[0_0_40px_rgba(96,165,250,0.28)]"
               >
-                <h3 className="text-xl font-bold text-blue-300">{b.title}</h3>
-                <p className="text-gray-400 mt-3 leading-relaxed">{b.desc}</p>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.18),transparent_55%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                <h3 className="relative text-xl font-bold text-blue-300 transition-colors duration-300 group-hover:text-white group-active:text-white">
+                  {b.title}
+                </h3>
+                <p className="relative text-gray-400 mt-3 leading-relaxed transition-colors duration-300 group-hover:text-gray-200 group-active:text-gray-200">
+                  {b.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -187,7 +523,6 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
       {/* ================= BODY ================= */}
       <div className="px-6 py-16">
         <div className="max-w-6xl mx-auto space-y-14">
-
           {/* Overview */}
           <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-300">
@@ -199,6 +534,38 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             </p>
           </div>
 
+          {/* Project Duration */}
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(16,24,42,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.projectDuration?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.projectDuration?.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {(content?.projectDuration?.cards ?? []).map(
+                (card: { title: string; label: string; desc: string }) => (
+                  <div
+                    key={card.title}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 text-left transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.16),transparent_58%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                    <div className="relative text-2xl md:text-3xl font-extrabold text-white">
+                      {card.title}
+                    </div>
+                    <p className="relative mt-4 text-base md:text-lg leading-7 text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
           {/* Delivery */}
           <div className="rounded-3xl bg-white/5 border border-white/10 p-10">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
@@ -206,18 +573,472 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             </h2>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.deliverySteps ?? []).map((s: { title: string; desc: string }, idx: number) => (
-                <div
-                  key={s.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold">
-                    {idx + 1}
+              {(content?.deliverySteps ?? []).map(
+                (s: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={s.title}
+                    className="group relative overflow-hidden p-7 rounded-[28px] bg-[#0b1220] border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60 active:shadow-[0_0_40px_rgba(96,165,250,0.24)]"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" />
+                    <div className="absolute top-0 left-7 right-7 h-px bg-gradient-to-r from-blue-400/40 via-purple-300/70 to-transparent" />
+                    <div className="relative w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold">
+                      {idx + 1}
+                    </div>
+                    <h3 className="relative mt-5 font-bold text-gray-100 transition-colors duration-300 group-hover:text-white group-active:text-white">
+                      {s.title}
+                    </h3>
+                    <p className="relative text-gray-400 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-200 group-active:text-gray-200">
+                      {s.desc}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-bold text-gray-100">{s.title}</h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{s.desc}</p>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Technologies */}
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-blue-300 via-blue-200 to-purple-300 bg-clip-text text-transparent">
+                {content?.technologiesTitle}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-xl leading-8">
+                {content?.technologiesSubtitle}
+              </p>
+            </div>
+
+            <div className="mt-12 grid items-start md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {technologies.map(
+                (
+                  tech: {
+                    icon: string;
+                    title: string;
+                    desc: string;
+                    items: string[];
+                  },
+                  idx: number
+                ) => {
+                  const isActive = activeTechnology === idx;
+
+                  return (
+                    <button
+                      key={tech.title}
+                      type="button"
+                      onMouseEnter={() => setActiveTechnology(idx)}
+                      onMouseLeave={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : current
+                        )
+                      }
+                      onFocus={() => setActiveTechnology(idx)}
+                      onBlur={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : current
+                        )
+                      }
+                      onClick={() =>
+                        setActiveTechnology((current) =>
+                          current === idx ? null : idx
+                        )
+                      }
+                      className={`group relative flex min-h-[132px] self-start flex-col overflow-hidden rounded-[24px] border bg-[#0b1220]/95 p-5 text-left transition-all duration-300 shadow-[0_0_30px_rgba(76,29,149,0.08)] ${
+                        isActive
+                          ? "border-blue-400/60 -translate-y-1 shadow-[0_0_35px_rgba(59,130,246,0.16)]"
+                          : "border-white/10 hover:-translate-y-1 hover:border-blue-300/40"
+                      }`}
+                    >
+                      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-11 min-w-11 items-center justify-center rounded-xl border border-blue-300/30 bg-blue-500/10 text-blue-200 shadow-[0_0_24px_rgba(59,130,246,0.12)] transition-all duration-300">
+                          {renderTechnologyIcon(tech.icon, "blue")}
+                        </div>
+                        <div className="flex min-h-[56px] items-center">
+                          <h3 className="text-lg font-extrabold leading-tight text-blue-200 transition-colors">
+                            {tech.title}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isActive
+                            ? "mt-5 max-h-[36rem] opacity-100"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <p className="text-gray-400 leading-7 text-base md:text-lg">
+                          {tech.desc}
+                        </p>
+
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          {tech.items.map((itemName: string) => (
+                            <span
+                              key={itemName}
+                              className="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-sm md:text-base text-gray-200"
+                            >
+                              {itemName}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                }
+              )}
+            </div>
+          </div>
+
+          {/* Architecture */}
+          <div className="rounded-[32px] bg-white/5 border border-white/10 p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-purple-200">
+                {content?.architecture?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-xl leading-8">
+                {content?.architecture?.intro}
+              </p>
+            </div>
+
+            <div className="mt-8 hidden xl:block">
+              <div className="mx-auto max-w-[1280px] rounded-[34px] border border-white/10 bg-[linear-gradient(180deg,rgba(15,24,43,0.98),rgba(9,14,24,0.99))] p-7 text-white shadow-[0_20px_70px_rgba(15,23,42,0.4)]">
+                <div className="grid grid-cols-[0.96fr_1.04fr] gap-5">
+                  <div className="space-y-4">
+                    {(content?.architecture?.processSteps ?? []).map(
+                      (
+                        step: { icon: string; title: string; desc: string },
+                        idx: number
+                      ) => (
+                        <React.Fragment key={step.title}>
+                          <div className="rounded-[26px] border border-white/10 bg-[#0f1829] px-6 py-4 shadow-[0_6px_18px_rgba(59,130,246,0.14)]">
+                            <div className="flex items-center gap-4">
+                              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-[18px] border border-blue-300/20 bg-blue-500/10 text-lg font-bold text-blue-200">
+                                {step.icon}
+                              </div>
+                              <div>
+                                <div className="text-[19px] font-bold leading-tight text-white">
+                                  {step.title}
+                                </div>
+                                <div className="mt-1 text-[16px] leading-6 text-gray-400">
+                                  {step.desc}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                            <div className="flex justify-start pl-8 text-[28px] leading-none text-blue-300">
+                              ↓
+                            </div>
+                          ) : null}
+                        </React.Fragment>
+                      )
+                    )}
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="mx-auto w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-10 py-2.5 text-xl font-bold text-white">
+                      Intelligent AIoT Flow
+                    </div>
+
+                    <div className="rounded-[26px] border border-white/10 bg-[#0f1829] p-4 shadow-[0_6px_18px_rgba(59,130,246,0.14)]">
+                      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+                        <div>
+                          <div className="mb-3 text-center text-[17px] font-semibold text-blue-200/80">
+                            Edge & Device Layer
+                          </div>
+                          <div className="rounded-[22px] border border-blue-300/20 bg-[#101a2c] px-6 py-5 text-center">
+                            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-[16px] bg-blue-500/10 text-base font-bold text-blue-200">
+                              {content?.architecture?.layers?.top?.icon}
+                            </div>
+                            <div className="mt-3 text-[34px] font-bold leading-none text-white">
+                              {content?.architecture?.layers?.top?.title}
+                            </div>
+                            <div className="mt-1 text-[16px] text-blue-200/75">
+                              {content?.architecture?.layers?.top?.stack}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="pt-8 text-3xl text-blue-300">→</div>
+
+                        <div>
+                          <div className="mb-3 text-center text-[17px] font-semibold text-blue-200/80">
+                            Intelligence Core
+                          </div>
+                          <div className="rounded-[22px] border border-blue-300/20 bg-[#101a2c] px-6 py-5 text-center">
+                            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-[16px] bg-blue-500/10 text-base font-bold text-blue-200">
+                              {content?.architecture?.layers?.middle?.[1]?.icon}
+                            </div>
+                            <div className="mt-3 text-[34px] font-bold leading-none text-white">
+                              AI Engine
+                            </div>
+                            <div className="mt-1 text-[16px] text-blue-200/75">
+                              Analysis & decisioning
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-3 flex items-center justify-center gap-3 text-[15px] text-blue-200/75">
+                        <span className="text-blue-300">•</span>
+                        <span>- -</span>
+                        <span>Prediction & automation</span>
+                        <span>- -</span>
+                        <span className="text-blue-300">•</span>
+                      </div>
+                      <div className="mt-0.5 text-center text-[28px] text-blue-300">↓</div>
+                    </div>
+
+                    <div className="mx-auto w-fit rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-10 py-2.5 text-xl font-bold text-white">
+                      Deployment & Optimization
+                    </div>
+
+                    <div className="rounded-[26px] border border-white/10 bg-[#0f1829] p-4 shadow-[0_6px_18px_rgba(59,130,246,0.14)]">
+                      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+                        <div className="rounded-[22px] border border-blue-300/20 bg-[#101a2c] px-5 py-4">
+                          <div className="text-[17px] font-bold text-white">
+                            {content?.architecture?.layers?.bottom?.title}
+                          </div>
+                          <div className="mt-1 text-[15px] text-blue-200/75">
+                            Cloud and operational scale
+                          </div>
+                        </div>
+
+                        <div className="text-3xl text-blue-300">→</div>
+
+                        <div className="rounded-[22px] border border-blue-300/20 bg-[#101a2c] px-5 py-4">
+                          <div className="text-[17px] font-bold text-white">
+                            Continuous improvement
+                          </div>
+                          <div className="mt-1 text-[15px] text-blue-200/75">
+                            Monitoring and model tuning
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              ))}
+
+                <div className="mt-5 rounded-[26px] border border-white/10 bg-[#0f1829] px-6 py-4 shadow-[0_6px_18px_rgba(59,130,246,0.14)]">
+                  <div className="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-4">
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-[16px] bg-blue-500/10 text-base font-bold text-blue-200">
+                        01
+                      </div>
+                      <div className="text-[17px] font-medium text-white">
+                        Device data capture
+                      </div>
+                    </div>
+
+                    <div className="text-3xl text-blue-300">→</div>
+
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-[16px] bg-blue-500/10 text-base font-bold text-blue-200">
+                        {content?.architecture?.layers?.bottom?.icon}
+                      </div>
+                      <div>
+                        <div className="text-[17px] font-medium text-white">
+                          Deployment
+                        </div>
+                        <div className="text-[15px] text-blue-200/75">
+                          edge / cloud / platform
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-3xl text-blue-300">→</div>
+
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-[16px] bg-purple-500/10 text-base font-bold text-purple-200">
+                        M
+                      </div>
+                      <div className="text-[17px] font-medium text-white">
+                        Monitoring & support
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 xl:hidden">
+              <div className="space-y-4">
+                {(content?.architecture?.processSteps ?? []).map(
+                  (
+                    step: { icon: string; title: string; desc: string },
+                    idx: number
+                  ) => (
+                    <React.Fragment key={step.title}>
+                      <div className="rounded-[22px] border border-cyan-300/20 bg-[#0e1828] p-5">
+                        <div className="flex items-start gap-4">
+                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-cyan-300/25 bg-cyan-400/10 text-sm font-bold text-cyan-200">
+                            {step.icon}
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold text-white">
+                              {step.title}
+                            </h3>
+                            <p className="mt-2 text-sm leading-6 text-gray-400">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      {idx < (content?.architecture?.processSteps?.length ?? 0) - 1 ? (
+                        <div className="text-center text-xl text-cyan-200">↓</div>
+                      ) : null}
+                    </React.Fragment>
+                  )
+                )}
+              </div>
+
+              <div className="space-y-5 mt-5">
+                <div className="group rounded-[26px] border border-white/10 bg-[#0b1220] p-6 transition-all duration-300 hover:border-blue-300/40 hover:shadow-[0_0_28px_rgba(59,130,246,0.18)]">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-blue-300/20 bg-blue-500/10 text-base font-bold text-blue-200">
+                      {content?.architecture?.layers?.top?.icon}
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-blue-100">
+                        {content?.architecture?.layers?.top?.title}
+                      </div>
+                      <div className="text-base text-blue-200/80">
+                        {content?.architecture?.layers?.top?.stack}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-base leading-7 text-gray-400">
+                    {content?.architecture?.layers?.top?.desc}
+                  </p>
+                </div>
+
+                <div className="text-center text-2xl text-blue-300">↓</div>
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  {(content?.architecture?.layers?.middle ?? []).map(
+                    (
+                      itemData: { icon: string; title: string; desc: string },
+                      idx: number
+                    ) => (
+                      <div
+                        key={itemData.title}
+                        className={`rounded-[22px] border bg-[#0b1220] p-6 ${
+                          idx === 1 ? "border-purple-300/20" : "border-white/10"
+                        }`}
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm font-bold text-blue-200">
+                            {itemData.icon}
+                          </div>
+                          <div className="text-xl font-semibold text-white">
+                            {itemData.title}
+                          </div>
+                        </div>
+                        <p className="mt-3 text-base leading-7 text-gray-400">
+                          {itemData.desc}
+                        </p>
+                      </div>
+                    )
+                  )}
+                </div>
+
+                <div className="text-center text-2xl text-blue-300">↓</div>
+
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 text-center">
+                  <div className="text-2xl font-bold text-white">
+                    {content?.architecture?.layers?.services?.title}
+                  </div>
+                  <p className="mt-3 text-base leading-7 text-gray-400">
+                    {content?.architecture?.layers?.services?.desc}
+                  </p>
+                </div>
+
+                <div className="text-center text-2xl text-blue-300">↓</div>
+
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 text-center">
+                  <div className="text-2xl font-bold text-white">
+                    {content?.architecture?.layers?.database?.title}
+                  </div>
+                  <div className="mt-1 text-base text-purple-200/80">
+                    {content?.architecture?.layers?.database?.stack}
+                  </div>
+                  <p className="mt-3 text-base leading-7 text-gray-400">
+                    {content?.architecture?.layers?.database?.desc}
+                  </p>
+                </div>
+
+                <div className="rounded-[24px] border border-white/10 bg-[#0b1220]/90 p-4">
+                  <div className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-blue-200/75">
+                    Support Infrastructure
+                  </div>
+                  <div className="mt-4 grid gap-4 md:grid-cols-3">
+                    {(content?.architecture?.layers?.sideCards ?? []).map(
+                      (card: { icon: string; title: string; desc: string }) => (
+                        <div
+                          key={card.title}
+                          className="rounded-[20px] border border-white/10 bg-[#0b1220] p-4"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xs font-bold text-blue-200">
+                              {card.icon}
+                            </div>
+                            <div className="text-base font-semibold text-blue-100">
+                              {card.title}
+                            </div>
+                          </div>
+                          <p className="mt-3 text-sm leading-6 text-gray-400">
+                            {card.desc}
+                          </p>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+
+                <div className="text-center text-2xl text-blue-300">↓</div>
+
+                <div className="rounded-[26px] border border-white/10 bg-[#0b1220] p-6 text-center">
+                  <div className="text-2xl font-bold text-blue-100">
+                    {content?.architecture?.layers?.bottom?.title}
+                  </div>
+                  <p className="mt-3 text-base leading-7 text-gray-400">
+                    {content?.architecture?.layers?.bottom?.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Maintenance Support */}
+          <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,20,39,0.96),rgba(10,16,28,0.98))] p-8 md:p-10">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200">
+                {content?.maintenanceSupport?.title}
+              </h2>
+              <p className="text-gray-300 mt-5 max-w-4xl mx-auto text-base md:text-lg leading-8">
+                {content?.maintenanceSupport?.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid md:grid-cols-2 xl:grid-cols-6 gap-6">
+              {(content?.maintenanceSupport?.cards ?? []).map(
+                (card: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={card.title}
+                    className={`group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60 ${
+                      idx < 3 ? "xl:col-span-2" : "xl:col-span-3"
+                    }`}
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-300/60 to-transparent" />
+                    <h3 className="relative text-xl md:text-2xl font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {card.title}
+                    </h3>
+                    <p className="relative mt-4 text-base md:text-lg leading-7 text-gray-400 transition-colors duration-300 group-hover:text-gray-200">
+                      {card.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -228,17 +1049,26 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
             </h2>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {(content?.whyChoose ?? []).map((w: { title: string; desc: string }) => (
-                <div
-                  key={w.title}
-                  className="p-7 rounded-2xl bg-[#0b1220] border border-white/10"
-                >
-                  <h3 className="text-lg font-bold text-blue-200">
-                    {w.title}
-                  </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">{w.desc}</p>
-                </div>
-              ))}
+              {(content?.whyChoose ?? []).map(
+                (w: { title: string; desc: string }, idx: number) => (
+                  <div
+                    key={w.title}
+                    className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[#0b1220] p-7 transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/50 hover:shadow-[0_0_35px_rgba(59,130,246,0.18)] active:-translate-y-1 active:border-blue-300/60"
+                  >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_60%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-300/60 to-transparent" />
+                    <div className="text-sm font-semibold text-blue-300/80">
+                      0{idx + 1}
+                    </div>
+                    <h3 className="relative mt-4 text-lg font-bold text-blue-200 transition-colors duration-300 group-hover:text-white">
+                      {w.title}
+                    </h3>
+                    <p className="relative text-gray-400 mt-2 leading-relaxed transition-colors duration-300 group-hover:text-gray-200">
+                      {w.desc}
+                    </p>
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -288,16 +1118,13 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
                 className="md:col-span-2 px-4 py-3 rounded-xl bg-[#0b1220] border border-white/10"
               />
 
-              <div className="md:col-span-2 flex gap-4">
+              <div className="md:col-span-2 flex gap-4 flex-wrap">
                 <button className="px-8 py-4 rounded-2xl bg-purple-600 hover:bg-purple-700 transition font-semibold">
                   {content?.submitLabel ?? "Submit Project"}
                 </button>
 
                 <Link
-                  to={
-                    "/services/it/" +
-                    category.slug
-                  }
+                  to={"/services/it/" + category.slug}
                   className="px-8 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition font-semibold"
                 >
                   Back to {category.title}
@@ -305,7 +1132,6 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </section>

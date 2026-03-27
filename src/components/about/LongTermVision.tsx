@@ -1,7 +1,17 @@
+import React from "react";
+
 const LongTermVision: React.FC = () => {
   return (
     <div className="mt-40 text-center max-w-4xl mx-auto mb-16">
-      <h2 className="text-5xl font-serif font-bold mb-8 bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+      <h2
+        className="
+          text-5xl font-serif font-bold mb-8
+          leading-[1.2]
+          pb-2
+          bg-gradient-to-r from-white via-purple-200 to-purple-400
+          bg-clip-text text-transparent
+        "
+      >
         Building for the Next Decade
       </h2>
 

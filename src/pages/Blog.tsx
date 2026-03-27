@@ -128,7 +128,7 @@ export default function Blog() {
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Expert perspectives on AI, software development, and digital
-            transformation — written by the Zora team.
+            transformation -written by the Zora team.
           </p>
         </motion.div>
       </section>

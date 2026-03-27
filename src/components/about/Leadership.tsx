@@ -1,6 +1,15 @@
 // src/components/about/Leadership.tsx
 import React from "react";
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Mail, Twitter } from "lucide-react";
+
+const contactEmail = "info@zoraglobalai.com";
+const openMail = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  event.preventDefault();
+  const composeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+    contactEmail
+  )}`;
+  window.open(composeUrl, "_blank", "noopener,noreferrer");
+};
 
 const Leadership: React.FC = () => {
   return (
@@ -48,7 +57,9 @@ const Leadership: React.FC = () => {
             {/* Social Icons */}
             <div className="mt-auto pt-6 flex justify-center gap-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/dransarali/"
+                target="_blank"
+                rel="noreferrer"
                 aria-label="MD LinkedIn"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
@@ -56,17 +67,20 @@ const Leadership: React.FC = () => {
               </a>
 
               <a
-                href="#"
-                aria-label="MD Twitter"
+                href="https://x.com/Adv_Dr_S_Ansar"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="MD X"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
                 <Twitter className="w-6 h-6" />
               </a>
 
               <a
-                href="mailto:business@zora.com"
+                href={`mailto:${contactEmail}`}
+                onClick={openMail}
                 aria-label="MD Email"
-                className="text-purple-200/80 hover:text-purple-100 transition"
+                className="cursor-pointer text-purple-200/80 hover:text-purple-100 transition"
               >
                 <Mail className="w-6 h-6" />
               </a>
@@ -102,7 +116,9 @@ const Leadership: React.FC = () => {
             {/* Social Icons */}
             <div className="mt-auto pt-6 flex justify-center gap-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ashik-ali-1775b6185?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noreferrer"
                 aria-label="CEO LinkedIn"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
@@ -110,7 +126,9 @@ const Leadership: React.FC = () => {
               </a>
 
               <a
-                href="#"
+                href="https://x.com/AshikAli676774"
+                target="_blank"
+                rel="noreferrer"
                 aria-label="CEO Twitter"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
@@ -118,9 +136,10 @@ const Leadership: React.FC = () => {
               </a>
 
               <a
-                href="mailto:business@zora.com"
+                href={`mailto:${contactEmail}`}
+                onClick={openMail}
                 aria-label="CEO Email"
-                className="text-purple-200/80 hover:text-purple-100 transition"
+                className="cursor-pointer text-purple-200/80 hover:text-purple-100 transition"
               >
                 <Mail className="w-6 h-6" />
               </a>

@@ -80,11 +80,11 @@ const WhyChooseUs: React.FC = () => {
               },
               {
                 title: "End-to-End Delivery",
-                desc: "From discovery and design to deployment and optimization — one partner for the complete lifecycle.",
+                desc: "From discovery and design to deployment and optimization - one partner for the complete lifecycle.",
               },
               {
                 title: "Long-Term Partnership",
-                desc: "We build relationships, not just projects — supporting teams as systems evolve and scale.",
+                desc: "We build relationships, not just projects - supporting teams as systems evolve and scale.",
               },
             ].map((item, index) => (
               <div key={index} className="relative group overflow-visible">

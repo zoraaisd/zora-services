@@ -65,10 +65,8 @@ const Hero: React.FC = () => {
         pt-0 sm:pt-[var(--nav-h,0px)]
       "
     >
-      {/* Soft blend into next section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-[#120424]" />
 
-      {/* ================= BACKGROUND ================= */}
       <div className="hero-bg-shift absolute inset-0 pointer-events-none z-0 bg-gradient-to-b from-[#0b0318] via-[#120424] to-[#16062d] will-change-[background-position] transition-all duration-700">
         <div className="absolute inset-0 opacity-80 hero-radial-drift will-change-transform">
           <Aurora
@@ -91,7 +89,9 @@ const Hero: React.FC = () => {
         </div>
         {canSpotlight && !isMobile && (
           <div
-            className={`pointer-events-none absolute inset-0 transition-opacity duration-300 ${spotlightVisible ? "opacity-100" : "opacity-0"}`}
+            className={`pointer-events-none absolute inset-0 transition-opacity duration-300 ${
+              spotlightVisible ? "opacity-100" : "opacity-0"
+            }`}
             style={{
               background:
                 "radial-gradient(360px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(129,140,248,0.16), transparent 58%)",
@@ -100,7 +100,6 @@ const Hero: React.FC = () => {
         )}
       </div>
 
-      {/* ✅ CONTENT WRAPPER */}
       <div
         className="
           relative z-10 w-full
@@ -114,36 +113,39 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
-            className="-translate-y-1 sm:translate-y-0 -translate-x-1 sm:translate-x-0 mt-0 sm:mt-1 font-serif font-black tracking-tight leading-tight"
+            className="-translate-y-1 sm:translate-y-0 -translate-x-1 sm:translate-x-0 mt-0 sm:mt-1 font-serif font-black tracking-tight"
           >
             <SplitText
-            text={"Built On Trust\nDriven by intelligence"} 
-            className="
-              hero-heading mx-auto 
-              max-w-[90vw] sm:max-w-[18ch] 
-              whitespace-pre-line 
-              text-[1.78rem] sm:text-5xl md:text-6xl lg:text-7xl
-              mt-20 sm:mt-10 md:mt-28 lg:mt-20
-              px-0 sm:px-0
-              leading-[1.5] sm:leading-[1.08] md:leading-[1.04]
-              font-extrabold text-center
-              bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent
-              [text-shadow:0_0_30px_rgba(168,85,247,0.25)]
-              transition-all duration-[400ms] ease-in-out
-              sm:hover:scale-[1.02] sm:hover:brightness-110
-              will-change-transform
-            "
-            delay={50}
-            duration={1.25}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0}
-            rootMargin="220px 0px"
-            textAlign="center"
-            showCallback
-          />
+              text={"Built On Trust\nDriven by intelligence"}
+              className="
+                hero-heading mx-auto
+                max-w-[90vw] sm:max-w-[18ch]
+                whitespace-pre-line
+                text-[1.78rem] sm:text-5xl md:text-6xl lg:text-7xl
+                mt-20 sm:mt-10 md:mt-28 lg:mt-20
+                px-0 sm:px-0
+                leading-[1.6] sm:leading-[1.22] md:leading-[1.18] lg:leading-[1.15]
+                font-extrabold text-center
+                bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent
+                [text-shadow:0_0_30px_rgba(168,85,247,0.25)]
+                transition-all ease-in-out
+                sm:hover:scale-[1.02] sm:hover:brightness-110
+                will-change-transform
+                pb-2
+                [&>*]:pb-[0.08em]
+              "
+              style={{ transitionDuration: "400ms" }}
+              delay={50}
+              duration={1.25}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0}
+              rootMargin="220px 0px"
+              textAlign="center"
+              showCallback
+            />
           </motion.h1>
 
           <motion.p
@@ -161,7 +163,13 @@ const Hero: React.FC = () => {
             animate={isMobile ? { opacity: 1, y: [0, -4, 0] } : { opacity: 1, y: 0 }}
             transition={
               isMobile
-                ? { delay: 0.42, duration: 1.8, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }
+                ? {
+                    delay: 0.42,
+                    duration: 1.8,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                  }
                 : { delay: 0.42, duration: 0.8 }
             }
             className="mt-6 sm:mt-10"
@@ -197,6 +205,7 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
       </div>
+
       <style>{`
         .hero-bg-shift {
           background-size: 120% 120%;

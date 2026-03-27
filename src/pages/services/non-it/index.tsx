@@ -1,8 +1,7 @@
-// src/pages/NonITServices.tsx
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import PageSEO from "../components/PageSEO";
+import PageSEO from "../../../components/PageSEO";
 
 const services = [
   {
@@ -120,7 +119,6 @@ const NonITServices: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* ✅ WHITE BORDER ONLY ADDED */}
                   <Link
                     to={`/services/non-it/${service.slug}`}
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full

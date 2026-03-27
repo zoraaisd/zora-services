@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { IT_SERVICE_PAGES } from "./itServicePages";
-import { IT_SERVICE_CATEGORIES } from "../data/itServicesData";
-import PageSEO from "../components/PageSEO";
-import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import { IT_SERVICE_PAGE_LOADERS, type ITServicePageKey } from "../../../data/itServicePages";
+import { IT_SERVICE_CATEGORIES } from "../../../data/itServicesData";
+import PageSEO from "../../../components/PageSEO";
+import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 
 const ITServiceItemPage: React.FC = () => {
   const { categorySlug, itemSlug } = useParams();
   const key = `${categorySlug}/${itemSlug}`;
-  const Page = IT_SERVICE_PAGES[key as keyof typeof IT_SERVICE_PAGES];
+  const loader = IT_SERVICE_PAGE_LOADERS[key as ITServicePageKey];
+  const [Page, setPage] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!loader) {
+      setPage(null);
+      return;
+    }
+
+    setPage(null);
+    loader().then((module) => {
+      if (!cancelled) {
+        setPage(() => module.default);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [loader, key]);
+
+  if (!loader) {
+    return <Navigate to="/services/it" replace />;
+  }
 
   if (!Page) {
-    return <Navigate to="/services/it" replace />;
+    return null;
   }
 
   const category = IT_SERVICE_CATEGORIES.find((c) => c.slug === categorySlug);
