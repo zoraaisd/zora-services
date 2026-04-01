@@ -138,12 +138,12 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
           <main className="lg:col-span-8 space-y-8">
             <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl overflow-hidden">
               {/* ===== TOP IMAGE BANNER ===== */}
-              <div className="relative h-[240px] md:h-[280px]">
+              <div className="relative w-full">
                 {heroImage && (
                   <img
                     src={heroImage}
                     alt={selectedItem.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 )}
 
@@ -181,7 +181,7 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
                   <Link
                     to={`/services/it/${category.slug}/${selectedItem.slug}`}
                     onClick={() => scrollToTop()} // ✅ ensures top on navigation
-                    className="px-10 py-4 rounded-2xl bg-purple-600 hover:bg-purple-700 font-semibold"
+                    className="px-10 py-4 rounded-2xl text-white bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd] font-semibold"
                   >
                     View Service
                   </Link>
@@ -189,7 +189,7 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
                   <Link
                     to="/book-appointment"
                     onClick={() => scrollToTop()} // ✅ ensures top on navigation
-                    className="px-10 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 font-semibold"
+                    className="px-10 py-4 rounded-2xl text-white bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd] font-semibold"
                   >
                     Book Appointment
                   </Link>

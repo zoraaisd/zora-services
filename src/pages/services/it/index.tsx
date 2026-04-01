@@ -61,7 +61,7 @@ const ITServices: React.FC = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 p-6">
           {IT_SERVICE_CATEGORIES.map((cat) => {
             const isActive = activeSlug === cat.slug;
 
@@ -69,7 +69,7 @@ const ITServices: React.FC = () => {
               <div
                 key={cat.slug}
                 className={[
-                  "relative overflow-hidden rounded-3xl backdrop-blur-xl transition-all duration-300",
+                  "relative overflow-hidden rounded-3xl backdrop-blur-xl transition-all duration-300 h-full flex flex-col",
                   isActive
                     ? "bg-gradient-to-br from-[#7d4596]/40 to-[#2aedf3]/30 border border-[#2aedf3]"
                     : "bg-white/5 border border-white/10 hover:border-[#7d4596]/60",
@@ -86,7 +86,7 @@ const ITServices: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-7 sm:p-9 md:p-10">
+                <div className="p-7 sm:p-9 md:p-10 flex flex-col flex-1">
                   <h3
                     className={[
                       "text-2xl font-bold mb-4",
@@ -102,20 +102,24 @@ const ITServices: React.FC = () => {
                     {cat.desc}
                   </p>
 
-                  <button
-                    onClick={() => {
-                      setActiveSlug(cat.slug);
-                      navigate(`/services/it/${cat.slug}`);
-                    }}
-                    className={[
-                      "mt-8 px-7 py-3 rounded-full font-semibold transition-all duration-300 border border-white",
-                      isActive
-                        ? "bg-gradient-to-r from-[#2aedf3] to-[#7d4596] text-black"
-                        : "bg-white/10 text-[#2aedf3] hover:bg-[#7d4596]/30",
-                    ].join(" ")}
-                  >
-                    View more →
-                  </button>
+                  <div className="flex-grow" />
+
+                  <div className="mt-4 flex justify-center">
+                    <button
+                      onClick={() => {
+                        setActiveSlug(cat.slug);
+                        navigate(`/services/it/${cat.slug}`);
+                      }}
+                      className={[
+                        "px-12 py-3 rounded-full font-semibold transition-all duration-300 border border-white",
+                        isActive
+                          ? "bg-gradient-to-r from-[#2aedf3] to-[#7d4596] text-black"
+                          : "bg-white/10 text-[#2aedf3] hover:bg-[#7d4596]/30",
+                      ].join(" ")}
+                    >
+                      View more →
+                    </button>
+                  </div>
 
                   <div
                     className={[

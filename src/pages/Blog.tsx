@@ -121,7 +121,7 @@ export default function Blog() {
             Insights & Ideas
           </span>
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-5">
-            The{" "}
+            <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">The</span>{" "}
             <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
               Zora Blog
             </span>

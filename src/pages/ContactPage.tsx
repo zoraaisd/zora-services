@@ -356,12 +356,8 @@ const ContactPage: React.FC = () => {
               <Sparkles className="w-8 h-8 text-white" />
             </motion.div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6">
-              Ready for a{" "}
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                Free Consultation
-              </span>
-              ?
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+              Ready for a Free Consultation?
             </h2>
 
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto text-lg">
