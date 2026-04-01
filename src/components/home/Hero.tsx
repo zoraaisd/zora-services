@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
             className="mt-4 sm:mt-6 text-purple-100/80 max-w-3xl mx-auto text-base sm:text-lg font-sans leading-relaxed transition-opacity duration-300 sm:hover:opacity-100"
           >
             Designed with reliability at the core and flexibility for the future,
-            our technology evolves alongside your business.
+            our technology evolves alongside your business
           </motion.p>
 
           <motion.div
@@ -200,7 +200,7 @@ const Hero: React.FC = () => {
                   style={{ left: ripple.x, top: ripple.y }}
                 />
               ))}
-              <span className="relative z-10 text-lg sm:text-xl font-bold">Start Discussion</span>
+              <span className="relative z-10 text-lg sm:text-xl font-bold">Book a consultation</span>
             </Link>
           </motion.div>
         </div>

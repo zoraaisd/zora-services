@@ -52,7 +52,7 @@ const GlobalImpact: React.FC = () => {
 
             <p className="mt-5 sm:mt-6 text-justify text-gray-300 text-sm sm:text-lg leading-relaxed">
             Zora Global AI Technologies Pvt. Ltd. delivers cutting-edge AI-driven solutions, enterprise platforms and scalable digital transformation initiatives tailored for modern businesses.
-            Our intelligent automation frameworks enable organizations to accelerate innovation, enhance agility, and maintain a competitive edge in an evolving digital landscape.
+            Our intelligent automation frameworks enable organizations to accelerate innovation, enhance agility and maintain a competitive edge in an evolving digital landscape.
             </p>
 
             <p className="mt-4 text-justify text-gray-200 text-sm sm:text-lg leading-relaxed font-semibold">

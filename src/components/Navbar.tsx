@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import zoraLogo from "../assets/zora-logo-redesign.png";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -61,9 +62,9 @@ const Navbar: React.FC = () => {
           }}
         >
           <img
-            src="/logo.png"
+            src={zoraLogo}
             alt="ZoraGlobalAI"
-            className="h-9 sm:h-10 md:h-11 xl:h-12 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain"
           />
         </Link>
 
