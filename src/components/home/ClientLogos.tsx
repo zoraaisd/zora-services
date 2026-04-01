@@ -49,18 +49,17 @@ const ClientLogos: React.FC = () => {
                 "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
             }}
           />
-          <div className="relative z-10 flex w-max items-center gap-5 sm:gap-8 brand-marquee hover:[animation-play-state:paused]">
+          <div className="relative z-10 flex w-max items-center gap-5 sm:gap-8 brand-marquee">
             {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((src, idx) => (
               <div
                 key={`${src}-${idx}`}
-                className="group relative w-48 sm:w-[250px] h-24 sm:h-28 flex items-center justify-center px-2 sm:px-3 transition-transform duration-300 hover:-translate-y-1"
+                className="relative w-48 sm:w-[250px] h-24 sm:h-28 flex items-center justify-center px-2 sm:px-3"
               >
-                <span className="pointer-events-none absolute inset-x-8 sm:inset-x-10 inset-y-6 rounded-full bg-violet-300/35 blur-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <img
                   src={src}
                   alt={`brand-logo-${idx}`}
                   loading="lazy"
-                  className="relative max-h-20 sm:max-h-24 max-w-full object-contain opacity-95 brightness-110 contrast-110 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100 group-hover:drop-shadow-[0_8px_22px_rgba(192,132,252,0.55)]"
+                  className="relative max-h-20 sm:max-h-24 max-w-full object-contain opacity-95 brightness-110 contrast-110 pointer-events-none select-none"
                 />
               </div>
             ))}

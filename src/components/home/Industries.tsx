@@ -65,7 +65,7 @@ const Industries: React.FC = () => {
 
           <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white">
             Industries We{" "}
-            <span className="bg-gradient-to-r from-purple-300 via-purple-400 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-white">
               Serve
             </span>
           </motion.h2>

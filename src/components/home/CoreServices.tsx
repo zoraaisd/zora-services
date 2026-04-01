@@ -181,7 +181,7 @@ const CoreServices: React.FC = () => {
         {/* HEADER */}
         <div className="mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-black text-center">
-            <span className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-white">
               IT Services &amp; Solutions
             </span>
           </h2>

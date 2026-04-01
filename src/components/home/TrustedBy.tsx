@@ -36,12 +36,12 @@ const TrustedBy: React.FC = () => {
 
       {/* ✅ Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-purple-400 mb-10">
+        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white mb-10">
           Trusted By Forward-Thinking Enterprises
         </h2>
 
         <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-snug font-serif text-lg sm:text-xl">
-          Teams that value reliability, security, and scalable engineering choose
+          Teams that value reliability, security and scalable engineering choose
           us to build systems that grow with their business.
         </p>
 
