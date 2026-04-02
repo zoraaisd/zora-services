@@ -1,6 +1,7 @@
 // src/components/about/Leadership.tsx
 import React from "react";
-import { Linkedin, Mail, Twitter } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 const contactEmail = "info@zoraglobalai.com";
 const openMail = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -73,7 +74,7 @@ const Leadership: React.FC = () => {
                 aria-label="MD X"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
-                <Twitter className="w-6 h-6" />
+                <FaXTwitter className="w-6 h-6" />
               </a>
 
               <a
@@ -132,7 +133,7 @@ const Leadership: React.FC = () => {
                 aria-label="CEO Twitter"
                 className="text-purple-200/80 hover:text-purple-100 transition"
               >
-                <Twitter className="w-6 h-6" />
+                <FaXTwitter className="w-6 h-6" />
               </a>
 
               <a

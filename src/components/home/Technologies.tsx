@@ -74,15 +74,15 @@ const Technologies: React.FC = () => {
         {/* ✅ CHANGED TO WHITE */}
         <h2 className="text-[clamp(1.2rem,6vw,1.65rem)] sm:text-4xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
           <span className="block sm:hidden">
-            <span className="block whitespace-nowrap">Built on a Foundation</span>
-            <span className="block whitespace-nowrap">of Trusted Technologies</span>
+            <span className="block whitespace-nowrap">Built on a foundation</span>
+            <span className="block whitespace-nowrap">of trusted technologies</span>
           </span>
-          <span className="hidden sm:inline">Built on a Foundation of Trusted Technologies</span>
+          <span className="hidden sm:inline">Built on a foundation of trusted technologies</span>
         </h2>
 
         <p className="text-gray-200/90 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Built on a foundation of trusted technologies and modern engineering
-          excellence.
+          We use proven cloud platforms and dependable tools to deliver secure,
+          scalable, and future-ready digital solutions.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -92,6 +92,7 @@ const Technologies: React.FC = () => {
               className="
                 group relative isolate
                 rounded-[26px]
+                overflow-hidden
                 h-[260px] sm:h-[300px]
                 p-0
                 flex flex-col
@@ -103,12 +104,16 @@ const Technologies: React.FC = () => {
               "
             >
               <div className="relative z-10 flex h-full flex-col overflow-hidden rounded-[26px] border border-indigo-300/20">
-                <div className="relative h-[180px] sm:h-[210px]">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center opacity-60 transition-all duration-500 group-hover:opacity-80 group-hover:scale-[1.06]"
-                    style={{ backgroundImage: `url('${tool.image}')` }}
+                <div className="relative h-[180px] sm:h-[210px] overflow-hidden rounded-t-[26px]">
+                  <img
+                    src={tool.image}
+                    alt={tool.name}
+                    className="absolute inset-0 h-full w-full rounded-t-[26px] object-cover opacity-68 brightness-95 contrast-100 saturate-95 transition-all duration-500 group-hover:scale-[1.04]"
+                    loading="lazy"
+                    draggable={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#020010]/72 via-[#0a041f]/56 to-[#08031a]/45" />
+                  <div className="absolute inset-0 rounded-t-[26px] bg-gradient-to-t from-[#020010]/42 via-[#0a041f]/22 to-transparent" />
+                  <div className="absolute inset-0 rounded-t-[26px] bg-white/2 mix-blend-screen" />
                   <div className="pointer-events-none absolute -inset-y-10 -left-1/2 w-1/2 rotate-12 bg-gradient-to-r from-transparent via-white/35 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
                 </div>
 
@@ -119,14 +124,14 @@ const Technologies: React.FC = () => {
                 </div>
               </div>
               <div
-                className="pointer-events-none absolute inset-0 rounded-[34px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="pointer-events-none absolute inset-0 rounded-[26px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   boxShadow:
                     "0 0 0 1px rgba(99,102,241,0.30), 0 0 60px rgba(79,70,229,0.28)",
                 }}
               />
               <div className="pointer-events-none absolute inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent via-indigo-300/80 to-transparent scale-x-0 transition-transform duration-500 group-hover:scale-x-100" />
-              <div className="pointer-events-none absolute -inset-3 rounded-[30px] opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(circle at 50% 35%, rgba(129,140,248,0.24), transparent 65%)" }} />
+              <div className="pointer-events-none absolute -inset-3 rounded-[26px] opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(circle at 50% 35%, rgba(129,140,248,0.24), transparent 65%)" }} />
             </div>
           ))}
         </div>

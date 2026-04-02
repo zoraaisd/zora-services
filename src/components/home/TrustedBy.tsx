@@ -36,7 +36,7 @@ const TrustedBy: React.FC = () => {
 
       {/* ✅ Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-purple-400 mb-10">
+        <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white mb-10">
           Trusted By Forward-Thinking Enterprises
         </h2>
 

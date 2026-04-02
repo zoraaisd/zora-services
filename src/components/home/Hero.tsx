@@ -113,18 +113,18 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease: "easeOut" }}
-            className="-translate-y-1 sm:translate-y-0 -translate-x-1 sm:translate-x-0 mt-0 sm:mt-1 font-serif font-black tracking-tight"
+            className="mt-0 sm:mt-1 font-serif font-black tracking-tight"
           >
             <SplitText
-              text={"Built On Trust\nDriven by intelligence"}
+              text={"Built on trust\ndriven by intelligence"}
               className="
                 hero-heading mx-auto
-                max-w-[90vw] sm:max-w-[18ch]
+                max-w-[88vw] sm:max-w-[18ch] md:max-w-[19ch]
                 whitespace-pre-line
-                text-[1.78rem] sm:text-5xl md:text-6xl lg:text-7xl
-                mt-20 sm:mt-10 md:mt-28 lg:mt-20
+                text-[1.58rem] max-[390px]:text-[1.48rem] sm:text-5xl md:text-[3.25rem] lg:text-7xl
+                mt-16 sm:mt-10 md:mt-24 lg:mt-20
                 px-0 sm:px-0
-                leading-[1.6] sm:leading-[1.22] md:leading-[1.18] lg:leading-[1.15]
+                leading-[1.42] sm:leading-[1.2] md:leading-[1.14] lg:leading-[1.12]
                 font-extrabold text-center
                 bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent
                 [text-shadow:0_0_30px_rgba(168,85,247,0.25)]
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
             className="mt-4 sm:mt-6 text-purple-100/80 max-w-3xl mx-auto text-base sm:text-lg font-sans leading-relaxed transition-opacity duration-300 sm:hover:opacity-100"
           >
             Designed with reliability at the core and flexibility for the future,
-            our technology evolves alongside your business.
+            our technology evolves alongside your business
           </motion.p>
 
           <motion.div
@@ -200,7 +200,7 @@ const Hero: React.FC = () => {
                   style={{ left: ripple.x, top: ripple.y }}
                 />
               ))}
-              <span className="relative z-10 text-lg sm:text-xl font-bold">Start Discussion</span>
+              <span className="relative z-10 text-lg sm:text-xl font-bold">Book a consultation</span>
             </Link>
           </motion.div>
         </div>

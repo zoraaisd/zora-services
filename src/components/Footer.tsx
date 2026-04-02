@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import type { MouseEvent } from "react";
 import {
   FaLinkedinIn,
-  FaTwitter,
   FaPhoneAlt,
   FaEnvelope,
   FaFacebookF,
   FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import zoraLogo from "../assets/zora-logo-redesign.png";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   const MAP_QUERY = "Zora Global AI Technologies Chennai";
@@ -21,9 +23,23 @@ const Footer: React.FC = () => {
   const YOUTUBE_URL = "https://www.youtube.com/@zoraglobalaitechnologies";
   const TWITTER_URL = "https://x.com/zoraglobalai";
   const FACEBOOK_URL = "https://www.facebook.com/ZoraGlobalAiTechnologies/";
+  const PRODUCTS_URL = "https://www.zoraai.us/";
+  const hrms_URL ="https://www.zoraai.us/products/hrms";
+  const crms_URL ="https://www.zoraai.us/products/crms";
+  const orbileads_URL = "https://www.zoraai.us/products/orbileads";
+
+
+
 
   const EMAIL = "info@zoraglobalai.com";
   const PHONE = "9087000345";
+  const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+    EMAIL
+  )}`;
+  const openMail = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.open(GMAIL_COMPOSE_URL, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <footer className="relative isolate mt-auto bg-[#0b0618] text-gray-300 border-t border-white/10">
@@ -37,7 +53,12 @@ const Footer: React.FC = () => {
           {/* 1️⃣ Company + Contact (NOW SPANS 2 COLUMNS ✅) */}
           {/* ================================================= */}
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-white mb-4">Zora Global AI</h2>
+            <img
+              src={zoraLogo}
+              alt="Zora Global AI"
+              className="mb-4 h-auto w-full max-w-[320px]"
+              loading="lazy"
+            />
 
             <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-md">
               Empowering enterprises with AI-driven solutions, cloud
@@ -72,6 +93,7 @@ const Footer: React.FC = () => {
               {/* ✅ Gmail (click opens mail) */}
               <a
                 href={`mailto:${EMAIL}`}
+                onClick={openMail}
                 className="flex items-center gap-2 text-gray-400 hover:text-purple-400 transition"
               >
                 <FaEnvelope className="text-purple-400" />
@@ -114,9 +136,9 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple-400 transition"
-                  aria-label="Twitter"
+                  aria-label="X"
                 >
-                  <FaTwitter size={18} />
+                  <FaXTwitter size={18} />
                 </a>
 
                 <a
@@ -157,7 +179,7 @@ const Footer: React.FC = () => {
                 {/* ✅ Products should open external site (same as navbar behavior) */}
                 <li>
                   <a
-                    href="https://www.zoraai.us/"
+                    href={PRODUCTS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-purple-400 transition"
@@ -174,36 +196,42 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
                 <li>
-                  <Link
-                    to="/products/hrms"
+                  <a
+                    href={hrms_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-purple-400 transition"
                   >
                     HRMS
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    to="/products/crms"
+                  <a
+                    href={crms_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-purple-400 transition"
                   >
                     CRMS
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link
-                    to="/products/messaging-applications"
+                    to="https://www.zoraai.us/products/workflow-automation"
                     className="hover:text-purple-400 transition"
                   >
                     Messaging Applications
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/products/orbileads"
+                  <a
+                    href={orbileads_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-purple-400 transition"
                   >
                     Orbileads
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
