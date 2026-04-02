@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const desktopBtn =
-    "group relative md:px-5 md:text-xs lg:px-7 lg:text-sm py-2.5 font-bold rounded-full block transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-black whitespace-nowrap after:absolute after:left-1/2 after:top-[1px] after:h-[2px] after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-violet-200/90 after:opacity-0 after:transition-all after:duration-300 group-hover:after:w-[72%] group-hover:after:opacity-100";
+    "group relative px-7 py-2.5 font-bold rounded-full block text-sm transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-black after:absolute after:left-1/2 after:top-[1px] after:h-[2px] after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-violet-200/90 after:opacity-0 after:transition-all after:duration-300 group-hover:after:w-[72%] group-hover:after:opacity-100";
   const desktopBtnInactive =
     "text-[#fffcf0] bg-[#fffcf0]/14 hover:bg-[#fffcf0]/22 border border-white/30 [box-shadow:inset_0_2px_0_rgba(255,255,255,0.52),0_12px_28px_rgba(0,0,0,0.32)] hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.58),0_16px_34px_rgba(0,0,0,0.34),0_0_22px_rgba(168,85,247,0.38)]";
   const desktopBtnActive =
@@ -132,7 +132,7 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/book-appointment"
-            className="bg-violet-500 text-white text-[11px] lg:text-xs xl:text-sm px-2.5 lg:px-3 xl:px-4 py-2 rounded-lg whitespace-nowrap transition-all duration-300"
+            className="bg-violet-500 text-white font-bold text-[11px] lg:text-xs xl:text-sm px-2.5 lg:px-3 xl:px-4 py-2 rounded-lg whitespace-nowrap transition-all duration-300"
           >
             Book Appointment
           </Link>
@@ -194,10 +194,10 @@ const Navbar: React.FC = () => {
           </Link>
           <Link
             to="/book-appointment"
-            className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center"
+            className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center font-extrabold"
             onClick={scrollTop}
           >
-            Book Appointment
+            <span className="font-bold">Book Appointment</span>
           </Link>
         </div>
       )}
