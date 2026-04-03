@@ -88,7 +88,7 @@ const AboutHero: React.FC = () => {
 
         <p className="mt-8 text-white/80 text-xl max-w-4xl mx-auto leading-relaxed">
           Zora Global AI engineers intelligent digital ecosystems that merge
-          artificial intelligence, cloud infrastructure, and enterprise strategy
+          artificial intelligence, cloud infrastructure and enterprise strategy
           into one seamless transformation platform.
         </p>
 

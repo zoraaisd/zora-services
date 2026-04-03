@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "AI Recommendation Engine Development Services",
   heroSubtitle:
-    "Build intelligent recommendation systems using machine learning and AI to deliver personalized experiences, increase user engagement, boost conversions, and improve customer retention.",
+    "Build intelligent recommendation systems using machine learning and AI to deliver personalized experiences, increase user engagement, boost conversions and improve customer retention.",
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
 
@@ -108,12 +108,12 @@ const content: any = {
     {
       title: "Product Recommendation Systems",
       desc:
-        "Deliver personalized product suggestions based on user behavior, purchase history, and preferences to improve sales and customer experience.",
+        "Deliver personalized product suggestions based on user behavior, purchase history and preferences to improve sales and customer experience.",
     },
     {
       title: "Content Recommendation Engines",
       desc:
-        "AI-powered recommendations for videos, articles, courses, and media platforms to increase engagement and user retention.",
+        "AI-powered recommendations for videos, articles, courses and media platforms to increase engagement and user retention.",
     },
     {
       title: "Real-Time Customer Personalization",
@@ -123,7 +123,7 @@ const content: any = {
   ],
 
   overview:
-    "Our AI recommendation engine development services help businesses deliver hyper-personalized experiences using advanced machine learning models such as collaborative filtering, content-based filtering, and hybrid recommendation systems. We design scalable, real-time recommendation engines that analyze user behavior, improve engagement, and drive conversions across e-commerce, OTT platforms, edtech, and SaaS applications.",
+    "Our AI recommendation engine development services help businesses deliver hyper-personalized experiences using advanced machine learning models such as collaborative filtering, content-based filtering and hybrid recommendation systems. We design scalable, real-time recommendation engines that analyze user behavior, improve engagement and drive conversions across e-commerce, OTT platforms, edtech and SaaS applications.",
 
   projectDuration: {
     title: "Project Duration",
@@ -134,19 +134,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -155,12 +155,12 @@ const content: any = {
     {
       title: "Data Analysis & Strategy",
       desc:
-        "We analyze user data, behavior patterns, and business goals to choose the most effective recommendation approach.",
+        "We analyze user data, behavior patterns and business goals to choose the most effective recommendation approach.",
     },
     {
       title: "Model Development & Testing",
       desc:
-        "We build and train machine learning models, evaluate performance metrics, and optimize recommendation accuracy.",
+        "We build and train machine learning models, evaluate performance metrics and optimize recommendation accuracy.",
     },
     {
       title: "Deployment & Optimization",
@@ -171,7 +171,7 @@ const content: any = {
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -199,7 +199,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -228,7 +228,7 @@ const content: any = {
   architecture: {
     title: "Recommendation Engine Development Architecture",
     intro:
-      "We design scalable and high-performance recommendation engine architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, real-time personalization, and seamless user experiences.",
+      "We design scalable and high-performance recommendation engine architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, real-time personalization and seamless user experiences.",
     processSteps: [
       {
         icon: "01",
@@ -289,7 +289,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -328,7 +328,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -347,7 +347,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -357,7 +357,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 
@@ -451,7 +451,7 @@ const ItAiAutomationSolutionsRecommendationEngineDevelopment: React.FC = () => {
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

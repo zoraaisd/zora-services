@@ -1,6 +1,6 @@
 # Zora Services
 
-A modern, full-featured services platform built with React and TypeScript. Zora provides a comprehensive solution for browsing IT and non-IT services, managing appointments, and exploring product offerings.
+A modern, full-featured services platform built with React and TypeScript. Zora provides a comprehensive solution for browsing IT and non-IT services, managing appointments and exploring product offerings.
 
 ## Features
 

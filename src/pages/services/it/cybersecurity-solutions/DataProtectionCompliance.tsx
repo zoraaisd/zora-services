@@ -100,27 +100,27 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Data Protection & Compliance Services",
   heroSubtitle:
-    "Safeguard sensitive data, ensure regulatory compliance, and build customer trust with advanced security frameworks, encryption strategies, and continuous governance models.",
+    "Safeguard sensitive data, ensure regulatory compliance and build customer trust with advanced security frameworks, encryption strategies and continuous governance models.",
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
 
   topBlocks: [
     {
       title: "Data Privacy & Protection",
-      desc: "End-to-end encryption, role-based access control, secure storage, and data lifecycle management to protect sensitive information across systems and business workflows.",
+      desc: "End-to-end encryption, role-based access control, secure storage and data lifecycle management to protect sensitive information across systems and business workflows.",
     },
     {
       title: "Compliance Readiness",
-      desc: "Prepare for GDPR, ISO, HIPAA, and other regulatory frameworks with structured audits, documentation practices, control mapping, and compliance-focused implementation strategies.",
+      desc: "Prepare for GDPR, ISO, HIPAA and other regulatory frameworks with structured audits, documentation practices, control mapping and compliance-focused implementation strategies.",
     },
     {
       title: "Risk Testing & Management",
-      desc: "Continuous risk assessments, vulnerability validation, policy checks, and security testing to proactively reduce exposure and strengthen long-term defense mechanisms.",
+      desc: "Continuous risk assessments, vulnerability validation, policy checks and security testing to proactively reduce exposure and strengthen long-term defense mechanisms.",
     },
   ],
 
   overview:
-    "Our data protection and compliance services help organizations secure critical business data while aligning with global and industry-specific regulations. We combine technical controls, governance frameworks, secure access models, and continuous monitoring to ensure your systems remain protected, compliant, and resilient against evolving cyber threats. From policy alignment to implementation and reporting, we support organizations in building a stronger security and compliance posture.",
+    "Our data protection and compliance services help organizations secure critical business data while aligning with global and industry-specific regulations. We combine technical controls, governance frameworks, secure access models and continuous monitoring to ensure your systems remain protected, compliant and resilient against evolving cyber threats. From policy alignment to implementation and reporting, we support organizations in building a stronger security and compliance posture.",
 
   projectDuration: {
     title: "Project Duration",
@@ -131,19 +131,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -151,28 +151,28 @@ const content: any = {
   deliverySteps: [
     {
       title: "Assessment & Gap Analysis",
-      desc: "Analyze current systems, data flows, policies, and business processes to identify compliance gaps, data protection risks, and security weaknesses.",
+      desc: "Analyze current systems, data flows, policies and business processes to identify compliance gaps, data protection risks and security weaknesses.",
     },
     {
       title: "Implementation & Controls",
-      desc: "Deploy encryption, access controls, governance policies, monitoring tools, and compliance-driven processes tailored to your operational environment.",
+      desc: "Deploy encryption, access controls, governance policies, monitoring tools and compliance-driven processes tailored to your operational environment.",
     },
     {
       title: "Monitoring & Governance",
-      desc: "Continuous monitoring, auditing, reporting, and policy reviews help maintain compliance, detect threats early, and improve long-term security posture.",
+      desc: "Continuous monitoring, auditing, reporting and policy reviews help maintain compliance, detect threats early and improve long-term security posture.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to deliver strong data protection, policy enforcement, secure access control, compliance readiness, and continuous governance across enterprise systems, business applications, cloud platforms, and digital infrastructure.",
+    "We use modern, reliable and scalable technologies to deliver strong data protection, policy enforcement, secure access control, compliance readiness and continuous governance across enterprise systems, business applications, cloud platforms and digital infrastructure.",
 
   technologies: [
     {
       icon: "frontend",
       title: "Application & Access Security",
       desc:
-        "We secure business applications, interfaces, and user access points to protect sensitive information and reduce exposure across digital environments.",
+        "We secure business applications, interfaces and user access points to protect sensitive information and reduce exposure across digital environments.",
       items: [
         "Access Control",
         "Role-Based Access",
@@ -186,7 +186,7 @@ const content: any = {
       icon: "backend",
       title: "Governance & Control Frameworks",
       desc:
-        "We implement backend security controls, governance models, process rules, and audit-driven systems that support compliance and operational accountability.",
+        "We implement backend security controls, governance models, process rules and audit-driven systems that support compliance and operational accountability.",
       items: [
         "Control Mapping",
         "Governance Logic",
@@ -200,7 +200,7 @@ const content: any = {
       icon: "database",
       title: "Secure Data Storage",
       desc:
-        "We protect structured and sensitive business data with secure storage practices, access restrictions, backup strategy, and controlled data handling.",
+        "We protect structured and sensitive business data with secure storage practices, access restrictions, backup strategy and controlled data handling.",
       items: [
         "MySQL",
         "PostgreSQL",
@@ -214,7 +214,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Infrastructure Compliance",
       desc:
-        "We secure cloud-hosted workloads, infrastructure environments, and connected systems while supporting monitoring, governance, and compliance requirements.",
+        "We secure cloud-hosted workloads, infrastructure environments and connected systems while supporting monitoring, governance and compliance requirements.",
       items: [
         "AWS",
         "Azure",
@@ -242,7 +242,7 @@ const content: any = {
       icon: "ai",
       title: "Risk Intelligence & Monitoring",
       desc:
-        "We combine intelligent analysis, monitoring insights, and security validation to support better risk awareness, compliance visibility, and protection strategy.",
+        "We combine intelligent analysis, monitoring insights and security validation to support better risk awareness, compliance visibility and protection strategy.",
       items: [
         "Risk Analysis",
         "Threat Insights",
@@ -257,22 +257,22 @@ const content: any = {
   architecture: {
     title: "Data Protection & Compliance Architecture",
     intro:
-      "We design structured data protection and compliance architectures that help organizations secure sensitive information, enforce governance controls, align with regulatory frameworks, and maintain long-term operational trust. This approach supports visibility, policy enforcement, secure access, monitoring, and continuous compliance improvement across enterprise systems.",
+      "We design structured data protection and compliance architectures that help organizations secure sensitive information, enforce governance controls, align with regulatory frameworks and maintain long-term operational trust. This approach supports visibility, policy enforcement, secure access, monitoring and continuous compliance improvement across enterprise systems.",
     processSteps: [
       {
         icon: "01",
         title: "Data Discovery",
-        desc: "Identify sensitive data, critical assets, and compliance scope",
+        desc: "Identify sensitive data, critical assets and compliance scope",
       },
       {
         icon: "02",
         title: "Control Mapping",
-        desc: "Define policies, access rules, and protection requirements",
+        desc: "Define policies, access rules and protection requirements",
       },
       {
         icon: "03",
         title: "Security Implementation",
-        desc: "Apply encryption, controls, and monitoring mechanisms",
+        desc: "Apply encryption, controls and monitoring mechanisms",
       },
       {
         icon: "04",
@@ -291,34 +291,34 @@ const content: any = {
         {
           icon: "[]",
           title: "Infrastructure Controls",
-          desc: "System, endpoint, cloud, and infrastructure-level protection controls support secure operations.",
+          desc: "System, endpoint, cloud and infrastructure-level protection controls support secure operations.",
         },
         {
           icon: "{}",
           title: "Compliance Engine",
-          desc: "Policies, control logic, audit requirements, and governance workflows drive compliance alignment.",
+          desc: "Policies, control logic, audit requirements and governance workflows drive compliance alignment.",
         },
         {
           icon: "O",
           title: "Identity & Access Governance",
-          desc: "Authentication, permissions, and role-based access protect data and reduce unauthorized exposure.",
+          desc: "Authentication, permissions and role-based access protect data and reduce unauthorized exposure.",
         },
       ],
       services: {
         icon: "++",
         title: "Risk Management & Reporting",
-        desc: "Continuous reviews, monitoring insights, and compliance reporting help reduce risk and support accountability.",
+        desc: "Continuous reviews, monitoring insights and compliance reporting help reduce risk and support accountability.",
       },
       database: {
         icon: "()",
         title: "Protected Data Repository",
         stack: "Secure Storage / Logs / Audit Trails",
-        desc: "Sensitive data, compliance records, and audit evidence are stored in structured and secure environments.",
+        desc: "Sensitive data, compliance records and audit evidence are stored in structured and secure environments.",
       },
       bottom: {
         icon: "<>",
         title: "Monitoring, Audit & Improvement",
-        desc: "Ongoing reviews, reporting, remediation, and control updates maintain compliance and strengthen resilience.",
+        desc: "Ongoing reviews, reporting, remediation and control updates maintain compliance and strengthen resilience.",
       },
       sideCards: [
         {
@@ -329,12 +329,12 @@ const content: any = {
         {
           icon: "R",
           title: "Risk Reduction",
-          desc: "Risks are identified, prioritized, and addressed through structured compliance and protection measures.",
+          desc: "Risks are identified, prioritized and addressed through structured compliance and protection measures.",
         },
         {
           icon: "M",
           title: "Monitoring & Governance",
-          desc: "Continuous oversight supports reporting, accountability, and long-term compliance readiness.",
+          desc: "Continuous oversight supports reporting, accountability and long-term compliance readiness.",
         },
       ],
     },
@@ -357,7 +357,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -381,12 +381,12 @@ const content: any = {
     {
       title: "Standards & Framework Driven",
       desc:
-        "Aligned with global standards like GDPR, ISO 27001, SOC 2, HIPAA, and industry-specific compliance requirements.",
+        "Aligned with global standards like GDPR, ISO 27001, SOC 2, HIPAA and industry-specific compliance requirements.",
     },
     {
       title: "End-to-End Protection",
       desc:
-        "From assessment to monitoring, we provide full lifecycle data protection, governance support, and compliance management.",
+        "From assessment to monitoring, we provide full lifecycle data protection, governance support and compliance management.",
     },
   ],
 

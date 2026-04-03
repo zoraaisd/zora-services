@@ -10,7 +10,7 @@ const item = {
   slug: "brand-identity-positioning",
   title: "Brand Identity Design",
   shortDesc:
-    "Create distinctive, memorable, and scalable brand identities with strategic positioning, visual consistency, and long-term brand recognition.",
+    "Create distinctive, memorable and scalable brand identities with strategic positioning, visual consistency and long-term brand recognition.",
 };
 
 const heroImage = "/non-it-hero/brand-identity-positioning.png";
@@ -102,7 +102,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Brand Identity Design",
   heroSubtitle:
-    "Zora Global AI helps businesses create distinctive, memorable, and consistent brand identities that improve recognition, strengthen trust, communicate brand values clearly, and help businesses stand out in competitive markets across digital, print, and customer-facing touchpoints.",
+    "Zora Global AI helps businesses create distinctive, memorable and consistent brand identities that improve recognition, strengthen trust, communicate brand values clearly and help businesses stand out in competitive markets across digital, print and customer-facing touchpoints.",
 
   primaryCta: "Explore Branding Services",
   secondaryCta: "Talk to Us",
@@ -110,43 +110,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Logo & Visual Identity",
-      desc: "We design professional logos, color systems, typography, and visual brand elements that create a strong first impression, improve recognition, and build a consistent brand presence across every customer touchpoint.",
+      desc: "We design professional logos, color systems, typography and visual brand elements that create a strong first impression, improve recognition and build a consistent brand presence across every customer touchpoint.",
     },
     {
       title: "Brand Strategy",
-      desc: "Our brand strategy services define positioning, messaging, tone of voice, value communication, and market differentiation to help businesses present a clear and compelling identity to their target audience.",
+      desc: "Our brand strategy services define positioning, messaging, tone of voice, value communication and market differentiation to help businesses present a clear and compelling identity to their target audience.",
     },
     {
       title: "Brand Guidelines",
-      desc: "We create scalable brand guidelines that help teams maintain consistency across websites, social media, presentations, packaging, marketing materials, and future business communications.",
+      desc: "We create scalable brand guidelines that help teams maintain consistency across websites, social media, presentations, packaging, marketing materials and future business communications.",
     },
   ],
 
   overview:
-    "Our brand identity design services combine brand strategy, creative direction, and visual design to build brands that are recognizable, meaningful, and scalable across every platform. We help businesses create a strong visual foundation that communicates credibility, strengthens market presence, improves customer trust, and supports long-term brand growth. From logo systems and color palettes to typography, messaging alignment, and consistency standards, our approach ensures your brand identity is not only attractive but also strategically built for business impact, recall, and competitive differentiation.",
+    "Our brand identity design services combine brand strategy, creative direction and visual design to build brands that are recognizable, meaningful and scalable across every platform. We help businesses create a strong visual foundation that communicates credibility, strengthens market presence, improves customer trust and supports long-term brand growth. From logo systems and color palettes to typography, messaging alignment and consistency standards, our approach ensures your brand identity is not only attractive but also strategically built for business impact, recall and competitive differentiation.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led brand identity solutions focused on clear positioning, visual consistency, and scalable brand growth.",
+      "We deliver strategy-led brand identity solutions focused on clear positioning, visual consistency and scalable brand growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps brands launch faster, sharpen positioning, and improve market visibility.",
+          "Structured execution that helps brands launch faster, sharpen positioning and improve market visibility.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Brand discovery, identity strategy, visual design systems, and rollout planning for consistent delivery.",
+          "Brand discovery, identity strategy, visual design systems and rollout planning for consistent delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert branding guidance, transparent collaboration, and scalable identity systems built for long-term growth.",
+          "Expert branding guidance, transparent collaboration and scalable identity systems built for long-term growth.",
       },
     ],
   },
@@ -156,85 +156,85 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand brand vision, target audience, business goals, and positioning challenges from the start.",
+        "Understand brand vision, target audience, business goals and positioning challenges from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review market context, competitors, customer perception, and brand gaps to shape the right identity direction.",
+        "Review market context, competitors, customer perception and brand gaps to shape the right identity direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define brand strategy, creative direction, tone, and a structured identity roadmap for execution.",
+        "Define brand strategy, creative direction, tone and a structured identity roadmap for execution.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT branding and creative services that strengthen market presence, brand consistency, and long-term business recognition. We combine strategic thinking, creative execution, and practical implementation to build identity systems that perform across every touchpoint.",
+    "Zora Global AI Technologies delivers structured non-IT branding and creative services that strengthen market presence, brand consistency and long-term business recognition. We combine strategic thinking, creative execution and practical implementation to build identity systems that perform across every touchpoint.",
   whoWeAreCards: [
     {
       title: "Strategy-Led Branding",
       desc:
-        "We align every branding engagement with business goals, target audience expectations, and measurable market impact.",
+        "We align every branding engagement with business goals, target audience expectations and measurable market impact.",
     },
     {
       title: "Creative & Positioning Expertise",
       desc:
-        "Our team combines brand strategy, messaging clarity, and visual design to create distinctive and scalable brand systems.",
+        "Our team combines brand strategy, messaging clarity and visual design to create distinctive and scalable brand systems.",
     },
     {
       title: "Long-Term Brand Consistency",
       desc:
-        "We support sustainable brand growth through guidelines, rollout structure, and consistency across customer touchpoints.",
+        "We support sustainable brand growth through guidelines, rollout structure and consistency across customer touchpoints.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven brand strategy frameworks, design platforms, research tools, and reporting methods to deliver practical, scalable, and measurable branding solutions.",
+    "We use proven brand strategy frameworks, design platforms, research tools and reporting methods to deliver practical, scalable and measurable branding solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Brand Analysis & Strategy Tools",
       desc:
-        "We use structured brand discovery and positioning frameworks to evaluate audience fit, differentiation, and growth direction.",
+        "We use structured brand discovery and positioning frameworks to evaluate audience fit, differentiation and growth direction.",
       items: ["SWOT Analysis", "Brand Positioning Framework", "Audience Persona Mapping"],
     },
     {
       icon: "marketing",
       title: "Marketing & Branding Platforms",
       desc:
-        "We align branding decisions with campaign platforms and digital channels used for visibility, communication, and performance.",
+        "We align branding decisions with campaign platforms and digital channels used for visibility, communication and performance.",
       items: ["Google Ads", "Meta Ads Manager", "Google Analytics"],
     },
     {
       icon: "design",
       title: "Creative Design Tools",
       desc:
-        "We use modern creative platforms to build logo systems, visual assets, presentations, and scalable brand collateral.",
+        "We use modern creative platforms to build logo systems, visual assets, presentations and scalable brand collateral.",
       items: ["Adobe Illustrator", "Adobe Photoshop", "Canva"],
     },
     {
       icon: "content",
       title: "Content & Messaging Systems",
       desc:
-        "We shape brand voice, message consistency, and communication standards using structured content planning methods.",
+        "We shape brand voice, message consistency and communication standards using structured content planning methods.",
       items: ["Brand Messaging Framework", "Tone of Voice Guidelines", "Content Strategy Templates"],
     },
     {
       icon: "operations",
       title: "Brand Governance & Rollout",
       desc:
-        "We build practical governance systems that help teams maintain consistency across campaigns, internal teams, and external partners.",
+        "We build practical governance systems that help teams maintain consistency across campaigns, internal teams and external partners.",
       items: ["Brand Guidelines", "Asset Management Systems", "Approval Workflow Templates"],
     },
     {
       icon: "analytics",
       title: "Reporting & Brand Insights",
       desc:
-        "We track visibility, engagement, and brand consistency signals through reporting structures that support better decisions.",
+        "We track visibility, engagement and brand consistency signals through reporting structures that support better decisions.",
       items: ["Performance Dashboards", "Brand Audit Reports", "Engagement Tracking"],
     },
   ],
@@ -242,84 +242,84 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from brand discovery to rollout, consistency management, and ongoing brand support with clear milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from brand discovery to rollout, consistency management and ongoing brand support with clear milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand brand vision, business goals, audience expectations, and identity requirements",
+        desc: "Understand brand vision, business goals, audience expectations and identity requirements",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess current brand perception, competitor positioning, and key communication gaps",
+        desc: "Assess current brand perception, competitor positioning and key communication gaps",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define brand positioning, creative direction, messaging, and rollout priorities",
+        desc: "Define brand positioning, creative direction, messaging and rollout priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right brand strategists, designers, and creative delivery resources",
+        desc: "Assign the right brand strategists, designers and creative delivery resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Develop brand assets, identity systems, and communication materials with structured implementation",
+        desc: "Develop brand assets, identity systems and communication materials with structured implementation",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Review consistency, audience response, and rollout quality to refine brand delivery",
+        desc: "Review consistency, audience response and rollout quality to refine brand delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide brand documentation, rollout guidance, and ongoing support for brand consistency",
+      desc: "Provide brand documentation, rollout guidance and ongoing support for brand consistency",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term brand growth through continuous refinement, consistency improvement, and strategic guidance that strengthens visibility and business impact.",
+      "We support long-term brand growth through continuous refinement, consistency improvement and strategic guidance that strengthens visibility and business impact.",
     cards: [
       {
         title: "Brand Consistency & Visual Refinement",
         desc:
-          "Strengthen visual identity systems, improve consistency, and maintain a professional brand presence across channels.",
+          "Strengthen visual identity systems, improve consistency and maintain a professional brand presence across channels.",
       },
       {
         title: "Strategic Positioning & Growth Alignment",
         desc:
-          "Refine brand strategy based on business goals, audience shifts, and market positioning opportunities.",
+          "Refine brand strategy based on business goals, audience shifts and market positioning opportunities.",
       },
       {
         title: "Performance Monitoring & Brand Insights",
         desc:
-          "Track brand engagement, visibility trends, and communication effectiveness to support better decisions.",
+          "Track brand engagement, visibility trends and communication effectiveness to support better decisions.",
       },
       {
         title: "Consultation & Creative Excellence",
         desc:
-          "Provide expert branding guidance to improve execution quality, message clarity, and creative consistency.",
+          "Provide expert branding guidance to improve execution quality, message clarity and creative consistency.",
       },
       {
         title: "Market Presence & Trust Building",
         desc:
-          "Support brand communication and positioning efforts that improve recognition, trust, and long-term credibility.",
+          "Support brand communication and positioning efforts that improve recognition, trust and long-term credibility.",
       },
     ],
   },
 
   frameworkTitle: "Brand Identity Transformation Framework",
   frameworkSubtitle:
-    "From inconsistent visuals and unclear messaging to a strategic, memorable, and scalable brand identity that supports long-term recognition and business growth.",
+    "From inconsistent visuals and unclear messaging to a strategic, memorable and scalable brand identity that supports long-term recognition and business growth.",
 
   beforePoints: [
     "Inconsistent brand visuals across digital and offline touchpoints",
@@ -330,7 +330,7 @@ const content: any = {
 
   afterPoints: [
     "Strong and consistent brand presence across all channels",
-    "Improved trust, recognition, and professional brand perception",
+    "Improved trust, recognition and professional brand perception",
     "Clear brand positioning and stronger message alignment",
     "Scalable visual identity system for long-term growth",
   ],
@@ -340,23 +340,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We create scalable brand systems aligned with business goals, market positioning, and long-term brand growth.",
+        "We create scalable brand systems aligned with business goals, market positioning and long-term brand growth.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, creative clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, creative clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support ongoing brand consistency, refinement, and strategic growth through a customer-focused partnership approach.",
+        "We support ongoing brand consistency, refinement and strategic growth through a customer-focused partnership approach.",
     },
   ],
 
   contactTitle: "Build a Brand That Stands Out",
   contactSubtitle:
-    "Ready to create, refresh, or strengthen your brand identity? Let’s design a distinctive brand system that reflects your business values, connects with your audience, and supports long-term brand visibility across every platform.",
+    "Ready to create, refresh, or strengthen your brand identity? Let’s design a distinctive brand system that reflects your business values, connects with your audience and supports long-term brand visibility across every platform.",
   messageLabel: "Tell us about your brand or design needs...",
   submitLabel: "Request Branding Consultation",
 };
@@ -439,7 +439,7 @@ const NonItBrandingCreativeServicesBrandIdentityPositioning: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

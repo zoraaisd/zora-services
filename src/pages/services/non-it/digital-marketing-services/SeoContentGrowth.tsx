@@ -10,7 +10,7 @@ const item = {
   slug: "seo-content-growth",
   title: "SEO Services",
   shortDesc:
-    "Technical SEO, on-page optimization, content strategy, and ongoing SEO management for sustainable rankings.",
+    "Technical SEO, on-page optimization, content strategy and ongoing SEO management for sustainable rankings.",
 };
 
 const heroImage = "/non-it-hero/seo-content-growth.png";
@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "SEO Services for Organic Growth",
   heroSubtitle:
-    "Zora Global AI Technologies is an SEO agency delivering professional search engine optimization services that help businesses improve keyword rankings, strengthen website visibility, attract qualified organic traffic, and build long-term digital authority through a structured and growth-focused SEO strategy.",
+    "Zora Global AI Technologies is an SEO agency delivering professional search engine optimization services that help businesses improve keyword rankings, strengthen website visibility, attract qualified organic traffic and build long-term digital authority through a structured and growth-focused SEO strategy.",
 
   primaryCta: "Get SEO Started",
   secondaryCta: "Talk to Us",
@@ -111,43 +111,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Technical & On-Page SEO",
-      desc: "We improve website structure, crawlability, indexing, page speed, metadata, URL hierarchy, internal linking, heading structure, and on-page relevance to strengthen search engine performance and create a solid SEO foundation for long-term organic growth.",
+      desc: "We improve website structure, crawlability, indexing, page speed, metadata, URL hierarchy, internal linking, heading structure and on-page relevance to strengthen search engine performance and create a solid SEO foundation for long-term organic growth.",
     },
     {
       title: "Content & Keyword Strategy",
-      desc: "Our SEO team performs keyword research, search intent analysis, content planning, topic expansion, and page-level optimization to target high-value search terms that bring relevant visitors, improve visibility, and support sustainable search traffic growth.",
+      desc: "Our SEO team performs keyword research, search intent analysis, content planning, topic expansion and page-level optimization to target high-value search terms that bring relevant visitors, improve visibility and support sustainable search traffic growth.",
     },
     {
       title: "Local, Enterprise & Ecommerce SEO",
-      desc: "We deliver scalable SEO solutions for local businesses, service companies, enterprises, SaaS brands, and ecommerce websites with strategies tailored to competition level, audience behavior, market goals, and long-term search performance needs.",
+      desc: "We deliver scalable SEO solutions for local businesses, service companies, enterprises, SaaS brands and ecommerce websites with strategies tailored to competition level, audience behavior, market goals and long-term search performance needs.",
     },
   ],
 
   overview:
-    "Our SEO services help businesses rank higher on Google, attract qualified organic traffic, and improve online visibility through technical SEO, on-page optimization, keyword research, content strategy, local SEO, and continuous performance improvement. We take a structured approach to search engine optimization by identifying technical issues, improving website relevance, enhancing content quality, and aligning every SEO activity with business goals. Whether you need better rankings, more leads, stronger local visibility, or sustainable long-term search growth, our SEO solutions are designed to deliver measurable impact. From website architecture and content alignment to search intent mapping and performance tracking, we help businesses build a stronger organic presence that supports brand authority, lead generation, and long-term digital growth.",
+    "Our SEO services help businesses rank higher on Google, attract qualified organic traffic and improve online visibility through technical SEO, on-page optimization, keyword research, content strategy, local SEO and continuous performance improvement. We take a structured approach to search engine optimization by identifying technical issues, improving website relevance, enhancing content quality and aligning every SEO activity with business goals. Whether you need better rankings, more leads, stronger local visibility, or sustainable long-term search growth, our SEO solutions are designed to deliver measurable impact. From website architecture and content alignment to search intent mapping and performance tracking, we help businesses build a stronger organic presence that supports brand authority, lead generation and long-term digital growth.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver SEO services focused on stronger visibility, better keyword performance, and measurable organic growth.",
+      "We deliver SEO services focused on stronger visibility, better keyword performance and measurable organic growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured SEO execution that helps businesses improve rankings, visibility, and long-term search performance.",
+          "Structured SEO execution that helps businesses improve rankings, visibility and long-term search performance.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Technical audits, on-page optimization, content planning, keyword mapping, and performance tracking for efficient delivery.",
+          "Technical audits, on-page optimization, content planning, keyword mapping and performance tracking for efficient delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Transparent SEO support, scalable optimization, and practical strategies that strengthen digital authority and growth.",
+          "Transparent SEO support, scalable optimization and practical strategies that strengthen digital authority and growth.",
       },
     ],
   },
@@ -157,71 +157,71 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business objectives, SEO goals, current website issues, target keywords, and expected outcomes so the execution path is aligned from the beginning.",
+        "Understand business objectives, SEO goals, current website issues, target keywords and expected outcomes so the execution path is aligned from the beginning.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze search visibility, keyword competition, technical issues, content gaps, and key service priorities to define the right improvement direction.",
+        "Analyze search visibility, keyword competition, technical issues, content gaps and key service priorities to define the right improvement direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define SEO strategy, workflow, responsibilities, and a structured action plan that keeps implementation practical and measurable.",
+        "Define SEO strategy, workflow, responsibilities and a structured action plan that keeps implementation practical and measurable.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured SEO consulting and implementation services that improve visibility, ranking performance, and long-term organic growth. We combine strategy, technical discipline, and content expertise to create clear, measurable search progress.",
+    "Zora Global AI Technologies delivers structured SEO consulting and implementation services that improve visibility, ranking performance and long-term organic growth. We combine strategy, technical discipline and content expertise to create clear, measurable search progress.",
   whoWeAreCards: [
     {
       title: "SEO-Led Execution",
       desc:
-        "We align each engagement with visibility goals, search priorities, and measurable outcomes instead of generic optimization work.",
+        "We align each engagement with visibility goals, search priorities and measurable outcomes instead of generic optimization work.",
     },
     {
       title: "Cross-Functional Expertise",
       desc:
-        "Our work spans technical SEO, content strategy, analytics, conversion support, and execution planning to support real organic growth.",
+        "Our work spans technical SEO, content strategy, analytics, conversion support and execution planning to support real organic growth.",
     },
     {
       title: "Long-Term Partnership",
       desc:
-        "We stay focused on sustainable improvement through reporting, support, optimization, and practical implementation guidance.",
+        "We stay focused on sustainable improvement through reporting, support, optimization and practical implementation guidance.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven business frameworks, marketing platforms, finance tools, HR systems, and operational optimization methods to deliver practical, scalable, and measurable non-IT business solutions.",
+    "We use proven business frameworks, marketing platforms, finance tools, HR systems and operational optimization methods to deliver practical, scalable and measurable non-IT business solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Business Analysis & Strategy Tools",
       desc:
-        "We use structured analysis, planning, and process-design frameworks to evaluate business position, risks, opportunities, and measurable performance direction.",
+        "We use structured analysis, planning and process-design frameworks to evaluate business position, risks, opportunities and measurable performance direction.",
       items: ["SWOT Analysis", "PESTLE Analysis", "Business Model Canvas"],
     },
     {
       icon: "marketing",
       title: "Marketing & Branding Platforms",
       desc:
-        "We support campaign planning, reporting, visibility analysis, and creative execution using common business marketing platforms.",
+        "We support campaign planning, reporting, visibility analysis and creative execution using common business marketing platforms.",
       items: ["Google Ads", "Meta Ads Manager", "Google Analytics"],
     },
     {
       icon: "finance",
       title: "Financial & Accounting Tools",
       desc:
-        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting, and cost control.",
+        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting and cost control.",
       items: ["Tally", "Zoho Books", "QuickBooks"],
     },
     {
       icon: "hr",
       title: "HR & Workforce Management",
       desc:
-        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes, and employee performance tracking.",
+        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes and employee performance tracking.",
       items: [
         "Custom HRMS Platform (Zora HRMS)",
         "Recruitment & Candidate Tracking (ATS)",
@@ -239,7 +239,7 @@ const content: any = {
       icon: "analytics",
       title: "Reporting & Analytics Tools",
       desc:
-        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights, and decision-ready business intelligence.",
+        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights and decision-ready business intelligence.",
       items: ["Power BI", "Tableau", "Business Intelligence (BI) Tools"],
     },
   ],
@@ -247,27 +247,27 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand business objectives, service requirements, and expected outcomes",
+        desc: "Understand business objectives, service requirements and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze business needs, market context, and key service priorities",
+        desc: "Analyze business needs, market context and key service priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define execution strategy, workflow, and structured action plan",
+        desc: "Define execution strategy, workflow and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, specialists, and operational resources",
+        desc: "Assign the right team, specialists and operational resources",
       },
     ],
     deliveryCards: [
@@ -279,52 +279,52 @@ const content: any = {
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor performance, evaluate results, and optimize delivery",
+        desc: "Continuously monitor performance, evaluate results and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide performance insights, reporting, and ongoing support",
+      desc: "Provide performance insights, reporting and ongoing support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
 
   frameworkTitle: "SEO Growth Transformation",
   frameworkSubtitle:
-    "A structured SEO approach that improves search visibility, keyword rankings, content relevance, and qualified organic traffic over time.",
+    "A structured SEO approach that improves search visibility, keyword rankings, content relevance and qualified organic traffic over time.",
 
   beforePoints: [
     "Low search visibility across important business keywords",
@@ -345,23 +345,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable, future-ready business solutions aligned with strategic goals, ensuring operational growth, adaptability, and measurable business outcomes.",
+        "We deliver scalable, future-ready business solutions aligned with strategic goals, ensuring operational growth, adaptability and measurable business outcomes.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our approach combines milestone-based delivery, transparent reporting, and quality-driven execution to ensure reliable performance and timely project completion.",
+        "Our approach combines milestone-based delivery, transparent reporting and quality-driven execution to ensure reliable performance and timely project completion.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We provide continuous support and follow a customer-centric approach focused on improvement, sustainability, and long-term business success.",
+        "We provide continuous support and follow a customer-centric approach focused on improvement, sustainability and long-term business success.",
     },
   ],
 
   contactTitle: "Talk to Our SEO Experts",
   contactSubtitle:
-    "Ready to improve keyword rankings, increase organic traffic, and build stronger search visibility? Speak with our SEO specialists to discuss your goals, website challenges, and long-term growth opportunities.",
+    "Ready to improve keyword rankings, increase organic traffic and build stronger search visibility? Speak with our SEO specialists to discuss your goals, website challenges and long-term growth opportunities.",
 
   messageLabel: "Tell us about your SEO goals...",
   submitLabel: "Request SEO Consultation",
@@ -444,7 +444,7 @@ const NonItDigitalMarketingServicesSeoContentGrowth: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

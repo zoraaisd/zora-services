@@ -10,7 +10,7 @@ const item = {
   slug: "non-it-staff-augmentation",
   title: "Non-IT Staff Augmentation",
   shortDesc:
-    "Talent acquisition, manpower services, operational staffing, administrative staffing, and customer support hiring.",
+    "Talent acquisition, manpower services, operational staffing, administrative staffing and customer support hiring.",
 };
 
 const heroImage = "/non-it-hero/non-it-staff-augmentation.png";
@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Non-IT Staff Augmentation & Workforce Solutions",
   heroSubtitle:
-    "Zora Global AI provides non-IT staff augmentation services that help businesses strengthen workforce capacity, reduce hiring pressure, improve operational continuity, and access reliable talent across administration, customer support, operations, logistics, back-office, and business support functions.",
+    "Zora Global AI provides non-IT staff augmentation services that help businesses strengthen workforce capacity, reduce hiring pressure, improve operational continuity and access reliable talent across administration, customer support, operations, logistics, back-office and business support functions.",
 
   primaryCta: "Explore Staffing Solutions",
   secondaryCta: "Talk to Us",
@@ -111,40 +111,40 @@ const content: any = {
   topBlocks: [
     {
       title: "Talent Acquisition & Recruitment",
-      desc: "We manage end-to-end non-IT hiring support including requirement understanding, sourcing, screening, shortlisting, interview coordination, and onboarding assistance to help businesses fill critical roles faster and with better hiring quality.",
+      desc: "We manage end-to-end non-IT hiring support including requirement understanding, sourcing, screening, shortlisting, interview coordination and onboarding assistance to help businesses fill critical roles faster and with better hiring quality.",
     },
     {
       title: "Staff Augmentation & Workforce Deployment",
-      desc: "Our staff augmentation services provide flexible workforce support for temporary, contract, project-based, and long-term staffing needs so businesses can scale teams efficiently without disrupting day-to-day operations.",
+      desc: "Our staff augmentation services provide flexible workforce support for temporary, contract, project-based and long-term staffing needs so businesses can scale teams efficiently without disrupting day-to-day operations.",
     },
     {
       title: "Operational & Support Staffing",
-      desc: "We support hiring for operational staffing, administrative roles, customer support teams, service coordinators, front-office personnel, and business support functions to improve workforce reliability across core business activities.",
+      desc: "We support hiring for operational staffing, administrative roles, customer support teams, service coordinators, front-office personnel and business support functions to improve workforce reliability across core business activities.",
     },
   ],
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led staffing solutions focused on workforce readiness, hiring quality, and scalable team support.",
+      "We deliver strategy-led staffing solutions focused on workforce readiness, hiring quality and scalable team support.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses fill roles faster, reduce hiring pressure, and keep operations moving.",
+          "Structured execution that helps businesses fill roles faster, reduce hiring pressure and keep operations moving.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Talent sourcing, screening, hiring support, workforce deployment, and onboarding coordination.",
+          "Talent sourcing, screening, hiring support, workforce deployment and onboarding coordination.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert staffing support, transparent execution, and flexible workforce models built for long-term reliability.",
+          "Expert staffing support, transparent execution and flexible workforce models built for long-term reliability.",
       },
     ],
   },
@@ -154,57 +154,57 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand hiring needs, workforce gaps, role expectations, and business priorities from the start.",
+        "Understand hiring needs, workforce gaps, role expectations and business priorities from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review staffing challenges, recruitment bottlenecks, availability, and operational requirements to define the right support approach.",
+        "Review staffing challenges, recruitment bottlenecks, availability and operational requirements to define the right support approach.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define sourcing plans, interview flow, deployment timelines, and a clear staffing roadmap for delivery.",
+        "Define sourcing plans, interview flow, deployment timelines and a clear staffing roadmap for delivery.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT staffing and workforce solutions that improve hiring speed, workforce stability, and long-term business continuity. We combine recruitment discipline, operational support, and practical execution to build dependable staffing outcomes.",
+    "Zora Global AI Technologies delivers structured non-IT staffing and workforce solutions that improve hiring speed, workforce stability and long-term business continuity. We combine recruitment discipline, operational support and practical execution to build dependable staffing outcomes.",
   whoWeAreCards: [
     {
       title: "Staffing-Led Execution",
       desc:
-        "We align every staffing engagement with business goals, role requirements, and measurable workforce outcomes.",
+        "We align every staffing engagement with business goals, role requirements and measurable workforce outcomes.",
     },
     {
       title: "Recruitment & Coordination Expertise",
       desc:
-        "Our team combines sourcing, screening, coordination, and workforce planning to support dependable hiring.",
+        "Our team combines sourcing, screening, coordination and workforce planning to support dependable hiring.",
     },
     {
       title: "Long-Term Workforce Stability",
       desc:
-        "We support sustainable staffing operations through process structure, review controls, and continuous improvement.",
+        "We support sustainable staffing operations through process structure, review controls and continuous improvement.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven recruitment methods, HR systems, coordination workflows, and operational tools to deliver practical, scalable, and measurable staffing solutions.",
+    "We use proven recruitment methods, HR systems, coordination workflows and operational tools to deliver practical, scalable and measurable staffing solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Recruitment & Sourcing Tools",
       desc:
-        "We use practical hiring systems to source, track, and shortlist candidates efficiently across non-IT roles.",
+        "We use practical hiring systems to source, track and shortlist candidates efficiently across non-IT roles.",
       items: ["Job Portals", "ATS", "Candidate Databases"],
     },
     {
       icon: "hr",
       title: "HR & Workforce Systems",
       desc:
-        "We support onboarding, attendance, workforce records, and employee coordination with structured HR processes.",
+        "We support onboarding, attendance, workforce records and employee coordination with structured HR processes.",
       items: ["HRMS", "Attendance Systems", "Onboarding Checklists"],
     },
     {
@@ -225,14 +225,14 @@ const content: any = {
       icon: "finance",
       title: "Planning & Forecast Support Tools",
       desc:
-        "We use workforce planning methods to support hiring forecasts, manpower budgeting, and role mapping.",
+        "We use workforce planning methods to support hiring forecasts, manpower budgeting and role mapping.",
       items: ["Manpower Plans", "Hiring Forecasts", "Resource Models"],
     },
     {
       icon: "analytics",
       title: "Coordination & Review Platforms",
       desc:
-        "We use shared workflows and review systems that keep recruiters, managers, and business stakeholders aligned.",
+        "We use shared workflows and review systems that keep recruiters, managers and business stakeholders aligned.",
       items: ["Google Workspace", "Microsoft Office", "Shared Review Sheets"],
     },
   ],
@@ -240,87 +240,87 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand hiring needs, workforce gaps, and expected outcomes",
+        desc: "Understand hiring needs, workforce gaps and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze workforce challenges, hiring bottlenecks, and priorities",
+        desc: "Analyze workforce challenges, hiring bottlenecks and priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define sourcing strategy, hiring flow, and structured action plan",
+        desc: "Define sourcing strategy, hiring flow and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right recruiters, coordinators, and operational resources",
+        desc: "Assign the right recruiters, coordinators and operational resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Execute sourcing, screening, hiring, and staffing deployment efficiently",
+        desc: "Execute sourcing, screening, hiring and staffing deployment efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor hiring performance, evaluate results, and optimize delivery",
+        desc: "Continuously monitor hiring performance, evaluate results and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide hiring insights, reporting, and ongoing support",
+      desc: "Provide hiring insights, reporting and ongoing support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term workforce success through continuous staffing optimization, performance improvement, and strategic support that drives measurable hiring efficiency and operational continuity.",
+      "We ensure long-term workforce success through continuous staffing optimization, performance improvement and strategic support that drives measurable hiring efficiency and operational continuity.",
     cards: [
       {
         title: "Process Optimization & Workforce Efficiency",
         desc:
-          "Enhance hiring workflows, improve execution quality, and drive workforce efficiency across staffing operations.",
+          "Enhance hiring workflows, improve execution quality and drive workforce efficiency across staffing operations.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine staffing strategies based on business needs to ensure scalability, flexibility, and adaptability.",
+          "Continuously refine staffing strategies based on business needs to ensure scalability, flexibility and adaptability.",
       },
       {
         title: "Performance Monitoring & Workforce Insights",
         desc:
-          "Track hiring KPIs, analyze staffing trends, and deliver data-driven insights to support better decisions.",
+          "Track hiring KPIs, analyze staffing trends and deliver data-driven insights to support better decisions.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve staffing decisions, strengthen execution, and achieve operational excellence.",
+          "Provide expert guidance to improve staffing decisions, strengthen execution and achieve operational excellence.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support employer branding, communication, and talent positioning to improve trust, engagement, and hiring credibility.",
+          "Support employer branding, communication and talent positioning to improve trust, engagement and hiring credibility.",
       },
     ],
   },
 
   overview:
-    "Our non-IT staff augmentation and workforce solutions help organizations meet changing manpower requirements with greater speed, flexibility, and operational confidence. We support talent acquisition, candidate sourcing, workforce deployment, and staffing coordination for non-technical roles across administration, operations, customer service, logistics, sales support, and other business-critical functions. By combining structured recruitment processes with scalable workforce support, we help businesses reduce hiring delays, strengthen workforce continuity, and respond more effectively to growth demands, seasonal requirements, and operational workload changes. Whether you need short-term staff deployment or long-term workforce expansion, our staffing solutions are designed to improve hiring efficiency, support productivity, and create a more dependable non-IT workforce structure.",
+    "Our non-IT staff augmentation and workforce solutions help organizations meet changing manpower requirements with greater speed, flexibility and operational confidence. We support talent acquisition, candidate sourcing, workforce deployment and staffing coordination for non-technical roles across administration, operations, customer service, logistics, sales support and other business-critical functions. By combining structured recruitment processes with scalable workforce support, we help businesses reduce hiring delays, strengthen workforce continuity and respond more effectively to growth demands, seasonal requirements and operational workload changes. Whether you need short-term staff deployment or long-term workforce expansion, our staffing solutions are designed to improve hiring efficiency, support productivity and create a more dependable non-IT workforce structure.",
 
   frameworkTitle: "Workforce Capacity Transformation",
   frameworkSubtitle:
-    "Turning hiring delays and staffing gaps into a reliable, scalable, and business-aligned workforce support model.",
+    "Turning hiring delays and staffing gaps into a reliable, scalable and business-aligned workforce support model.",
 
   beforePoints: [
     "Talent shortages affecting daily operations and service delivery",
@@ -341,23 +341,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable staffing solutions aligned with business needs, workforce planning, and long-term operational stability.",
+        "We deliver scalable staffing solutions aligned with business needs, workforce planning and long-term operational stability.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, hiring clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, hiring clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous staffing improvement, workforce confidence, and long-term operational support through a customer-focused approach.",
+        "We support continuous staffing improvement, workforce confidence and long-term operational support through a customer-focused approach.",
     },
   ],
 
   contactTitle: "Build Your Workforce",
   contactSubtitle:
-    "Looking for reliable non-IT staffing and workforce augmentation support? Connect with our staffing specialists to discuss your hiring goals, manpower needs, and workforce expansion plans.",
+    "Looking for reliable non-IT staffing and workforce augmentation support? Connect with our staffing specialists to discuss your hiring goals, manpower needs and workforce expansion plans.",
 
   messageLabel: "Tell us about your staffing requirements...",
   submitLabel: "Request Staffing Support",
@@ -440,7 +440,7 @@ const NonItStaffAugmentationWorkforceSolutionsNonItStaffAugmentation: React.FC =
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

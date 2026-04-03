@@ -10,7 +10,7 @@ const item = {
   slug: "content-management-support",
   title: "Content Management Support",
   shortDesc:
-    "End-to-end content management services to organize, publish, maintain, and optimize digital content.",
+    "End-to-end content management services to organize, publish, maintain and optimize digital content.",
 };
 
 const heroImage = "/non-it-hero/content-management-support.png";
@@ -102,7 +102,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Content Management Services",
   heroSubtitle:
-    "Zora Global AI provides end-to-end content management services that help businesses organize, manage, publish, maintain, and optimize digital content across websites, portals, applications, and marketing channels. Our approach focuses on structured workflows, content accuracy, publishing consistency, SEO readiness, and long-term governance so your digital presence stays relevant, professional, and easy to scale.",
+    "Zora Global AI provides end-to-end content management services that help businesses organize, manage, publish, maintain and optimize digital content across websites, portals, applications and marketing channels. Our approach focuses on structured workflows, content accuracy, publishing consistency, SEO readiness and long-term governance so your digital presence stays relevant, professional and easy to scale.",
 
   primaryCta: "Manage Content Effectively",
   secondaryCta: "Talk to Us",
@@ -110,43 +110,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Content Strategy & Planning",
-      desc: "We create structured content frameworks, editorial guidelines, publishing plans, taxonomy, and governance models that align with business goals, audience expectations, and long-term digital growth.",
+      desc: "We create structured content frameworks, editorial guidelines, publishing plans, taxonomy and governance models that align with business goals, audience expectations and long-term digital growth.",
     },
     {
       title: "Content Publishing & Maintenance",
-      desc: "Our team manages content uploads, page updates, formatting, scheduling, metadata handling, and version control to keep content consistent, current, and professionally maintained across platforms.",
+      desc: "Our team manages content uploads, page updates, formatting, scheduling, metadata handling and version control to keep content consistent, current and professionally maintained across platforms.",
     },
     {
       title: "Content Optimization & Governance",
-      desc: "We improve content quality through SEO alignment, compliance checks, review workflows, performance monitoring, and lifecycle governance to ensure every content asset delivers ongoing value.",
+      desc: "We improve content quality through SEO alignment, compliance checks, review workflows, performance monitoring and lifecycle governance to ensure every content asset delivers ongoing value.",
     },
   ],
 
   overview:
-    "Our content management services help businesses maintain a well-structured and high-quality digital presence across websites, portals, e-commerce platforms, knowledge bases, and marketing channels. We support the complete content lifecycle, from planning and organization to publishing, updating, optimization, and governance. This ensures your content remains accurate, brand-aligned, easy to navigate, search-friendly, and valuable for both users and business operations.",
+    "Our content management services help businesses maintain a well-structured and high-quality digital presence across websites, portals, e-commerce platforms, knowledge bases and marketing channels. We support the complete content lifecycle, from planning and organization to publishing, updating, optimization and governance. This ensures your content remains accurate, brand-aligned, easy to navigate, search-friendly and valuable for both users and business operations.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led non-IT solutions focused on business process optimization, operational efficiency, and scalable growth.",
+      "We deliver strategy-led non-IT solutions focused on business process optimization, operational efficiency and scalable growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses move faster, improve decisions, and achieve better performance.",
+          "Structured execution that helps businesses move faster, improve decisions and achieve better performance.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Business analysis, strategic planning, workflow optimization, and performance tracking for efficient delivery.",
+          "Business analysis, strategic planning, workflow optimization and performance tracking for efficient delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert consulting, transparent approach, and scalable solutions that drive growth and long-term success.",
+          "Expert consulting, transparent approach and scalable solutions that drive growth and long-term success.",
       },
     ],
   },
@@ -156,71 +156,71 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business objectives, service requirements, and expected outcomes so the execution path is aligned from the beginning.",
+        "Understand business objectives, service requirements and expected outcomes so the execution path is aligned from the beginning.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze business needs, market context, current process gaps, and key service priorities to define the right improvement direction.",
+        "Analyze business needs, market context, current process gaps and key service priorities to define the right improvement direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define execution strategy, workflow, responsibilities, and a structured action plan that keeps implementation practical and measurable.",
+        "Define execution strategy, workflow, responsibilities and a structured action plan that keeps implementation practical and measurable.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT consulting and implementation services that improve operations, execution quality, and long-term business performance. We combine strategy, process discipline, and domain expertise to create clear, measurable business progress.",
+    "Zora Global AI Technologies delivers structured non-IT consulting and implementation services that improve operations, execution quality and long-term business performance. We combine strategy, process discipline and domain expertise to create clear, measurable business progress.",
   whoWeAreCards: [
     {
       title: "Business-Led Execution",
       desc:
-        "We align each engagement with business goals, operational priorities, and measurable outcomes instead of generic advisory work.",
+        "We align each engagement with business goals, operational priorities and measurable outcomes instead of generic advisory work.",
     },
     {
       title: "Cross-Functional Expertise",
       desc:
-        "Our work spans strategy, marketing, HR, finance, operations, and execution planning to support real business change across departments.",
+        "Our work spans strategy, marketing, HR, finance, operations and execution planning to support real business change across departments.",
     },
     {
       title: "Long-Term Partnership",
       desc:
-        "We stay focused on sustainable improvement through reporting, support, optimization, and practical implementation guidance.",
+        "We stay focused on sustainable improvement through reporting, support, optimization and practical implementation guidance.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven business frameworks, marketing platforms, finance tools, HR systems, and operational optimization methods to deliver practical, scalable, and measurable non-IT business solutions.",
+    "We use proven business frameworks, marketing platforms, finance tools, HR systems and operational optimization methods to deliver practical, scalable and measurable non-IT business solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Business Analysis & Strategy Tools",
       desc:
-        "We use structured analysis, planning, and process-design frameworks to evaluate business position, risks, opportunities, and measurable performance direction.",
+        "We use structured analysis, planning and process-design frameworks to evaluate business position, risks, opportunities and measurable performance direction.",
       items: ["SWOT Analysis", "PESTLE Analysis", "Business Model Canvas"],
     },
     {
       icon: "marketing",
       title: "Marketing & Branding Platforms",
       desc:
-        "We support campaign planning, reporting, visibility analysis, and creative execution using common business marketing platforms.",
+        "We support campaign planning, reporting, visibility analysis and creative execution using common business marketing platforms.",
       items: ["Google Ads", "Meta Ads Manager", "Google Analytics"],
     },
     {
       icon: "finance",
       title: "Financial & Accounting Tools",
       desc:
-        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting, and cost control.",
+        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting and cost control.",
       items: ["Tally", "Zoho Books", "QuickBooks"],
     },
     {
       icon: "hr",
       title: "HR & Workforce Management",
       desc:
-        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes, and employee performance tracking.",
+        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes and employee performance tracking.",
       items: [
         "Custom HRMS Platform (Zora HRMS)",
         "Recruitment & Candidate Tracking (ATS)",
@@ -242,7 +242,7 @@ const content: any = {
       icon: "analytics",
       title: "Reporting & Analytics Tools",
       desc:
-        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights, and decision-ready business intelligence.",
+        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights and decision-ready business intelligence.",
       items: ["Power BI", "Tableau", "Business Intelligence (BI) Tools"],
     },
   ],
@@ -250,27 +250,27 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand business objectives, service requirements, and expected outcomes",
+        desc: "Understand business objectives, service requirements and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze business needs, market context, and key service priorities",
+        desc: "Analyze business needs, market context and key service priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define execution strategy, workflow, and structured action plan",
+        desc: "Define execution strategy, workflow and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, specialists, and operational resources",
+        desc: "Assign the right team, specialists and operational resources",
       },
     ],
     deliveryCards: [
@@ -282,45 +282,45 @@ const content: any = {
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor performance, evaluate results, and optimize delivery",
+        desc: "Continuously monitor performance, evaluate results and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide performance insights, reporting, and ongoing support",
+      desc: "Provide performance insights, reporting and ongoing support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
@@ -329,21 +329,21 @@ const content: any = {
   whyChoose: [
     {
       title: "Structured content operations",
-      desc: "We build organized workflows, approval paths, and version control practices that reduce content errors, improve collaboration, and keep publishing operations streamlined.",
+      desc: "We build organized workflows, approval paths and version control practices that reduce content errors, improve collaboration and keep publishing operations streamlined.",
     },
     {
       title: "Reliable publishing consistency",
-      desc: "From regular updates to large-scale content maintenance, we help ensure your information stays current, properly formatted, and consistent across all digital touchpoints.",
+      desc: "From regular updates to large-scale content maintenance, we help ensure your information stays current, properly formatted and consistent across all digital touchpoints.",
     },
     {
       title: "SEO-ready and quality-governed delivery",
-      desc: "Our content support combines accuracy, search optimization, governance, and performance-focused improvements to strengthen visibility, usability, and long-term brand trust.",
+      desc: "Our content support combines accuracy, search optimization, governance and performance-focused improvements to strengthen visibility, usability and long-term brand trust.",
     },
   ],
 
   contactTitle: "Talk to Our Content Specialists",
   contactSubtitle:
-    "Looking for reliable content management support for your website, portal, or digital platform? Share your requirements with our team and we will help you plan, maintain, and optimize your content operations effectively.",
+    "Looking for reliable content management support for your website, portal, or digital platform? Share your requirements with our team and we will help you plan, maintain and optimize your content operations effectively.",
   messageLabel:
     "Tell us about your content management needs, platforms, update frequency, or optimization goals...",
   submitLabel: "Request Content Support",
@@ -429,7 +429,7 @@ const NonItBrandingCreativeServicesContentManagementSupport: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

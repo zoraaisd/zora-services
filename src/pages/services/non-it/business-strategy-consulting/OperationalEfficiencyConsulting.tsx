@@ -10,7 +10,7 @@ const item = {
   slug: "operational-efficiency-consulting",
   title: "Operational Efficiency Consulting",
   shortDesc:
-    "Eliminate inefficiencies, improve productivity, and build KPI-driven operational systems for sustainable business growth.",
+    "Eliminate inefficiencies, improve productivity and build KPI-driven operational systems for sustainable business growth.",
 };
 
 const heroImage = "/non-it-hero/operational-efficiency-consulting.png";
@@ -173,7 +173,7 @@ const content: any = {
   heroTitle: "Operational Efficiency Consulting",
 
   heroSubtitle:
-    "Zora Global AI provides operational efficiency consulting services that help businesses eliminate inefficiencies, optimize workflows, reduce operational costs, and improve productivity through KPI-driven performance systems.",
+    "Zora Global AI provides operational efficiency consulting services that help businesses eliminate inefficiencies, optimize workflows, reduce operational costs and improve productivity through KPI-driven performance systems.",
 
   primaryCta: "Explore Consulting Services",
   secondaryCta: "Talk to Us",
@@ -181,45 +181,45 @@ const content: any = {
     {
       title: "Process Optimization",
       desc:
-        "We analyze and redesign workflows to remove inefficiencies, improve execution speed, and build structured operational systems.",
+        "We analyze and redesign workflows to remove inefficiencies, improve execution speed and build structured operational systems.",
     },
     {
       title: "Cost Reduction",
       desc:
-        "We identify operational overheads, cost leakages, and inefficient resource allocation to improve overall business efficiency.",
+        "We identify operational overheads, cost leakages and inefficient resource allocation to improve overall business efficiency.",
     },
     {
       title: "Performance Measurement",
       desc:
-        "We design KPI frameworks, reporting systems, and performance dashboards that support data-driven operational improvement.",
+        "We design KPI frameworks, reporting systems and performance dashboards that support data-driven operational improvement.",
     },
   ],
 
   overview:
-    "Our operational efficiency consulting services help organizations identify performance gaps, improve workflows, reduce operational costs, and build scalable systems that support productivity, agility, and measurable business growth.",
+    "Our operational efficiency consulting services help organizations identify performance gaps, improve workflows, reduce operational costs and build scalable systems that support productivity, agility and measurable business growth.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver operational efficiency consulting through a structured execution model focused on workflow improvement, KPI alignment, and measurable business performance.",
+      "We deliver operational efficiency consulting through a structured execution model focused on workflow improvement, KPI alignment and measurable business performance.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses improve process speed, resource utilization, and operational clarity.",
+          "Structured execution that helps businesses improve process speed, resource utilization and operational clarity.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Operational analysis, workflow optimization, KPI planning, and performance tracking for efficient delivery.",
+          "Operational analysis, workflow optimization, KPI planning and performance tracking for efficient delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert consulting, transparent execution, and scalable process improvements that support long-term growth.",
+          "Expert consulting, transparent execution and scalable process improvements that support long-term growth.",
       },
     ],
   },
@@ -229,33 +229,33 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand operational challenges, business goals, and expected outcomes before planning improvements.",
+        "Understand operational challenges, business goals and expected outcomes before planning improvements.",
     },
     {
       title: "Analysis",
       desc:
-        "Assess process gaps, inefficiencies, cost leakages, and productivity issues to define the right improvement path.",
+        "Assess process gaps, inefficiencies, cost leakages and productivity issues to define the right improvement path.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Build a practical roadmap with workflow priorities, KPI structure, and accountability for execution.",
+        "Build a practical roadmap with workflow priorities, KPI structure and accountability for execution.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies supports organizations with structured consulting services that improve operational performance, execution quality, and measurable business efficiency. We combine strategy, process discipline, and business clarity to drive sustainable improvement.",
+    "Zora Global AI Technologies supports organizations with structured consulting services that improve operational performance, execution quality and measurable business efficiency. We combine strategy, process discipline and business clarity to drive sustainable improvement.",
   whoWeAreCards: [
     {
       title: "Operational Focus",
       desc:
-        "We align each engagement with process efficiency, cost control, execution quality, and measurable business outcomes.",
+        "We align each engagement with process efficiency, cost control, execution quality and measurable business outcomes.",
     },
     {
       title: "Cross-Functional Insight",
       desc:
-        "Our work supports operations, finance, people, reporting, and workflow design for stronger execution.",
+        "Our work supports operations, finance, people, reporting and workflow design for stronger execution.",
     },
     {
       title: "Long-Term Improvement",
@@ -266,14 +266,14 @@ const content: any = {
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven analysis methods, reporting tools, operational systems, and optimization frameworks to improve business efficiency and execution quality.",
+    "We use proven analysis methods, reporting tools, operational systems and optimization frameworks to improve business efficiency and execution quality.",
 
   technologies: [
     {
       icon: "strategy",
       title: "Business Analysis & Strategy Tools",
       desc:
-        "We use structured frameworks to identify inefficiencies, priorities, and measurable performance opportunities across operations.",
+        "We use structured frameworks to identify inefficiencies, priorities and measurable performance opportunities across operations.",
       items: [
         "SWOT Analysis",
         "PESTLE Analysis",
@@ -284,7 +284,7 @@ const content: any = {
       icon: "marketing",
       title: "Planning & Communication Tools",
       desc:
-        "We use planning and collaboration platforms to coordinate execution, reviews, and improvement cycles across teams.",
+        "We use planning and collaboration platforms to coordinate execution, reviews and improvement cycles across teams.",
       items: [
         "Google Workspace",
         "Notion",
@@ -295,7 +295,7 @@ const content: any = {
       icon: "finance",
       title: "Financial & Cost Control Tools",
       desc:
-        "We use cost analysis and planning tools to improve budget visibility, efficiency, and operational control.",
+        "We use cost analysis and planning tools to improve budget visibility, efficiency and operational control.",
       items: [
         "Budget Planning Models",
         "Cost Tracking Systems",
@@ -306,7 +306,7 @@ const content: any = {
       icon: "hr",
       title: "Workforce & Accountability Tools",
       desc:
-        "We support efficiency through people planning, accountability structure, and performance visibility across teams.",
+        "We support efficiency through people planning, accountability structure and performance visibility across teams.",
       items: [
         "Attendance Tracking",
         "Role Responsibility Mapping",
@@ -317,7 +317,7 @@ const content: any = {
       icon: "operations",
       title: "Operations & Process Optimization",
       desc:
-        "We apply proven methods to standardize workflows, reduce waste, and improve execution consistency.",
+        "We apply proven methods to standardize workflows, reduce waste and improve execution consistency.",
       items: [
         "Lean Methodology",
         "Six Sigma Principles",
@@ -340,57 +340,57 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our delivery model helps businesses move from operational assessment to execution, optimization, and measurable improvement with clear milestones.",
+      "Our delivery model helps businesses move from operational assessment to execution, optimization and measurable improvement with clear milestones.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand operational challenges, priorities, and expected outcomes",
+        desc: "Understand operational challenges, priorities and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Review inefficiencies, costs, productivity gaps, and execution risks",
+        desc: "Review inefficiencies, costs, productivity gaps and execution risks",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define workflows, KPI structure, responsibilities, and improvement roadmap",
+        desc: "Define workflows, KPI structure, responsibilities and improvement roadmap",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, tools, and support systems for smooth execution",
+        desc: "Assign the right team, tools and support systems for smooth execution",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Implement process improvements, reporting systems, and operational controls",
+        desc: "Implement process improvements, reporting systems and operational controls",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Track KPI progress, review outcomes, and refine execution for better efficiency",
+        desc: "Track KPI progress, review outcomes and refine execution for better efficiency",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide structured reporting, insights, and continuous operational guidance",
+      desc: "Provide structured reporting, insights and continuous operational guidance",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term operational performance through continuous optimization, reporting, and practical guidance that drives measurable business improvement.",
+      "We support long-term operational performance through continuous optimization, reporting and practical guidance that drives measurable business improvement.",
     cards: [
       {
         title: "Process Optimization & Efficiency",
         desc:
-          "Improve workflows, execution quality, and operational consistency across core business functions.",
+          "Improve workflows, execution quality and operational consistency across core business functions.",
       },
       {
         title: "Strategic Refinement & Alignment",
@@ -400,17 +400,17 @@ const content: any = {
       {
         title: "Performance Monitoring & Insights",
         desc:
-          "Track KPIs, review productivity trends, and support stronger decisions with operational reporting.",
+          "Track KPIs, review productivity trends and support stronger decisions with operational reporting.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance that improves accountability, execution quality, and day-to-day operational performance.",
+          "Provide expert guidance that improves accountability, execution quality and day-to-day operational performance.",
       },
       {
         title: "Business Improvement Support",
         desc:
-          "Support continuous improvement initiatives that strengthen scalability, control, and operational reliability.",
+          "Support continuous improvement initiatives that strengthen scalability, control and operational reliability.",
       },
     ],
   },
@@ -419,7 +419,7 @@ const content: any = {
 
   frameworkTitle: "Business Process Optimisation Framework",
   frameworkSubtitle:
-    "Aligning workflows, accountability, and performance systems to create efficient and scalable operations.",
+    "Aligning workflows, accountability and performance systems to create efficient and scalable operations.",
   beforePoints: [
     "Inefficient workflows and repeated operational delays",
     "High costs caused by poor resource utilization",
@@ -427,7 +427,7 @@ const content: any = {
   ],
   afterPoints: [
     "Streamlined workflows with stronger operational control",
-    "Lower costs, better productivity, and improved resource usage",
+    "Lower costs, better productivity and improved resource usage",
     "KPI-driven visibility with faster and better decision-making",
   ],
 
@@ -436,12 +436,12 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver efficiency solutions aligned with strategic goals, operational growth, and measurable business outcomes.",
+        "We deliver efficiency solutions aligned with strategic goals, operational growth and measurable business outcomes.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our approach combines milestone-based delivery, clear reporting, and quality-focused execution for reliable performance.",
+        "Our approach combines milestone-based delivery, clear reporting and quality-focused execution for reliable performance.",
     },
     {
       title: "Long-Term Growth & Partnership",
@@ -452,7 +452,7 @@ const content: any = {
   contactTitle: "Improve Your Operational Performance",
 
   contactSubtitle:
-    "Looking to optimize operations, reduce costs, and improve productivity? Talk to our consultants about building stronger and more efficient systems for your business.",
+    "Looking to optimize operations, reduce costs and improve productivity? Talk to our consultants about building stronger and more efficient systems for your business.",
 
   messageLabel: "Tell us about your operational challenges...",
   submitLabel: "Request Consultation",
@@ -488,7 +488,7 @@ const NonItBusinessStrategyConsultingOperationalEfficiencyConsulting: React.FC =
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       setSubmitStatus({
         type: "error",
-        message: "Please fill in your name, email, and project details.",
+        message: "Please fill in your name, email and project details.",
       });
       return;
     }
@@ -560,7 +560,7 @@ const NonItBusinessStrategyConsultingOperationalEfficiencyConsulting: React.FC =
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

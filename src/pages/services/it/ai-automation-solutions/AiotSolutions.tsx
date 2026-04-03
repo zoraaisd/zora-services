@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "AIoT Development Solutions",
   heroSubtitle:
-    "Transform your business with powerful AI + IoT integration — enabling real-time intelligence, predictive insights, automation, and smart decision-making across connected ecosystems.",
+    "Transform your business with powerful AI + IoT integration — enabling real-time intelligence, predictive insights, automation and smart decision-making across connected ecosystems.",
 
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
@@ -108,7 +108,7 @@ const content: any = {
   topBlocks: [
     {
       title: "Device & Sensor Integration",
-      desc: "Seamlessly connect IoT devices, sensors, and gateways to collect real-time operational data across environments.",
+      desc: "Seamlessly connect IoT devices, sensors and gateways to collect real-time operational data across environments.",
     },
     {
       title: "Edge AI & Analytics",
@@ -116,12 +116,12 @@ const content: any = {
     },
     {
       title: "Predictive Automation",
-      desc: "Leverage AI to predict failures, detect anomalies, and trigger automated actions for improved efficiency.",
+      desc: "Leverage AI to predict failures, detect anomalies and trigger automated actions for improved efficiency.",
     },
   ],
 
   overview:
-    "Our AIoT solutions combine Artificial Intelligence and Internet of Things technologies to build intelligent, connected systems that enhance operational efficiency, reduce downtime, and unlock new business value. We design scalable ecosystems that integrate devices, data pipelines, and AI models — enabling organizations to gain real-time insights, automate processes, and make smarter decisions. From industrial automation to smart cities, we help businesses harness the full potential of AI-driven IoT systems.",
+    "Our AIoT solutions combine Artificial Intelligence and Internet of Things technologies to build intelligent, connected systems that enhance operational efficiency, reduce downtime and unlock new business value. We design scalable ecosystems that integrate devices, data pipelines and AI models — enabling organizations to gain real-time insights, automate processes and make smarter decisions. From industrial automation to smart cities, we help businesses harness the full potential of AI-driven IoT systems.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,28 +152,28 @@ const content: any = {
   deliverySteps: [
     {
       title: "Discovery & Architecture",
-      desc: "We analyze your business requirements, identify use cases, and design a scalable AIoT architecture including devices, connectivity, and data flow.",
+      desc: "We analyze your business requirements, identify use cases and design a scalable AIoT architecture including devices, connectivity and data flow.",
     },
     {
       title: "Development & Integration",
-      desc: "Develop IoT platforms, integrate sensors and devices, and build AI models for analytics, prediction, and automation.",
+      desc: "Develop IoT platforms, integrate sensors and devices and build AI models for analytics, prediction and automation.",
     },
     {
       title: "Deployment & Optimization",
-      desc: "Deploy solutions in production, monitor system performance, retrain models, and continuously optimize for efficiency and scalability.",
+      desc: "Deploy solutions in production, monitor system performance, retrain models and continuously optimize for efficiency and scalability.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build connected AIoT ecosystems that enable device intelligence, secure communication, predictive analytics, real-time monitoring, and automation across industrial, enterprise, and smart infrastructure environments.",
+    "We use modern, reliable and scalable technologies to build connected AIoT ecosystems that enable device intelligence, secure communication, predictive analytics, real-time monitoring and automation across industrial, enterprise and smart infrastructure environments.",
 
   technologies: [
     {
       icon: "frontend",
       title: "AIoT Dashboards & Interfaces",
       desc:
-        "We build responsive dashboards and control interfaces to visualize device data, alerts, analytics, and operational insights in real time.",
+        "We build responsive dashboards and control interfaces to visualize device data, alerts, analytics and operational insights in real time.",
       items: [
         "React",
         "Next.js",
@@ -187,7 +187,7 @@ const content: any = {
       icon: "backend",
       title: "Backend & Device Communication",
       desc:
-        "We develop secure backend systems, APIs, and communication services that connect devices, platforms, and automation workflows.",
+        "We develop secure backend systems, APIs and communication services that connect devices, platforms and automation workflows.",
       items: [
         "Node.js",
         "Python",
@@ -201,7 +201,7 @@ const content: any = {
       icon: "database",
       title: "Data Storage & Processing",
       desc:
-        "We manage time-series, event, and operational data using scalable databases and structured storage for analytics and reporting.",
+        "We manage time-series, event and operational data using scalable databases and structured storage for analytics and reporting.",
       items: [
         "PostgreSQL",
         "MongoDB",
@@ -215,7 +215,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud, Edge & Deployment",
       desc:
-        "We deploy AIoT workloads across cloud and edge environments to support scalability, resilience, monitoring, and low-latency intelligence.",
+        "We deploy AIoT workloads across cloud and edge environments to support scalability, resilience, monitoring and low-latency intelligence.",
       items: [
         "AWS",
         "Azure",
@@ -229,7 +229,7 @@ const content: any = {
       icon: "mobile",
       title: "Connected Devices & Mobility",
       desc:
-        "We support connected mobile experiences, remote access, smart device integration, and on-field operational visibility.",
+        "We support connected mobile experiences, remote access, smart device integration and on-field operational visibility.",
       items: [
         "Mobile Apps",
         "Flutter",
@@ -243,7 +243,7 @@ const content: any = {
       icon: "ai",
       title: "AI Models & Automation",
       desc:
-        "We integrate AI capabilities for anomaly detection, prediction, automation, computer vision, and intelligent decision-making across IoT systems.",
+        "We integrate AI capabilities for anomaly detection, prediction, automation, computer vision and intelligent decision-making across IoT systems.",
       items: [
         "Machine Learning",
         "Predictive Models",
@@ -258,12 +258,12 @@ const content: any = {
   architecture: {
     title: "AIoT Solution Architecture",
     intro:
-      "We design scalable AIoT architectures that combine connected devices, real-time data pipelines, edge intelligence, cloud processing, and AI-driven automation. This approach helps businesses capture operational data, generate actionable insights, automate responses, and create intelligent ecosystems that are secure, efficient, and future-ready.",
+      "We design scalable AIoT architectures that combine connected devices, real-time data pipelines, edge intelligence, cloud processing and AI-driven automation. This approach helps businesses capture operational data, generate actionable insights, automate responses and create intelligent ecosystems that are secure, efficient and future-ready.",
     processSteps: [
       {
         icon: "01",
         title: "Device & Data Capture",
-        desc: "Collect real-time data from sensors, gateways, and connected endpoints",
+        desc: "Collect real-time data from sensors, gateways and connected endpoints",
       },
       {
         icon: "02",
@@ -273,12 +273,12 @@ const content: any = {
       {
         icon: "03",
         title: "AI Analysis & Decisioning",
-        desc: "Apply prediction, anomaly detection, and analytics for smart outcomes",
+        desc: "Apply prediction, anomaly detection and analytics for smart outcomes",
       },
       {
         icon: "04",
         title: "Automation & Optimization",
-        desc: "Trigger actions, improve workflows, and continuously optimize performance",
+        desc: "Trigger actions, improve workflows and continuously optimize performance",
       },
     ],
     layers: {
@@ -286,40 +286,40 @@ const content: any = {
         icon: "</>",
         title: "Devices & Edge Layer",
         stack: "Sensors / Gateways / Controllers",
-        desc: "Connected devices collect signals, machine data, and environmental inputs from real-world operations.",
+        desc: "Connected devices collect signals, machine data and environmental inputs from real-world operations.",
       },
       middle: [
         {
           icon: "[]",
           title: "Connectivity Layer",
-          desc: "Communication channels securely transmit device data between edge, applications, and cloud platforms.",
+          desc: "Communication channels securely transmit device data between edge, applications and cloud platforms.",
         },
         {
           icon: "{}",
           title: "AI Processing Engine",
-          desc: "AI models, analytics logic, and rule-based services convert raw data into intelligent decisions.",
+          desc: "AI models, analytics logic and rule-based services convert raw data into intelligent decisions.",
         },
         {
           icon: "O",
           title: "Monitoring & Control",
-          desc: "Dashboards, alerts, device controls, and orchestration workflows manage ongoing operations.",
+          desc: "Dashboards, alerts, device controls and orchestration workflows manage ongoing operations.",
         },
       ],
       services: {
         icon: "++",
         title: "Automation & Business Logic",
-        desc: "Operational workflows trigger automated actions, predictions, alerts, and business responses.",
+        desc: "Operational workflows trigger automated actions, predictions, alerts and business responses.",
       },
       database: {
         icon: "()",
         title: "Data & Event Repository",
         stack: "Operational Data / Logs / Analytics",
-        desc: "Structured storage supports reporting, model improvement, historical analysis, and performance tracking.",
+        desc: "Structured storage supports reporting, model improvement, historical analysis and performance tracking.",
       },
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Optimization",
-        desc: "Cloud services, deployment systems, and optimization processes ensure scale, resilience, and continuous improvement.",
+        desc: "Cloud services, deployment systems and optimization processes ensure scale, resilience and continuous improvement.",
       },
       sideCards: [
         {
@@ -330,12 +330,12 @@ const content: any = {
         {
           icon: "R",
           title: "Real-Time Intelligence",
-          desc: "Immediate insights, anomaly alerts, and predictive outputs improve operational response.",
+          desc: "Immediate insights, anomaly alerts and predictive outputs improve operational response.",
         },
         {
           icon: "M",
           title: "Monitoring & Maintenance",
-          desc: "Continuous tracking, diagnostics, and updates keep systems stable and efficient over time.",
+          desc: "Continuous tracking, diagnostics and updates keep systems stable and efficient over time.",
         },
       ],
     },
@@ -358,7 +358,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -376,15 +376,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Deep AIoT Expertise",
-      desc: "Strong experience in AI, IoT platforms, edge computing, and real-time analytics for building advanced connected systems.",
+      desc: "Strong experience in AI, IoT platforms, edge computing and real-time analytics for building advanced connected systems.",
     },
     {
       title: "Scalable & Secure Solutions",
-      desc: "Enterprise-grade architecture designed for scalability, high performance, and robust security across devices and networks.",
+      desc: "Enterprise-grade architecture designed for scalability, high performance and robust security across devices and networks.",
     },
     {
       title: "Industry-Focused Use Cases",
-      desc: "Proven solutions across manufacturing, healthcare, logistics, energy, agriculture, and smart city ecosystems.",
+      desc: "Proven solutions across manufacturing, healthcare, logistics, energy, agriculture and smart city ecosystems.",
     },
   ],
 
@@ -478,7 +478,7 @@ const ItAiAutomationSolutionsAiotSolutions: React.FC = () => {
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

@@ -101,7 +101,7 @@ const content: any = {
   heroTitle: "Custom Enterprise Software Development",
 
   heroSubtitle:
-    "Scalable CRM, ERP, HRMS, and internal enterprise systems engineered for performance, security, and long-term business growth. We design robust enterprise-grade platforms tailored to your workflows, ensuring flexibility, integration readiness, and seamless digital transformation.",
+    "Scalable CRM, ERP, HRMS and internal enterprise systems engineered for performance, security and long-term business growth. We design robust enterprise-grade platforms tailored to your workflows, ensuring flexibility, integration readiness and seamless digital transformation.",
 
   primaryCta: "Get Started",
 
@@ -109,22 +109,22 @@ const content: any = {
     {
       title: "Enterprise CRM & Business Applications",
       desc:
-        "Centralize customer data, automate workflows, and improve operational visibility with custom-built CRM systems. Enhance sales tracking, customer engagement, and performance insights through real-time dashboards.",
+        "Centralize customer data, automate workflows and improve operational visibility with custom-built CRM systems. Enhance sales tracking, customer engagement and performance insights through real-time dashboards.",
     },
     {
       title: "ERP & Process Automation",
       desc:
-        "Finance, inventory, supply chain, and operational ERP solutions built using agile engineering practices. Streamline business processes, reduce manual efforts, and enable data-driven decision-making.",
+        "Finance, inventory, supply chain and operational ERP solutions built using agile engineering practices. Streamline business processes, reduce manual efforts and enable data-driven decision-making.",
     },
     {
       title: "HRMS & Internal Systems",
       desc:
-        "Secure HRMS platforms supporting payroll, compliance, employee management, and performance tracking. Improve workforce productivity and simplify HR operations with automation.",
+        "Secure HRMS platforms supporting payroll, compliance, employee management and performance tracking. Improve workforce productivity and simplify HR operations with automation.",
     },
   ],
 
   overview:
-    "Our enterprise software solutions help organizations streamline operations, automate workflows, and improve decision-making through scalable and secure custom-built systems. We build end-to-end enterprise applications that integrate seamlessly with existing tools, ensuring minimal disruption while maximizing productivity. Our solutions are designed with future scalability, data security, and high performance in mind, helping businesses stay competitive in evolving markets.",
+    "Our enterprise software solutions help organizations streamline operations, automate workflows and improve decision-making through scalable and secure custom-built systems. We build end-to-end enterprise applications that integrate seamlessly with existing tools, ensuring minimal disruption while maximizing productivity. Our solutions are designed with future scalability, data security and high performance in mind, helping businesses stay competitive in evolving markets.",
 
 projectDuration: {
   title: "Project Duration",
@@ -135,19 +135,19 @@ projectDuration: {
       title: "48 Hours",
       label: "Standard Fast Delivery",
       desc:
-        "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+        "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
     },
     {
       title: "Design + Development",
       label: "What is Included",
       desc:
-        "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+        "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
     },
     {
       title: "Finalized Content",
       label: "Requirement Condition",
       desc:
-        "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+        "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
     },
   ],
 },
@@ -156,65 +156,65 @@ projectDuration: {
     {
       title: "Requirements Analysis",
       desc:
-        "We conduct in-depth business analysis, stakeholder discussions, and system audits to understand your workflows. This phase includes defining system architecture, selecting the right technology stack, and planning scalability and security requirements.",
+        "We conduct in-depth business analysis, stakeholder discussions and system audits to understand your workflows. This phase includes defining system architecture, selecting the right technology stack and planning scalability and security requirements.",
     },
     {
       title: "Design & Development",
       desc:
-        "Our team builds modern, modular, and secure enterprise applications using agile methodologies. We focus on clean architecture, API-first design, and seamless integrations with third-party systems.",
+        "Our team builds modern, modular and secure enterprise applications using agile methodologies. We focus on clean architecture, API-first design and seamless integrations with third-party systems.",
     },
     {
       title: "Testing & Deployment",
       desc:
-        "We ensure rigorous quality assurance through functional, performance, and security testing. Post-deployment, we monitor system performance, provide support, and continuously optimize for better efficiency.",
+        "We ensure rigorous quality assurance through functional, performance and security testing. Post-deployment, we monitor system performance, provide support and continuously optimize for better efficiency.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, scalable, and enterprise-ready technologies to build secure business applications, ERP platforms, HRMS systems, internal dashboards, and workflow automation solutions that support long-term operational growth.",
+    "We use modern, scalable and enterprise-ready technologies to build secure business applications, ERP platforms, HRMS systems, internal dashboards and workflow automation solutions that support long-term operational growth.",
 
   technologies: [
     {
       icon: "frontend",
       title: "Frontend Technologies",
       desc:
-        "We build modern enterprise user interfaces that are responsive, fast, user-friendly, and optimized for large-scale business operations.",
+        "We build modern enterprise user interfaces that are responsive, fast, user-friendly and optimized for large-scale business operations.",
       items: ["HTML", "CSS", "JavaScript", "React", "Angular", "Next.js"],
     },
     {
       icon: "backend",
       title: "Backend & API Technologies",
       desc:
-        "We develop secure backend systems, scalable APIs, and business logic layers that power enterprise operations and workflow automation.",
+        "We develop secure backend systems, scalable APIs and business logic layers that power enterprise operations and workflow automation.",
       items: ["Python", "Spring Boot", "Nest.js", "Node.js", "Redis"],
     },
     {
       icon: "database",
       title: "Database & Storage",
       desc:
-        "We manage enterprise data using structured, reliable, and scalable databases for transactional systems, reporting, and internal operations.",
+        "We manage enterprise data using structured, reliable and scalable databases for transactional systems, reporting and internal operations.",
       items: ["MySQL", "MongoDB", "MS SQL", "Neon DB", "PostgreSQL"],
     },
     {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy enterprise software on secure cloud infrastructure for better scalability, availability, performance, and system reliability.",
+        "We deploy enterprise software on secure cloud infrastructure for better scalability, availability, performance and system reliability.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
       icon: "mobile",
       title: "Mobile Application Development",
       desc:
-        "We build companion mobile applications for enterprise workflows, workforce operations, approvals, reporting, and real-time communication.",
+        "We build companion mobile applications for enterprise workflows, workforce operations, approvals, reporting and real-time communication.",
       items: ["Flutter", "React Native", "Kotlin", "Swift"],
     },
     {
       icon: "ai",
       title: "AI Services & Solutions",
       desc:
-        "We integrate AI capabilities into enterprise platforms to improve automation, prediction, document processing, analytics, and decision support.",
+        "We integrate AI capabilities into enterprise platforms to improve automation, prediction, document processing, analytics and decision support.",
       items: [
         "Machine Learning",
         "AI Chatbots",
@@ -229,27 +229,27 @@ projectDuration: {
   architecture: {
     title: "Custom Enterprise Software Architecture",
     intro:
-      "We design enterprise software architecture that supports secure workflows, modular development, system integrations, scalable databases, and cloud-ready deployment. This architecture helps businesses build CRM, ERP, HRMS, internal portals, and process automation platforms with performance, reliability, and long-term flexibility.",
+      "We design enterprise software architecture that supports secure workflows, modular development, system integrations, scalable databases and cloud-ready deployment. This architecture helps businesses build CRM, ERP, HRMS, internal portals and process automation platforms with performance, reliability and long-term flexibility.",
     processSteps: [
       {
         icon: "01",
         title: "Business Requirement",
-        desc: "Understand workflows, teams, approvals, and goals",
+        desc: "Understand workflows, teams, approvals and goals",
       },
       {
         icon: "02",
         title: "Requirement Analysis",
-        desc: "Define modules, roles, integrations, and scope",
+        desc: "Define modules, roles, integrations and scope",
       },
       {
         icon: "03",
         title: "Planning & Architecture",
-        desc: "Design system flow, architecture, and roadmap",
+        desc: "Design system flow, architecture and roadmap",
       },
       {
         icon: "04",
         title: "UI/UX & Module Design",
-        desc: "Plan dashboards, forms, and user journeys",
+        desc: "Plan dashboards, forms and user journeys",
       },
     ],
     layers: {
@@ -257,40 +257,40 @@ projectDuration: {
         icon: "</>",
         title: "Frontend",
         stack: "Web Portal / Dashboard UI",
-        desc: "User-facing interface for employees, managers, admins, and business users.",
+        desc: "User-facing interface for employees, managers, admins and business users.",
       },
       middle: [
         {
           icon: "[]",
           title: "Web Server",
-          desc: "Routing, request flow, and delivery layer.",
+          desc: "Routing, request flow and delivery layer.",
         },
         {
           icon: "{}",
           title: "Backend API",
-          desc: "Core business logic, modules, and integrations.",
+          desc: "Core business logic, modules and integrations.",
         },
         {
           icon: "O",
           title: "Authentication Service",
-          desc: "User roles, access control, and identity security.",
+          desc: "User roles, access control and identity security.",
         },
       ],
       services: {
         icon: "++",
         title: "Business Logic / Services",
-        desc: "Enterprise workflows, approvals, automation, and process orchestration.",
+        desc: "Enterprise workflows, approvals, automation and process orchestration.",
       },
       database: {
         icon: "()",
         title: "Database",
         stack: "SQL / NoSQL",
-        desc: "Centralized storage for transactions, users, modules, and business records.",
+        desc: "Centralized storage for transactions, users, modules and business records.",
       },
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, file storage, backups, and infrastructure scaling.",
+        desc: "Hosting, deployment, file storage, backups and infrastructure scaling.",
       },
       sideCards: [
         {
@@ -306,7 +306,7 @@ projectDuration: {
         {
           icon: "M",
           title: "Monitoring & Logging",
-          desc: "Tracks system health, errors, and performance.",
+          desc: "Tracks system health, errors and performance.",
         },
       ],
     },
@@ -319,22 +319,22 @@ projectDuration: {
       {
         title: "Bug Fixing",
         desc:
-          "Quick identification and resolution of technical issues to keep the enterprise system stable, secure, and fully functional.",
+          "Quick identification and resolution of technical issues to keep the enterprise system stable, secure and fully functional.",
       },
       {
         title: "Minor Technical Corrections",
         desc:
-          "Small corrections, adjustments, and refinements are handled to improve usability, workflow accuracy, and day-to-day platform stability.",
+          "Small corrections, adjustments and refinements are handled to improve usability, workflow accuracy and day-to-day platform stability.",
       },
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring helps us identify bottlenecks, improve speed, and ensure your enterprise platform performs efficiently.",
+          "Continuous monitoring helps us identify bottlenecks, improve speed and ensure your enterprise platform performs efficiently.",
       },
       {
         title: "Basic Support Assistance",
         desc:
-          "We provide assistance for operational questions, minor changes, and platform guidance after deployment.",
+          "We provide assistance for operational questions, minor changes and platform guidance after deployment.",
       },
       {
         title: "Ongoing Technical Support",
@@ -365,7 +365,7 @@ projectDuration: {
   contactTitle: "Discuss Your Enterprise Software",
 
   contactSubtitle:
-    "Tell us about your enterprise requirements and our experts will connect with you to design a scalable, secure, and high-performance solution tailored to your business.",
+    "Tell us about your enterprise requirements and our experts will connect with you to design a scalable, secure and high-performance solution tailored to your business.",
 
   messageLabel: "Tell us about your project...",
 

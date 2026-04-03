@@ -103,7 +103,7 @@ export default function Blog() {
     <div className="min-h-screen bg-[#0b0618] text-white">
       <PageSEO
         title="Blog — AI, Technology & Business Insights | Zora Global AI"
-        description="Read Zora Global AI's latest articles on AI automation, software development trends, digital transformation, and technology strategy for modern businesses."
+        description="Read Zora Global AI's latest articles on AI automation, software development trends, digital transformation and technology strategy for modern businesses."
         canonical="/blog"
       />
       {/* Hero */}
@@ -127,7 +127,7 @@ export default function Blog() {
             </span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Expert perspectives on AI, software development, and digital
+            Expert perspectives on AI, software development and digital
             transformation -written by the Zora team.
           </p>
         </motion.div>
@@ -357,7 +357,7 @@ export default function Blog() {
             Get the latest insights in your inbox
           </h3>
           <p className="text-gray-400 text-sm mb-8 max-w-md mx-auto leading-relaxed">
-            No spam. Just expert articles on AI, software, and digital
+            No spam. Just expert articles on AI, software and digital
             transformation — delivered when we publish.
           </p>
           {subscribed ? (

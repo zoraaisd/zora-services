@@ -41,7 +41,7 @@ const TrustedBy: React.FC = () => {
         </h2>
 
         <p className="text-gray-200/85 max-w-3xl mx-auto mb-9 leading-snug font-serif text-lg sm:text-xl">
-          Teams that value reliability, security, and scalable engineering choose
+          Teams that value reliability, security and scalable engineering choose
           us to build systems that grow with their business.
         </p>
 

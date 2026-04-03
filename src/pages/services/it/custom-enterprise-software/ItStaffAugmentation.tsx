@@ -101,7 +101,7 @@ const content: any = {
   heroTitle: "IT Staff Augmentation Services",
 
   heroSubtitle:
-    "Scale development teams quickly with experienced engineers across web, mobile, cloud, and enterprise projects. Our flexible staff augmentation model helps you bridge skill gaps, accelerate delivery timelines, and maintain full control over your projects without long-term hiring commitments.",
+    "Scale development teams quickly with experienced engineers across web, mobile, cloud and enterprise projects. Our flexible staff augmentation model helps you bridge skill gaps, accelerate delivery timelines and maintain full control over your projects without long-term hiring commitments.",
 
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
@@ -110,22 +110,22 @@ const content: any = {
     {
       title: "Software Developers",
       desc:
-        "Frontend, backend, and full-stack engineers experienced in modern frameworks like React, Angular, Node.js, Java, and Python. Our developers integrate seamlessly into your team and workflows.",
+        "Frontend, backend and full-stack engineers experienced in modern frameworks like React, Angular, Node.js, Java and Python. Our developers integrate seamlessly into your team and workflows.",
     },
     {
       title: "Mobile Teams",
       desc:
-        "Android, iOS, and cross-platform experts specializing in Flutter, React Native, and native development. Build high-performance mobile apps with scalable architecture.",
+        "Android, iOS and cross-platform experts specializing in Flutter, React Native and native development. Build high-performance mobile apps with scalable architecture.",
     },
     {
       title: "Specialized Talent",
       desc:
-        "Access DevOps engineers, AI/ML specialists, QA automation experts, and cloud engineers with deep expertise in AWS, Azure, and Google Cloud platforms.",
+        "Access DevOps engineers, AI/ML specialists, QA automation experts and cloud engineers with deep expertise in AWS, Azure and Google Cloud platforms.",
     },
   ],
 
   overview:
-    "Our staff augmentation model enables rapid onboarding of highly skilled and vetted developers who integrate seamlessly with your internal teams. We help businesses scale engineering capacity, reduce hiring time, and ensure project continuity without compromising quality. Whether you need short-term support or long-term team extension, our flexible engagement models are designed to align with your business goals and technical requirements.",
+    "Our staff augmentation model enables rapid onboarding of highly skilled and vetted developers who integrate seamlessly with your internal teams. We help businesses scale engineering capacity, reduce hiring time and ensure project continuity without compromising quality. Whether you need short-term support or long-term team extension, our flexible engagement models are designed to align with your business goals and technical requirements.",
 
   projectDuration: {
     title: "Project Duration",
@@ -136,19 +136,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -157,23 +157,23 @@ const content: any = {
     {
       title: "Planning",
       desc:
-        "We assess your project scope, technical requirements, and team gaps to identify the right talent. This includes defining roles, skillsets, timelines, and engagement models tailored to your needs.",
+        "We assess your project scope, technical requirements and team gaps to identify the right talent. This includes defining roles, skillsets, timelines and engagement models tailored to your needs.",
     },
     {
       title: "Onboarding",
       desc:
-        "Quick onboarding of pre-vetted developers who align with your project goals. Our team ensures smooth integration with your tools, workflows, and communication processes.",
+        "Quick onboarding of pre-vetted developers who align with your project goals. Our team ensures smooth integration with your tools, workflows and communication processes.",
     },
     {
       title: "Delivery",
       desc:
-        "Our developers collaborate in agile environments, ensuring high productivity, quality delivery, and scalability. We continuously monitor performance and adapt team size based on evolving requirements.",
+        "Our developers collaborate in agile environments, ensuring high productivity, quality delivery and scalability. We continuously monitor performance and adapt team size based on evolving requirements.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -201,7 +201,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -230,22 +230,22 @@ const content: any = {
   architecture: {
     title: "IT Staff Augmentation Architecture",
     intro:
-      "We follow a structured staff augmentation architecture that helps businesses quickly extend their teams with the right technical talent. From requirement analysis and role mapping to onboarding, collaboration, delivery, and support, our approach ensures faster ramp-up, seamless integration, controlled execution, and reliable long-term development support.",
+      "We follow a structured staff augmentation architecture that helps businesses quickly extend their teams with the right technical talent. From requirement analysis and role mapping to onboarding, collaboration, delivery and support, our approach ensures faster ramp-up, seamless integration, controlled execution and reliable long-term development support.",
     processSteps: [
       {
         icon: "01",
         title: "Customer Requirement",
-        desc: "Understand project scope, team gaps, and needed skills",
+        desc: "Understand project scope, team gaps and needed skills",
       },
       {
         icon: "02",
         title: "Requirement Analysis",
-        desc: "Define roles, expertise level, duration, and team fit",
+        desc: "Define roles, expertise level, duration and team fit",
       },
       {
         icon: "03",
         title: "Proposal / Planning",
-        desc: "Map resources, onboarding plan, and engagement model",
+        desc: "Map resources, onboarding plan and engagement model",
       },
       {
         icon: "04",
@@ -264,34 +264,34 @@ const content: any = {
         {
           icon: "[]",
           title: "Project Coordination",
-          desc: "Task planning, sprint alignment, and communication flow.",
+          desc: "Task planning, sprint alignment and communication flow.",
         },
         {
           icon: "{}",
           title: "Technical Delivery",
-          desc: "Development execution, code contribution, and feature delivery.",
+          desc: "Development execution, code contribution and feature delivery.",
         },
         {
           icon: "O",
           title: "Access & Security",
-          desc: "Secure onboarding, permissions, and controlled system access.",
+          desc: "Secure onboarding, permissions and controlled system access.",
         },
       ],
       services: {
         icon: "++",
         title: "Business Logic / Services",
-        desc: "Daily collaboration, delivery tracking, quality checks, and workflow continuity.",
+        desc: "Daily collaboration, delivery tracking, quality checks and workflow continuity.",
       },
       database: {
         icon: "()",
         title: "Project Systems / Repositories",
         stack: "Code / Tools / Data",
-        desc: "Source code, project assets, sprint tools, and shared technical resources.",
+        desc: "Source code, project assets, sprint tools and shared technical resources.",
       },
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Support",
-        desc: "Infrastructure, release support, monitoring, and continuous engineering assistance.",
+        desc: "Infrastructure, release support, monitoring and continuous engineering assistance.",
       },
       sideCards: [
         {
@@ -307,7 +307,7 @@ const content: any = {
         {
           icon: "M",
           title: "Monitoring & Reporting",
-          desc: "Track performance, progress, and productivity continuously.",
+          desc: "Track performance, progress and productivity continuously.",
         },
       ],
     },
@@ -330,7 +330,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -354,7 +354,7 @@ const content: any = {
     {
       title: "Flexible Engagement",
       desc:
-        "Scale your team up or down based on project demands with flexible hiring models including hourly, monthly, and dedicated resources.",
+        "Scale your team up or down based on project demands with flexible hiring models including hourly, monthly and dedicated resources.",
     },
     {
       title: "Faster Delivery",

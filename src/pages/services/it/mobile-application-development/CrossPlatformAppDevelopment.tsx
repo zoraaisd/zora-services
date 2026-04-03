@@ -97,57 +97,57 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 
 const content: any = {
   "heroTitle": "Cross-Platform App Development Services",
-  "heroSubtitle": "We provide cross-platform app development services that help businesses launch high-performance mobile applications for both iOS and Android using a single codebase. Our solutions focus on faster delivery, cost efficiency, consistent user experience, scalable architecture, and secure mobile performance to support long-term business growth.",
+  "heroSubtitle": "We provide cross-platform app development services that help businesses launch high-performance mobile applications for both iOS and Android using a single codebase. Our solutions focus on faster delivery, cost efficiency, consistent user experience, scalable architecture and secure mobile performance to support long-term business growth.",
   "primaryCta": "Build Your App",
   "topBlocks": [
     {
       "title": "Single Codebase Development",
-      "desc": "We build cross-platform mobile applications using a unified codebase that works efficiently across both iOS and Android platforms. This approach reduces duplication, speeds up development, simplifies maintenance, and helps businesses launch mobile products faster while maintaining consistency in features and experience."
+      "desc": "We build cross-platform mobile applications using a unified codebase that works efficiently across both iOS and Android platforms. This approach reduces duplication, speeds up development, simplifies maintenance and helps businesses launch mobile products faster while maintaining consistency in features and experience."
     },
     {
       "title": "Native-Like User Experience",
-      "desc": "Our cross-platform apps are designed to deliver smooth navigation, responsive interfaces, and performance that feels close to native applications. We focus on creating intuitive user experiences, polished UI design, and platform-aware interactions that improve usability, engagement, and retention."
+      "desc": "Our cross-platform apps are designed to deliver smooth navigation, responsive interfaces and performance that feels close to native applications. We focus on creating intuitive user experiences, polished UI design and platform-aware interactions that improve usability, engagement and retention."
     },
     {
       "title": "Scalable & Secure App Architecture",
-      "desc": "We develop mobile applications on robust and secure architecture that supports future growth, third-party integrations, and business expansion. From API connectivity and cloud integration to performance optimization and data protection, our solutions are built for reliability and long-term scalability."
+      "desc": "We develop mobile applications on robust and secure architecture that supports future growth, third-party integrations and business expansion. From API connectivity and cloud integration to performance optimization and data protection, our solutions are built for reliability and long-term scalability."
     }
   ],
-  "overview": "Our cross-platform app development services help businesses create feature-rich, scalable, and cost-effective mobile applications for multiple platforms through a single streamlined development process. We design and develop custom apps that function smoothly across iOS and Android while reducing development time, maintenance effort, and overall project cost. Whether you need a customer-facing mobile app, business productivity solution, booking system, e-commerce platform, enterprise application, or on-demand service app, we build cross-platform mobile solutions that combine modern UI/UX, strong backend connectivity, reliable performance, and secure architecture. Our goal is to help businesses launch faster, reach a wider audience, and maintain a consistent mobile experience across devices.",
+  "overview": "Our cross-platform app development services help businesses create feature-rich, scalable and cost-effective mobile applications for multiple platforms through a single streamlined development process. We design and develop custom apps that function smoothly across iOS and Android while reducing development time, maintenance effort and overall project cost. Whether you need a customer-facing mobile app, business productivity solution, booking system, e-commerce platform, enterprise application, or on-demand service app, we build cross-platform mobile solutions that combine modern UI/UX, strong backend connectivity, reliable performance and secure architecture. Our goal is to help businesses launch faster, reach a wider audience and maintain a consistent mobile experience across devices.",
   "projectDuration": {
     "title": "Project Duration",
     "subtitle": "For fast-launch website requirements, our standard delivery timeline can be completed within 48 hours based on finalized content and clear scope.",
     "cards": [
       {
         "title": "48 Hours",
-        "desc": "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements."
+        "desc": "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements."
       },
       {
         "title": "Design + Development",
-        "desc": "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation."
+        "desc": "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation."
       },
       {
         "title": "Finalized Content",
-        "desc": "Timeline applies when content, branding, and scope are clearly defined and approved before development begins."
+        "desc": "Timeline applies when content, branding and scope are clearly defined and approved before development begins."
       }
     ]
   },
   "deliverySteps": [
     {
       "title": "Planning",
-      "desc": "We start by understanding your business model, app goals, target users, required features, and platform expectations to define the right cross-platform development strategy. This phase helps us choose the best architecture, user flow, feature priorities, and technical approach for efficient and scalable delivery."
+      "desc": "We start by understanding your business model, app goals, target users, required features and platform expectations to define the right cross-platform development strategy. This phase helps us choose the best architecture, user flow, feature priorities and technical approach for efficient and scalable delivery."
     },
     {
       "title": "Development",
-      "desc": "Once the strategy is clear, we design and develop the application using modern cross-platform frameworks, shared business logic, and platform-specific enhancements where needed. Our process focuses on responsive design, clean code, API integration, security, performance optimization, and consistent user experience across iOS and Android."
+      "desc": "Once the strategy is clear, we design and develop the application using modern cross-platform frameworks, shared business logic and platform-specific enhancements where needed. Our process focuses on responsive design, clean code, API integration, security, performance optimization and consistent user experience across iOS and Android."
     },
     {
       "title": "Launch & Scale",
-      "desc": "Before release, we thoroughly test the app for performance, responsiveness, usability, compatibility, and security across different devices and operating systems. After launch, we support optimization, updates, monitoring, and future feature expansion so your app can continue growing with your business needs."
+      "desc": "Before release, we thoroughly test the app for performance, responsiveness, usability, compatibility and security across different devices and operating systems. After launch, we support optimization, updates, monitoring and future feature expansion so your app can continue growing with your business needs."
     }
   ],
   "technologiesTitle": "Technologies We Use",
-  "technologiesSubtitle": "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+  "technologiesSubtitle": "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
   "technologies": [
     {
       "icon": "frontend",
@@ -170,7 +170,7 @@ const content: any = {
     {
       "icon": "cloud",
       "title": "Cloud & Deployment",
-      "desc": "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+      "desc": "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       "items": ["AWS", "Azure", "GCP", "Firebase"]
     },
     {
@@ -188,7 +188,7 @@ const content: any = {
   ],
   "architecture": {
     "title": "Web Design & Development Architecture",
-    "intro": "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, and seamless user experience.",
+    "intro": "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security and seamless user experience.",
     "processSteps": [
       {
         "icon": "01",
@@ -249,7 +249,7 @@ const content: any = {
       "bottom": {
         "icon": "<>",
         "title": "Cloud / Deployment / Storage",
-        "desc": "Hosting, deployment, and storage."
+        "desc": "Hosting, deployment and storage."
       },
       "sideCards": [
         {
@@ -284,7 +284,7 @@ const content: any = {
       },
       {
         "title": "Performance Monitoring",
-        "desc": "Continuous monitoring to ensure speed, uptime, and optimal performance."
+        "desc": "Continuous monitoring to ensure speed, uptime and optimal performance."
       },
       {
         "title": "Basic Support Assistance",
@@ -299,19 +299,19 @@ const content: any = {
   "whyChoose": [
     {
       "title": "Cost-Effective Development",
-      "desc": "Cross-platform development allows businesses to reduce overall development and maintenance costs by using a shared codebase for iOS and Android. This makes it an efficient solution for startups, growing businesses, and enterprises that want quality mobile apps without managing two completely separate builds."
+      "desc": "Cross-platform development allows businesses to reduce overall development and maintenance costs by using a shared codebase for iOS and Android. This makes it an efficient solution for startups, growing businesses and enterprises that want quality mobile apps without managing two completely separate builds."
     },
     {
       "title": "Faster Time-to-Market",
-      "desc": "By developing once and deploying across multiple platforms, we help businesses launch their apps faster and reach users on both iOS and Android in less time. This faster delivery model supports quicker validation, earlier market entry, and better business agility."
+      "desc": "By developing once and deploying across multiple platforms, we help businesses launch their apps faster and reach users on both iOS and Android in less time. This faster delivery model supports quicker validation, earlier market entry and better business agility."
     },
     {
       "title": "Scalable Mobile Solutions",
-      "desc": "Our cross-platform applications are built with future growth in mind. From feature expansion and backend scaling to third-party integrations and performance improvements, we create mobile solutions that remain stable, adaptable, and ready to support evolving business requirements."
+      "desc": "Our cross-platform applications are built with future growth in mind. From feature expansion and backend scaling to third-party integrations and performance improvements, we create mobile solutions that remain stable, adaptable and ready to support evolving business requirements."
     }
   ],
   "contactTitle": "Start Your Cross-Platform App",
-  "contactSubtitle": "Looking to build a mobile app for both iOS and Android with a faster and more cost-effective development approach? Share your idea with our team and we will help you plan, design, and develop a scalable cross-platform application tailored to your business goals.",
+  "contactSubtitle": "Looking to build a mobile app for both iOS and Android with a faster and more cost-effective development approach? Share your idea with our team and we will help you plan, design and develop a scalable cross-platform application tailored to your business goals.",
   "messageLabel": "Tell us about your app idea...",
   "submitLabel": "Request Consultation"
 };
@@ -403,7 +403,7 @@ const ItMobileApplicationDevelopmentCrossPlatformAppDevelopment: React.FC = () =
 
               <p className="text-gray-300 mt-5 mx-auto max-w-3xl text-base sm:text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">

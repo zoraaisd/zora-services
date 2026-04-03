@@ -10,7 +10,7 @@ const item = {
   slug: "social-media-branding",
   title: "Social Media Management",
   shortDesc:
-    "End-to-end social media management services including strategy, content creation, scheduling, engagement, campaign support, and analytics-driven brand growth.",
+    "End-to-end social media management services including strategy, content creation, scheduling, engagement, campaign support and analytics-driven brand growth.",
 };
 
 const heroImage = "/non-it-hero/social-media-branding.png";
@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Social Media Management Services",
   heroSubtitle:
-    "Zora Global AI provides professional social media management services that help businesses build brand awareness, strengthen audience engagement, maintain a consistent online presence, and grow across major social media platforms through strategy-led content and performance-focused execution.",
+    "Zora Global AI provides professional social media management services that help businesses build brand awareness, strengthen audience engagement, maintain a consistent online presence and grow across major social media platforms through strategy-led content and performance-focused execution.",
 
   primaryCta: "Grow on Social Media",
   secondaryCta: "Talk to Us",
@@ -111,43 +111,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Social Media Strategy",
-      desc: "We create platform-specific social media strategies aligned with your brand voice, audience behavior, business goals, and content direction to improve consistency, reach, and long-term digital visibility across important channels.",
+      desc: "We create platform-specific social media strategies aligned with your brand voice, audience behavior, business goals and content direction to improve consistency, reach and long-term digital visibility across important channels.",
     },
     {
       title: "Content Creation & Scheduling",
-      desc: "Our team develops engaging social media content including post ideas, captions, creatives, branded messaging, campaign content, and structured publishing schedules to keep your business active, relevant, and professionally presented online.",
+      desc: "Our team develops engaging social media content including post ideas, captions, creatives, branded messaging, campaign content and structured publishing schedules to keep your business active, relevant and professionally presented online.",
     },
     {
       title: "Community & Campaign Management",
-      desc: "We support day-to-day social media management through audience engagement, comment moderation, campaign coordination, promotional planning, and platform monitoring to help brands build trust, visibility, and stronger community interaction.",
+      desc: "We support day-to-day social media management through audience engagement, comment moderation, campaign coordination, promotional planning and platform monitoring to help brands build trust, visibility and stronger community interaction.",
     },
   ],
 
   overview:
-    "Our social media management services help businesses build a stronger digital presence through consistent content, audience-focused communication, and platform-appropriate growth strategies. We support content planning, creative coordination, publishing schedules, engagement management, campaign execution, and performance tracking across major social media platforms. By aligning social activity with brand goals, customer interests, and business messaging, we help companies improve visibility, strengthen audience connection, enhance credibility, and create meaningful digital engagement. Whether the goal is brand awareness, lead generation support, community growth, or stronger market positioning, our social media services are designed to deliver structured, scalable, and business-aligned results.",
+    "Our social media management services help businesses build a stronger digital presence through consistent content, audience-focused communication and platform-appropriate growth strategies. We support content planning, creative coordination, publishing schedules, engagement management, campaign execution and performance tracking across major social media platforms. By aligning social activity with brand goals, customer interests and business messaging, we help companies improve visibility, strengthen audience connection, enhance credibility and create meaningful digital engagement. Whether the goal is brand awareness, lead generation support, community growth, or stronger market positioning, our social media services are designed to deliver structured, scalable and business-aligned results.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver structured social media management focused on stronger brand consistency, better engagement, and measurable digital growth.",
+      "We deliver structured social media management focused on stronger brand consistency, better engagement and measurable digital growth.",
     cards: [
       {
         title: "Fast & Brand-Focused Execution",
         label: "Best suited for",
         desc:
-          "Businesses that want a consistent social presence with clearer messaging, stronger engagement, and better content direction.",
+          "Businesses that want a consistent social presence with clearer messaging, stronger engagement and better content direction.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Social strategy, content planning, publishing schedules, community coordination, campaign support, and performance tracking.",
+          "Social strategy, content planning, publishing schedules, community coordination, campaign support and performance tracking.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Platform-specific planning, disciplined execution, and scalable support that improve social visibility and audience connection.",
+          "Platform-specific planning, disciplined execution and scalable support that improve social visibility and audience connection.",
       },
     ],
   },
@@ -157,85 +157,85 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand brand goals, target audience, platforms, content themes, posting needs, and engagement priorities before execution begins.",
+        "Understand brand goals, target audience, platforms, content themes, posting needs and engagement priorities before execution begins.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze audience behavior, competitor activity, brand positioning gaps, content opportunities, and platform priorities to shape the right social plan.",
+        "Analyze audience behavior, competitor activity, brand positioning gaps, content opportunities and platform priorities to shape the right social plan.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define content direction, publishing cadence, campaign coordination, community workflow, and reporting milestones for structured delivery.",
+        "Define content direction, publishing cadence, campaign coordination, community workflow and reporting milestones for structured delivery.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies provides structured social media management support that helps businesses grow their digital presence with stronger consistency, better engagement, and clearer brand communication. We combine strategy, content operations, and performance monitoring to turn social media activity into measurable brand growth.",
+    "Zora Global AI Technologies provides structured social media management support that helps businesses grow their digital presence with stronger consistency, better engagement and clearer brand communication. We combine strategy, content operations and performance monitoring to turn social media activity into measurable brand growth.",
   whoWeAreCards: [
     {
       title: "Brand-Led Social Execution",
       desc:
-        "We align every engagement with business goals, audience relevance, and brand consistency instead of random posting activity.",
+        "We align every engagement with business goals, audience relevance and brand consistency instead of random posting activity.",
     },
     {
       title: "Content, Community & Campaign Coordination",
       desc:
-        "Our work connects content planning, publishing, audience engagement, promotions, and monitoring to build a stronger overall social presence.",
+        "Our work connects content planning, publishing, audience engagement, promotions and monitoring to build a stronger overall social presence.",
     },
     {
       title: "Long-Term Digital Growth Support",
       desc:
-        "We stay focused on sustainable social performance through reporting, refinement, content optimization, and platform-aware execution.",
+        "We stay focused on sustainable social performance through reporting, refinement, content optimization and platform-aware execution.",
     },
   ],
 
   technologiesTitle: "Social Media Platforms, Content Tools & Engagement Systems",
   technologiesSubtitle:
-    "We use structured social planning methods, publishing systems, content workflows, and analytics tools to deliver practical, scalable, and measurable social media growth.",
+    "We use structured social planning methods, publishing systems, content workflows and analytics tools to deliver practical, scalable and measurable social media growth.",
   technologies: [
     {
       icon: "strategy",
       title: "Social Strategy & Brand Planning",
       desc:
-        "We define platform goals, content themes, brand messaging, and audience alignment strategies that shape more consistent social growth.",
+        "We define platform goals, content themes, brand messaging and audience alignment strategies that shape more consistent social growth.",
       items: ["Content Pillars", "Brand Positioning", "Audience Mapping"],
     },
     {
       icon: "marketing",
       title: "Platform & Campaign Management",
       desc:
-        "We manage core social platforms and campaign coordination to improve visibility, promotional reach, and audience interaction across channels.",
+        "We manage core social platforms and campaign coordination to improve visibility, promotional reach and audience interaction across channels.",
       items: ["Instagram", "Facebook", "LinkedIn"],
     },
     {
       icon: "content",
       title: "Content Planning & Publishing Workflows",
       desc:
-        "We structure caption planning, creative coordination, calendar scheduling, and publishing workflows that keep social activity organized and consistent.",
+        "We structure caption planning, creative coordination, calendar scheduling and publishing workflows that keep social activity organized and consistent.",
       items: ["Content Calendars", "Scheduling Tools", "Creative Briefs"],
     },
     {
       icon: "community",
       title: "Community Engagement & Interaction",
       desc:
-        "We support audience engagement, comment moderation, inbox follow-up, and brand interaction routines that strengthen trust and responsiveness.",
+        "We support audience engagement, comment moderation, inbox follow-up and brand interaction routines that strengthen trust and responsiveness.",
       items: ["Comment Moderation", "Message Handling", "Audience Engagement"],
     },
     {
       icon: "operations",
       title: "Campaign Support & Execution Operations",
       desc:
-        "We coordinate promotional content, social launches, collaboration flow, and post-level execution details that support stronger campaign delivery.",
+        "We coordinate promotional content, social launches, collaboration flow and post-level execution details that support stronger campaign delivery.",
       items: ["Promotional Posts", "Campaign Rollouts", "Execution Checklists"],
     },
     {
       icon: "analytics",
       title: "Performance Tracking & Analytics",
       desc:
-        "We build reporting views that improve visibility into reach, engagement, follower growth, and campaign performance for better decisions.",
+        "We build reporting views that improve visibility into reach, engagement, follower growth and campaign performance for better decisions.",
       items: ["Engagement Reports", "Reach Tracking", "Performance Dashboards"],
     },
   ],
@@ -243,84 +243,84 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from social strategy clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from social strategy clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand brand objectives, target audience, platform focus, and content expectations",
+        desc: "Understand brand objectives, target audience, platform focus and content expectations",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze current social presence, audience behavior, content gaps, and engagement priorities",
+        desc: "Analyze current social presence, audience behavior, content gaps and engagement priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define content roadmap, publishing workflow, campaign support, and structured action plan",
+        desc: "Define content roadmap, publishing workflow, campaign support and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right content, community, and reporting support resources for execution",
+        desc: "Assign the right content, community and reporting support resources for execution",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Execute content publishing, engagement support, and social campaign activities efficiently",
+        desc: "Execute content publishing, engagement support and social campaign activities efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor engagement, evaluate content performance, and optimize delivery",
+        desc: "Continuously monitor engagement, evaluate content performance and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide visibility into social performance, insights, and ongoing growth support",
+      desc: "Provide visibility into social performance, insights and ongoing growth support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
 
   frameworkTitle: "Social Media Growth Transformation",
   frameworkSubtitle:
-    "Turning inconsistent social activity into a structured brand presence with stronger engagement, visibility, and audience growth.",
+    "Turning inconsistent social activity into a structured brand presence with stronger engagement, visibility and audience growth.",
 
   beforePoints: [
     "Irregular posting with limited content direction",
@@ -340,21 +340,21 @@ const content: any = {
   whyChoose: [
     {
       title: "Brand-consistent social execution",
-      desc: "We build structured social media systems around brand voice, audience relevance, and platform fit so your presence feels intentional and professional.",
+      desc: "We build structured social media systems around brand voice, audience relevance and platform fit so your presence feels intentional and professional.",
     },
     {
       title: "Stronger content and community coordination",
-      desc: "Our work connects planning, publishing, engagement, and campaign activity so your social channels operate as a clear growth system instead of disconnected posts.",
+      desc: "Our work connects planning, publishing, engagement and campaign activity so your social channels operate as a clear growth system instead of disconnected posts.",
     },
     {
       title: "Ongoing optimization for long-term growth",
-      desc: "We improve social performance through reporting, content refinement, platform prioritization, and consistent execution that supports sustainable visibility.",
+      desc: "We improve social performance through reporting, content refinement, platform prioritization and consistent execution that supports sustainable visibility.",
     },
   ],
 
   contactTitle: "Talk to Our Social Media Experts",
   contactSubtitle:
-    "Ready to improve your brand presence, audience engagement, and content consistency on social media? Talk to our specialists to build a social media strategy aligned with your business goals and digital growth plans.",
+    "Ready to improve your brand presence, audience engagement and content consistency on social media? Talk to our specialists to build a social media strategy aligned with your business goals and digital growth plans.",
 
   messageLabel: "Tell us about your social media goals...",
   submitLabel: "Request Social Media Consultation",
@@ -440,7 +440,7 @@ const NonItDigitalMarketingServicesSocialMediaBranding: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

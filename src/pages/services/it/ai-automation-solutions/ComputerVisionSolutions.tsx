@@ -108,11 +108,11 @@ const content: any = {
   topBlocks: [
     {
       title: "Image Recognition",
-      desc: "Detect and classify objects, faces, and patterns using advanced deep learning models.",
+      desc: "Detect and classify objects, faces and patterns using advanced deep learning models.",
     },
     {
       title: "Video Analytics",
-      desc: "Real-time monitoring, tracking, and behavioral analysis for smart surveillance and insights.",
+      desc: "Real-time monitoring, tracking and behavioral analysis for smart surveillance and insights.",
     },
     {
       title: "Visual Inspection",
@@ -121,7 +121,7 @@ const content: any = {
   ],
 
   overview:
-    "Our Computer Vision solutions enable businesses to analyze and act on visual data with high accuracy and speed. We build scalable systems for real-world environments — combining deep learning, robust data pipelines, and optimized deployment strategies for consistent performance.",
+    "Our Computer Vision solutions enable businesses to analyze and act on visual data with high accuracy and speed. We build scalable systems for real-world environments — combining deep learning, robust data pipelines and optimized deployment strategies for consistent performance.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,7 +152,7 @@ const content: any = {
   deliverySteps: [
     {
       title: "Vision Strategy & Use Case Discovery",
-      desc: "Define business goals, datasets, and the right computer vision approach.",
+      desc: "Define business goals, datasets and the right computer vision approach.",
     },
     {
       title: "Model Development & Training",
@@ -160,13 +160,13 @@ const content: any = {
     },
     {
       title: "Deployment & Continuous Optimization",
-      desc: "Deploy solutions in real environments with monitoring, scaling, and ongoing improvements.",
+      desc: "Deploy solutions in real environments with monitoring, scaling and ongoing improvements.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -194,7 +194,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -223,7 +223,7 @@ const content: any = {
   architecture: {
     title: "Computer Vision Solutions Architecture",
     intro:
-      "We design scalable and high-performance computer vision solution architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, real-time processing, and seamless visual intelligence workflows.",
+      "We design scalable and high-performance computer vision solution architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, real-time processing and seamless visual intelligence workflows.",
     processSteps: [
       {
         icon: "01",
@@ -284,7 +284,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -323,7 +323,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -342,7 +342,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -352,7 +352,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 

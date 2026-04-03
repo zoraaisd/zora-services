@@ -33,7 +33,7 @@ const Home: React.FC = () => {
     <main className="relative bg-[#010409] text-white overflow-hidden">
       <PageSEO
         title="AI Automation & Software Development Company | Zora Global AI"
-        description="Zora Global AI delivers AI automation, custom software, web and mobile development, cloud infrastructure, and cybersecurity solutions for modern businesses."
+        description="Zora Global AI delivers AI automation, custom software, web and mobile development, cloud infrastructure and cybersecurity solutions for modern businesses."
         canonical="/"
       />
       {/* ================= GLOBAL STYLES ================= */}

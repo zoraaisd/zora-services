@@ -10,7 +10,7 @@ const item = {
   slug: "lead-generation-campaigns",
   title: "Lead Generation Campaigns",
   shortDesc:
-    "Strategy-led experience approach to drive better product journeys, clarity, and conversion-ready design direction.",
+    "Strategy-led experience approach to drive better product journeys, clarity and conversion-ready design direction.",
 };
 
 const heroImage = "/non-it-hero/lead-generation-campaigns.png";
@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Lead Generation Campaigns",
   heroSubtitle:
-    "Zora Global AI builds lead generation campaigns that help businesses attract qualified prospects, increase inquiry volume, and convert demand into measurable pipeline growth through audience targeting, campaign execution, landing-page alignment, and continuous optimization.",
+    "Zora Global AI builds lead generation campaigns that help businesses attract qualified prospects, increase inquiry volume and convert demand into measurable pipeline growth through audience targeting, campaign execution, landing-page alignment and continuous optimization.",
 
   primaryCta: "Explore Lead Generation",
   secondaryCta: "Talk to Us",
@@ -111,25 +111,25 @@ const content: any = {
   topBlocks: [
     {
       title: "Audience Targeting & Offer Strategy",
-      desc: "We define ideal customer segments, campaign angles, lead magnets, and conversion offers that align acquisition activity with business goals and buyer intent.",
+      desc: "We define ideal customer segments, campaign angles, lead magnets and conversion offers that align acquisition activity with business goals and buyer intent.",
     },
     {
       title: "Campaign Launch & Lead Capture",
-      desc: "Our team manages ad setup, form strategy, landing-page coordination, funnel flow, and lead-capture mechanisms to improve response quality and campaign efficiency.",
+      desc: "Our team manages ad setup, form strategy, landing-page coordination, funnel flow and lead-capture mechanisms to improve response quality and campaign efficiency.",
     },
     {
       title: "Performance Tracking & Optimization",
-      desc: "We monitor channel performance, CPL trends, conversion behavior, and response quality to refine campaigns and increase lead generation efficiency over time.",
+      desc: "We monitor channel performance, CPL trends, conversion behavior and response quality to refine campaigns and increase lead generation efficiency over time.",
     },
   ],
 
   overview:
-    "Our lead generation campaign services help businesses create a structured and scalable acquisition engine across digital channels. We support audience analysis, campaign planning, lead magnet strategy, landing-page coordination, ad execution, and follow-up workflow design so that lead generation is not just about clicks, but about generating qualified prospects with stronger conversion potential. From campaign launch to reporting and optimization, we help businesses improve inquiry flow, reduce wasted spend, and build a more predictable pipeline for sales and growth teams.",
+    "Our lead generation campaign services help businesses create a structured and scalable acquisition engine across digital channels. We support audience analysis, campaign planning, lead magnet strategy, landing-page coordination, ad execution and follow-up workflow design so that lead generation is not just about clicks, but about generating qualified prospects with stronger conversion potential. From campaign launch to reporting and optimization, we help businesses improve inquiry flow, reduce wasted spend and build a more predictable pipeline for sales and growth teams.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver structured lead generation campaigns focused on audience precision, stronger conversion flow, and measurable pipeline growth.",
+      "We deliver structured lead generation campaigns focused on audience precision, stronger conversion flow and measurable pipeline growth.",
     cards: [
       {
         title: "Fast & Conversion-Focused Execution",
@@ -141,13 +141,13 @@ const content: any = {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Audience targeting, campaign setup, offer positioning, landing-flow alignment, lead capture, and optimization support.",
+          "Audience targeting, campaign setup, offer positioning, landing-flow alignment, lead capture and optimization support.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Strategic campaign planning, disciplined execution, and data-backed improvements that strengthen lead acquisition performance.",
+          "Strategic campaign planning, disciplined execution and data-backed improvements that strengthen lead acquisition performance.",
       },
     ],
   },
@@ -157,85 +157,85 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand target audience, campaign goals, offer positioning, budget expectations, and lead qualification priorities before launch.",
+        "Understand target audience, campaign goals, offer positioning, budget expectations and lead qualification priorities before launch.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze buyer intent, channel fit, competitor activity, conversion barriers, and current campaign gaps to shape the right acquisition approach.",
+        "Analyze buyer intent, channel fit, competitor activity, conversion barriers and current campaign gaps to shape the right acquisition approach.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define campaign structure, messaging, targeting logic, landing-page requirements, and optimization milestones for structured execution.",
+        "Define campaign structure, messaging, targeting logic, landing-page requirements and optimization milestones for structured execution.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured digital marketing support that helps businesses build lead pipelines with stronger targeting, better campaign control, and measurable acquisition outcomes. We combine strategy, campaign operations, and performance analysis to turn marketing activity into qualified business opportunities.",
+    "Zora Global AI Technologies delivers structured digital marketing support that helps businesses build lead pipelines with stronger targeting, better campaign control and measurable acquisition outcomes. We combine strategy, campaign operations and performance analysis to turn marketing activity into qualified business opportunities.",
   whoWeAreCards: [
     {
       title: "Performance-Led Campaign Execution",
       desc:
-        "We align every lead generation engagement with business objectives, audience intent, and measurable conversion outcomes rather than vanity metrics.",
+        "We align every lead generation engagement with business objectives, audience intent and measurable conversion outcomes rather than vanity metrics.",
     },
     {
       title: "Full-Funnel Lead Coordination",
       desc:
-        "Our work connects targeting, ad campaigns, landing flows, lead capture, and follow-up visibility to improve the quality of generated opportunities.",
+        "Our work connects targeting, ad campaigns, landing flows, lead capture and follow-up visibility to improve the quality of generated opportunities.",
     },
     {
       title: "Ongoing Growth Partnership",
       desc:
-        "We focus on sustainable lead generation through testing, reporting, optimization, and campaign refinement that supports long-term demand generation.",
+        "We focus on sustainable lead generation through testing, reporting, optimization and campaign refinement that supports long-term demand generation.",
     },
   ],
 
   technologiesTitle: "Lead Generation Platforms, Campaign Tools & Analytics",
   technologiesSubtitle:
-    "We use proven campaign frameworks, ad platforms, CRM workflows, audience targeting systems, and reporting tools to deliver scalable and measurable lead generation performance.",
+    "We use proven campaign frameworks, ad platforms, CRM workflows, audience targeting systems and reporting tools to deliver scalable and measurable lead generation performance.",
   technologies: [
     {
       icon: "strategy",
       title: "Campaign Strategy & Funnel Planning",
       desc:
-        "We define campaign objectives, offer strategy, buyer journey flow, and qualification paths that turn outreach into structured lead generation activity.",
+        "We define campaign objectives, offer strategy, buyer journey flow and qualification paths that turn outreach into structured lead generation activity.",
       items: ["Offer Mapping", "Lead Funnel Planning", "Conversion Strategy"],
     },
     {
       icon: "ads",
       title: "Paid Media & Acquisition Platforms",
       desc:
-        "We use digital advertising channels to reach relevant audiences, launch targeted campaigns, and generate inbound lead opportunities efficiently.",
+        "We use digital advertising channels to reach relevant audiences, launch targeted campaigns and generate inbound lead opportunities efficiently.",
       items: ["Google Ads", "Meta Ads Manager", "LinkedIn Campaign Manager"],
     },
     {
       icon: "crm",
       title: "Lead Capture & CRM Workflows",
       desc:
-        "We structure forms, lead-routing logic, and CRM handoff processes so marketing-generated leads are captured, tracked, and followed up effectively.",
+        "We structure forms, lead-routing logic and CRM handoff processes so marketing-generated leads are captured, tracked and followed up effectively.",
       items: ["Lead Forms", "HubSpot CRM", "Zoho CRM"],
     },
     {
       icon: "audience",
       title: "Audience Segmentation & Targeting",
       desc:
-        "We refine audience groups, messaging relevance, and campaign intent signals to improve lead quality and reduce wasted acquisition spend.",
+        "We refine audience groups, messaging relevance and campaign intent signals to improve lead quality and reduce wasted acquisition spend.",
       items: ["Buyer Personas", "Audience Lists", "Intent Segmentation"],
     },
     {
       icon: "operations",
       title: "Conversion Operations & Testing",
       desc:
-        "We improve campaign performance with landing-page alignment, CTA refinement, lead magnet positioning, and structured A/B testing workflows.",
+        "We improve campaign performance with landing-page alignment, CTA refinement, lead magnet positioning and structured A/B testing workflows.",
       items: ["Landing Pages", "CTA Testing", "A/B Experiments"],
     },
     {
       icon: "analytics",
       title: "Reporting & Performance Analytics",
       desc:
-        "We track CPL, conversion rate, inquiry quality, and campaign efficiency with reporting structures that support faster and better decisions.",
+        "We track CPL, conversion rate, inquiry quality and campaign efficiency with reporting structures that support faster and better decisions.",
       items: ["Google Analytics", "Looker Studio", "Conversion Dashboards"],
     },
   ],
@@ -243,96 +243,96 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from campaign clarity to execution, optimization, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from campaign clarity to execution, optimization and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand campaign goals, audience segments, offers, and lead qualification expectations",
+        desc: "Understand campaign goals, audience segments, offers and lead qualification expectations",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze demand potential, channel fit, messaging gaps, and current lead generation challenges",
+        desc: "Analyze demand potential, channel fit, messaging gaps and current lead generation challenges",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define campaign structure, funnel journey, landing-flow requirements, and optimization roadmap",
+        desc: "Define campaign structure, funnel journey, landing-flow requirements and optimization roadmap",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign campaign specialists, creative support, reporting ownership, and execution priorities",
+        desc: "Assign campaign specialists, creative support, reporting ownership and execution priorities",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Launch campaigns, manage targeting, coordinate lead capture, and run acquisition activity efficiently",
+        desc: "Launch campaigns, manage targeting, coordinate lead capture and run acquisition activity efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously track lead quality, cost performance, conversion flow, and campaign results to optimize delivery",
+        desc: "Continuously track lead quality, cost performance, conversion flow and campaign results to optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide performance reporting, pipeline visibility, and ongoing campaign improvement support",
+      desc: "Provide performance reporting, pipeline visibility and ongoing campaign improvement support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
 
   frameworkTitle: "Lead Generation Transformation",
   frameworkSubtitle:
-    "Turning inconsistent acquisition activity into a structured lead generation engine with stronger targeting, better conversion flow, and measurable pipeline outcomes.",
+    "Turning inconsistent acquisition activity into a structured lead generation engine with stronger targeting, better conversion flow and measurable pipeline outcomes.",
 
   beforePoints: [
     "Lead generation efforts running without clear targeting or qualification structure",
-    "Weak alignment between campaign messaging, landing pages, and conversion goals",
-    "Limited visibility into lead quality, cost efficiency, and follow-up readiness",
+    "Weak alignment between campaign messaging, landing pages and conversion goals",
+    "Limited visibility into lead quality, cost efficiency and follow-up readiness",
     "Inconsistent optimization causing wasted spend and lower inquiry performance",
   ],
 
   afterPoints: [
     "More structured campaigns with clearer targeting and stronger offer positioning",
-    "Better lead capture flow between ads, landing pages, forms, and follow-up systems",
-    "Improved visibility into lead quality, CPL, and conversion performance",
+    "Better lead capture flow between ads, landing pages, forms and follow-up systems",
+    "Improved visibility into lead quality, CPL and conversion performance",
     "Stronger coordination between marketing execution and business growth goals",
   ],
 
@@ -340,15 +340,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Targeted acquisition strategy",
-      desc: "We build lead generation campaigns around audience intent, offer clarity, and conversion goals so acquisition efforts stay focused on qualified opportunities.",
+      desc: "We build lead generation campaigns around audience intent, offer clarity and conversion goals so acquisition efforts stay focused on qualified opportunities.",
     },
     {
       title: "Stronger lead capture coordination",
-      desc: "Our work connects ads, landing pages, forms, and reporting workflows so generated leads move through a cleaner and more measurable funnel.",
+      desc: "Our work connects ads, landing pages, forms and reporting workflows so generated leads move through a cleaner and more measurable funnel.",
     },
     {
       title: "Continuous optimization support",
-      desc: "We improve campaign performance through testing, reporting, audience refinement, and disciplined optimization that supports long-term growth.",
+      desc: "We improve campaign performance through testing, reporting, audience refinement and disciplined optimization that supports long-term growth.",
     },
   ],
 
@@ -441,7 +441,7 @@ const NonItDigitalMarketingServicesLeadGenerationCampaigns: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

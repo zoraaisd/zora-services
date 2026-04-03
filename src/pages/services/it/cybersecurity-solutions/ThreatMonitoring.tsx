@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Threat Monitoring Services",
   heroSubtitle:
-    "24/7 real-time threat monitoring and detection services to protect your networks, endpoints, cloud environments, and enterprise systems from cyber attacks, breaches, and unauthorized access.",
+    "24/7 real-time threat monitoring and detection services to protect your networks, endpoints, cloud environments and enterprise systems from cyber attacks, breaches and unauthorized access.",
 
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
@@ -108,20 +108,20 @@ const content: any = {
   topBlocks: [
     {
       title: "Network & Endpoint Monitoring",
-      desc: "Continuous monitoring of networks, endpoints, and devices to detect malware, unusual behavior, unauthorized access, and security anomalies in real time.",
+      desc: "Continuous monitoring of networks, endpoints and devices to detect malware, unusual behavior, unauthorized access and security anomalies in real time.",
     },
     {
       title: "Advanced Threat Intelligence",
-      desc: "Leverage global threat intelligence feeds, behavioral analytics, and AI-driven insights to identify both known and emerging cyber threats before they impact your business.",
+      desc: "Leverage global threat intelligence feeds, behavioral analytics and AI-driven insights to identify both known and emerging cyber threats before they impact your business.",
     },
     {
       title: "Incident Response & Mitigation",
-      desc: "Rapid detection, containment, and response workflows to minimize damage, reduce downtime, and ensure business continuity during security incidents.",
+      desc: "Rapid detection, containment and response workflows to minimize damage, reduce downtime and ensure business continuity during security incidents.",
     },
   ],
 
   overview:
-    "Our threat monitoring services provide continuous, proactive security by combining real-time detection, advanced analytics, and rapid incident response. We monitor your IT infrastructure 24/7 to identify suspicious activities, correlate security events, and respond to threats before they escalate into major breaches. With a strong focus on prevention, visibility, and rapid mitigation, we help organizations maintain a resilient and secure digital environment.",
+    "Our threat monitoring services provide continuous, proactive security by combining real-time detection, advanced analytics and rapid incident response. We monitor your IT infrastructure 24/7 to identify suspicious activities, correlate security events and respond to threats before they escalate into major breaches. With a strong focus on prevention, visibility and rapid mitigation, we help organizations maintain a resilient and secure digital environment.",
 
   projectDuration: {
     title: "Project Duration",
@@ -131,17 +131,17 @@ const content: any = {
       {
         title: "48 Hours",
         label: "Standard Fast Delivery",
-        desc: "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+        desc: "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
-        desc: "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+        desc: "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
-        desc: "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+        desc: "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -149,57 +149,57 @@ const content: any = {
   deliverySteps: [
     {
       title: "24/7 Monitoring & Visibility",
-      desc: "Continuous monitoring across networks, endpoints, cloud platforms, and applications to ensure complete visibility into your security landscape.",
+      desc: "Continuous monitoring across networks, endpoints, cloud platforms and applications to ensure complete visibility into your security landscape.",
     },
     {
       title: "Threat Detection & Analysis",
-      desc: "Analyze logs, detect anomalies, correlate events, and identify potential threats using advanced detection mechanisms and intelligent analytics.",
+      desc: "Analyze logs, detect anomalies, correlate events and identify potential threats using advanced detection mechanisms and intelligent analytics.",
     },
     {
       title: "Incident Response & Optimization",
-      desc: "Quickly contain threats, execute mitigation strategies, and continuously optimize monitoring systems to improve detection accuracy and response time.",
+      desc: "Quickly contain threats, execute mitigation strategies and continuously optimize monitoring systems to improve detection accuracy and response time.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to deliver continuous threat visibility, real-time detection, incident response readiness, and enterprise-grade monitoring across networks, cloud platforms, endpoints, and critical digital systems.",
+    "We use modern, reliable and scalable technologies to deliver continuous threat visibility, real-time detection, incident response readiness and enterprise-grade monitoring across networks, cloud platforms, endpoints and critical digital systems.",
 
   technologies: [
     {
       icon: "frontend",
       title: "Monitoring Dashboards & Interfaces",
-      desc: "We use modern monitoring interfaces and security dashboards to provide clear visibility into live alerts, incidents, events, and threat intelligence data.",
+      desc: "We use modern monitoring interfaces and security dashboards to provide clear visibility into live alerts, incidents, events and threat intelligence data.",
       items: ["Security Dashboards", "Alert Panels", "Threat Visualization"],
     },
     {
       icon: "backend",
       title: "Detection & Response Systems",
-      desc: "We implement backend-driven monitoring logic, detection workflows, event correlation, and automated response mechanisms for proactive security operations.",
+      desc: "We implement backend-driven monitoring logic, detection workflows, event correlation and automated response mechanisms for proactive security operations.",
       items: ["Threat Detection", "Event Correlation"],
     },
     {
       icon: "database",
       title: "Logs, Events & Data Storage",
-      desc: "We manage large-scale security logs, event records, and alert history using structured and scalable storage systems for investigation and reporting.",
+      desc: "We manage large-scale security logs, event records and alert history using structured and scalable storage systems for investigation and reporting.",
       items: ["Log Storage", "Event Records", "Incident History", "Audit Trails"],
     },
     {
       icon: "cloud",
       title: "Cloud & Infrastructure Monitoring",
-      desc: "We monitor cloud environments, virtual machines, services, infrastructure layers, and connected resources for unusual activity and security threats.",
+      desc: "We monitor cloud environments, virtual machines, services, infrastructure layers and connected resources for unusual activity and security threats.",
       items: ["AWS", "Azure", "GCP", "Infrastructure Monitoring"],
     },
     {
       icon: "mobile",
       title: "Endpoint & Device Visibility",
-      desc: "We monitor endpoints, user systems, and connected devices to identify suspicious activity, unauthorized access, malware behavior, and unusual patterns.",
+      desc: "We monitor endpoints, user systems and connected devices to identify suspicious activity, unauthorized access, malware behavior and unusual patterns.",
       items: ["Endpoints", "Access Monitoring", "Behavior Tracking", "Device Security"],
     },
     {
       icon: "ai",
       title: "Threat Intelligence & Analytics",
-      desc: "We combine intelligence feeds, anomaly detection, and advanced analytics to identify evolving cyber threats and improve response speed with better context.",
+      desc: "We combine intelligence feeds, anomaly detection and advanced analytics to identify evolving cyber threats and improve response speed with better context.",
       items: ["Threat Intelligence", "Behavior Analytics", "AI Insights"],
     },
   ],
@@ -207,12 +207,12 @@ const content: any = {
   architecture: {
     title: "Threat Monitoring Architecture",
     intro:
-      "We design structured and real-time threat monitoring architectures to track suspicious activity across networks, endpoints, cloud environments, and enterprise systems. This approach improves visibility, accelerates threat detection, strengthens incident response, and supports long-term cybersecurity resilience.",
+      "We design structured and real-time threat monitoring architectures to track suspicious activity across networks, endpoints, cloud environments and enterprise systems. This approach improves visibility, accelerates threat detection, strengthens incident response and supports long-term cybersecurity resilience.",
     processSteps: [
       {
         icon: "01",
         title: "Data Collection",
-        desc: "Gather logs, events, and security signals",
+        desc: "Gather logs, events and security signals",
       },
       {
         icon: "02",
@@ -241,40 +241,40 @@ const content: any = {
         {
           icon: "[]",
           title: "Event Collection",
-          desc: "Logs, alerts, telemetry, and system activities are gathered for visibility.",
+          desc: "Logs, alerts, telemetry and system activities are gathered for visibility.",
         },
         {
           icon: "{}",
           title: "Threat Analysis Engine",
-          desc: "Detection logic, analytics, and correlation identify meaningful security events.",
+          desc: "Detection logic, analytics and correlation identify meaningful security events.",
         },
         {
           icon: "O",
           title: "Access & Identity Review",
-          desc: "User behavior, access anomalies, and authentication-related risks are monitored.",
+          desc: "User behavior, access anomalies and authentication-related risks are monitored.",
         },
       ],
       services: {
         icon: "++",
         title: "Incident Detection & Response",
-        desc: "Alerts are investigated, prioritized, and escalated for rapid containment and mitigation.",
+        desc: "Alerts are investigated, prioritized and escalated for rapid containment and mitigation.",
       },
       database: {
         icon: "()",
         title: "Security Data Repository",
         stack: "Logs / Alerts / Incidents / Reports",
-        desc: "Collected threat data is stored for analysis, reporting, compliance, and response tracking.",
+        desc: "Collected threat data is stored for analysis, reporting, compliance and response tracking.",
       },
       bottom: {
         icon: "<>",
         title: "Response, Reporting & Optimization",
-        desc: "Security teams act on incidents, improve controls, and optimize monitoring strategies continuously.",
+        desc: "Security teams act on incidents, improve controls and optimize monitoring strategies continuously.",
       },
       sideCards: [
         {
           icon: "CDN",
           title: "Network Visibility",
-          desc: "Continuous monitoring of traffic flows, events, and connected systems.",
+          desc: "Continuous monitoring of traffic flows, events and connected systems.",
         },
         {
           icon: "R",
@@ -284,7 +284,7 @@ const content: any = {
         {
           icon: "M",
           title: "Monitoring & Reporting",
-          desc: "Ongoing visibility supports governance, compliance, and security improvement.",
+          desc: "Ongoing visibility supports governance, compliance and security improvement.",
         },
       ],
     },
@@ -304,7 +304,7 @@ const content: any = {
       },
       {
         title: "Performance Monitoring",
-        desc: "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+        desc: "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -328,7 +328,7 @@ const content: any = {
     },
     {
       title: "Business Continuity Focus",
-      desc: "Minimize downtime, protect sensitive data, and ensure uninterrupted operations with rapid response capabilities.",
+      desc: "Minimize downtime, protect sensitive data and ensure uninterrupted operations with rapid response capabilities.",
     },
   ],
 

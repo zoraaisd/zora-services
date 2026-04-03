@@ -101,7 +101,7 @@ const content: any = {
   heroTitle: "Website Design & Development Solutions",
 
   heroSubtitle:
-    "We deliver modern, scalable, and SEO-optimized website design & development solutions focused on performance, security, and seamless user experience to boost digital presence, engagement, and conversions.",
+    "We deliver modern, scalable and SEO-optimized website design & development solutions focused on performance, security and seamless user experience to boost digital presence, engagement and conversions.",
 
   primaryCta: "Get Free Consultation",
   secondaryCta: "Talk to Our Experts",
@@ -109,22 +109,22 @@ const content: any = {
     {
       title: "Frontend Development",
       desc:
-        "We design responsive, interactive, and high-performance user interfaces using modern technologies like React. Our focus is on delivering smooth user experiences, faster load times, and consistent design across mobile, tablet, and desktop devices.",
+        "We design responsive, interactive and high-performance user interfaces using modern technologies like React. Our focus is on delivering smooth user experiences, faster load times and consistent design across mobile, tablet and desktop devices.",
     },
     {
       title: "Backend & API Development",
       desc:
-        "We build secure, scalable, and efficient backend systems with clean architecture and well-structured APIs. Our solutions ensure reliable performance, efficient data handling, and seamless integration with third-party services.",
+        "We build secure, scalable and efficient backend systems with clean architecture and well-structured APIs. Our solutions ensure reliable performance, efficient data handling and seamless integration with third-party services.",
     },
     {
       title: "Full-Stack Web Applications",
       desc:
-        "We provide end-to-end web development solutions by combining frontend, backend, and cloud technologies. From dashboards to enterprise platforms, we deliver scalable, secure, and production-ready applications.",
+        "We provide end-to-end web development solutions by combining frontend, backend and cloud technologies. From dashboards to enterprise platforms, we deliver scalable, secure and production-ready applications.",
     },
   ],
 
   overview:
-    "Our web development services are designed to help businesses build powerful, scalable, and user-focused digital platforms. Whether you need a business website, a custom web application, or a complete digital solution, we ensure your platform is fast, reliable, and optimized for search engines. By combining modern technologies with proven best practices, we create websites that not only look professional but also attract users, improve engagement, and support long-term business growth.",
+    "Our web development services are designed to help businesses build powerful, scalable and user-focused digital platforms. Whether you need a business website, a custom web application, or a complete digital solution, we ensure your platform is fast, reliable and optimized for search engines. By combining modern technologies with proven best practices, we create websites that not only look professional but also attract users, improve engagement and support long-term business growth.",
 
   projectDuration: {
     title: "Project Duration",
@@ -135,19 +135,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -156,23 +156,23 @@ const content: any = {
     {
       title: "Planning",
       desc:
-        "We begin by understanding your business goals, target audience, and requirements in detail. This helps us define a clear strategy, select the right technology stack, and create a roadmap for long-term scalability and success.",
+        "We begin by understanding your business goals, target audience and requirements in detail. This helps us define a clear strategy, select the right technology stack and create a roadmap for long-term scalability and success.",
     },
     {
       title: "Development",
       desc:
-        "Our team designs and develops your solution using modern UI/UX principles and scalable technologies. We focus on clean code, performance optimization, and secure architecture to deliver a reliable and high-quality product.",
+        "Our team designs and develops your solution using modern UI/UX principles and scalable technologies. We focus on clean code, performance optimization and secure architecture to deliver a reliable and high-quality product.",
     },
     {
       title: "Launch",
       desc:
-        "We deploy your website with SEO optimization, performance tuning, and monitoring tools. After launch, we ensure smooth operation and provide ongoing support for continuous improvement and growth.",
+        "We deploy your website with SEO optimization, performance tuning and monitoring tools. After launch, we ensure smooth operation and provide ongoing support for continuous improvement and growth.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -200,7 +200,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -229,7 +229,7 @@ const content: any = {
   architecture: {
     title: "Web Design & Development Architecture",
     intro:
-      "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, and seamless user experience.",
+      "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security and seamless user experience.",
     processSteps: [
       {
         icon: "01",
@@ -290,7 +290,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -329,7 +329,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -348,7 +348,7 @@ const content: any = {
   {
     title: "Scalable Delivery with Structured Execution",
     desc:
-      "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+      "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
   },
   {
     title: "Business-Focused Technology Partnership",
@@ -358,13 +358,13 @@ const content: any = {
   {
     title: "Transparent Collaboration & Long-Term Support",
     desc:
-      "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+      "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
   },
 ],
   contactTitle: "Build Your Web Platform",
 
   contactSubtitle:
-    "Whether you are starting from scratch or upgrading your existing website, we help you build a high-performance, scalable, and SEO-ready solution tailored to your business. Share your requirements and our team will work with you to create a platform that delivers real value.",
+    "Whether you are starting from scratch or upgrading your existing website, we help you build a high-performance, scalable and SEO-ready solution tailored to your business. Share your requirements and our team will work with you to create a platform that delivers real value.",
 
   messageLabel: "Tell us about your web project...",
   submitLabel: "Start Your Project",
@@ -451,7 +451,7 @@ const ItWebsiteWebApplicationServicesWebsiteDesignDevelopment: React.FC = () => 
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -951,7 +951,7 @@ const ItWebsiteWebApplicationServicesWebsiteDesignDevelopment: React.FC = () => 
                               Cloud / Deployment / Storage
                             </div>
                             <div className="mt-1 text-[9px] leading-4 text-blue-200/75 break-normal">
-                              Hosting, deployment, and storage
+                              Hosting, deployment and storage
                             </div>
                           </div>
                         </div>

@@ -28,15 +28,15 @@ const NonITServiceCategoryPage: React.FC = () => {
 
   const heroDescription =
     category?.slug === "business-strategy-consulting"
-      ? "Strategic advisory services designed to optimize business operations, improve efficiency, and drive sustainable long-term growth. We help organizations align processes, technology, and decision-making to achieve measurable performance improvements and scalable success."
+      ? "Strategic advisory services designed to optimize business operations, improve efficiency and drive sustainable long-term growth. We help organizations align processes, technology and decision-making to achieve measurable performance improvements and scalable success."
       : category?.slug === "branding-creative-services"
-        ? "Brand identity systems and creative solutions designed to strengthen market presence, improve brand recognition, and ensure visual consistency. We help businesses build impactful brand identities through strategic design, creative execution, and consistent messaging to drive engagement, trust, and long-term growth."
+        ? "Brand identity systems and creative solutions designed to strengthen market presence, improve brand recognition and ensure visual consistency. We help businesses build impactful brand identities through strategic design, creative execution and consistent messaging to drive engagement, trust and long-term growth."
         : category?.slug === "accounting-financial-operations"
-          ? "Reliable financial operations support designed to improve accuracy, ensure regulatory compliance, and enhance financial reporting. We help businesses streamline accounting processes, maintain data integrity, and gain clear financial insights to support better decision-making and sustainable growth."
+          ? "Reliable financial operations support designed to improve accuracy, ensure regulatory compliance and enhance financial reporting. We help businesses streamline accounting processes, maintain data integrity and gain clear financial insights to support better decision-making and sustainable growth."
           : category?.slug === "digital-marketing-services"
-            ? "Performance-driven marketing systems designed to accelerate business growth and deliver measurable ROI. We help businesses execute data-driven campaigns, optimize marketing channels, and improve conversion performance to maximize visibility, engagement, and long-term revenue growth."
+            ? "Performance-driven marketing systems designed to accelerate business growth and deliver measurable ROI. We help businesses execute data-driven campaigns, optimize marketing channels and improve conversion performance to maximize visibility, engagement and long-term revenue growth."
             : category?.slug === "staff-augmentation-workforce-solutions"
-              ? "Flexible staffing solutions designed to help businesses scale non-IT teams quickly with skilled and qualified professionals. We support efficient workforce expansion through reliable talent sourcing, seamless onboarding, and scalable staffing models to improve productivity and meet evolving business demands."
+              ? "Flexible staffing solutions designed to help businesses scale non-IT teams quickly with skilled and qualified professionals. We support efficient workforce expansion through reliable talent sourcing, seamless onboarding and scalable staffing models to improve productivity and meet evolving business demands."
       : category?.desc;
 
   const [activeSlug, setActiveSlug] = useState<string>("");

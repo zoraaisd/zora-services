@@ -6,7 +6,7 @@ import PageSEO from "../../../components/PageSEO";
 const services = [
   {
     title: "Business & Strategy Consulting",
-    desc: "Strategic advisory services to optimize operations, efficiency, and long-term growth.",
+    desc: "Strategic advisory services to optimize operations, efficiency and long-term growth.",
     slug: "business-strategy-consulting",
   },
   {
@@ -48,7 +48,7 @@ const NonITServices: React.FC = () => {
     <section className="relative bg-[#050510] text-white min-h-screen overflow-hidden">
       <PageSEO
         title="Business & Marketing Services — Strategy, Branding & Finance | Zora Global AI"
-        description="Business strategy consulting, staff augmentation, branding, digital marketing, accounting, and financial operations services for growing companies."
+        description="Business strategy consulting, staff augmentation, branding, digital marketing, accounting and financial operations services for growing companies."
         canonical="/services/non-it"
       />
       {/* Background Glow */}
@@ -76,7 +76,7 @@ const NonITServices: React.FC = () => {
           </h1>
 
           <p className="text-gray-400 mt-6 max-w-3xl mx-auto text-lg">
-            Comprehensive services designed to strengthen your organization's operations, growth, and market position.
+            Comprehensive services designed to strengthen your organization's operations, growth and market position.
           </p>
 
           <div className="w-24 sm:w-32 md:w-40 h-[3px] bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 mx-auto mt-6 sm:mt-8 rounded-full" />

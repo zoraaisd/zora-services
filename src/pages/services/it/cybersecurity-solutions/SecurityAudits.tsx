@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Cyber Security Audit Services",
   heroSubtitle:
-    "Comprehensive cybersecurity audit services designed to identify vulnerabilities, assess risks, and strengthen enterprise security across web applications, networks, cloud infrastructure, and IT environments. Protect your business with proactive security assessments and expert insights.",
+    "Comprehensive cybersecurity audit services designed to identify vulnerabilities, assess risks and strengthen enterprise security across web applications, networks, cloud infrastructure and IT environments. Protect your business with proactive security assessments and expert insights.",
 
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
@@ -108,20 +108,20 @@ const content: any = {
   topBlocks: [
     {
       title: "Information & Network Security Audits",
-      desc: "In-depth evaluation of network architecture, firewall configurations, access controls, and system policies to detect security gaps and prevent unauthorized access.",
+      desc: "In-depth evaluation of network architecture, firewall configurations, access controls and system policies to detect security gaps and prevent unauthorized access.",
     },
     {
       title: "Vulnerability Assessment & Penetration Testing",
-      desc: "Advanced vulnerability scanning and real-world penetration testing to identify exploitable weaknesses in applications, servers, and infrastructure before attackers can exploit them.",
+      desc: "Advanced vulnerability scanning and real-world penetration testing to identify exploitable weaknesses in applications, servers and infrastructure before attackers can exploit them.",
     },
     {
       title: "Compliance Audits & Risk Management",
-      desc: "Ensure your organization meets regulatory and industry standards while identifying, prioritizing, and mitigating security risks effectively.",
+      desc: "Ensure your organization meets regulatory and industry standards while identifying, prioritizing and mitigating security risks effectively.",
     },
   ],
 
   overview:
-    "Our cybersecurity audit services provide a comprehensive evaluation of your organization's entire security posture. We identify vulnerabilities, analyze potential threats, and assess risk exposure across applications, networks, and cloud environments. Through structured audits, penetration testing, and compliance checks, we deliver actionable insights and strategic recommendations to strengthen your security framework, protect sensitive data, and ensure business continuity.",
+    "Our cybersecurity audit services provide a comprehensive evaluation of your organization's entire security posture. We identify vulnerabilities, analyze potential threats and assess risk exposure across applications, networks and cloud environments. Through structured audits, penetration testing and compliance checks, we deliver actionable insights and strategic recommendations to strengthen your security framework, protect sensitive data and ensure business continuity.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,28 +152,28 @@ const content: any = {
   deliverySteps: [
     {
       title: "Assessment & Discovery",
-      desc: "We analyze your IT infrastructure, applications, security policies, and workflows to identify potential vulnerabilities and areas of risk.",
+      desc: "We analyze your IT infrastructure, applications, security policies and workflows to identify potential vulnerabilities and areas of risk.",
     },
     {
       title: "Testing & Validation",
-      desc: "Our experts perform vulnerability assessments, penetration testing, and simulated attack scenarios to validate system defenses and uncover hidden threats.",
+      desc: "Our experts perform vulnerability assessments, penetration testing and simulated attack scenarios to validate system defenses and uncover hidden threats.",
     },
     {
       title: "Reporting & Remediation",
-      desc: "We provide detailed audit reports with risk prioritization, actionable recommendations, and guidance to remediate vulnerabilities and improve overall security posture.",
+      desc: "We provide detailed audit reports with risk prioritization, actionable recommendations and guidance to remediate vulnerabilities and improve overall security posture.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use industry-relevant cybersecurity tools, testing frameworks, cloud security platforms, and monitoring solutions to identify vulnerabilities, validate risks, strengthen compliance, and improve overall security posture.",
+    "We use industry-relevant cybersecurity tools, testing frameworks, cloud security platforms and monitoring solutions to identify vulnerabilities, validate risks, strengthen compliance and improve overall security posture.",
 
   technologies: [
     {
       icon: "frontend",
       title: "Application Security Testing",
       desc:
-        "We assess web applications, portals, and user-facing systems for common security weaknesses and misconfigurations.",
+        "We assess web applications, portals and user-facing systems for common security weaknesses and misconfigurations.",
       items: ["OWASP Top 10", "SAST", "DAST", "API Security Testing", "Session Testing", "Access Control Review"],
     },
     {
@@ -187,28 +187,28 @@ const content: any = {
       icon: "database",
       title: "Data & Database Security Review",
       desc:
-        "We evaluate database exposure, configuration risks, access privileges, and sensitive data protection controls.",
+        "We evaluate database exposure, configuration risks, access privileges and sensitive data protection controls.",
       items: ["MySQL Security", "PostgreSQL Security", "MongoDB Security", "MS SQL Review", "Encryption Checks", "Backup Validation"],
     },
     {
       icon: "cloud",
       title: "Cloud & Infrastructure Security",
       desc:
-        "We review cloud environments, deployment configurations, servers, networks, and infrastructure security posture.",
+        "We review cloud environments, deployment configurations, servers, networks and infrastructure security posture.",
       items: ["AWS Security", "Azure Security", "GCP Security", "Firewall Review", "Server Hardening", "Cloud Misconfiguration Checks"],
     },
     {
       icon: "mobile",
       title: "Network & Endpoint Security",
       desc:
-        "We analyze network exposure, internal communication paths, endpoint risks, and traffic-level security concerns.",
+        "We analyze network exposure, internal communication paths, endpoint risks and traffic-level security concerns.",
       items: ["Wireshark", "Port Scanning", "Firewall Validation", "IDS/IPS Review", "Endpoint Checks", "Network Segmentation"],
     },
     {
       icon: "ai",
       title: "Compliance, Monitoring & Reporting",
       desc:
-        "We support audit readiness through compliance mapping, log review, risk prioritization, and structured reporting.",
+        "We support audit readiness through compliance mapping, log review, risk prioritization and structured reporting.",
       items: ["ISO 27001", "SOC 2", "PCI-DSS", "SIEM Review", "Risk Reporting", "Remediation Guidance"],
     },
   ],
@@ -216,27 +216,27 @@ const content: any = {
   architecture: {
     title: "Security Audit Services Architecture",
     intro:
-      "We follow a structured cybersecurity audit to identify vulnerabilities, assess risks, improve compliance, and provide clear remediation for stronger security.",
+      "We follow a structured cybersecurity audit to identify vulnerabilities, assess risks, improve compliance and provide clear remediation for stronger security.",
     processSteps: [
       {
         icon: "01",
         title: "Customer Requirement",
-        desc: "Understand systems, risks, assets, and audit objectives",
+        desc: "Understand systems, risks, assets and audit objectives",
       },
       {
         icon: "02",
         title: "Requirement Analysis",
-        desc: "Define scope, audit targets, security gaps, and priorities",
+        desc: "Define scope, audit targets, security gaps and priorities",
       },
       {
         icon: "03",
         title: "Proposal / Planning",
-        desc: "Plan audit flow, tools, testing strategy, and reporting",
+        desc: "Plan audit flow, tools, testing strategy and reporting",
       },
       {
         icon: "04",
         title: "Security Evaluation",
-        desc: "Assess applications, infrastructure, controls, and access",
+        desc: "Assess applications, infrastructure, controls and access",
       },
     ],
     layers: {
@@ -244,40 +244,40 @@ const content: any = {
         icon: "</>",
         title: "Audit Interface",
         stack: "Assessment / Review Layer",
-        desc: "Security review layer for evaluating applications, systems, and cloud environments.",
+        desc: "Security review layer for evaluating applications, systems and cloud environments.",
       },
       middle: [
         {
           icon: "[]",
           title: "Infrastructure Review",
-          desc: "Network, server, firewall, and system configuration assessment.",
+          desc: "Network, server, firewall and system configuration assessment.",
         },
         {
           icon: "{}",
           title: "Application Testing",
-          desc: "Security testing for web applications, APIs, and access controls.",
+          desc: "Security testing for web applications, APIs and access controls.",
         },
         {
           icon: "O",
           title: "Identity & Access Security",
-          desc: "Authentication, authorization, and user access validation.",
+          desc: "Authentication, authorization and user access validation.",
         },
       ],
       services: {
         icon: "++",
         title: "Business Logic / Services",
-        desc: "Risk analysis, vulnerability validation, compliance review, and remediation guidance.",
+        desc: "Risk analysis, vulnerability validation, compliance review and remediation guidance.",
       },
       database: {
         icon: "()",
         title: "Security Data & Findings",
         stack: "Logs / Reports / Evidence",
-        desc: "Centralized audit findings, evidence records, logs, and remediation references.",
+        desc: "Centralized audit findings, evidence records, logs and remediation references.",
       },
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Monitoring",
-        desc: "Cloud posture review, deployment security validation, and monitoring analysis.",
+        desc: "Cloud posture review, deployment security validation and monitoring analysis.",
       },
       sideCards: [
         {
@@ -293,7 +293,7 @@ const content: any = {
         {
           icon: "M",
           title: "Monitoring & Reporting",
-          desc: "Clear reports, recommendations, and security improvement roadmap.",
+          desc: "Clear reports, recommendations and security improvement roadmap.",
         },
       ],
     },
@@ -316,7 +316,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -334,15 +334,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Expert Security Audits with Risk-Focused Analysis",
-      desc: "We conduct detailed cybersecurity audits that go beyond surface-level checks, helping businesses identify critical vulnerabilities, evaluate real security risks, and strengthen protection across applications, networks, and cloud environments.",
+      desc: "We conduct detailed cybersecurity audits that go beyond surface-level checks, helping businesses identify critical vulnerabilities, evaluate real security risks and strengthen protection across applications, networks and cloud environments.",
     },
     {
       title: "Compliance Alignment with Actionable Recommendations",
-      desc: "Our audit process is designed to support compliance readiness while delivering clear, prioritized, and practical remediation guidance that helps your team fix weaknesses faster and improve your overall security posture.",
+      desc: "Our audit process is designed to support compliance readiness while delivering clear, prioritized and practical remediation guidance that helps your team fix weaknesses faster and improve your overall security posture.",
     },
     {
       title: "Proactive Protection with Long-Term Security Value",
-      desc: "We help organizations take a proactive approach to cybersecurity through structured assessments, testing, reporting, and ongoing security improvement strategies that reduce exposure and support business continuity.",
+      desc: "We help organizations take a proactive approach to cybersecurity through structured assessments, testing, reporting and ongoing security improvement strategies that reduce exposure and support business continuity.",
     },
   ],
 

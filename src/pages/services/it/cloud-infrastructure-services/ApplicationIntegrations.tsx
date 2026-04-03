@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Application Integrations",
   heroSubtitle:
-    "Seamlessly connect your enterprise applications, cloud platforms, and third-party tools to enable real-time data flow, automation, and business efficiency at scale.",
+    "Seamlessly connect your enterprise applications, cloud platforms and third-party tools to enable real-time data flow, automation and business efficiency at scale.",
 
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
@@ -108,11 +108,11 @@ const content: any = {
   topBlocks: [
     {
       title: "API Integrations",
-      desc: "We design and implement secure RESTful and GraphQL APIs to connect applications, ensuring fast, reliable, and scalable communication between systems.",
+      desc: "We design and implement secure RESTful and GraphQL APIs to connect applications, ensuring fast, reliable and scalable communication between systems.",
     },
     {
       title: "Enterprise Integration",
-      desc: "Integrate ERP, CRM, HRMS, finance, and legacy systems into a unified ecosystem that enhances collaboration and eliminates data silos.",
+      desc: "Integrate ERP, CRM, HRMS, finance and legacy systems into a unified ecosystem that enhances collaboration and eliminates data silos.",
     },
     {
       title: "Process Automation",
@@ -121,7 +121,7 @@ const content: any = {
   ],
 
   overview:
-    "Modern businesses rely on multiple applications across departments, often leading to disconnected systems and inefficiencies. Our application integration services unify your technology ecosystem, enabling seamless communication between platforms. We ensure real-time data exchange, improved visibility, and automation across your business processes. Whether integrating cloud applications, on-premise systems, or third-party tools, we deliver scalable and secure integration solutions that drive productivity and innovation.",
+    "Modern businesses rely on multiple applications across departments, often leading to disconnected systems and inefficiencies. Our application integration services unify your technology ecosystem, enabling seamless communication between platforms. We ensure real-time data exchange, improved visibility and automation across your business processes. Whether integrating cloud applications, on-premise systems, or third-party tools, we deliver scalable and secure integration solutions that drive productivity and innovation.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,25 +152,25 @@ const content: any = {
   deliverySteps: [
     {
       title: "Assessment & Planning",
-      desc: "We analyze your existing systems, business workflows, and integration requirements to design a scalable and future-ready architecture tailored to your needs.",
+      desc: "We analyze your existing systems, business workflows and integration requirements to design a scalable and future-ready architecture tailored to your needs.",
     },
     {
       title: "Integration Development",
-      desc: "Our team develops and implements APIs, middleware, and connectors to ensure seamless communication between systems with high performance and security.",
+      desc: "Our team develops and implements APIs, middleware and connectors to ensure seamless communication between systems with high performance and security.",
     },
     {
       title: "Testing & Deployment",
-      desc: "We rigorously test integrations for reliability, performance, and data accuracy before deploying them into production environments.",
+      desc: "We rigorously test integrations for reliability, performance and data accuracy before deploying them into production environments.",
     },
     {
       title: "Monitoring & Optimization",
-      desc: "Continuous monitoring, performance tuning, and updates ensure your integrations remain efficient, secure, and aligned with evolving business needs.",
+      desc: "Continuous monitoring, performance tuning and updates ensure your integrations remain efficient, secure and aligned with evolving business needs.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -198,7 +198,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -227,7 +227,7 @@ const content: any = {
   architecture: {
     title: "Application Integrations Architecture",
     intro:
-      "We design scalable and high-performance application integration architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, seamless system communication, and real-time business workflows.",
+      "We design scalable and high-performance application integration architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, seamless system communication and real-time business workflows.",
     processSteps: [
       {
         icon: "01",
@@ -288,7 +288,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -327,7 +327,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -346,7 +346,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -356,7 +356,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 

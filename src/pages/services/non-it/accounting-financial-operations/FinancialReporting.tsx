@@ -10,7 +10,7 @@ const item = {
   slug: "financial-reporting",
   title: "Financial Reporting",
   shortDesc:
-    "Balance sheets, income statements, cash flow statements, compliance reporting, and analysis insights.",
+    "Balance sheets, income statements, cash flow statements, compliance reporting and analysis insights.",
 };
 
 const heroImage = "/non-it-hero/financial-reporting.png";
@@ -101,7 +101,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Financial Reporting Services",
   heroSubtitle:
-    "Zora Global AI delivers accurate, structured, and compliance-focused financial reporting services that help businesses prepare balance sheets, income statements, profit and loss accounts, cash flow statements, and management reports with better clarity, control, and financial visibility.",
+    "Zora Global AI delivers accurate, structured and compliance-focused financial reporting services that help businesses prepare balance sheets, income statements, profit and loss accounts, cash flow statements and management reports with better clarity, control and financial visibility.",
 
   primaryCta: "Explore Financial Reporting",
   secondaryCta: "Talk to Us",
@@ -109,43 +109,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Financial Statements",
-      desc: "We prepare clear and professionally structured financial statements including income statements, profit and loss accounts, balance sheets, and cash flow statements to support accurate financial visibility and reporting consistency.",
+      desc: "We prepare clear and professionally structured financial statements including income statements, profit and loss accounts, balance sheets and cash flow statements to support accurate financial visibility and reporting consistency.",
     },
     {
       title: "Management & Corporate Reporting",
-      desc: "Our reporting support includes management accounting reports, internal financial summaries, consolidated reporting, and structured performance documentation that improves monitoring, planning, and business-level decision-making.",
+      desc: "Our reporting support includes management accounting reports, internal financial summaries, consolidated reporting and structured performance documentation that improves monitoring, planning and business-level decision-making.",
     },
     {
       title: "Compliance & Financial Analysis",
-      desc: "We support financial analysis, ratio reviews, and compliance-oriented reporting aligned with accounting standards and statutory expectations, helping businesses strengthen reporting discipline and audit readiness.",
+      desc: "We support financial analysis, ratio reviews and compliance-oriented reporting aligned with accounting standards and statutory expectations, helping businesses strengthen reporting discipline and audit readiness.",
     },
   ],
 
   overview:
-    "Our financial reporting services help businesses convert accounting records into accurate, meaningful, and decision-supportive financial reports. We support the preparation of balance sheets, income statements, cash flow statements, management reports, compliance documentation, and financial analysis outputs that improve transparency across business operations. With structured reporting practices, timely statement preparation, and stronger review controls, businesses can improve financial accuracy, reduce reporting gaps, support audits, maintain compliance readiness, and make better strategic decisions based on reliable financial information.",
+    "Our financial reporting services help businesses convert accounting records into accurate, meaningful and decision-supportive financial reports. We support the preparation of balance sheets, income statements, cash flow statements, management reports, compliance documentation and financial analysis outputs that improve transparency across business operations. With structured reporting practices, timely statement preparation and stronger review controls, businesses can improve financial accuracy, reduce reporting gaps, support audits, maintain compliance readiness and make better strategic decisions based on reliable financial information.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led financial reporting solutions focused on reporting accuracy, compliance readiness, and stronger business visibility.",
+      "We deliver strategy-led financial reporting solutions focused on reporting accuracy, compliance readiness and stronger business visibility.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses improve statement preparation speed, reporting quality, and financial visibility.",
+          "Structured execution that helps businesses improve statement preparation speed, reporting quality and financial visibility.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Financial statements, management reports, compliance-ready reporting, analysis outputs, and review support.",
+          "Financial statements, management reports, compliance-ready reporting, analysis outputs and review support.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert reporting support, transparent execution, and scalable finance processes built for long-term reporting reliability.",
+          "Expert reporting support, transparent execution and scalable finance processes built for long-term reporting reliability.",
       },
     ],
   },
@@ -155,64 +155,64 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand reporting expectations, business structure, management needs, and compliance requirements from the start.",
+        "Understand reporting expectations, business structure, management needs and compliance requirements from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review accounting records, reporting gaps, statement delays, and control needs to define the right support approach.",
+        "Review accounting records, reporting gaps, statement delays and control needs to define the right support approach.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define reporting workflows, review cycles, documentation checkpoints, and a clear execution roadmap for delivery.",
+        "Define reporting workflows, review cycles, documentation checkpoints and a clear execution roadmap for delivery.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT financial reporting services that improve visibility, reporting discipline, and long-term business confidence. We combine financial clarity, process control, and practical execution to support dependable reporting outcomes.",
+    "Zora Global AI Technologies delivers structured non-IT financial reporting services that improve visibility, reporting discipline and long-term business confidence. We combine financial clarity, process control and practical execution to support dependable reporting outcomes.",
   whoWeAreCards: [
     {
       title: "Reporting-Led Execution",
       desc:
-        "We align every reporting engagement with business goals, compliance expectations, and measurable financial clarity.",
+        "We align every reporting engagement with business goals, compliance expectations and measurable financial clarity.",
     },
     {
       title: "Analysis & Documentation Expertise",
       desc:
-        "Our team combines reporting accuracy, documentation discipline, and review processes to support dependable financial reporting.",
+        "Our team combines reporting accuracy, documentation discipline and review processes to support dependable financial reporting.",
     },
     {
       title: "Long-Term Financial Visibility",
       desc:
-        "We support sustainable reporting operations through process structure, review controls, and continuous improvement.",
+        "We support sustainable reporting operations through process structure, review controls and continuous improvement.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven reporting systems, analysis tools, compliance methods, and operational workflows to deliver practical, scalable, and measurable financial reporting solutions.",
+    "We use proven reporting systems, analysis tools, compliance methods and operational workflows to deliver practical, scalable and measurable financial reporting solutions.",
   technologies: [
     {
       icon: "finance",
       title: "Financial Reporting Tools",
       desc:
-        "We use practical reporting systems to prepare statements, management reports, and structured financial outputs with accuracy.",
+        "We use practical reporting systems to prepare statements, management reports and structured financial outputs with accuracy.",
       items: ["Excel Reporting", "Tally", "Zoho Books"],
     },
     {
       icon: "analytics",
       title: "Analysis & Dashboard Tools",
       desc:
-        "We build insight-driven reporting formats that improve visibility into profitability, cash flow, ratios, and performance trends.",
+        "We build insight-driven reporting formats that improve visibility into profitability, cash flow, ratios and performance trends.",
       items: ["MIS Dashboards", "Ratio Analysis", "Performance Reports"],
     },
     {
       icon: "compliance",
       title: "Compliance & Review Systems",
       desc:
-        "We support reporting accuracy and audit readiness through structured review workflows, checklists, and compliance documentation.",
+        "We support reporting accuracy and audit readiness through structured review workflows, checklists and compliance documentation.",
       items: ["Review Checklists", "Audit Support Files", "Compliance Notes"],
     },
     {
@@ -226,14 +226,14 @@ const content: any = {
       icon: "strategy",
       title: "Planning & Forecast Support Tools",
       desc:
-        "We use structured planning and reporting methods to support budgeting, variance reviews, and management decision-making.",
+        "We use structured planning and reporting methods to support budgeting, variance reviews and management decision-making.",
       items: ["Budget Models", "Variance Reports", "Forecast Sheets"],
     },
     {
       icon: "collaboration",
       title: "Coordination & Review Platforms",
       desc:
-        "We use shared workflows and review systems that keep finance teams, approvers, and business stakeholders aligned.",
+        "We use shared workflows and review systems that keep finance teams, approvers and business stakeholders aligned.",
       items: ["Google Workspace", "Microsoft Office", "Shared Review Sheets"],
     },
   ],
@@ -241,27 +241,27 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand business objectives, service requirements, and expected outcomes",
+        desc: "Understand business objectives, service requirements and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze business needs, market context, and key service priorities",
+        desc: "Analyze business needs, market context and key service priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define execution strategy, workflow, and structured action plan",
+        desc: "Define execution strategy, workflow and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, specialists, and operational resources",
+        desc: "Assign the right team, specialists and operational resources",
       },
     ],
     deliveryCards: [
@@ -273,52 +273,52 @@ const content: any = {
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor performance, evaluate results, and optimize delivery",
+        desc: "Continuously monitor performance, evaluate results and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide performance insights, reporting, and ongoing support",
+      desc: "Provide performance insights, reporting and ongoing support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term financial visibility through continuous reporting refinement, documentation improvement, and strategic guidance that strengthens business confidence.",
+      "We support long-term financial visibility through continuous reporting refinement, documentation improvement and strategic guidance that strengthens business confidence.",
     cards: [
       {
         title: "Reporting Optimization & Financial Accuracy",
         desc:
-          "Improve reporting workflows, reduce statement errors, and maintain high accuracy across financial outputs.",
+          "Improve reporting workflows, reduce statement errors and maintain high accuracy across financial outputs.",
       },
       {
         title: "Strategic Refinement & Reporting Alignment",
         desc:
-          "Refine reporting workflows based on business needs, leadership priorities, and compliance expectations.",
+          "Refine reporting workflows based on business needs, leadership priorities and compliance expectations.",
       },
       {
         title: "Performance Monitoring & Financial Insights",
         desc:
-          "Track reporting quality, financial trends, and statement performance to support better decisions.",
+          "Track reporting quality, financial trends and statement performance to support better decisions.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert reporting guidance to improve execution quality, review controls, and financial process strength.",
+          "Provide expert reporting guidance to improve execution quality, review controls and financial process strength.",
       },
       {
         title: "Compliance & Documentation Support",
         desc:
-          "Support reporting documentation, review systems, and audit readiness that improve reliability and confidence.",
+          "Support reporting documentation, review systems and audit readiness that improve reliability and confidence.",
       },
     ],
   },
 
   frameworkTitle: "Financial Reporting Transformation",
   frameworkSubtitle:
-    "Turning accounting records into accurate, compliant, and business-ready financial reporting outputs.",
+    "Turning accounting records into accurate, compliant and business-ready financial reporting outputs.",
 
   beforePoints: [
     "Manual and fragmented reporting workflows across teams",
@@ -328,7 +328,7 @@ const content: any = {
 
   afterPoints: [
     "Streamlined reporting with structured workflows",
-    "Lower effort, improved productivity, and better resource usage",
+    "Lower effort, improved productivity and better resource usage",
     "Integrated reporting workflows with stronger data visibility",
   ],
 
@@ -337,23 +337,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable financial reporting solutions aligned with business visibility, compliance needs, and long-term reporting stability.",
+        "We deliver scalable financial reporting solutions aligned with business visibility, compliance needs and long-term reporting stability.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, reporting clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, reporting clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous reporting improvement, business clarity, and long-term financial confidence through a customer-focused approach.",
+        "We support continuous reporting improvement, business clarity and long-term financial confidence through a customer-focused approach.",
     },
   ],
 
   contactTitle: "Request Financial Reporting Support",
   contactSubtitle:
-    "Need accurate financial statements, management reports, or compliance-ready reporting support? Speak with our accounting experts to strengthen financial clarity, reporting consistency, and business decision-making.",
+    "Need accurate financial statements, management reports, or compliance-ready reporting support? Speak with our accounting experts to strengthen financial clarity, reporting consistency and business decision-making.",
 
   messageLabel: "Tell us about your reporting needs...",
   submitLabel: "Request Consultation",
@@ -433,7 +433,7 @@ const NonItAccountingFinancialOperationsFinancialReporting: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

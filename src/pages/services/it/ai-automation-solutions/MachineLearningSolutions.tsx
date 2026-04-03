@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "AI & Machine Learning Solutions",
   heroSubtitle:
-    "Build intelligent systems that learn, adapt, and scale — from predictive analytics to automation and personalization using advanced machine learning models.",
+    "Build intelligent systems that learn, adapt and scale — from predictive analytics to automation and personalization using advanced machine learning models.",
 
   primaryCta: "Start ML Project",
   secondaryCta: "Consult Experts",
@@ -114,7 +114,7 @@ const content: any = {
     {
       title: "Predictive Analytics",
       desc:
-        "Forecast trends, detect risks, and improve decisions with real-time data insights.",
+        "Forecast trends, detect risks and improve decisions with real-time data insights.",
     },
     {
       title: "Personalized Experiences",
@@ -124,7 +124,7 @@ const content: any = {
   ],
 
   overview:
-    "Our AI & Machine Learning solutions help businesses unlock the value of data through intelligent automation, predictive insights, and scalable systems. We design, develop, and deploy ML models that continuously learn and improve — ensuring accuracy, performance, and business impact.",
+    "Our AI & Machine Learning solutions help businesses unlock the value of data through intelligent automation, predictive insights and scalable systems. We design, develop and deploy ML models that continuously learn and improve — ensuring accuracy, performance and business impact.",
 
   projectDuration: {
     title: "Project Duration",
@@ -135,19 +135,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -156,23 +156,23 @@ const content: any = {
     {
       title: "AI Strategy & Discovery",
       desc:
-        "Identify use cases, define data strategy, and align ML solutions with business goals.",
+        "Identify use cases, define data strategy and align ML solutions with business goals.",
     },
     {
       title: "Model Development & Training",
       desc:
-        "Build, train, and validate models using modern ML frameworks and best practices.",
+        "Build, train and validate models using modern ML frameworks and best practices.",
     },
     {
       title: "Deployment & Optimization",
       desc:
-        "Deploy scalable ML systems with monitoring, retraining, and continuous improvement.",
+        "Deploy scalable ML systems with monitoring, retraining and continuous improvement.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -200,7 +200,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -229,7 +229,7 @@ const content: any = {
   architecture: {
     title: "Machine Learning Solutions Architecture",
     intro:
-      "We design scalable and high-performance machine learning solution architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, intelligent automation, and seamless data-driven experiences.",
+      "We design scalable and high-performance machine learning solution architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, intelligent automation and seamless data-driven experiences.",
     processSteps: [
       {
         icon: "01",
@@ -290,7 +290,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -329,7 +329,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -348,7 +348,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -358,7 +358,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 

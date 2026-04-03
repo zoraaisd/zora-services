@@ -249,7 +249,7 @@ export const IT_SERVICE_CATEGORIES: ServiceCategory[] = [
       {
         slug: "cloud-migration-services",
         title: "Cloud Migration Services",
-        description: "Secure migration to AWS, Azure, and Google Cloud.",
+        description: "Secure migration to AWS, Azure and Google Cloud.",
         features: [
           "Application Migration",
           "Data & Database Migration",

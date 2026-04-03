@@ -130,7 +130,7 @@ const ServicesHero: React.FC = () => {
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
             className="mx-auto max-w-3xl text-sm leading-relaxed tracking-[0.01em] text-purple-100/85 sm:text-lg md:text-xl"
           >
-            Enterprise-grade solutions engineered for high-performance, scalable, and secure
+            Enterprise-grade solutions engineered for high-performance, scalable and secure
             digital ecosystems.
           </motion.p>
         </div>

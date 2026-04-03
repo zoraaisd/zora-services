@@ -100,50 +100,50 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Web Application Development Services",
   heroSubtitle:
-    "SEO-optimized, high-performance web application development services focused on scalable architecture, responsive design, and modern UI/UX to grow your digital business.",
+    "SEO-optimized, high-performance web application development services focused on scalable architecture, responsive design and modern UI/UX to grow your digital business.",
   primaryCta: "Get Started",
   secondaryCta: "Talk to Our Experts",
 
   topBlocks: [
     {
       title: "Business Strategy & Planning",
-      desc: "We align web application development with your business goals using SEO strategy, competitor analysis, and user-focused planning.",
+      desc: "We align web application development with your business goals using SEO strategy, competitor analysis and user-focused planning.",
     },
     {
       title: "UI/UX Design & Development",
-      desc: "We build responsive, SEO-friendly web applications with modern UI/UX, fast performance, and scalable backend architecture.",
+      desc: "We build responsive, SEO-friendly web applications with modern UI/UX, fast performance and scalable backend architecture.",
     },
     {
       title: "Deployment & SEO Optimization",
-      desc: "We ensure smooth deployment with technical SEO optimization, speed improvements, and analytics tracking for better visibility.",
+      desc: "We ensure smooth deployment with technical SEO optimization, speed improvements and analytics tracking for better visibility.",
     },
   ],
 
   overview:
-    "Our web application development services focus on building scalable, secure, and SEO-friendly web applications. From business dashboards and admin panels to enterprise platforms and customer portals, we deliver high-performance web solutions with clean code, responsive design, and optimized user experience for long-term growth.",
+    "Our web application development services focus on building scalable, secure and SEO-friendly web applications. From business dashboards and admin panels to enterprise platforms and customer portals, we deliver high-performance web solutions with clean code, responsive design and optimized user experience for long-term growth.",
 
   projectDuration: {
     title: "Project Duration",
     subtitle:
-      "The delivery timeline for web application development depends on project scope, features, workflows, and integrations. We follow a structured execution process to ensure quality, scalability, and on-time delivery.",
+      "The delivery timeline for web application development depends on project scope, features, workflows and integrations. We follow a structured execution process to ensure quality, scalability and on-time delivery.",
     cards: [
       {
         title: "Planning Phase",
         label: "Discovery & Scope",
         desc:
-          "We define business goals, user requirements, workflows, modules, and technology direction before development starts.",
+          "We define business goals, user requirements, workflows, modules and technology direction before development starts.",
       },
       {
         title: "Design + Development",
         label: "Core Build Stage",
         desc:
-          "UI/UX design, frontend development, backend APIs, database setup, authentication, and feature implementation are handled in a structured flow.",
+          "UI/UX design, frontend development, backend APIs, database setup, authentication and feature implementation are handled in a structured flow.",
       },
       {
         title: "Testing + Launch",
         label: "Final Delivery Stage",
         desc:
-          "We complete QA testing, performance validation, deployment, and post-launch checks to ensure a stable production-ready release.",
+          "We complete QA testing, performance validation, deployment and post-launch checks to ensure a stable production-ready release.",
       },
     ],
   },
@@ -151,21 +151,21 @@ const content: any = {
   deliverySteps: [
     {
       title: "Requirement Analysis & Research",
-      desc: "We analyze your business requirements, target audience, and competitors to create a strong foundation for web application development.",
+      desc: "We analyze your business requirements, target audience and competitors to create a strong foundation for web application development.",
     },
     {
       title: "Development & Implementation",
-      desc: "We develop fast, scalable, and secure web applications using modern frameworks with SEO and performance optimization.",
+      desc: "We develop fast, scalable and secure web applications using modern frameworks with SEO and performance optimization.",
     },
     {
       title: "Testing, Launch & Growth",
-      desc: "We ensure quality testing, SEO validation, and continuous optimization for better performance, ranking, and user engagement.",
+      desc: "We ensure quality testing, SEO validation and continuous optimization for better performance, ranking and user engagement.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build secure, responsive, and high-performance web applications tailored to different business needs.",
+    "We use modern, reliable and scalable technologies to build secure, responsive and high-performance web applications tailored to different business needs.",
 
   technologies: [
     {
@@ -193,7 +193,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy web applications on cloud platforms that support speed, uptime, scalability, and security.",
+        "We deploy web applications on cloud platforms that support speed, uptime, scalability and security.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -207,7 +207,7 @@ const content: any = {
       icon: "ai",
       title: "AI Services & Integrations",
       desc:
-        "We can integrate AI-based features to automate workflows, improve support, and enhance digital experiences.",
+        "We can integrate AI-based features to automate workflows, improve support and enhance digital experiences.",
       items: [
         "AI Chatbots",
         "Machine Learning",
@@ -221,22 +221,22 @@ const content: any = {
   architecture: {
     title: "Web Application Development Architecture",
     intro:
-      "We design scalable and secure web application architectures using modern frontend, backend, database, and deployment layers to ensure performance, reliability, and future-ready business growth.",
+      "We design scalable and secure web application architectures using modern frontend, backend, database and deployment layers to ensure performance, reliability and future-ready business growth.",
     processSteps: [
       {
         icon: "01",
         title: "Customer Requirement",
-        desc: "Understand business goals, workflows, and feature expectations",
+        desc: "Understand business goals, workflows and feature expectations",
       },
       {
         icon: "02",
         title: "Requirement Analysis",
-        desc: "Define user flow, modules, and technical scope",
+        desc: "Define user flow, modules and technical scope",
       },
       {
         icon: "03",
         title: "Proposal / Planning",
-        desc: "Plan architecture, delivery stages, and implementation approach",
+        desc: "Plan architecture, delivery stages and implementation approach",
       },
       {
         icon: "04",
@@ -255,23 +255,23 @@ const content: any = {
         {
           icon: "[]",
           title: "Web Server",
-          desc: "Routing, request handling, and content delivery.",
+          desc: "Routing, request handling and content delivery.",
         },
         {
           icon: "{}",
           title: "Backend API",
-          desc: "Business rules, API logic, and system communication.",
+          desc: "Business rules, API logic and system communication.",
         },
         {
           icon: "O",
           title: "Authentication Service",
-          desc: "Secure user access, sessions, and permissions.",
+          desc: "Secure user access, sessions and permissions.",
         },
       ],
       services: {
         icon: "++",
         title: "Business Logic / Services",
-        desc: "Core workflows, validations, integrations, and operations.",
+        desc: "Core workflows, validations, integrations and operations.",
       },
       database: {
         icon: "()",
@@ -282,13 +282,13 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment pipeline, cloud infrastructure, and storage.",
+        desc: "Hosting, deployment pipeline, cloud infrastructure and storage.",
       },
       sideCards: [
         {
           icon: "CDN",
           title: "CDN / Load Balancer",
-          desc: "Improves speed, scalability, and traffic distribution.",
+          desc: "Improves speed, scalability and traffic distribution.",
         },
         {
           icon: "R",
@@ -298,7 +298,7 @@ const content: any = {
         {
           icon: "M",
           title: "Monitoring & Logging",
-          desc: "Tracks health, performance, and application errors.",
+          desc: "Tracks health, performance and application errors.",
         },
       ],
     },
@@ -321,12 +321,12 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring of application speed, uptime, and key technical health indicators.",
+          "Continuous monitoring of application speed, uptime and key technical health indicators.",
       },
       {
         title: "Basic Support Assistance",
         desc:
-          "Support for minor operational queries, guidance, and maintenance-related assistance.",
+          "Support for minor operational queries, guidance and maintenance-related assistance.",
       },
       {
         title: "Ongoing Technical Support",
@@ -340,17 +340,17 @@ const content: any = {
     {
       title: "Modern Architecture with Scalable Delivery",
       desc:
-        "We build web applications with a structured and scalable approach using modern frameworks, clean architecture, and milestone-based execution for long-term business growth.",
+        "We build web applications with a structured and scalable approach using modern frameworks, clean architecture and milestone-based execution for long-term business growth.",
     },
     {
       title: "SEO, Performance & User Experience Focus",
       desc:
-        "Our web application solutions are designed with performance optimization, responsive design, smooth user experience, and SEO-friendly implementation where applicable.",
+        "Our web application solutions are designed with performance optimization, responsive design, smooth user experience and SEO-friendly implementation where applicable.",
     },
     {
       title: "Secure, Reliable & Future-Ready Solutions",
       desc:
-        "We develop secure and business-ready web applications with strong technical foundations, reliable support, and flexibility for future upgrades and integrations.",
+        "We develop secure and business-ready web applications with strong technical foundations, reliable support and flexibility for future upgrades and integrations.",
     },
   ],
 
@@ -442,7 +442,7 @@ const ItWebsiteWebApplicationServicesWebApplicationDevelopment: React.FC = () =>
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

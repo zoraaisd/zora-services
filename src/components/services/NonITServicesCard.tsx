@@ -31,7 +31,7 @@ const NonITServicesCard: React.FC = () => {
 
             <p className="text-gray-400 text-base sm:text-lg mb-6 md:mb-8 leading-relaxed">
               Business-focused services designed to accelerate growth,
-              strengthen operations, build brands, and scale teams.
+              strengthen operations, build brands and scale teams.
             </p>
 
             <ul className="space-y-3 sm:space-y-4 text-gray-300 text-sm sm:text-base">

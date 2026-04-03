@@ -10,7 +10,7 @@ const item = {
   slug: "accounting-management",
   title: "Accounting Management",
   shortDesc:
-    "End-to-end accounting management services for bookkeeping, financial reporting, compliance, reconciliations, and audit-ready financial operations.",
+    "End-to-end accounting management services for bookkeeping, financial reporting, compliance, reconciliations and audit-ready financial operations.",
 };
 
 const heroImage = "/non-it-hero/accounting-management.png";
@@ -101,7 +101,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Accounting Management Services",
   heroSubtitle:
-    "Zora Global AI delivers professional accounting management services that help businesses maintain accurate books, streamline financial operations, improve reporting accuracy, and stay compliant with day-to-day accounting and regulatory requirements.",
+    "Zora Global AI delivers professional accounting management services that help businesses maintain accurate books, streamline financial operations, improve reporting accuracy and stay compliant with day-to-day accounting and regulatory requirements.",
 
   primaryCta: "Get Accounting Support",
   secondaryCta: "Talk to Us",
@@ -109,43 +109,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Bookkeeping & General Ledger Management",
-      desc: "We manage day-to-day bookkeeping, journal entries, ledger updates, and account categorization to keep your financial records accurate, organized, and ready for reporting.",
+      desc: "We manage day-to-day bookkeeping, journal entries, ledger updates and account categorization to keep your financial records accurate, organized and ready for reporting.",
     },
     {
       title: "Accounts Payable & Receivable Support",
-      desc: "Our accounting team handles invoice tracking, receivables follow-up, payment processing, vendor coordination, and cash flow-related accounting tasks with better control and visibility.",
+      desc: "Our accounting team handles invoice tracking, receivables follow-up, payment processing, vendor coordination and cash flow-related accounting tasks with better control and visibility.",
     },
     {
       title: "Financial Reporting & Compliance Support",
-      desc: "We prepare structured financial reports, maintain documentation, support reconciliations, and help businesses stay aligned with compliance, audit, and internal accounting standards.",
+      desc: "We prepare structured financial reports, maintain documentation, support reconciliations and help businesses stay aligned with compliance, audit and internal accounting standards.",
     },
   ],
 
   overview:
-    "Our accounting management services are designed to support businesses with reliable, structured, and scalable financial operations. From bookkeeping and ledger maintenance to reconciliations, payable and receivable management, reporting, and compliance support, we help organizations improve financial accuracy and operational efficiency. With disciplined accounting workflows and timely financial visibility, businesses can reduce errors, strengthen control, support audits, and make better financial decisions with confidence.",
+    "Our accounting management services are designed to support businesses with reliable, structured and scalable financial operations. From bookkeeping and ledger maintenance to reconciliations, payable and receivable management, reporting and compliance support, we help organizations improve financial accuracy and operational efficiency. With disciplined accounting workflows and timely financial visibility, businesses can reduce errors, strengthen control, support audits and make better financial decisions with confidence.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led accounting solutions focused on financial accuracy, compliance, and scalable operational control.",
+      "We deliver strategy-led accounting solutions focused on financial accuracy, compliance and scalable operational control.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses improve accounting control, reduce errors, and strengthen reporting speed.",
+          "Structured execution that helps businesses improve accounting control, reduce errors and strengthen reporting speed.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Bookkeeping, reconciliations, payable and receivable support, compliance workflows, and reporting delivery.",
+          "Bookkeeping, reconciliations, payable and receivable support, compliance workflows and reporting delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert financial operations guidance, transparent delivery, and scalable accounting systems built for long-term reliability.",
+          "Expert financial operations guidance, transparent delivery and scalable accounting systems built for long-term reliability.",
       },
     ],
   },
@@ -155,64 +155,64 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business operations, accounting structure, reporting needs, and compliance requirements from the start.",
+        "Understand business operations, accounting structure, reporting needs and compliance requirements from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review current accounting gaps, process issues, financial controls, and reporting priorities to shape the right support model.",
+        "Review current accounting gaps, process issues, financial controls and reporting priorities to shape the right support model.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define accounting workflows, review structure, control checkpoints, and a clear execution roadmap for delivery.",
+        "Define accounting workflows, review structure, control checkpoints and a clear execution roadmap for delivery.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT accounting and financial operations services that improve control, reporting accuracy, and long-term business reliability. We combine financial discipline, operational clarity, and practical execution to support stronger accounting performance.",
+    "Zora Global AI Technologies delivers structured non-IT accounting and financial operations services that improve control, reporting accuracy and long-term business reliability. We combine financial discipline, operational clarity and practical execution to support stronger accounting performance.",
   whoWeAreCards: [
     {
       title: "Finance-Led Execution",
       desc:
-        "We align every accounting engagement with business requirements, compliance needs, and measurable financial outcomes.",
+        "We align every accounting engagement with business requirements, compliance needs and measurable financial outcomes.",
     },
     {
       title: "Reporting & Control Expertise",
       desc:
-        "Our team combines bookkeeping accuracy, reconciliation discipline, and reporting structure to support dependable financial management.",
+        "Our team combines bookkeeping accuracy, reconciliation discipline and reporting structure to support dependable financial management.",
     },
     {
       title: "Long-Term Operational Stability",
       desc:
-        "We support sustainable finance operations through process discipline, documentation, and continuous accounting improvement.",
+        "We support sustainable finance operations through process discipline, documentation and continuous accounting improvement.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven accounting systems, compliance workflows, reporting tools, and operational methods to deliver practical, scalable, and measurable financial management solutions.",
+    "We use proven accounting systems, compliance workflows, reporting tools and operational methods to deliver practical, scalable and measurable financial management solutions.",
   technologies: [
     {
       icon: "finance",
       title: "Accounting & Bookkeeping Tools",
       desc:
-        "We use practical accounting systems to manage ledgers, bookkeeping, transaction control, and financial records with accuracy.",
+        "We use practical accounting systems to manage ledgers, bookkeeping, transaction control and financial records with accuracy.",
       items: ["Tally", "Zoho Books", "QuickBooks"],
     },
     {
       icon: "analytics",
       title: "Reporting & Financial Insight Tools",
       desc:
-        "We build reporting structures and dashboards that improve visibility into financial performance, liabilities, and cash flow.",
+        "We build reporting structures and dashboards that improve visibility into financial performance, liabilities and cash flow.",
       items: ["Excel Reports", "MIS Dashboards", "Financial Statement Templates"],
     },
     {
       icon: "compliance",
       title: "Compliance & Documentation Systems",
       desc:
-        "We support financial documentation, reconciliation workflows, and audit-ready record management through structured control systems.",
+        "We support financial documentation, reconciliation workflows and audit-ready record management through structured control systems.",
       items: ["Reconciliation Checklists", "Audit Support Files", "Compliance Documentation"],
     },
     {
@@ -226,14 +226,14 @@ const content: any = {
       icon: "strategy",
       title: "Financial Planning & Analysis Tools",
       desc:
-        "We use structured planning and review methods to support budgeting, cost control, and better financial decision-making.",
+        "We use structured planning and review methods to support budgeting, cost control and better financial decision-making.",
       items: ["Budget Models", "Cost Tracking Systems", "Variance Analysis"],
     },
     {
       icon: "collaboration",
       title: "Team Coordination & Review Systems",
       desc:
-        "We use shared workflows and review systems that keep accounting teams, approvers, and business stakeholders aligned.",
+        "We use shared workflows and review systems that keep accounting teams, approvers and business stakeholders aligned.",
       items: ["Google Workspace", "Microsoft Office", "Shared Review Templates"],
     },
   ],
@@ -241,77 +241,77 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from accounting assessment to execution, reporting, control, and ongoing support with clear milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from accounting assessment to execution, reporting, control and ongoing support with clear milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand accounting needs, business structure, reporting priorities, and compliance expectations",
+        desc: "Understand accounting needs, business structure, reporting priorities and compliance expectations",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess current records, control gaps, reporting delays, and accounting workflow issues",
+        desc: "Assess current records, control gaps, reporting delays and accounting workflow issues",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define workflow structure, review process, reporting cycle, and financial control priorities",
+        desc: "Define workflow structure, review process, reporting cycle and financial control priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right accounting specialists, reporting resources, and review support",
+        desc: "Assign the right accounting specialists, reporting resources and review support",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Execute bookkeeping, reconciliations, reporting, and accounting control tasks efficiently",
+        desc: "Execute bookkeeping, reconciliations, reporting and accounting control tasks efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously review reporting quality, compliance alignment, and process efficiency",
+        desc: "Continuously review reporting quality, compliance alignment and process efficiency",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide financial insights, documentation, and ongoing support for stable accounting operations",
+      desc: "Provide financial insights, documentation and ongoing support for stable accounting operations",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term financial stability through continuous accounting refinement, reporting improvement, and strategic guidance that strengthens control and business confidence.",
+      "We support long-term financial stability through continuous accounting refinement, reporting improvement and strategic guidance that strengthens control and business confidence.",
     cards: [
       {
         title: "Accounting Optimization & Financial Accuracy",
         desc:
-          "Improve financial workflows, reduce reporting errors, and maintain high accounting accuracy across operations.",
+          "Improve financial workflows, reduce reporting errors and maintain high accounting accuracy across operations.",
       },
       {
         title: "Strategic Refinement & Financial Alignment",
         desc:
-          "Refine accounting workflows based on business needs, reporting demands, and compliance priorities.",
+          "Refine accounting workflows based on business needs, reporting demands and compliance priorities.",
       },
       {
         title: "Performance Monitoring & Financial Insights",
         desc:
-          "Track reporting quality, financial trends, and accounting performance to support better decisions.",
+          "Track reporting quality, financial trends and accounting performance to support better decisions.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert accounting guidance to improve execution quality, documentation, and financial process strength.",
+          "Provide expert accounting guidance to improve execution quality, documentation and financial process strength.",
       },
       {
         title: "Compliance & Control Support",
         desc:
-          "Support reconciliations, documentation, and control systems that improve readiness, reliability, and audit confidence.",
+          "Support reconciliations, documentation and control systems that improve readiness, reliability and audit confidence.",
       },
     ],
   },
@@ -320,15 +320,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Accurate books and stronger financial control",
-      desc: "We help maintain clean and well-structured accounting records that improve internal control, reduce manual errors, and support stable day-to-day financial operations.",
+      desc: "We help maintain clean and well-structured accounting records that improve internal control, reduce manual errors and support stable day-to-day financial operations.",
     },
     {
       title: "Compliance-focused accounting support",
-      desc: "Our structured accounting processes support documentation, reconciliations, reporting consistency, and readiness for internal reviews, audits, and regulatory expectations.",
+      desc: "Our structured accounting processes support documentation, reconciliations, reporting consistency and readiness for internal reviews, audits and regulatory expectations.",
     },
     {
       title: "Clear reporting for smarter decisions",
-      desc: "With timely financial statements and organized accounting data, your business gets better visibility into performance, cash flow, liabilities, and overall financial health.",
+      desc: "With timely financial statements and organized accounting data, your business gets better visibility into performance, cash flow, liabilities and overall financial health.",
     },
   ],
 
@@ -337,23 +337,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable accounting solutions aligned with business needs, financial controls, and long-term operational stability.",
+        "We deliver scalable accounting solutions aligned with business needs, financial controls and long-term operational stability.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, reporting clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, reporting clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous accounting improvement, operational reliability, and long-term business confidence through a customer-focused approach.",
+        "We support continuous accounting improvement, operational reliability and long-term business confidence through a customer-focused approach.",
     },
   ],
 
   frameworkTitle: "Accounting Management Transformation",
   frameworkSubtitle:
-    "From disconnected accounting activities and reporting delays to accurate, compliant, and insight-driven financial management.",
+    "From disconnected accounting activities and reporting delays to accurate, compliant and insight-driven financial management.",
 
   beforePoints: [
     "Inconsistent bookkeeping and record maintenance",
@@ -373,7 +373,7 @@ const content: any = {
 
   contactTitle: "Talk to Our Accounting Experts",
   contactSubtitle:
-    "Looking for reliable accounting management services for your business? Share your requirements and our team will help you build a more accurate, compliant, and efficient finance operation.",
+    "Looking for reliable accounting management services for your business? Share your requirements and our team will help you build a more accurate, compliant and efficient finance operation.",
 
   messageLabel: "Tell us about your accounting requirements...",
   submitLabel: "Request Accounting Consultation",
@@ -456,7 +456,7 @@ const NonItAccountingFinancialOperationsAccountingManagement: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

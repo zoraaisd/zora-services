@@ -10,7 +10,7 @@ const item = {
   slug: "creative-assets-marketing-design",
   title: "Creative Assets & Marketing Design",
   shortDesc:
-    "High-quality creative assets for marketing, branding, UI visuals, and multimedia designs.",
+    "High-quality creative assets for marketing, branding, UI visuals and multimedia designs.",
 };
 
 const heroImage = "/non-it-hero/creative-assets-marketing-design.png";
@@ -102,7 +102,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Creative Assets Services",
   heroSubtitle:
-    "Zora Global AI delivers creative assets that help brands maintain visual consistency, improve communication, and stand out across digital, marketing, and business platforms.",
+    "Zora Global AI delivers creative assets that help brands maintain visual consistency, improve communication and stand out across digital, marketing and business platforms.",
 
   primaryCta: "Create Visual Impact",
   secondaryCta: "Talk to Us",
@@ -110,25 +110,25 @@ const content: any = {
   topBlocks: [
     {
       title: "Brand & Marketing Creatives",
-      desc: "We design branded marketing visuals such as banners, ad creatives, social media posts, brochures, and campaign graphics that strengthen brand visibility and engagement.",
+      desc: "We design branded marketing visuals such as banners, ad creatives, social media posts, brochures and campaign graphics that strengthen brand visibility and engagement.",
     },
     {
       title: "UI & Digital Assets",
-      desc: "Our team creates icons, illustrations, interface graphics, and digital design elements that support websites, applications, dashboards, and mobile experiences.",
+      desc: "Our team creates icons, illustrations, interface graphics and digital design elements that support websites, applications, dashboards and mobile experiences.",
     },
     {
       title: "Multimedia Assets",
-      desc: "We deliver presentation visuals, motion-based design elements, and supporting multimedia assets that make communication more professional and impactful.",
+      desc: "We deliver presentation visuals, motion-based design elements and supporting multimedia assets that make communication more professional and impactful.",
     },
   ],
 
   overview:
-    "Our creative assets services help businesses build a strong and reusable visual ecosystem across branding, marketing, and digital channels. We create high-quality design assets that align with your brand identity, improve communication clarity, and support better campaign execution across teams and platforms.",
+    "Our creative assets services help businesses build a strong and reusable visual ecosystem across branding, marketing and digital channels. We create high-quality design assets that align with your brand identity, improve communication clarity and support better campaign execution across teams and platforms.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led creative asset solutions focused on visual consistency, faster campaign execution, and scalable brand growth.",
+      "We deliver strategy-led creative asset solutions focused on visual consistency, faster campaign execution and scalable brand growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
@@ -140,13 +140,13 @@ const content: any = {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Creative planning, design systems, campaign assets, and production workflows for focused delivery.",
+          "Creative planning, design systems, campaign assets and production workflows for focused delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert design guidance, transparent collaboration, and scalable creative systems built for long-term brand use.",
+          "Expert design guidance, transparent collaboration and scalable creative systems built for long-term brand use.",
       },
     ],
   },
@@ -156,78 +156,78 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand brand goals, campaign needs, asset types, and communication priorities from the start.",
+        "Understand brand goals, campaign needs, asset types and communication priorities from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review audience expectations, brand style, current creative gaps, and campaign context to define the right direction.",
+        "Review audience expectations, brand style, current creative gaps and campaign context to define the right direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define creative direction, visual standards, production flow, and a structured asset delivery roadmap.",
+        "Define creative direction, visual standards, production flow and a structured asset delivery roadmap.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT creative and branding services that improve visual consistency, campaign quality, and long-term brand communication. We combine creative thinking, strategic execution, and practical delivery to build asset systems that support business growth across every touchpoint.",
+    "Zora Global AI Technologies delivers structured non-IT creative and branding services that improve visual consistency, campaign quality and long-term brand communication. We combine creative thinking, strategic execution and practical delivery to build asset systems that support business growth across every touchpoint.",
   whoWeAreCards: [
     {
       title: "Brand-Led Creative Execution",
       desc:
-        "We align every creative engagement with brand standards, campaign goals, and measurable communication outcomes.",
+        "We align every creative engagement with brand standards, campaign goals and measurable communication outcomes.",
     },
     {
       title: "Design & Production Expertise",
       desc:
-        "Our team combines creative strategy, digital design, and visual storytelling to produce effective and scalable assets.",
+        "Our team combines creative strategy, digital design and visual storytelling to produce effective and scalable assets.",
     },
     {
       title: "Long-Term Asset Consistency",
       desc:
-        "We support sustainable creative growth through asset systems, reusable templates, and consistent brand rollout.",
+        "We support sustainable creative growth through asset systems, reusable templates and consistent brand rollout.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven creative planning frameworks, design platforms, collaboration tools, and reporting methods to deliver practical, scalable, and measurable creative solutions.",
+    "We use proven creative planning frameworks, design platforms, collaboration tools and reporting methods to deliver practical, scalable and measurable creative solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Creative Planning & Strategy Tools",
       desc:
-        "We use structured planning methods to align asset creation with campaigns, audience needs, and brand goals.",
+        "We use structured planning methods to align asset creation with campaigns, audience needs and brand goals.",
       items: ["Campaign Planning Framework", "Creative Brief Templates", "Audience Persona Mapping"],
     },
     {
       icon: "design",
       title: "Creative Design Platforms",
       desc:
-        "We use industry-standard design platforms to build graphics, marketing creatives, and reusable visual systems.",
+        "We use industry-standard design platforms to build graphics, marketing creatives and reusable visual systems.",
       items: ["Adobe Illustrator", "Adobe Photoshop", "Canva"],
     },
     {
       icon: "marketing",
       title: "Marketing & Campaign Platforms",
       desc:
-        "We align asset delivery with marketing platforms used for campaigns, promotions, and audience communication.",
+        "We align asset delivery with marketing platforms used for campaigns, promotions and audience communication.",
       items: ["Google Ads", "Meta Ads Manager", "Mailchimp"],
     },
     {
       icon: "content",
       title: "Content & Communication Systems",
       desc:
-        "We organize creative messaging, content structure, and communication standards for stronger visual storytelling.",
+        "We organize creative messaging, content structure and communication standards for stronger visual storytelling.",
       items: ["Content Calendars", "Brand Messaging Framework", "Copy Layout Templates"],
     },
     {
       icon: "operations",
       title: "Creative Workflow & Governance",
       desc:
-        "We use practical asset workflows and approval systems that keep production, reviews, and team coordination efficient.",
+        "We use practical asset workflows and approval systems that keep production, reviews and team coordination efficient.",
       items: ["Brand Guidelines", "Approval Workflow Templates", "Asset Libraries"],
     },
     {
@@ -242,84 +242,84 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from creative discovery to asset production, rollout, and ongoing brand support with clear milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from creative discovery to asset production, rollout and ongoing brand support with clear milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand campaign goals, asset requirements, brand expectations, and delivery priorities",
+        desc: "Understand campaign goals, asset requirements, brand expectations and delivery priorities",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess current creative quality, communication gaps, and key visual priorities",
+        desc: "Assess current creative quality, communication gaps and key visual priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define creative direction, brand alignment, formats, and structured execution priorities",
+        desc: "Define creative direction, brand alignment, formats and structured execution priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right designers, creative specialists, and production resources",
+        desc: "Assign the right designers, creative specialists and production resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Create brand assets, campaign creatives, and communication visuals with structured implementation",
+        desc: "Create brand assets, campaign creatives and communication visuals with structured implementation",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Review asset performance, consistency, and campaign fit to refine creative delivery",
+        desc: "Review asset performance, consistency and campaign fit to refine creative delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide asset organization, rollout guidance, and ongoing creative support for consistency",
+      desc: "Provide asset organization, rollout guidance and ongoing creative support for consistency",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term brand growth through continuous creative refinement, consistency improvement, and strategic guidance that strengthens visual impact and communication quality.",
+      "We support long-term brand growth through continuous creative refinement, consistency improvement and strategic guidance that strengthens visual impact and communication quality.",
     cards: [
       {
         title: "Creative Optimization & Brand Consistency",
         desc:
-          "Improve visual quality, maintain consistency, and strengthen brand communication across creative touchpoints.",
+          "Improve visual quality, maintain consistency and strengthen brand communication across creative touchpoints.",
       },
       {
         title: "Strategic Refinement & Campaign Alignment",
         desc:
-          "Refine creative direction based on campaign goals, audience needs, and business priorities.",
+          "Refine creative direction based on campaign goals, audience needs and business priorities.",
       },
       {
         title: "Performance Monitoring & Creative Insights",
         desc:
-          "Track asset effectiveness, engagement trends, and communication impact to support better decisions.",
+          "Track asset effectiveness, engagement trends and communication impact to support better decisions.",
       },
       {
         title: "Consultation & Creative Excellence",
         desc:
-          "Provide expert creative guidance to improve execution quality, visual clarity, and brand presentation.",
+          "Provide expert creative guidance to improve execution quality, visual clarity and brand presentation.",
       },
       {
         title: "Market Presence & Engagement Support",
         desc:
-          "Support communication and creative rollout that improve audience engagement, trust, and brand visibility.",
+          "Support communication and creative rollout that improve audience engagement, trust and brand visibility.",
       },
     ],
   },
 
   frameworkTitle: "From Scattered Visuals to Strong Brand Presence",
   frameworkSubtitle:
-    "Turning inconsistent design materials into a clear, professional, and scalable creative asset system.",
+    "Turning inconsistent design materials into a clear, professional and scalable creative asset system.",
 
   beforePoints: [
     "Inconsistent visuals across campaigns and brand materials",
@@ -340,12 +340,12 @@ const content: any = {
     {
       title: "Brand-consistent output",
       desc:
-        "We create assets that stay aligned with your brand identity, communication style, and campaign goals.",
+        "We create assets that stay aligned with your brand identity, communication style and campaign goals.",
     },
     {
       title: "Scalable library",
       desc:
-        "Our approach helps you build reusable creative assets for future campaigns, teams, and platforms.",
+        "Our approach helps you build reusable creative assets for future campaigns, teams and platforms.",
     },
     {
       title: "Fast turnaround",
@@ -359,23 +359,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We create scalable creative systems aligned with brand goals, campaign priorities, and long-term business growth.",
+        "We create scalable creative systems aligned with brand goals, campaign priorities and long-term business growth.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, creative clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, creative clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous creative consistency, refinement, and strategic growth through a customer-focused partnership approach.",
+        "We support continuous creative consistency, refinement and strategic growth through a customer-focused partnership approach.",
     },
   ],
 
   contactTitle: "Request Creative Assets",
   contactSubtitle:
-    "Ready to create, refresh, or strengthen your brand identity? Let’s design a distinctive brand system that reflects your business values, connects with your audience, and supports long-term brand visibility across every platform.",
+    "Ready to create, refresh, or strengthen your brand identity? Let’s design a distinctive brand system that reflects your business values, connects with your audience and supports long-term brand visibility across every platform.",
   messageLabel: "Tell us about your creative requirements...",
   submitLabel: "Request Creative Assets",
 };
@@ -458,7 +458,7 @@ const NonItBrandingCreativeServicesCreativeAssetsMarketingDesign: React.FC = () 
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

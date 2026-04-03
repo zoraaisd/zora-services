@@ -10,7 +10,7 @@ const item = {
   slug: "bookkeeping-ledger-handling",
   title: "Bookkeeping & Ledger Handling",
   shortDesc:
-    "Daily transaction recording, ledger maintenance, reconciliations, and structured accounting records.",
+    "Daily transaction recording, ledger maintenance, reconciliations and structured accounting records.",
 };
 
 const heroImage = "/non-it-hero/bookkeeping-ledger-handling.png";
@@ -101,7 +101,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Bookkeeping & Ledger Handling",
   heroSubtitle:
-    "Zora Global AI provides reliable bookkeeping and ledger handling services that help businesses maintain accurate financial records, organize day-to-day transaction data, strengthen ledger accuracy, and support better financial control, reporting, and compliance across regular accounting operations.",
+    "Zora Global AI provides reliable bookkeeping and ledger handling services that help businesses maintain accurate financial records, organize day-to-day transaction data, strengthen ledger accuracy and support better financial control, reporting and compliance across regular accounting operations.",
 
   primaryCta: "Explore Bookkeeping Services",
   secondaryCta: "Talk to Us",
@@ -109,25 +109,25 @@ const content: any = {
   topBlocks: [
     {
       title: "Daily Transaction Recording",
-      desc: "We accurately record day-to-day financial transactions with structured journal entries, proper account classification, and disciplined bookkeeping practices that improve financial accuracy and record consistency.",
+      desc: "We accurately record day-to-day financial transactions with structured journal entries, proper account classification and disciplined bookkeeping practices that improve financial accuracy and record consistency.",
     },
     {
       title: "General Ledger Management",
-      desc: "Our team maintains general ledgers, chart of accounts, account balances, and ledger updates in a systematic way to support clean books, better tracking, and dependable accounting control.",
+      desc: "Our team maintains general ledgers, chart of accounts, account balances and ledger updates in a systematic way to support clean books, better tracking and dependable accounting control.",
     },
     {
       title: "Financial Accounting & Reporting",
-      desc: "We support month-end bookkeeping activities, ledger reviews, reconciliations, and accounting report preparation to improve visibility, compliance support, and decision-making readiness.",
+      desc: "We support month-end bookkeeping activities, ledger reviews, reconciliations and accounting report preparation to improve visibility, compliance support and decision-making readiness.",
     },
   ],
 
   overview:
-    "Our bookkeeping and ledger handling services help businesses maintain clean, accurate, and well-organized accounting records across daily financial operations. We support transaction recording, journal entries, ledger posting, account reviews, reconciliations, and structured bookkeeping workflows that strengthen financial discipline and reduce reporting gaps. With accurate books and properly maintained ledgers, businesses can improve financial visibility, support audit readiness, reduce accounting errors, and build a stronger foundation for reporting, compliance, and operational decision-making.",
+    "Our bookkeeping and ledger handling services help businesses maintain clean, accurate and well-organized accounting records across daily financial operations. We support transaction recording, journal entries, ledger posting, account reviews, reconciliations and structured bookkeeping workflows that strengthen financial discipline and reduce reporting gaps. With accurate books and properly maintained ledgers, businesses can improve financial visibility, support audit readiness, reduce accounting errors and build a stronger foundation for reporting, compliance and operational decision-making.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led bookkeeping solutions focused on record accuracy, financial visibility, and scalable accounting control.",
+      "We deliver strategy-led bookkeeping solutions focused on record accuracy, financial visibility and scalable accounting control.",
     cards: [
       {
         title: "Fast & Strategic Execution",
@@ -139,13 +139,13 @@ const content: any = {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Transaction recording, ledger posting, reconciliations, account review, and documentation support for reliable delivery.",
+          "Transaction recording, ledger posting, reconciliations, account review and documentation support for reliable delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert bookkeeping guidance, transparent workflows, and scalable ledger systems built for long-term accounting reliability.",
+          "Expert bookkeeping guidance, transparent workflows and scalable ledger systems built for long-term accounting reliability.",
       },
     ],
   },
@@ -155,64 +155,64 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand transaction volume, accounting structure, reporting needs, and ledger requirements from the start.",
+        "Understand transaction volume, accounting structure, reporting needs and ledger requirements from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Review bookkeeping gaps, ledger inconsistencies, process delays, and documentation issues to define the right support model.",
+        "Review bookkeeping gaps, ledger inconsistencies, process delays and documentation issues to define the right support model.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define recording workflows, ledger structure, review checkpoints, and a clear bookkeeping execution roadmap.",
+        "Define recording workflows, ledger structure, review checkpoints and a clear bookkeeping execution roadmap.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT bookkeeping and financial operations services that improve record accuracy, ledger control, and long-term accounting stability. We combine financial discipline, process clarity, and practical execution to support dependable bookkeeping performance.",
+    "Zora Global AI Technologies delivers structured non-IT bookkeeping and financial operations services that improve record accuracy, ledger control and long-term accounting stability. We combine financial discipline, process clarity and practical execution to support dependable bookkeeping performance.",
   whoWeAreCards: [
     {
       title: "Accuracy-Led Execution",
       desc:
-        "We align every bookkeeping engagement with financial accuracy, process control, and measurable record quality outcomes.",
+        "We align every bookkeeping engagement with financial accuracy, process control and measurable record quality outcomes.",
     },
     {
       title: "Ledger & Reporting Expertise",
       desc:
-        "Our team combines transaction discipline, ledger maintenance, and reporting structure to support reliable accounting workflows.",
+        "Our team combines transaction discipline, ledger maintenance and reporting structure to support reliable accounting workflows.",
     },
     {
       title: "Long-Term Financial Stability",
       desc:
-        "We support sustainable bookkeeping operations through consistent reviews, documentation, and ongoing process improvement.",
+        "We support sustainable bookkeeping operations through consistent reviews, documentation and ongoing process improvement.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven bookkeeping systems, reporting tools, compliance workflows, and operational methods to deliver practical, scalable, and measurable ledger management solutions.",
+    "We use proven bookkeeping systems, reporting tools, compliance workflows and operational methods to deliver practical, scalable and measurable ledger management solutions.",
   technologies: [
     {
       icon: "finance",
       title: "Bookkeeping & Ledger Tools",
       desc:
-        "We use practical accounting systems to manage day-to-day entries, ledgers, balances, and financial records with accuracy.",
+        "We use practical accounting systems to manage day-to-day entries, ledgers, balances and financial records with accuracy.",
       items: ["Tally", "Zoho Books", "QuickBooks"],
     },
     {
       icon: "analytics",
       title: "Reporting & Record Review Tools",
       desc:
-        "We use reporting structures and review templates that improve visibility into transactions, balances, and account movement.",
+        "We use reporting structures and review templates that improve visibility into transactions, balances and account movement.",
       items: ["Excel Reports", "Ledger Review Sheets", "MIS Reports"],
     },
     {
       icon: "compliance",
       title: "Compliance & Documentation Systems",
       desc:
-        "We support reconciliations, documentation accuracy, and audit-supportive bookkeeping records through structured control systems.",
+        "We support reconciliations, documentation accuracy and audit-supportive bookkeeping records through structured control systems.",
       items: ["Reconciliation Checklists", "Supporting Documents", "Audit Files"],
     },
     {
@@ -226,14 +226,14 @@ const content: any = {
       icon: "strategy",
       title: "Planning & Review Tools",
       desc:
-        "We use structured review methods to support ledger accuracy, month-end readiness, and stronger bookkeeping discipline.",
+        "We use structured review methods to support ledger accuracy, month-end readiness and stronger bookkeeping discipline.",
       items: ["Month-End Checklists", "Variance Reviews", "Closure Templates"],
     },
     {
       icon: "collaboration",
       title: "Team Coordination & Review Systems",
       desc:
-        "We use shared review systems that help teams, approvers, and business stakeholders stay aligned on accounting records.",
+        "We use shared review systems that help teams, approvers and business stakeholders stay aligned on accounting records.",
       items: ["Google Workspace", "Microsoft Office", "Shared Review Templates"],
     },
   ],
@@ -241,90 +241,90 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from bookkeeping assessment to execution, review, reporting, and ongoing support with clear milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from bookkeeping assessment to execution, review, reporting and ongoing support with clear milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand bookkeeping needs, transaction structure, ledger priorities, and reporting expectations",
+        desc: "Understand bookkeeping needs, transaction structure, ledger priorities and reporting expectations",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess record gaps, posting delays, ledger issues, and bookkeeping workflow challenges",
+        desc: "Assess record gaps, posting delays, ledger issues and bookkeeping workflow challenges",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define recording workflow, ledger review cycle, and structured bookkeeping priorities",
+        desc: "Define recording workflow, ledger review cycle and structured bookkeeping priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right bookkeeping specialists, review support, and reporting resources",
+        desc: "Assign the right bookkeeping specialists, review support and reporting resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Execute transaction recording, ledger updates, reviews, and reconciliations efficiently",
+        desc: "Execute transaction recording, ledger updates, reviews and reconciliations efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously review record quality, ledger accuracy, and process efficiency",
+        desc: "Continuously review record quality, ledger accuracy and process efficiency",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide bookkeeping insights, supporting documentation, and ongoing support for stable financial records",
+      desc: "Provide bookkeeping insights, supporting documentation and ongoing support for stable financial records",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term financial stability through continuous bookkeeping refinement, ledger improvement, and strategic guidance that strengthens record accuracy and business confidence.",
+      "We support long-term financial stability through continuous bookkeeping refinement, ledger improvement and strategic guidance that strengthens record accuracy and business confidence.",
     cards: [
       {
         title: "Bookkeeping Optimization & Financial Accuracy",
         desc:
-          "Improve transaction workflows, reduce entry errors, and maintain high bookkeeping accuracy across operations.",
+          "Improve transaction workflows, reduce entry errors and maintain high bookkeeping accuracy across operations.",
       },
       {
         title: "Strategic Refinement & Ledger Alignment",
         desc:
-          "Refine bookkeeping workflows based on business needs, accounting priorities, and record management demands.",
+          "Refine bookkeeping workflows based on business needs, accounting priorities and record management demands.",
       },
       {
         title: "Performance Monitoring & Financial Insights",
         desc:
-          "Track bookkeeping quality, ledger trends, and record performance to support better financial decisions.",
+          "Track bookkeeping quality, ledger trends and record performance to support better financial decisions.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert bookkeeping guidance to improve execution quality, documentation, and process discipline.",
+          "Provide expert bookkeeping guidance to improve execution quality, documentation and process discipline.",
       },
       {
         title: "Compliance & Record Control Support",
         desc:
-          "Support reconciliations, documentation, and control systems that improve readiness, reliability, and audit confidence.",
+          "Support reconciliations, documentation and control systems that improve readiness, reliability and audit confidence.",
       },
     ],
   },
 
   frameworkTitle: "Bookkeeping Transformation",
   frameworkSubtitle:
-    "Turning daily financial activity into structured, reliable, and audit-supportive accounting records.",
+    "Turning daily financial activity into structured, reliable and audit-supportive accounting records.",
 
   beforePoints: [
     "Unrecorded or inconsistently recorded transactions",
     "Disorganized ledgers and incomplete account tracking",
     "Limited visibility into day-to-day financial activity",
-    "Higher risk of errors, reporting gaps, and compliance issues",
+    "Higher risk of errors, reporting gaps and compliance issues",
   ],
 
   afterPoints: [
@@ -344,7 +344,7 @@ const content: any = {
     {
       title: "Consistent bookkeeping support",
       desc:
-        "Our bookkeeping process supports transaction accuracy, ledger maintenance, reconciliations, and cleaner accounting workflows.",
+        "Our bookkeeping process supports transaction accuracy, ledger maintenance, reconciliations and cleaner accounting workflows.",
     },
     {
       title: "Clear visibility for better decisions",
@@ -358,23 +358,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable bookkeeping solutions aligned with business needs, ledger control, and long-term accounting reliability.",
+        "We deliver scalable bookkeeping solutions aligned with business needs, ledger control and long-term accounting reliability.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, record clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, record clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous bookkeeping improvement, operational reliability, and long-term business confidence through a customer-focused approach.",
+        "We support continuous bookkeeping improvement, operational reliability and long-term business confidence through a customer-focused approach.",
     },
   ],
 
   contactTitle: "Start Your Bookkeeping Engagement",
   contactSubtitle:
-    "Need reliable bookkeeping and ledger handling support for your business? Speak with our accounting specialists to build accurate records, cleaner ledgers, and stronger financial operations.",
+    "Need reliable bookkeeping and ledger handling support for your business? Speak with our accounting specialists to build accurate records, cleaner ledgers and stronger financial operations.",
 
   messageLabel: "Tell us about your bookkeeping needs...",
   submitLabel: "Request Bookkeeping Consultation",
@@ -457,7 +457,7 @@ const NonItAccountingFinancialOperationsBookkeepingLedgerHandling: React.FC = ()
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

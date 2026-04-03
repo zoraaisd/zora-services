@@ -22,7 +22,7 @@ const Leadership: React.FC = () => {
 
         <p className="text-purple-200 mt-4 max-w-2xl mx-auto">
           Vision-driven leaders shaping the future of AI innovation, enterprise
-          transformation, and global digital growth.
+          transformation and global digital growth.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ const Leadership: React.FC = () => {
 
             <p className="text-purple-200 text-sm leading-relaxed">
               Leads operational excellence and execution strategy, ensuring
-              delivery precision, innovation continuity, and long-term enterprise
+              delivery precision, innovation continuity and long-term enterprise
               partnerships while driving sustainable organizational growth and
               performance excellence across global initiatives.
             </p>

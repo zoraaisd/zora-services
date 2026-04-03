@@ -10,7 +10,7 @@ const item = {
   slug: "performance-marketing",
   title: "Performance Marketing (Google & Meta Ads)",
   shortDesc:
-    "Google Ads + Meta Ads campaigns to generate leads, increase conversions, and maximize ROI.",
+    "Google Ads + Meta Ads campaigns to generate leads, increase conversions and maximize ROI.",
 };
 
 const heroImage = "/non-it-hero/performance-marketing.png";
@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Performance Marketing Services",
   heroSubtitle:
-    "Zora Global AI is a performance marketing agency delivering strategic Google Ads and Meta Ads services that help businesses generate qualified leads, improve conversions, strengthen campaign efficiency, and achieve measurable growth through data-driven paid advertising.",
+    "Zora Global AI is a performance marketing agency delivering strategic Google Ads and Meta Ads services that help businesses generate qualified leads, improve conversions, strengthen campaign efficiency and achieve measurable growth through data-driven paid advertising.",
 
   primaryCta: "Launch Paid Campaigns",
   secondaryCta: "Talk to Us",
@@ -111,43 +111,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Google Ads & Search Campaign Management",
-      desc: "We plan and manage Google Ads campaigns across search, display, remarketing, branded, and high-intent keyword segments to improve visibility, capture demand, and generate qualified enquiries with stronger conversion intent.",
+      desc: "We plan and manage Google Ads campaigns across search, display, remarketing, branded and high-intent keyword segments to improve visibility, capture demand and generate qualified enquiries with stronger conversion intent.",
     },
     {
       title: "Meta Ads & Social Lead Generation",
-      desc: "Our Meta advertising services include Facebook and Instagram campaign strategy, audience targeting, ad creative planning, lead generation funnels, retargeting, and campaign optimization designed to improve reach, engagement, and conversion outcomes.",
+      desc: "Our Meta advertising services include Facebook and Instagram campaign strategy, audience targeting, ad creative planning, lead generation funnels, retargeting and campaign optimization designed to improve reach, engagement and conversion outcomes.",
     },
     {
       title: "Landing Page & Conversion Optimization",
-      desc: "We improve paid campaign performance by refining ad messaging, creatives, offers, landing page alignment, conversion journeys, and bidding strategies to help reduce wasted spend and improve return on ad investment.",
+      desc: "We improve paid campaign performance by refining ad messaging, creatives, offers, landing page alignment, conversion journeys and bidding strategies to help reduce wasted spend and improve return on ad investment.",
     },
   ],
 
   overview:
-    "Our performance marketing services help businesses grow faster through highly targeted paid advertising campaigns on Google Ads and Meta Ads. We focus on building structured campaign strategies that align ad targeting, audience intent, creative performance, landing page experience, and conversion tracking to generate better-quality leads and stronger business outcomes. From search advertising and remarketing to paid social campaigns and lead generation funnels, we help brands improve ad efficiency, reduce customer acquisition friction, and scale campaigns based on measurable performance insights. Whether the goal is lead generation, sales growth, local visibility, ecommerce performance, or customer acquisition at scale, our paid marketing approach is designed to support sustainable and data-backed digital growth.",
+    "Our performance marketing services help businesses grow faster through highly targeted paid advertising campaigns on Google Ads and Meta Ads. We focus on building structured campaign strategies that align ad targeting, audience intent, creative performance, landing page experience and conversion tracking to generate better-quality leads and stronger business outcomes. From search advertising and remarketing to paid social campaigns and lead generation funnels, we help brands improve ad efficiency, reduce customer acquisition friction and scale campaigns based on measurable performance insights. Whether the goal is lead generation, sales growth, local visibility, ecommerce performance, or customer acquisition at scale, our paid marketing approach is designed to support sustainable and data-backed digital growth.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver performance marketing campaigns focused on stronger targeting, better conversion efficiency, and measurable paid growth.",
+      "We deliver performance marketing campaigns focused on stronger targeting, better conversion efficiency and measurable paid growth.",
     cards: [
       {
         title: "Fast & Performance-Focused Execution",
         label: "Best suited for",
         desc:
-          "Businesses that want disciplined ad execution with better lead quality, lower waste, and clearer campaign outcomes.",
+          "Businesses that want disciplined ad execution with better lead quality, lower waste and clearer campaign outcomes.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Campaign strategy, audience targeting, ad setup, landing-page alignment, tracking, and ongoing optimization support.",
+          "Campaign strategy, audience targeting, ad setup, landing-page alignment, tracking and ongoing optimization support.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Data-backed campaign management, transparent reporting, and scalable paid media support across search and social channels.",
+          "Data-backed campaign management, transparent reporting and scalable paid media support across search and social channels.",
       },
     ],
   },
@@ -157,85 +157,85 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business goals, target geography, customer segments, conversion actions, budget range, and campaign priorities before launch.",
+        "Understand business goals, target geography, customer segments, conversion actions, budget range and campaign priorities before launch.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze audience intent, keyword opportunities, creative gaps, funnel friction, and platform fit to define the best paid acquisition model.",
+        "Analyze audience intent, keyword opportunities, creative gaps, funnel friction and platform fit to define the best paid acquisition model.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define campaign structure, bidding logic, creative direction, landing-page alignment, and reporting milestones for structured execution.",
+        "Define campaign structure, bidding logic, creative direction, landing-page alignment and reporting milestones for structured execution.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies provides structured performance marketing support that helps businesses generate qualified leads, improve return on ad spend, and scale paid acquisition with stronger visibility and control. We combine paid media strategy, campaign operations, and conversion analysis to turn ad spend into measurable growth outcomes.",
+    "Zora Global AI Technologies provides structured performance marketing support that helps businesses generate qualified leads, improve return on ad spend and scale paid acquisition with stronger visibility and control. We combine paid media strategy, campaign operations and conversion analysis to turn ad spend into measurable growth outcomes.",
   whoWeAreCards: [
     {
       title: "ROI-Led Campaign Execution",
       desc:
-        "We align every advertising engagement with business outcomes, conversion goals, and revenue efficiency instead of vanity click metrics.",
+        "We align every advertising engagement with business outcomes, conversion goals and revenue efficiency instead of vanity click metrics.",
     },
     {
       title: "Cross-Channel Paid Media Expertise",
       desc:
-        "Our work spans Google Ads, Meta Ads, retargeting, creative planning, funnel coordination, and conversion reporting to support scalable campaign growth.",
+        "Our work spans Google Ads, Meta Ads, retargeting, creative planning, funnel coordination and conversion reporting to support scalable campaign growth.",
     },
     {
       title: "Ongoing Performance Partnership",
       desc:
-        "We stay focused on sustainable campaign improvement through testing, reporting, budget refinement, and structured optimization support.",
+        "We stay focused on sustainable campaign improvement through testing, reporting, budget refinement and structured optimization support.",
     },
   ],
 
   technologiesTitle: "Paid Media Platforms, Ad Tools & Conversion Analytics",
   technologiesSubtitle:
-    "We use proven paid media systems, audience targeting methods, landing-page workflows, and reporting tools to deliver practical and measurable performance marketing results.",
+    "We use proven paid media systems, audience targeting methods, landing-page workflows and reporting tools to deliver practical and measurable performance marketing results.",
   technologies: [
     {
       icon: "strategy",
       title: "Campaign Planning & Paid Strategy",
       desc:
-        "We define acquisition goals, budget priorities, offer positioning, and platform strategy that align paid activity with measurable business outcomes.",
+        "We define acquisition goals, budget priorities, offer positioning and platform strategy that align paid activity with measurable business outcomes.",
       items: ["Campaign Planning", "Budget Strategy", "Offer Positioning"],
     },
     {
       icon: "ads",
       title: "Google Ads & Meta Ads Execution",
       desc:
-        "We manage search, display, remarketing, and paid social campaigns that help businesses capture demand and generate conversions efficiently.",
+        "We manage search, display, remarketing and paid social campaigns that help businesses capture demand and generate conversions efficiently.",
       items: ["Google Ads", "Meta Ads Manager", "Remarketing Campaigns"],
     },
     {
       icon: "audience",
       title: "Audience Targeting & Segmentation",
       desc:
-        "We structure intent-based targeting, lookalike segments, retargeting pools, and campaign relevance signals to improve traffic quality.",
+        "We structure intent-based targeting, lookalike segments, retargeting pools and campaign relevance signals to improve traffic quality.",
       items: ["Audience Lists", "Interest Segments", "Retargeting Pools"],
     },
     {
       icon: "landing",
       title: "Landing Pages & Conversion Paths",
       desc:
-        "We improve paid outcomes by aligning ad messaging, CTA flow, landing-page experience, and lead capture structure for better conversion rates.",
+        "We improve paid outcomes by aligning ad messaging, CTA flow, landing-page experience and lead capture structure for better conversion rates.",
       items: ["Landing Pages", "CTA Alignment", "Lead Capture Forms"],
     },
     {
       icon: "operations",
       title: "Bidding, Testing & Optimization",
       desc:
-        "We refine ad performance through bid strategy, creative testing, placement analysis, and structured optimization routines across campaigns.",
+        "We refine ad performance through bid strategy, creative testing, placement analysis and structured optimization routines across campaigns.",
       items: ["Bid Strategy", "Creative Testing", "Placement Optimization"],
     },
     {
       icon: "analytics",
       title: "Tracking & Performance Reporting",
       desc:
-        "We build conversion tracking and reporting systems that improve visibility into ROAS, CPL, ad efficiency, and channel contribution.",
+        "We build conversion tracking and reporting systems that improve visibility into ROAS, CPL, ad efficiency and channel contribution.",
       items: ["GA4", "Meta Pixel", "Looker Studio"],
     },
   ],
@@ -243,96 +243,96 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from paid campaign clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from paid campaign clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand ad goals, audience targets, budgets, offers, and conversion priorities",
+        desc: "Understand ad goals, audience targets, budgets, offers and conversion priorities",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze channel fit, keyword demand, audience intent, and performance gaps across paid media",
+        desc: "Analyze channel fit, keyword demand, audience intent and performance gaps across paid media",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define campaign structure, bidding logic, creative direction, and conversion roadmap",
+        desc: "Define campaign structure, bidding logic, creative direction and conversion roadmap",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign campaign specialists, creative support, tracking setup, and reporting ownership",
+        desc: "Assign campaign specialists, creative support, tracking setup and reporting ownership",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Launch and manage paid campaigns, ad groups, creatives, and conversion flows efficiently",
+        desc: "Launch and manage paid campaigns, ad groups, creatives and conversion flows efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor cost, lead quality, conversion trends, and campaign performance to optimize delivery",
+        desc: "Continuously monitor cost, lead quality, conversion trends and campaign performance to optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide paid media reporting, efficiency insights, and ongoing campaign support",
+      desc: "Provide paid media reporting, efficiency insights and ongoing campaign support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
 
   frameworkTitle: "Paid Campaign Growth Transformation",
   frameworkSubtitle:
-    "Turning underperforming advertising efforts into structured, conversion-focused, and scalable paid acquisition campaigns.",
+    "Turning underperforming advertising efforts into structured, conversion-focused and scalable paid acquisition campaigns.",
 
   beforePoints: [
     "Low-quality leads from broad or ineffective ad targeting",
     "High customer acquisition costs and inefficient ad spend",
-    "Weak campaign tracking, funnel visibility, and conversion clarity",
+    "Weak campaign tracking, funnel visibility and conversion clarity",
     "Inconsistent performance across Google Ads and social campaigns",
   ],
 
   afterPoints: [
     "Better lead quality through focused audience and keyword targeting",
     "Improved campaign efficiency and stronger return on ad spend",
-    "Clearer visibility into conversions, funnel performance, and results",
+    "Clearer visibility into conversions, funnel performance and results",
     "More scalable paid growth across search and social advertising channels",
   ],
 
@@ -340,15 +340,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Conversion-focused paid media strategy",
-      desc: "We build search and social campaigns around audience intent, offer relevance, and measurable conversion outcomes instead of surface-level traffic metrics.",
+      desc: "We build search and social campaigns around audience intent, offer relevance and measurable conversion outcomes instead of surface-level traffic metrics.",
     },
     {
       title: "Stronger budget and funnel control",
-      desc: "Our work connects targeting, bidding, creatives, landing pages, and tracking so ad spend moves through a cleaner and more accountable funnel.",
+      desc: "Our work connects targeting, bidding, creatives, landing pages and tracking so ad spend moves through a cleaner and more accountable funnel.",
     },
     {
       title: "Continuous optimization for scale",
-      desc: "We improve campaign efficiency through testing, reporting, bid refinement, and structured optimization that supports long-term paid growth.",
+      desc: "We improve campaign efficiency through testing, reporting, bid refinement and structured optimization that supports long-term paid growth.",
     },
   ],
 
@@ -437,7 +437,7 @@ const NonItDigitalMarketingServicesPerformanceMarketing: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

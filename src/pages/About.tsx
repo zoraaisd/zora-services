@@ -20,7 +20,7 @@ const About: React.FC = () => {
     <section className="relative min-h-screen bg-[#140a28] text-white overflow-x-hidden">
       <PageSEO
         title="About Us — AI & Technology Consulting Firm | Zora Global AI"
-        description="Learn about Zora Global AI — our mission, leadership team, culture, and vision for helping businesses grow through AI automation and intelligent software."
+        description="Learn about Zora Global AI — our mission, leadership team, culture and vision for helping businesses grow through AI automation and intelligent software."
         canonical="/about"
       />
       {/* ✅ Background system for the whole page (behind everything) */}

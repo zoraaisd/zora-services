@@ -97,58 +97,58 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 
 const content: any = {
   "heroTitle": "Custom Android App Development Services",
-  "heroSubtitle": "We build secure, scalable, and high-performance Android applications for businesses that need reliable mobile experiences, strong usability, and long-term growth across modern devices.",
+  "heroSubtitle": "We build secure, scalable and high-performance Android applications for businesses that need reliable mobile experiences, strong usability and long-term growth across modern devices.",
   "primaryCta": "Start Your Android Project",
   "secondaryCta": "Talk to Our Team",
   "topBlocks": [
     {
       "title": "Custom Android App Strategy & Development",
-      "desc": "We create business-focused Android applications with the right feature planning, architecture, and native development approach to match your operational and user goals."
+      "desc": "We create business-focused Android applications with the right feature planning, architecture and native development approach to match your operational and user goals."
     },
     {
       "title": "Android UI/UX Design & User Experience",
-      "desc": "We design intuitive Android interfaces with responsive layouts, clean navigation, Material Design principles, and usability-focused mobile experiences."
+      "desc": "We design intuitive Android interfaces with responsive layouts, clean navigation, Material Design principles and usability-focused mobile experiences."
     },
     {
       "title": "API, Backend & Cloud Integration",
-      "desc": "We connect Android apps with secure APIs, backend platforms, cloud services, databases, and third-party systems to deliver complete mobile solutions."
+      "desc": "We connect Android apps with secure APIs, backend platforms, cloud services, databases and third-party systems to deliver complete mobile solutions."
     }
   ],
-  "overview": "Our Android app development services help businesses design, build, and deploy secure and scalable mobile applications tailored for real users and real operations. From customer-facing apps and business tools to workflow apps and service platforms, we develop Android solutions with strong performance, maintainable code, backend connectivity, and Play Store readiness. Every app is built to support usability, security, scalability, and long-term product value.",
+  "overview": "Our Android app development services help businesses design, build and deploy secure and scalable mobile applications tailored for real users and real operations. From customer-facing apps and business tools to workflow apps and service platforms, we develop Android solutions with strong performance, maintainable code, backend connectivity and Play Store readiness. Every app is built to support usability, security, scalability and long-term product value.",
   "projectDuration": {
     "title": "Project Duration",
     "subtitle": "For fast-launch website requirements, our standard delivery timeline can be completed within 48 hours based on finalized content and clear scope.",
     "cards": [
       {
         "title": "48 Hours",
-        "desc": "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements."
+        "desc": "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements."
       },
       {
         "title": "Design + Development",
-        "desc": "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation."
+        "desc": "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation."
       },
       {
         "title": "Finalized Content",
-        "desc": "Timeline applies when content, branding, and scope are clearly defined and approved before development begins."
+        "desc": "Timeline applies when content, branding and scope are clearly defined and approved before development begins."
       }
     ]
   },
   "deliverySteps": [
     {
       "title": "Discovery, Planning & Requirement Analysis",
-      "desc": "We understand your business goals, app requirements, user journeys, technical needs, and platform expectations to define the right Android development roadmap."
+      "desc": "We understand your business goals, app requirements, user journeys, technical needs and platform expectations to define the right Android development roadmap."
     },
     {
       "title": "Design, Development & Integration",
-      "desc": "We create the Android user experience, build the application with reliable native development practices, and integrate APIs, backend systems, and essential business workflows."
+      "desc": "We create the Android user experience, build the application with reliable native development practices and integrate APIs, backend systems and essential business workflows."
     },
     {
       "title": "Testing, Launch & Ongoing Optimization",
-      "desc": "We perform quality testing, security checks, device compatibility validation, and Play Store deployment support, followed by performance improvements and future enhancements."
+      "desc": "We perform quality testing, security checks, device compatibility validation and Play Store deployment support, followed by performance improvements and future enhancements."
     }
   ],
   "technologiesTitle": "Technologies We Use",
-  "technologiesSubtitle": "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+  "technologiesSubtitle": "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
   "technologies": [
     {
       "icon": "frontend",
@@ -171,7 +171,7 @@ const content: any = {
     {
       "icon": "cloud",
       "title": "Cloud & Deployment",
-      "desc": "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+      "desc": "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       "items": ["AWS", "Azure", "GCP", "Firebase"]
     },
     {
@@ -189,7 +189,7 @@ const content: any = {
   ],
   "architecture": {
     "title": "Web Design & Development Architecture",
-    "intro": "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, and seamless user experience.",
+    "intro": "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security and seamless user experience.",
     "processSteps": [
       {
         "icon": "01",
@@ -250,7 +250,7 @@ const content: any = {
       "bottom": {
         "icon": "<>",
         "title": "Cloud / Deployment / Storage",
-        "desc": "Hosting, deployment, and storage."
+        "desc": "Hosting, deployment and storage."
       },
       "sideCards": [
         {
@@ -285,7 +285,7 @@ const content: any = {
       },
       {
         "title": "Performance Monitoring",
-        "desc": "Continuous monitoring to ensure speed, uptime, and optimal performance."
+        "desc": "Continuous monitoring to ensure speed, uptime and optimal performance."
       },
       {
         "title": "Basic Support Assistance",
@@ -300,7 +300,7 @@ const content: any = {
   "whyChoose": [
     {
       "title": "Scalable Delivery with Structured Execution",
-      "desc": "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals."
+      "desc": "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals."
     },
     {
       "title": "Business-Focused Technology Partnership",
@@ -308,11 +308,11 @@ const content: any = {
     },
     {
       "title": "Transparent Collaboration & Long-Term Support",
-      "desc": "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement."
+      "desc": "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement."
     }
   ],
   "contactTitle": "Talk to Our Android App Development Team",
-  "contactSubtitle": "Share your Android app idea, feature requirements, or business goals, and our team will help you plan the right mobile solution.",
+  "contactSubtitle": "Share your Android app idea, feature requirements, or business goals and our team will help you plan the right mobile solution.",
   "messageLabel": "Tell us about your Android app requirements...",
   "submitLabel": "Request Android Consultation"
 };
@@ -404,7 +404,7 @@ const ItMobileApplicationDevelopmentAndroidAppDevelopment: React.FC = () => {
 
               <p className="text-gray-300 mt-5 mx-auto max-w-3xl text-base sm:text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">

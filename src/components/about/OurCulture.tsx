@@ -24,9 +24,9 @@ const OurCulture: React.FC = () => {
         </h2>
 
         <p className="text-white/75 mt-6 max-w-3xl mx-auto leading-relaxed">
-          We operate with technical rigor, architectural clarity, and a bias
+          We operate with technical rigor, architectural clarity and a bias
           toward measurable execution. Innovation at Zora Global AI is
-          intentional driven by research, discipline, and accountability.
+          intentional driven by research, discipline and accountability.
         </p>
       </div>
 
@@ -46,7 +46,7 @@ const OurCulture: React.FC = () => {
           },
           {
             title: "Responsible AI Governance",
-            desc: "Security, ethics, and compliance embedded into every AI system.",
+            desc: "Security, ethics and compliance embedded into every AI system.",
           },
         ].map((item, index) => (
           <div key={index} className="relative group">

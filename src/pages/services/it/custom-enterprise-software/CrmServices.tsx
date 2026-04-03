@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "CRM Services",
   heroSubtitle:
-    "Empower your business with centralized CRM solutions that streamline customer interactions, optimize sales pipelines, and enable data-driven decision-making for sustainable growth.",
+    "Empower your business with centralized CRM solutions that streamline customer interactions, optimize sales pipelines and enable data-driven decision-making for sustainable growth.",
 
   primaryCta: "Build Your CRM",
   secondaryCta: "Talk to Us",
@@ -108,20 +108,20 @@ const content: any = {
   topBlocks: [
     {
       title: "Sales CRM",
-      desc: "Comprehensive lead management, pipeline tracking, sales forecasting, and deal management systems to improve conversion rates and revenue growth.",
+      desc: "Comprehensive lead management, pipeline tracking, sales forecasting and deal management systems to improve conversion rates and revenue growth.",
     },
     {
       title: "Marketing Automation",
-      desc: "Automate campaigns, email workflows, and personalized customer journeys to enhance engagement and maximize marketing ROI.",
+      desc: "Automate campaigns, email workflows and personalized customer journeys to enhance engagement and maximize marketing ROI.",
     },
     {
       title: "Customer Support CRM",
-      desc: "Centralized support system with ticketing, customer interaction tracking, and SLA management for improved customer satisfaction.",
+      desc: "Centralized support system with ticketing, customer interaction tracking and SLA management for improved customer satisfaction.",
     },
   ],
 
   overview:
-    "A powerful CRM system is essential for managing customer relationships and driving business growth. Our CRM solutions are designed to centralize customer data, automate workflows, and provide actionable insights across sales, marketing, and support teams. We build scalable and customizable CRM platforms tailored to your unique business processes. By integrating advanced analytics and automation, we help businesses enhance customer experiences, improve retention, and boost operational efficiency.",
+    "A powerful CRM system is essential for managing customer relationships and driving business growth. Our CRM solutions are designed to centralize customer data, automate workflows and provide actionable insights across sales, marketing and support teams. We build scalable and customizable CRM platforms tailored to your unique business processes. By integrating advanced analytics and automation, we help businesses enhance customer experiences, improve retention and boost operational efficiency.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,25 +152,25 @@ const content: any = {
   deliverySteps: [
     {
       title: "Discovery, Analysis & CRM Strategy",
-      desc: "We understand your business processes, customer journey, challenges, and operational goals to define a clear CRM strategy aligned with your organization’s requirements and long-term growth plans.",
+      desc: "We understand your business processes, customer journey, challenges and operational goals to define a clear CRM strategy aligned with your organization’s requirements and long-term growth plans.",
     },
     {
       title: "Design, Configuration & Workflow Setup",
-      desc: "We design and configure CRM modules, dashboards, automations, and workflows tailored to your business operations, while also planning integrations with the tools and systems you already use.",
+      desc: "We design and configure CRM modules, dashboards, automations and workflows tailored to your business operations, while also planning integrations with the tools and systems you already use.",
     },
     {
       title: "Implementation, Integration & User Enablement",
-      desc: "We deploy the CRM solution, connect it with your existing platforms such as ERP, marketing tools, and communication systems, and provide training and onboarding support for smooth team adoption.",
+      desc: "We deploy the CRM solution, connect it with your existing platforms such as ERP, marketing tools and communication systems and provide training and onboarding support for smooth team adoption.",
     },
     {
       title: "Optimization, Monitoring & Ongoing Support",
-      desc: "We continuously monitor system performance, optimize workflows, enhance features, and provide long-term support to ensure your CRM remains scalable, efficient, and valuable for your business.",
+      desc: "We continuously monitor system performance, optimize workflows, enhance features and provide long-term support to ensure your CRM remains scalable, efficient and valuable for your business.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -198,7 +198,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -227,7 +227,7 @@ const content: any = {
   architecture: {
     title: "CRM Services Architecture",
     intro:
-      "We design scalable CRM architectures ensuring performance, security, and smooth customer lifecycle management.",
+      "We design scalable CRM architectures ensuring performance, security and smooth customer lifecycle management.",
     processSteps: [
       {
         icon: "01",
@@ -266,7 +266,7 @@ const content: any = {
         {
           icon: "{}",
           title: "Backend API",
-          desc: "Request handling, business rules, and integrations.",
+          desc: "Request handling, business rules and integrations.",
         },
         {
           icon: "O",
@@ -277,18 +277,18 @@ const content: any = {
       services: {
         icon: "++",
         title: "Business Logic / Services",
-        desc: "Core CRM workflows, automation, and module logic.",
+        desc: "Core CRM workflows, automation and module logic.",
       },
       database: {
         icon: "()",
         title: "Database",
         stack: "SQL / NoSQL",
-        desc: "Centralized storage for leads, contacts, deals, and activities.",
+        desc: "Centralized storage for leads, contacts, deals and activities.",
       },
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, backups, and scalable infrastructure.",
+        desc: "Hosting, deployment, backups and scalable infrastructure.",
       },
       sideCards: [
         {
@@ -304,7 +304,7 @@ const content: any = {
         {
           icon: "M",
           title: "Monitoring & Logging",
-          desc: "Health checks, alerts, and error tracking.",
+          desc: "Health checks, alerts and error tracking.",
         },
       ],
     },
@@ -327,7 +327,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -345,15 +345,15 @@ const content: any = {
   whyChoose: [
     {
       title: "Tailored Solutions with Scalable Growth",
-      desc: "We build CRM solutions tailored to your business workflows and long-term goals, with scalable architecture that supports growing teams, expanding customer data, and evolving operational requirements.",
+      desc: "We build CRM solutions tailored to your business workflows and long-term goals, with scalable architecture that supports growing teams, expanding customer data and evolving operational requirements.",
     },
     {
       title: "Automation, Insights & Performance",
-      desc: "Our CRM platforms combine workflow automation, advanced reporting, and data-driven insights to streamline daily operations, improve team productivity, and help you make smarter business decisions.",
+      desc: "Our CRM platforms combine workflow automation, advanced reporting and data-driven insights to streamline daily operations, improve team productivity and help you make smarter business decisions.",
     },
     {
       title: "Customer Focused Delivery & End-to-End Support",
-      desc: "From strategy and implementation to optimization and ongoing support, we focus on creating customer-centric CRM experiences that improve engagement, strengthen relationships, and deliver lasting business value.",
+      desc: "From strategy and implementation to optimization and ongoing support, we focus on creating customer-centric CRM experiences that improve engagement, strengthen relationships and deliver lasting business value.",
     },
   ],
 

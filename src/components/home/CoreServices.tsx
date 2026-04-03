@@ -39,7 +39,7 @@ const CoreServices: React.FC = () => {
         id: 4,
         title: "Enterprise Software",
         description:
-          "Custom-built enterprise platforms designed for scalability, security, and long-term business value.",
+          "Custom-built enterprise platforms designed for scalability, security and long-term business value.",
         slug: "custom-enterprise-software",
         image: "/it-hero/crm.jpg",
       },
@@ -47,7 +47,7 @@ const CoreServices: React.FC = () => {
         id: 5,
         title: "Cloud & Infrastructure",
         description:
-          "Modern cloud-native solutions enabling global collaboration, flexibility, and digital expansion.",
+          "Modern cloud-native solutions enabling global collaboration, flexibility and digital expansion.",
         slug: "cloud-infrastructure-services",
         image: "/it-hero/cloud-architecture.jpg",
       },

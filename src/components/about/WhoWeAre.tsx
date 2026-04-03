@@ -31,12 +31,12 @@ const WhoWeAre: React.FC = () => {
                 48 professional services delivered within 48 hours
               </strong>{" "}
               using intelligent AI automation frameworks designed to ensure
-              fast, accurate, and complete end-to-end business solutions.
+              fast, accurate and complete end-to-end business solutions.
             </p>
 
             <p className="text-white/75 leading-relaxed">
               Our approach integrates advanced artificial intelligence,
-              enterprise automation, and strategic consulting to help
+              enterprise automation and strategic consulting to help
               organizations scale efficiently while maintaining operational
               clarity and measurable business outcomes.
             </p>

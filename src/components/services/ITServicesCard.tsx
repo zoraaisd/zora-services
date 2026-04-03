@@ -31,7 +31,7 @@ const ITServicesCard: React.FC = () => {
 
             <p className="text-gray-400 text-base sm:text-lg mb-6 md:mb-8 leading-relaxed">
               High-performance engineering across web, mobile, AI automation,
-              enterprise systems, cloud infrastructure, and cybersecurity.
+              enterprise systems, cloud infrastructure and cybersecurity.
             </p>
 
             <ul className="space-y-3 sm:space-y-4 text-gray-300 text-sm sm:text-base">

@@ -53,8 +53,8 @@ const WhyChooseUs: React.FC = () => {
             </h2>
 
             <p className="mt-5 md:mt-6 text-white/75 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed px-1">
-              Enterprise-grade engineering, AI acceleration, and consulting
-              discipline delivered with speed, security, and measurable
+              Enterprise-grade engineering, AI acceleration and consulting
+              discipline delivered with speed, security and measurable
               outcomes.
             </p>
           </div>
@@ -68,7 +68,7 @@ const WhyChooseUs: React.FC = () => {
               },
               {
                 title: "Enterprise Architecture",
-                desc: "Systems designed for scalability, security, performance, and long-term maintainability across industries.",
+                desc: "Systems designed for scalability, security, performance and long-term maintainability across industries.",
               },
               {
                 title: "AI + Business Strategy",
@@ -76,7 +76,7 @@ const WhyChooseUs: React.FC = () => {
               },
               {
                 title: "Security & Governance",
-                desc: "Responsible AI, compliance readiness, and secure-by-design practices embedded into every solution.",
+                desc: "Responsible AI, compliance readiness and secure-by-design practices embedded into every solution.",
               },
               {
                 title: "End-to-End Delivery",

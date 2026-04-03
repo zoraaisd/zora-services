@@ -100,27 +100,27 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "AI Chatbot Development Services",
   heroSubtitle:
-    "Build intelligent AI-powered chatbots for customer support, lead generation, and business automation with NLP, machine learning, and seamless integrations.",
+    "Build intelligent AI-powered chatbots for customer support, lead generation and business automation with NLP, machine learning and seamless integrations.",
   primaryCta: "Build a Chatbot",
   secondaryCta: "Talk to Us",
 
   topBlocks: [
     {
       title: "Customer Support Chatbots",
-      desc: "24/7 AI chatbot solutions for customer support, FAQ automation, ticket handling, and real-time user assistance.",
+      desc: "24/7 AI chatbot solutions for customer support, FAQ automation, ticket handling and real-time user assistance.",
     },
     {
       title: "Sales & Lead Generation Bots",
-      desc: "Automated chatbots for lead qualification, appointment scheduling, and conversion optimization to boost sales.",
+      desc: "Automated chatbots for lead qualification, appointment scheduling and conversion optimization to boost sales.",
     },
     {
       title: "Enterprise AI Chatbots",
-      desc: "Internal chatbots for HR, IT support, onboarding, and knowledge management to improve productivity.",
+      desc: "Internal chatbots for HR, IT support, onboarding and knowledge management to improve productivity.",
     },
   ],
 
   overview:
-    "Our AI chatbot development services help businesses automate conversations and improve customer engagement using advanced NLP and machine learning. We build scalable, secure, and SEO-friendly chatbot solutions for websites, mobile apps, WhatsApp, and enterprise systems with real-time analytics and continuous optimization.",
+    "Our AI chatbot development services help businesses automate conversations and improve customer engagement using advanced NLP and machine learning. We build scalable, secure and SEO-friendly chatbot solutions for websites, mobile apps, WhatsApp and enterprise systems with real-time analytics and continuous optimization.",
 
   projectDuration: {
     title: "Project Duration",
@@ -131,19 +131,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -151,11 +151,11 @@ const content: any = {
   deliverySteps: [
     {
       title: "Requirement Analysis & Planning",
-      desc: "We identify chatbot use cases, user intents, workflows, and conversation design for effective automation.",
+      desc: "We identify chatbot use cases, user intents, workflows and conversation design for effective automation.",
     },
     {
       title: "Development & AI Training",
-      desc: "We build and train AI chatbot models using NLP, integrating APIs, CRM systems, and automation tools.",
+      desc: "We build and train AI chatbot models using NLP, integrating APIs, CRM systems and automation tools.",
     },
     {
       title: "Deployment & Optimization",
@@ -165,7 +165,7 @@ const content: any = {
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -193,7 +193,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -222,7 +222,7 @@ const content: any = {
   architecture: {
     title: "AI Chatbot Development Architecture",
     intro:
-      "We design scalable and high-performance AI chatbot architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, intelligent automation, and seamless conversational experiences.",
+      "We design scalable and high-performance AI chatbot architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, intelligent automation and seamless conversational experiences.",
     processSteps: [
       {
         icon: "01",
@@ -283,7 +283,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -322,7 +322,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -341,7 +341,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -351,7 +351,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 
@@ -445,7 +445,7 @@ const ItAiAutomationSolutionsChatbotDevelopment: React.FC = () => {
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

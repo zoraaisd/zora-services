@@ -10,7 +10,7 @@ const item = {
   slug: "financial-operations-support",
   title: "Financial Operations Support",
   shortDesc:
-    "Billing, e-invoicing, invoice processing, accounts payable, and receivable workflows for healthy cash flow.",
+    "Billing, e-invoicing, invoice processing, accounts payable and receivable workflows for healthy cash flow.",
 };
 
 const heroImage = "/non-it-hero/financial-operations-support.png";
@@ -101,7 +101,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Financial Operations Support",
   heroSubtitle:
-    "Zora Global AI delivers reliable financial operations support services that help businesses manage billing, e-invoicing, invoice processing, accounts payable, and accounts receivable with stronger control, smoother coordination, and better operational efficiency across day-to-day finance activities.",
+    "Zora Global AI delivers reliable financial operations support services that help businesses manage billing, e-invoicing, invoice processing, accounts payable and accounts receivable with stronger control, smoother coordination and better operational efficiency across day-to-day finance activities.",
 
   primaryCta: "Explore Financial Operations",
   secondaryCta: "Talk to Us",
@@ -109,43 +109,43 @@ const content: any = {
   topBlocks: [
     {
       title: "Billing & Invoicing",
-      desc: "We support billing and invoicing operations through structured invoice creation, digital billing workflows, due-date monitoring, payment follow-ups, and accurate documentation that improve billing consistency and reduce administrative delays.",
+      desc: "We support billing and invoicing operations through structured invoice creation, digital billing workflows, due-date monitoring, payment follow-ups and accurate documentation that improve billing consistency and reduce administrative delays.",
     },
     {
       title: "Accounts Payable",
-      desc: "Our accounts payable support includes invoice validation, approval coordination, purchase order matching, payment scheduling, and payable tracking to help businesses improve financial control and maintain smoother vendor payment operations.",
+      desc: "Our accounts payable support includes invoice validation, approval coordination, purchase order matching, payment scheduling and payable tracking to help businesses improve financial control and maintain smoother vendor payment operations.",
     },
     {
       title: "Accounts Receivable",
-      desc: "We manage accounts receivable activities including customer invoicing, collections tracking, receivable reconciliation, payment follow-up, and overdue balance monitoring to improve visibility and support healthier business cash flow.",
+      desc: "We manage accounts receivable activities including customer invoicing, collections tracking, receivable reconciliation, payment follow-up and overdue balance monitoring to improve visibility and support healthier business cash flow.",
     },
   ],
 
   overview:
-    "Our financial operations support services help businesses streamline billing, invoicing, payables, and receivables through structured financial workflows and disciplined transaction management. We support invoice generation, invoice review, payable coordination, receivable monitoring, payment tracking, and reconciliation processes that improve accuracy and reduce delays across finance operations. With better visibility into invoices, payments, outstanding balances, and collections activity, businesses can strengthen financial control, reduce operational bottlenecks, improve working capital efficiency, and maintain more reliable day-to-day financial operations.",
+    "Our financial operations support services help businesses streamline billing, invoicing, payables and receivables through structured financial workflows and disciplined transaction management. We support invoice generation, invoice review, payable coordination, receivable monitoring, payment tracking and reconciliation processes that improve accuracy and reduce delays across finance operations. With better visibility into invoices, payments, outstanding balances and collections activity, businesses can strengthen financial control, reduce operational bottlenecks, improve working capital efficiency and maintain more reliable day-to-day financial operations.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver structured financial operations support focused on billing efficiency, payment coordination, and healthier finance workflows.",
+      "We deliver structured financial operations support focused on billing efficiency, payment coordination and healthier finance workflows.",
     cards: [
       {
         title: "Fast & Controlled Execution",
         label: "Best suited for",
         desc:
-          "Structured finance execution that improves invoice processing, payment coordination, and operational control.",
+          "Structured finance execution that improves invoice processing, payment coordination and operational control.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Billing workflows, payable and receivable tracking, reconciliation support, and reporting visibility for dependable operations.",
+          "Billing workflows, payable and receivable tracking, reconciliation support and reporting visibility for dependable operations.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Process discipline, clear financial workflows, and scalable support that strengthen control and day-to-day efficiency.",
+          "Process discipline, clear financial workflows and scalable support that strengthen control and day-to-day efficiency.",
       },
     ],
   },
@@ -155,85 +155,85 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand invoice volume, approval flow, payment cycles, and coordination needs so financial operations are aligned from the start.",
+        "Understand invoice volume, approval flow, payment cycles and coordination needs so financial operations are aligned from the start.",
     },
     {
       title: "Analysis",
       desc:
-        "Assess billing gaps, payable and receivable bottlenecks, reconciliation issues, and reporting priorities to define the right support model.",
+        "Assess billing gaps, payable and receivable bottlenecks, reconciliation issues and reporting priorities to define the right support model.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define finance workflows, responsibilities, controls, and a structured execution plan for smooth day-to-day operations.",
+        "Define finance workflows, responsibilities, controls and a structured execution plan for smooth day-to-day operations.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies provides structured accounting and financial operations support that improves control, coordination, and consistency across daily finance workflows. We combine operational discipline, process clarity, and execution support to keep billing, collections, payables, and reporting activities dependable.",
+    "Zora Global AI Technologies provides structured accounting and financial operations support that improves control, coordination and consistency across daily finance workflows. We combine operational discipline, process clarity and execution support to keep billing, collections, payables and reporting activities dependable.",
   whoWeAreCards: [
     {
       title: "Finance-Led Execution",
       desc:
-        "We align every engagement with financial accuracy, control requirements, and measurable operational improvements instead of fragmented admin support.",
+        "We align every engagement with financial accuracy, control requirements and measurable operational improvements instead of fragmented admin support.",
     },
     {
       title: "Cross-Workflow Coordination",
       desc:
-        "Our support spans billing, payables, receivables, reconciliation, and reporting activities to improve continuity across finance operations.",
+        "Our support spans billing, payables, receivables, reconciliation and reporting activities to improve continuity across finance operations.",
     },
     {
       title: "Long-Term Operational Support",
       desc:
-        "We stay focused on sustainable financial discipline through process monitoring, workflow refinement, and practical execution support.",
+        "We stay focused on sustainable financial discipline through process monitoring, workflow refinement and practical execution support.",
     },
   ],
 
   technologiesTitle: "Financial Systems, Operations & Reporting Tools",
   technologiesSubtitle:
-    "We use structured finance workflows, accounting platforms, reporting tools, and coordination systems to deliver practical, scalable, and well-controlled financial operations support.",
+    "We use structured finance workflows, accounting platforms, reporting tools and coordination systems to deliver practical, scalable and well-controlled financial operations support.",
   technologies: [
     {
       icon: "finance",
       title: "Billing & Invoice Management",
       desc:
-        "We support invoice creation, billing structure, e-invoicing workflows, due-date monitoring, and payment coordination to improve consistency across finance operations.",
+        "We support invoice creation, billing structure, e-invoicing workflows, due-date monitoring and payment coordination to improve consistency across finance operations.",
       items: ["Invoice Creation", "E-Invoicing", "Billing Schedules"],
     },
     {
       icon: "operations",
       title: "Payables & Receivables Operations",
       desc:
-        "We manage payable approvals, receivable follow-ups, collections tracking, payment status monitoring, and outstanding balance visibility.",
+        "We manage payable approvals, receivable follow-ups, collections tracking, payment status monitoring and outstanding balance visibility.",
       items: ["Accounts Payable", "Accounts Receivable", "Collections Tracking"],
     },
     {
       icon: "analytics",
       title: "Financial Reporting & Visibility",
       desc:
-        "We build reporting routines that improve visibility into cash flow movement, invoice status, outstanding balances, and day-to-day finance performance.",
+        "We build reporting routines that improve visibility into cash flow movement, invoice status, outstanding balances and day-to-day finance performance.",
       items: ["Cash Flow Reporting", "Aging Reports", "Status Dashboards"],
     },
     {
       icon: "collaboration",
       title: "Approval & Coordination Workflows",
       desc:
-        "We support structured approval flow, vendor coordination, customer follow-up, and finance communication routines that reduce delays and missed actions.",
+        "We support structured approval flow, vendor coordination, customer follow-up and finance communication routines that reduce delays and missed actions.",
       items: ["Approval Tracking", "Vendor Coordination", "Customer Follow-Up"],
     },
     {
       icon: "strategy",
       title: "Controls & Reconciliation Support",
       desc:
-        "We apply disciplined review and reconciliation processes to reduce mismatches, strengthen tracking, and support better financial control.",
+        "We apply disciplined review and reconciliation processes to reduce mismatches, strengthen tracking and support better financial control.",
       items: ["Payment Reconciliation", "Balance Verification", "Control Reviews"],
     },
     {
       icon: "database",
       title: "Accounting Platforms & Data Handling",
       desc:
-        "We work with common accounting tools and structured data handling processes to support invoice records, payment updates, and finance documentation consistency.",
+        "We work with common accounting tools and structured data handling processes to support invoice records, payment updates and finance documentation consistency.",
       items: ["Tally", "Zoho Books", "QuickBooks"],
     },
   ],
@@ -241,77 +241,77 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from finance workflow clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from finance workflow clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand billing flow, payment cycles, approval needs, and operational priorities",
+        desc: "Understand billing flow, payment cycles, approval needs and operational priorities",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze invoice handling gaps, payable and receivable issues, and reporting needs",
+        desc: "Analyze invoice handling gaps, payable and receivable issues and reporting needs",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define execution workflow, controls, coordination points, and structured action plan",
+        desc: "Define execution workflow, controls, coordination points and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right finance support resources, process owners, and reporting responsibilities",
+        desc: "Assign the right finance support resources, process owners and reporting responsibilities",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Execute billing, payable, receivable, and reconciliation support processes efficiently",
+        desc: "Execute billing, payable, receivable and reconciliation support processes efficiently",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor finance operations, evaluate workflow gaps, and optimize delivery",
+        desc: "Continuously monitor finance operations, evaluate workflow gaps and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide finance visibility, performance insights, and ongoing operational support",
+      desc: "Provide finance visibility, performance insights and ongoing operational support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term financial efficiency through continuous workflow improvement, stronger control, and better visibility across billing and payment operations.",
+      "We support long-term financial efficiency through continuous workflow improvement, stronger control and better visibility across billing and payment operations.",
     cards: [
       {
         title: "Billing Accuracy & Operational Consistency",
         desc:
-          "Improve invoice discipline, reduce processing delays, and maintain more reliable billing operations across finance workflows.",
+          "Improve invoice discipline, reduce processing delays and maintain more reliable billing operations across finance workflows.",
       },
       {
         title: "Payables, Receivables & Cash Flow Alignment",
         desc:
-          "Strengthen follow-up, payment timing, and outstanding balance visibility to support better working capital control.",
+          "Strengthen follow-up, payment timing and outstanding balance visibility to support better working capital control.",
       },
       {
         title: "Reporting Visibility & Decision Support",
         desc:
-          "Track finance activity, review status trends, and maintain clearer reporting that supports stronger decisions and operational planning.",
+          "Track finance activity, review status trends and maintain clearer reporting that supports stronger decisions and operational planning.",
       },
       {
         title: "Control, Review & Reconciliation Support",
         desc:
-          "Maintain stronger verification routines, reconciliation discipline, and operational checks across day-to-day finance activities.",
+          "Maintain stronger verification routines, reconciliation discipline and operational checks across day-to-day finance activities.",
       },
       {
         title: "Cash Flow Planning & Working Capital Support",
         desc:
-          "Support forecasting, collections timing, and payment planning to improve liquidity control and overall financial stability.",
+          "Support forecasting, collections timing and payment planning to improve liquidity control and overall financial stability.",
       },
     ],
   },
@@ -320,39 +320,39 @@ const content: any = {
   whyChoose: [
     {
       title: "Structured finance workflow control",
-      desc: "We build disciplined billing, payable, receivable, and reconciliation workflows that reduce delays and improve operational visibility.",
+      desc: "We build disciplined billing, payable, receivable and reconciliation workflows that reduce delays and improve operational visibility.",
     },
     {
       title: "Reliable payment and invoice coordination",
-      desc: "Our support strengthens invoice handling, approval movement, payment follow-up, and collections tracking across everyday finance operations.",
+      desc: "Our support strengthens invoice handling, approval movement, payment follow-up and collections tracking across everyday finance operations.",
     },
     {
       title: "Better visibility for cash flow decisions",
-      desc: "We improve finance reporting, status tracking, and process consistency so businesses can make better operational and cash flow decisions.",
+      desc: "We improve finance reporting, status tracking and process consistency so businesses can make better operational and cash flow decisions.",
     },
   ],
 
   frameworkTitle: "Financial Operations Transformation",
   frameworkSubtitle:
-    "Improving billing, payables, receivables, and payment coordination through structured financial operations support.",
+    "Improving billing, payables, receivables and payment coordination through structured financial operations support.",
 
   beforePoints: [
     "Manual billing and invoice handling across disconnected processes",
-    "Delays in approvals, payment tracking, and reconciliation activities",
-    "Limited visibility into receivables, payables, and outstanding balances",
+    "Delays in approvals, payment tracking and reconciliation activities",
+    "Limited visibility into receivables, payables and outstanding balances",
     "Inefficient collections follow-up affecting working capital and cash flow",
   ],
 
   afterPoints: [
     "More structured billing and invoice processing across finance operations",
-    "Improved visibility into payments, receivables, and payable status",
-    "Better coordination for approvals, reconciliations, and collections tracking",
+    "Improved visibility into payments, receivables and payable status",
+    "Better coordination for approvals, reconciliations and collections tracking",
     "Stronger financial control and more efficient cash flow support",
   ],
 
   contactTitle: "Optimize Your Financial Operations",
   contactSubtitle:
-    "Need support for billing, invoicing, accounts payable, or receivable operations? Talk to our financial operations specialists to improve control, visibility, and day-to-day finance efficiency.",
+    "Need support for billing, invoicing, accounts payable, or receivable operations? Talk to our financial operations specialists to improve control, visibility and day-to-day finance efficiency.",
 
   messageLabel: "Tell us about your billing & payment needs...",
   submitLabel: "Request Support",
@@ -438,7 +438,7 @@ const NonItAccountingFinancialOperationsFinancialOperationsSupport: React.FC = (
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Workflow Automation & RPA Services",
   heroSubtitle:
-    "Streamline business operations with intelligent workflow automation and RPA solutions. Reduce manual effort, improve efficiency, and scale faster with secure, AI-powered automation systems.",
+    "Streamline business operations with intelligent workflow automation and RPA solutions. Reduce manual effort, improve efficiency and scale faster with secure, AI-powered automation systems.",
   primaryCta: "Get Started",
   secondaryCta: "Talk to Us",
 
@@ -108,12 +108,12 @@ const content: any = {
     {
       title: "Business Process Automation Solutions",
       desc:
-        "Automate repetitive workflows across finance, HR, operations, and customer support to reduce manual work and increase productivity.",
+        "Automate repetitive workflows across finance, HR, operations and customer support to reduce manual work and increase productivity.",
     },
     {
       title: "RPA & System Integration",
       desc:
-        "Seamlessly integrate CRMs, ERPs, APIs, and third-party tools with robotic process automation for smooth data flow and execution.",
+        "Seamlessly integrate CRMs, ERPs, APIs and third-party tools with robotic process automation for smooth data flow and execution.",
     },
     {
       title: "AI-Powered Intelligent Automation",
@@ -123,7 +123,7 @@ const content: any = {
   ],
 
   overview:
-    "Our workflow automation and RPA services help businesses digitize and optimize operations using scalable and secure automation frameworks. We design intelligent workflows that connect systems, eliminate repetitive tasks, reduce human errors, and improve operational speed. From small automation use cases to enterprise-level process transformation, our solutions are built for performance, scalability, and long-term efficiency.",
+    "Our workflow automation and RPA services help businesses digitize and optimize operations using scalable and secure automation frameworks. We design intelligent workflows that connect systems, eliminate repetitive tasks, reduce human errors and improve operational speed. From small automation use cases to enterprise-level process transformation, our solutions are built for performance, scalability and long-term efficiency.",
 
   projectDuration: {
     title: "Project Duration",
@@ -134,19 +134,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -155,23 +155,23 @@ const content: any = {
     {
       title: "Process Discovery & Analysis",
       desc:
-        "We identify automation opportunities, analyze workflows, and define automation strategies aligned with your business goals.",
+        "We identify automation opportunities, analyze workflows and define automation strategies aligned with your business goals.",
     },
     {
       title: "Automation Design & Development",
       desc:
-        "We design workflows, build RPA bots, configure integrations, and implement automation logic with approvals and exception handling.",
+        "We design workflows, build RPA bots, configure integrations and implement automation logic with approvals and exception handling.",
     },
     {
       title: "Deployment, Monitoring & Optimization",
       desc:
-        "We deploy automation systems, monitor performance, and continuously optimize workflows for scalability and efficiency.",
+        "We deploy automation systems, monitor performance and continuously optimize workflows for scalability and efficiency.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -199,7 +199,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -228,7 +228,7 @@ const content: any = {
   architecture: {
     title: "Workflow Automation & RPA Architecture",
     intro:
-      "We design scalable and high-performance workflow automation and RPA architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, smooth integrations, and intelligent process execution.",
+      "We design scalable and high-performance workflow automation and RPA architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, smooth integrations and intelligent process execution.",
     processSteps: [
       {
         icon: "01",
@@ -289,7 +289,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -328,7 +328,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -347,7 +347,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -357,7 +357,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 
@@ -451,7 +451,7 @@ const ItAiAutomationSolutionsWorkflowAutomationRpa: React.FC = () => {
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

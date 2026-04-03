@@ -103,7 +103,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Website Content Services",
   heroSubtitle:
-    "Zora Global AI delivers professional website content services that help businesses improve search visibility, communicate their value clearly, and convert website visitors into enquiries, leads, and customers through SEO-optimized, brand-aligned, and conversion-focused content.",
+    "Zora Global AI delivers professional website content services that help businesses improve search visibility, communicate their value clearly and convert website visitors into enquiries, leads and customers through SEO-optimized, brand-aligned and conversion-focused content.",
 
   primaryCta: "Get Content Started",
   secondaryCta: "Talk to Us",
@@ -112,27 +112,27 @@ const content: any = {
     {
       title: "Website Copywriting",
       desc:
-        "We create clear, persuasive, and professionally structured website copy that reflects your brand voice, explains your services effectively, and guides users toward meaningful action across key pages.",
+        "We create clear, persuasive and professionally structured website copy that reflects your brand voice, explains your services effectively and guides users toward meaningful action across key pages.",
     },
     {
       title: "SEO Content Writing",
       desc:
-        "Our SEO content writing helps improve keyword relevance, organic search performance, and long-term visibility with content that is optimized for both search engines and real users.",
+        "Our SEO content writing helps improve keyword relevance, organic search performance and long-term visibility with content that is optimized for both search engines and real users.",
     },
     {
       title: "Blogs & Landing Pages",
       desc:
-        "We develop informative blog content and conversion-focused landing pages that support digital marketing campaigns, strengthen authority, and improve lead generation performance.",
+        "We develop informative blog content and conversion-focused landing pages that support digital marketing campaigns, strengthen authority and improve lead generation performance.",
     },
   ],
 
   overview:
-    "Our website content services are designed to help businesses build a stronger digital presence through clear messaging, better SEO performance, and more engaging website experiences. From homepage content and service pages to landing pages, company profiles, and blog articles, we create content that improves clarity, builds trust, supports search engine rankings, and helps users understand your value quickly. Every piece of content is aligned with your brand identity, business goals, and audience expectations to deliver both visibility and conversion impact.",
+    "Our website content services are designed to help businesses build a stronger digital presence through clear messaging, better SEO performance and more engaging website experiences. From homepage content and service pages to landing pages, company profiles and blog articles, we create content that improves clarity, builds trust, supports search engine rankings and helps users understand your value quickly. Every piece of content is aligned with your brand identity, business goals and audience expectations to deliver both visibility and conversion impact.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led content solutions focused on SEO visibility, clear communication, and scalable digital growth.",
+      "We deliver strategy-led content solutions focused on SEO visibility, clear communication and scalable digital growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
@@ -144,13 +144,13 @@ const content: any = {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Content planning, SEO alignment, messaging structure, and page-focused writing for efficient delivery.",
+          "Content planning, SEO alignment, messaging structure and page-focused writing for efficient delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert content guidance, transparent collaboration, and scalable messaging systems built for long-term growth.",
+          "Expert content guidance, transparent collaboration and scalable messaging systems built for long-term growth.",
       },
     ],
   },
@@ -160,50 +160,50 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business goals, website objectives, audience expectations, and page priorities from the beginning.",
+        "Understand business goals, website objectives, audience expectations and page priorities from the beginning.",
     },
     {
       title: "Analysis",
       desc:
-        "Review user intent, market context, keyword focus, and current messaging gaps to shape the right content direction.",
+        "Review user intent, market context, keyword focus and current messaging gaps to shape the right content direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define content structure, SEO priorities, page hierarchy, and a clear execution roadmap for delivery.",
+        "Define content structure, SEO priorities, page hierarchy and a clear execution roadmap for delivery.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT content and branding services that improve digital clarity, search visibility, and long-term communication performance. We combine content strategy, SEO thinking, and practical execution to build website messaging systems that support business growth.",
+    "Zora Global AI Technologies delivers structured non-IT content and branding services that improve digital clarity, search visibility and long-term communication performance. We combine content strategy, SEO thinking and practical execution to build website messaging systems that support business growth.",
   whoWeAreCards: [
     {
       title: "Business-Led Content Execution",
       desc:
-        "We align every content engagement with business goals, user intent, and measurable website outcomes.",
+        "We align every content engagement with business goals, user intent and measurable website outcomes.",
     },
     {
       title: "SEO & Messaging Expertise",
       desc:
-        "Our team combines search optimization, content clarity, and brand-aligned writing to create effective website communication.",
+        "Our team combines search optimization, content clarity and brand-aligned writing to create effective website communication.",
     },
     {
       title: "Long-Term Content Consistency",
       desc:
-        "We support sustainable digital growth through structured messaging, content refinement, and consistent communication standards.",
+        "We support sustainable digital growth through structured messaging, content refinement and consistent communication standards.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven content planning frameworks, SEO platforms, collaboration tools, and analytics systems to deliver practical, scalable, and measurable website content solutions.",
+    "We use proven content planning frameworks, SEO platforms, collaboration tools and analytics systems to deliver practical, scalable and measurable website content solutions.",
   technologies: [
     {
       icon: "strategy",
       title: "Content Strategy & Planning Tools",
       desc:
-        "We use structured planning methods to align page content with business goals, user intent, and communication priorities.",
+        "We use structured planning methods to align page content with business goals, user intent and communication priorities.",
       items: [
         "Content Frameworks",
         "Page Messaging Maps",
@@ -214,35 +214,35 @@ const content: any = {
       icon: "seo",
       title: "SEO & Search Visibility Tools",
       desc:
-        "We use SEO platforms and keyword analysis systems to improve search relevance, structure, and long-term visibility.",
+        "We use SEO platforms and keyword analysis systems to improve search relevance, structure and long-term visibility.",
       items: ["Google Search Console", "SEMrush", "Keyword Research Tools"],
     },
     {
       icon: "content",
       title: "Website Content Systems",
       desc:
-        "We organize headlines, service messaging, page structure, and brand voice through clear content systems and templates.",
+        "We organize headlines, service messaging, page structure and brand voice through clear content systems and templates.",
       items: ["Service Page Templates", "Brand Voice Guidelines", "Content Calendars"],
     },
     {
       icon: "marketing",
       title: "Marketing & Landing Page Platforms",
       desc:
-        "We align content delivery with digital campaigns, landing pages, and business communication platforms.",
+        "We align content delivery with digital campaigns, landing pages and business communication platforms.",
       items: ["Google Ads", "Meta Ads Manager", "Mailchimp"],
     },
     {
       icon: "operations",
       title: "Workflow & Content Governance",
       desc:
-        "We use practical workflows and review systems that keep approvals, revisions, and content delivery efficient.",
+        "We use practical workflows and review systems that keep approvals, revisions and content delivery efficient.",
       items: ["Approval Workflows", "Content Review Systems", "Brand Guidelines"],
     },
     {
       icon: "analytics",
       title: "Reporting & Performance Insights",
       desc:
-        "We track search visibility, page engagement, and content performance through insight systems that support better decisions.",
+        "We track search visibility, page engagement and content performance through insight systems that support better decisions.",
       items: ["Google Analytics", "Performance Dashboards", "Engagement Reports"],
     },
   ],
@@ -250,77 +250,77 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand website goals, audience needs, page priorities, and content requirements",
+        desc: "Understand website goals, audience needs, page priorities and content requirements",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess current messaging, SEO gaps, user intent, and key communication priorities",
+        desc: "Assess current messaging, SEO gaps, user intent and key communication priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define page structure, keyword direction, message hierarchy, and a structured content roadmap",
+        desc: "Define page structure, keyword direction, message hierarchy and a structured content roadmap",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right content strategists, writers, and optimization resources",
+        desc: "Assign the right content strategists, writers and optimization resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Create website pages, SEO content, and landing page messaging with structured implementation",
+        desc: "Create website pages, SEO content and landing page messaging with structured implementation",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Review performance, clarity, and search alignment to refine content delivery",
+        desc: "Review performance, clarity and search alignment to refine content delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide content recommendations, reporting insights, and ongoing support for website improvement",
+      desc: "Provide content recommendations, reporting insights and ongoing support for website improvement",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term digital growth through continuous content refinement, SEO improvement, and strategic guidance that strengthens visibility, engagement, and conversion quality.",
+      "We support long-term digital growth through continuous content refinement, SEO improvement and strategic guidance that strengthens visibility, engagement and conversion quality.",
     cards: [
       {
         title: "Content Optimization & Message Clarity",
         desc:
-          "Improve page messaging, strengthen clarity, and maintain high-quality website communication across digital touchpoints.",
+          "Improve page messaging, strengthen clarity and maintain high-quality website communication across digital touchpoints.",
       },
       {
         title: "Strategic Refinement & SEO Alignment",
         desc:
-          "Refine website content based on business goals, search trends, and audience needs to support better visibility.",
+          "Refine website content based on business goals, search trends and audience needs to support better visibility.",
       },
       {
         title: "Performance Monitoring & Content Insights",
         desc:
-          "Track page performance, engagement patterns, and content effectiveness to support better content decisions.",
+          "Track page performance, engagement patterns and content effectiveness to support better content decisions.",
       },
       {
         title: "Consultation & Content Excellence",
         desc:
-          "Provide expert guidance to improve website communication, SEO structure, and content execution quality.",
+          "Provide expert guidance to improve website communication, SEO structure and content execution quality.",
       },
       {
         title: "Engagement & Conversion Support",
         desc:
-          "Support page-level improvements that strengthen trust, user action, and long-term conversion performance.",
+          "Support page-level improvements that strengthen trust, user action and long-term conversion performance.",
       },
     ],
   },
@@ -330,17 +330,17 @@ const content: any = {
     {
       title: "SEO + clarity",
       desc:
-        "We write content that is optimized for search visibility while staying clear, readable, and useful for real users, helping your pages perform better in both rankings and engagement.",
+        "We write content that is optimized for search visibility while staying clear, readable and useful for real users, helping your pages perform better in both rankings and engagement.",
     },
     {
       title: "Brand-aligned tone",
       desc:
-        "Our content maintains a consistent tone of voice across website pages, campaigns, and business communication so your brand feels professional, trustworthy, and unified.",
+        "Our content maintains a consistent tone of voice across website pages, campaigns and business communication so your brand feels professional, trustworthy and unified.",
     },
     {
       title: "Conversion-focused structure",
       desc:
-        "We structure content to improve readability, guide visitors through the page journey, highlight your value clearly, and support stronger enquiry, lead, and conversion outcomes.",
+        "We structure content to improve readability, guide visitors through the page journey, highlight your value clearly and support stronger enquiry, lead and conversion outcomes.",
     },
   ],
 
@@ -349,23 +349,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We create scalable content systems aligned with business goals, search priorities, and long-term digital growth.",
+        "We create scalable content systems aligned with business goals, search priorities and long-term digital growth.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, content clarity, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, content clarity and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous content refinement, SEO consistency, and strategic growth through a customer-focused partnership approach.",
+        "We support continuous content refinement, SEO consistency and strategic growth through a customer-focused partnership approach.",
     },
   ],
 
   frameworkTitle: "Content That Converts",
   frameworkSubtitle:
-    "Turning unclear website messaging into structured, SEO-friendly, engaging, and conversion-focused content that improves visibility, user trust, and business outcomes.",
+    "Turning unclear website messaging into structured, SEO-friendly, engaging and conversion-focused content that improves visibility, user trust and business outcomes.",
 
   beforePoints: [
     "Unclear messaging that confuses visitors and weakens brand communication",
@@ -377,13 +377,13 @@ const content: any = {
   afterPoints: [
     "Clear and professional messaging that communicates value more effectively",
     "Improved keyword relevance and stronger organic search visibility",
-    "Higher engagement through better readability, structure, and page flow",
+    "Higher engagement through better readability, structure and page flow",
     "Better conversion support with content aligned to user intent and business goals",
   ],
 
   contactTitle: "Talk to Our Content Experts",
   contactSubtitle:
-    "Looking to improve your website content, service page messaging, SEO visibility, or landing page performance? Our content specialists are ready to help you create high-quality website content that supports rankings, engagement, and conversions.",
+    "Looking to improve your website content, service page messaging, SEO visibility, or landing page performance? Our content specialists are ready to help you create high-quality website content that supports rankings, engagement and conversions.",
   messageLabel: "Tell us about your content requirements...",
   submitLabel: "Request Content Consultation",
 };
@@ -466,7 +466,7 @@ const NonItBrandingCreativeServicesWebsiteCorporateContent: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

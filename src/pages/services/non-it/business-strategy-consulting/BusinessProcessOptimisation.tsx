@@ -10,7 +10,7 @@ const item = {
   slug: "business-process-optimisation",
   title: "Business Process Optimisation",
   shortDesc:
-    "Strategic consulting services that help businesses optimize operations, improve efficiency, streamline decision-making, and build sustainable long-term growth through structured planning and performance-focused execution.",
+    "Strategic consulting services that help businesses optimize operations, improve efficiency, streamline decision-making and build sustainable long-term growth through structured planning and performance-focused execution.",
 };
 
 const heroImage = "/non-it-hero/business-process-optimisation.png";
@@ -173,7 +173,7 @@ const content: any = {
   heroTitle: "Business Process Optimisation",
 
   heroSubtitle:
-    "Zora Global AI helps businesses improve workflows, reduce operational costs, and increase productivity through process optimization, workflow automation, and structured business transformation.",
+    "Zora Global AI helps businesses improve workflows, reduce operational costs and increase productivity through process optimization, workflow automation and structured business transformation.",
 
   primaryCta: "Optimize Business Processes",
   secondaryCta: "Talk to Our Experts",
@@ -181,45 +181,45 @@ const content: any = {
     {
       title: "ERP & Enterprise Systems",
       desc:
-        "We design, implement, integrate, and optimise ERP and enterprise platforms that unify operations, improve reporting accuracy, connect departments, and create better visibility across finance, HR, procurement, sales, and operations.",
+        "We design, implement, integrate and optimise ERP and enterprise platforms that unify operations, improve reporting accuracy, connect departments and create better visibility across finance, HR, procurement, sales and operations.",
     },
     {
       title: "Workflow & Process Automation",
       desc:
-        "We automate repetitive tasks, approval workflows, internal coordination processes, and operational routines using workflow automation, BPM tools, and intelligent process systems.",
+        "We automate repetitive tasks, approval workflows, internal coordination processes and operational routines using workflow automation, BPM tools and intelligent process systems.",
     },
     {
       title: "Process Improvement & Cost Reduction",
       desc:
-        "We identify inefficiencies, remove bottlenecks, optimise business operations, and reduce unnecessary costs through structured process improvement strategies and measurable execution models.",
+        "We identify inefficiencies, remove bottlenecks, optimise business operations and reduce unnecessary costs through structured process improvement strategies and measurable execution models.",
     },
   ],
 
   overview:
-    "Our business process optimisation services focus on improving end-to-end workflows, strengthening operational control, and building efficient systems across the organisation. We help businesses operate faster, smarter, and more cost-effectively through process assessment, workflow improvement, and transformation planning.",
+    "Our business process optimisation services focus on improving end-to-end workflows, strengthening operational control and building efficient systems across the organisation. We help businesses operate faster, smarter and more cost-effectively through process assessment, workflow improvement and transformation planning.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led non-IT solutions focused on business process optimization, operational efficiency, and scalable growth.",
+      "We deliver strategy-led non-IT solutions focused on business process optimization, operational efficiency and scalable growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
         label: "Best suited for",
         desc:
-          "Structured execution that helps businesses move faster, improve decisions, and achieve better performance.",
+          "Structured execution that helps businesses move faster, improve decisions and achieve better performance.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Business analysis, strategic planning, workflow optimization, and performance tracking for efficient delivery.",
+          "Business analysis, strategic planning, workflow optimization and performance tracking for efficient delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert consulting, transparent approach, and scalable solutions that drive growth and long-term success.",
+          "Expert consulting, transparent approach and scalable solutions that drive growth and long-term success.",
       },
     ],
   },
@@ -229,51 +229,51 @@ const content: any = {
     {
       title: "Requirement Gathering",
       desc:
-        "Understand business objectives, service requirements, and expected outcomes so the execution path is aligned from the beginning.",
+        "Understand business objectives, service requirements and expected outcomes so the execution path is aligned from the beginning.",
     },
     {
       title: "Analysis",
       desc:
-        "Analyze business needs, market context, current process gaps, and key service priorities to define the right improvement direction.",
+        "Analyze business needs, market context, current process gaps and key service priorities to define the right improvement direction.",
     },
     {
       title: "Planning & Strategy",
       desc:
-        "Define execution strategy, workflow, responsibilities, and a structured action plan that keeps implementation practical and measurable.",
+        "Define execution strategy, workflow, responsibilities and a structured action plan that keeps implementation practical and measurable.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT consulting and implementation services that improve operations, execution quality, and long-term business performance. We combine strategy, process discipline, and domain expertise to create clear, measurable business progress.",
+    "Zora Global AI Technologies delivers structured non-IT consulting and implementation services that improve operations, execution quality and long-term business performance. We combine strategy, process discipline and domain expertise to create clear, measurable business progress.",
   whoWeAreCards: [
     {
       title: "Business-Led Execution",
       desc:
-        "We align each engagement with business goals, operational priorities, and measurable outcomes instead of generic advisory work.",
+        "We align each engagement with business goals, operational priorities and measurable outcomes instead of generic advisory work.",
     },
     {
       title: "Cross-Functional Expertise",
       desc:
-        "Our work spans strategy, marketing, HR, finance, operations, and execution planning to support real business change across departments.",
+        "Our work spans strategy, marketing, HR, finance, operations and execution planning to support real business change across departments.",
     },
     {
       title: "Long-Term Partnership",
       desc:
-        "We stay focused on sustainable improvement through reporting, support, optimization, and practical implementation guidance.",
+        "We stay focused on sustainable improvement through reporting, support, optimization and practical implementation guidance.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven business frameworks, marketing platforms, finance tools, HR systems, and operational optimization methods to deliver practical, scalable, and measurable non-IT business solutions.",
+    "We use proven business frameworks, marketing platforms, finance tools, HR systems and operational optimization methods to deliver practical, scalable and measurable non-IT business solutions.",
 
   technologies: [
     {
       icon: "strategy",
       title: "Business Analysis & Strategy Tools",
       desc:
-        "We use structured analysis, planning, and process-design frameworks to evaluate business position, risks, opportunities, and measurable performance direction.",
+        "We use structured analysis, planning and process-design frameworks to evaluate business position, risks, opportunities and measurable performance direction.",
       items: [
         "SWOT Analysis",
         "PESTLE Analysis",
@@ -284,7 +284,7 @@ const content: any = {
       icon: "marketing",
       title: "Marketing & Branding Platforms",
       desc:
-        "We support campaign planning, reporting, visibility analysis, and creative execution using common business marketing platforms.",
+        "We support campaign planning, reporting, visibility analysis and creative execution using common business marketing platforms.",
       items: [
         "Google Ads",
         "Meta Ads Manager",
@@ -295,7 +295,7 @@ const content: any = {
       icon: "finance",
       title: "Financial & Accounting Tools",
       desc:
-        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting, and cost control.",
+        "We work with practical accounting systems and financial planning frameworks to improve visibility, budgeting and cost control.",
       items: [
         "Tally",
         "Zoho Books",
@@ -306,7 +306,7 @@ const content: any = {
       icon: "hr",
       title: "HR & Workforce Management",
       desc:
-        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes, and employee performance tracking.",
+        "We support people operations through HR systems, recruitment workflows, workforce planning, payroll processes and employee performance tracking.",
       items: [
         "Custom HRMS Platform (Zora HRMS)",
         "Recruitment & Candidate Tracking (ATS)",
@@ -328,7 +328,7 @@ const content: any = {
       icon: "analytics",
       title: "Reporting & Analytics Tools",
       desc:
-        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights, and decision-ready business intelligence.",
+        "We build reporting structures and analytics workflows that turn operational data into clear dashboards, measurable insights and decision-ready business intelligence.",
       items: [
         "Power BI",
         "Tableau",
@@ -340,27 +340,27 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring, and ongoing support with transparent milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from requirement clarity to execution, monitoring and ongoing support with transparent milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand business objectives, service requirements, and expected outcomes",
+        desc: "Understand business objectives, service requirements and expected outcomes",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Analyze business needs, market context, and key service priorities",
+        desc: "Analyze business needs, market context and key service priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define execution strategy, workflow, and structured action plan",
+        desc: "Define execution strategy, workflow and structured action plan",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, specialists, and operational resources",
+        desc: "Assign the right team, specialists and operational resources",
       },
     ],
     deliveryCards: [
@@ -372,45 +372,45 @@ const content: any = {
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously monitor performance, evaluate results, and optimize delivery",
+        desc: "Continuously monitor performance, evaluate results and optimize delivery",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide performance insights, reporting, and ongoing support",
+      desc: "Provide performance insights, reporting and ongoing support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We ensure long-term business success through continuous optimization, performance improvement, and strategic support that drives measurable growth and operational efficiency.",
+      "We ensure long-term business success through continuous optimization, performance improvement and strategic support that drives measurable growth and operational efficiency.",
     cards: [
       {
         title: "Process Optimization & Business Efficiency",
         desc:
-          "Enhance workflows, improve execution quality, and drive operational efficiency and productivity growth across business processes.",
+          "Enhance workflows, improve execution quality and drive operational efficiency and productivity growth across business processes.",
       },
       {
         title: "Strategic Refinement & Growth Alignment",
         desc:
-          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth, and market adaptability.",
+          "Continuously refine business strategies based on performance insights to ensure scalability, revenue growth and market adaptability.",
       },
       {
         title: "Performance Monitoring & Business Insights",
         desc:
-          "Track KPIs, analyze performance trends, and deliver data-driven insights to support better decision-making and measurable business outcomes.",
+          "Track KPIs, analyze performance trends and deliver data-driven insights to support better decision-making and measurable business outcomes.",
       },
       {
         title: "Consultation & Operational Excellence",
         desc:
-          "Provide expert guidance to improve business decisions, strengthen execution, and achieve operational excellence across day-to-day activities.",
+          "Provide expert guidance to improve business decisions, strengthen execution and achieve operational excellence across day-to-day activities.",
       },
       {
         title: "Brand & Market Positioning Support",
         desc:
-          "Support branding, communication, and market positioning strategies to improve customer trust, engagement, and business credibility.",
+          "Support branding, communication and market positioning strategies to improve customer trust, engagement and business credibility.",
       },
     ],
   },
@@ -419,7 +419,7 @@ const content: any = {
 
   frameworkTitle: "Business Process Optimisation Framework",
   frameworkSubtitle:
-    "Aligning people, processes, and technology for sustainable efficiency, stronger control, and measurable business performance.",
+    "Aligning people, processes and technology for sustainable efficiency, stronger control and measurable business performance.",
   beforePoints: [
     "Manual and fragmented workflows across departments",
     "High operational costs and repeated inefficiencies",
@@ -427,7 +427,7 @@ const content: any = {
   ],
   afterPoints: [
     "Streamlined operations with structured workflows",
-    "Lower costs, improved productivity, and better resource usage",
+    "Lower costs, improved productivity and better resource usage",
     "Integrated ERP-driven workflows with stronger data visibility",
   ],
 
@@ -436,23 +436,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver scalable, future-ready business solutions aligned with strategic goals, ensuring operational growth, adaptability, and measurable business outcomes.",
+        "We deliver scalable, future-ready business solutions aligned with strategic goals, ensuring operational growth, adaptability and measurable business outcomes.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our approach combines milestone-based delivery, transparent reporting, and quality-driven execution to ensure reliable performance and timely project completion.",
+        "Our approach combines milestone-based delivery, transparent reporting and quality-driven execution to ensure reliable performance and timely project completion.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We provide continuous support and follow a customer-centric approach focused on improvement, sustainability, and long-term business success.",
+        "We provide continuous support and follow a customer-centric approach focused on improvement, sustainability and long-term business success.",
     },
   ],
   contactTitle: "Optimize Your Business Processes",
 
   contactSubtitle:
-    "Ready to improve efficiency, reduce costs, and build stronger workflows? Talk to our process optimisation experts to explore a faster and more scalable path for your business.",
+    "Ready to improve efficiency, reduce costs and build stronger workflows? Talk to our process optimisation experts to explore a faster and more scalable path for your business.",
 
   messageLabel: "Describe your process optimisation goals...",
   submitLabel: "Request Process Assessment",
@@ -488,7 +488,7 @@ const NonItBusinessStrategyConsultingBusinessProcessOptimisation: React.FC = () 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       setSubmitStatus({
         type: "error",
-        message: "Please fill in your name, email, and project details.",
+        message: "Please fill in your name, email and project details.",
       });
       return;
     }
@@ -560,7 +560,7 @@ const NonItBusinessStrategyConsultingBusinessProcessOptimisation: React.FC = () 
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

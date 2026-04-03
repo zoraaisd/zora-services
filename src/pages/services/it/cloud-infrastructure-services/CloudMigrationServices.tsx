@@ -100,7 +100,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "Cloud Migration Services",
   heroSubtitle:
-    "Accelerate your digital transformation with secure, scalable, and cost-efficient cloud migration services. We seamlessly migrate applications, data, and infrastructure with minimal downtime and maximum reliability.",
+    "Accelerate your digital transformation with secure, scalable and cost-efficient cloud migration services. We seamlessly migrate applications, data and infrastructure with minimal downtime and maximum reliability.",
 
   primaryCta: "Start Your Migration",
   secondaryCta: "Talk to Us",
@@ -108,11 +108,11 @@ const content: any = {
   topBlocks: [
     {
       title: "Application Migration",
-      desc: "We migrate applications using rehosting (lift-and-shift), replatforming, or re-architecting approaches to ensure improved performance, scalability, and cloud-native readiness.",
+      desc: "We migrate applications using rehosting (lift-and-shift), replatforming, or re-architecting approaches to ensure improved performance, scalability and cloud-native readiness.",
     },
     {
       title: "Data Migration",
-      desc: "Secure and reliable data migration with backup strategies, validation processes, and zero data loss assurance across databases, data warehouses, and storage systems.",
+      desc: "Secure and reliable data migration with backup strategies, validation processes and zero data loss assurance across databases, data warehouses and storage systems.",
     },
     {
       title: "Infrastructure Modernization",
@@ -121,7 +121,7 @@ const content: any = {
   ],
 
   overview:
-    "Cloud migration is a critical step in modernizing your IT infrastructure and enabling business agility. Our cloud migration services help organizations seamlessly transition from legacy systems to modern cloud platforms. We ensure high availability, data integrity, and performance optimization throughout the migration process. By leveraging industry best practices and automation tools, we minimize risks and downtime. Whether you're moving a single application or an entire data center, we deliver tailored migration strategies aligned with your business goals.",
+    "Cloud migration is a critical step in modernizing your IT infrastructure and enabling business agility. Our cloud migration services help organizations seamlessly transition from legacy systems to modern cloud platforms. We ensure high availability, data integrity and performance optimization throughout the migration process. By leveraging industry best practices and automation tools, we minimize risks and downtime. Whether you're moving a single application or an entire data center, we deliver tailored migration strategies aligned with your business goals.",
 
   projectDuration: {
     title: "Project Duration",
@@ -132,19 +132,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -152,25 +152,25 @@ const content: any = {
   deliverySteps: [
     {
       title: "Assessment & Strategy Planning",
-      desc: "We evaluate your current infrastructure, application dependencies, and cloud readiness to define the right migration strategy, platform selection, and roadmap aligned with your business goals.",
+      desc: "We evaluate your current infrastructure, application dependencies and cloud readiness to define the right migration strategy, platform selection and roadmap aligned with your business goals.",
     },
     {
       title: "Architecture Design & Migration Preparation",
-      desc: "We prepare the migration environment by designing a secure cloud architecture, defining workloads, planning data transfer, and setting up the tools and processes required for a smooth transition.",
+      desc: "We prepare the migration environment by designing a secure cloud architecture, defining workloads, planning data transfer and setting up the tools and processes required for a smooth transition.",
     },
     {
       title: "Migration Execution & Validation",
-      desc: "Our team executes the migration with minimal disruption, ensuring secure application movement, accurate data transfer, system testing, and validation to maintain continuity and performance.",
+      desc: "Our team executes the migration with minimal disruption, ensuring secure application movement, accurate data transfer, system testing and validation to maintain continuity and performance.",
     },
     {
       title: "Optimization, Monitoring & Support",
-      desc: "After migration, we optimize cloud performance, monitor workloads, improve cost efficiency, and provide ongoing support to ensure stability, scalability, and long-term business value.",
+      desc: "After migration, we optimize cloud performance, monitor workloads, improve cost efficiency and provide ongoing support to ensure stability, scalability and long-term business value.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -198,7 +198,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -227,7 +227,7 @@ const content: any = {
   architecture: {
     title: "Cloud Migration Services Architecture",
     intro:
-      "We design scalable and high-performance cloud migration architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, seamless data transfer, and minimal business disruption.",
+      "We design scalable and high-performance cloud migration architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security, seamless data transfer and minimal business disruption.",
     processSteps: [
       {
         icon: "01",
@@ -288,7 +288,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -327,7 +327,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -346,7 +346,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -356,7 +356,7 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
 

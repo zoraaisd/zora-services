@@ -254,7 +254,7 @@ export default function BlogPost() {
             Let's bring your vision to life
           </h3>
           <p className="text-gray-400 mb-6 max-w-md mx-auto text-sm leading-relaxed">
-            Our team specialises in modern web development, AI integration, and
+            Our team specialises in modern web development, AI integration and
             scalable digital solutions.
           </p>
           <Link

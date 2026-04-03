@@ -101,7 +101,7 @@ const content: any = {
   heroTitle: "iOS App Development Company for Scalable Business Apps",
 
   heroSubtitle:
-    "Looking for a reliable iOS app development company? We build secure, high-performance iPhone and iPad applications with modern UI/UX, seamless Apple ecosystem integration, and scalable architecture to help businesses grow faster in the mobile-first world.",
+    "Looking for a reliable iOS app development company? We build secure, high-performance iPhone and iPad applications with modern UI/UX, seamless Apple ecosystem integration and scalable architecture to help businesses grow faster in the mobile-first world.",
 
   primaryCta: "Get iOS App Development",
   secondaryCta: "Talk to Our Experts",
@@ -109,22 +109,22 @@ const content: any = {
     {
       title: "Custom iOS Application Development",
       desc:
-        "We provide custom iOS app development services tailored to your business needs. Our team builds fast, secure, and scalable iPhone and iPad apps using modern technologies, ensuring excellent performance, smooth user experience, and App Store readiness.",
+        "We provide custom iOS app development services tailored to your business needs. Our team builds fast, secure and scalable iPhone and iPad apps using modern technologies, ensuring excellent performance, smooth user experience and App Store readiness.",
     },
     {
       title: "iOS UI/UX Design Services",
       desc:
-        "Our iOS UI/UX design focuses on clean layouts, intuitive navigation, and Apple Human Interface Guidelines. We design visually appealing and user-friendly interfaces that improve engagement, increase retention, and deliver premium mobile experiences.",
+        "Our iOS UI/UX design focuses on clean layouts, intuitive navigation and Apple Human Interface Guidelines. We design visually appealing and user-friendly interfaces that improve engagement, increase retention and deliver premium mobile experiences.",
     },
     {
       title: "Apple Ecosystem & API Integration",
       desc:
-        "We integrate iOS apps with Apple services like iCloud, Apple Pay, and third-party APIs. Our solutions ensure secure data flow, real-time connectivity, and seamless integration with backend systems, cloud platforms, and enterprise tools.",
+        "We integrate iOS apps with Apple services like iCloud, Apple Pay and third-party APIs. Our solutions ensure secure data flow, real-time connectivity and seamless integration with backend systems, cloud platforms and enterprise tools.",
     },
   ],
 
   overview:
-    "Our iOS app development services are designed to help startups, enterprises, and businesses build powerful mobile applications for the Apple ecosystem. We specialize in developing secure, scalable, and high-performing iOS apps for iPhone and iPad. From e-commerce apps, booking platforms, and enterprise solutions to customer engagement and business productivity applications, we deliver end-to-end iOS solutions. Our development process focuses on performance optimization, user-friendly design, backend integration, and App Store compliance. As a leading iOS app development company, we ensure your application enhances user engagement, increases brand value, and drives long-term business growth.",
+    "Our iOS app development services are designed to help startups, enterprises and businesses build powerful mobile applications for the Apple ecosystem. We specialize in developing secure, scalable and high-performing iOS apps for iPhone and iPad. From e-commerce apps, booking platforms and enterprise solutions to customer engagement and business productivity applications, we deliver end-to-end iOS solutions. Our development process focuses on performance optimization, user-friendly design, backend integration and App Store compliance. As a leading iOS app development company, we ensure your application enhances user engagement, increases brand value and drives long-term business growth.",
 
   projectDuration: {
     title: "Project Duration",
@@ -135,19 +135,19 @@ const content: any = {
         title: "48 Hours",
         label: "Standard Fast Delivery",
         desc:
-          "Best suited for business websites, service pages, company profiles, and launch-ready websites with finalized requirements.",
+          "Best suited for business websites, service pages, company profiles and launch-ready websites with finalized requirements.",
       },
       {
         title: "Design + Development",
         label: "What is Included",
         desc:
-          "Responsive layout, structured content sections, contact forms, SEO-ready structure, and deployment-ready frontend implementation.",
+          "Responsive layout, structured content sections, contact forms, SEO-ready structure and deployment-ready frontend implementation.",
       },
       {
         title: "Finalized Content",
         label: "Requirement Condition",
         desc:
-          "Timeline applies when content, branding, and scope are clearly defined and approved before development begins.",
+          "Timeline applies when content, branding and scope are clearly defined and approved before development begins.",
       },
     ],
   },
@@ -156,23 +156,23 @@ const content: any = {
     {
       title: "Requirement Analysis & Planning",
       desc:
-        "We analyze your business goals, target audience, and app requirements to create a clear iOS app development roadmap. This includes feature planning, architecture design, and defining a scalable mobile strategy aligned with your objectives.",
+        "We analyze your business goals, target audience and app requirements to create a clear iOS app development roadmap. This includes feature planning, architecture design and defining a scalable mobile strategy aligned with your objectives.",
     },
     {
       title: "Design & Development",
       desc:
-        "Our team designs and develops iOS applications using modern technologies, Swift frameworks, and Apple best practices. We focus on performance, security, seamless UI/UX, and smooth integration with APIs and backend systems.",
+        "Our team designs and develops iOS applications using modern technologies, Swift frameworks and Apple best practices. We focus on performance, security, seamless UI/UX and smooth integration with APIs and backend systems.",
     },
     {
       title: "Testing & App Store Launch",
       desc:
-        "We conduct rigorous testing for performance, security, and usability. After ensuring App Store compliance, we assist with deployment, launch, and post-launch optimization to ensure long-term success.",
+        "We conduct rigorous testing for performance, security and usability. After ensuring App Store compliance, we assist with deployment, launch and post-launch optimization to ensure long-term success.",
     },
   ],
 
   technologiesTitle: "Technologies We Use",
   technologiesSubtitle:
-    "We use modern, reliable, and scalable technologies to build high-performance websites, mobile applications, and AI-powered solutions that are secure, responsive, and future-ready.",
+    "We use modern, reliable and scalable technologies to build high-performance websites, mobile applications and AI-powered solutions that are secure, responsive and future-ready.",
 
   technologies: [
     {
@@ -200,7 +200,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Deployment",
       desc:
-        "We deploy applications using cloud platforms that ensure speed, scalability, and uptime.",
+        "We deploy applications using cloud platforms that ensure speed, scalability and uptime.",
       items: ["AWS", "Azure", "GCP", "Firebase"],
     },
     {
@@ -229,7 +229,7 @@ const content: any = {
   architecture: {
     title: "Web Design & Development Architecture",
     intro:
-      "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database, and cloud technologies to ensure reliability, security, and seamless user experience.",
+      "We design scalable and high-performance Web Design & Development architectures using modern frontend, backend, database and cloud technologies to ensure reliability, security and seamless user experience.",
     processSteps: [
       {
         icon: "01",
@@ -290,7 +290,7 @@ const content: any = {
       bottom: {
         icon: "<>",
         title: "Cloud / Deployment / Storage",
-        desc: "Hosting, deployment, and storage.",
+        desc: "Hosting, deployment and storage.",
       },
       sideCards: [
         {
@@ -329,7 +329,7 @@ const content: any = {
       {
         title: "Performance Monitoring",
         desc:
-          "Continuous monitoring to ensure speed, uptime, and optimal performance.",
+          "Continuous monitoring to ensure speed, uptime and optimal performance.",
       },
       {
         title: "Basic Support Assistance",
@@ -348,7 +348,7 @@ const content: any = {
     {
       title: "Scalable Delivery with Structured Execution",
       desc:
-        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes, and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
+        "We follow a scalable and future-ready development approach with structured milestone-based execution, controlled implementation processes and quality assurance at every stage to ensure on-time delivery aligned with business goals.",
     },
     {
       title: "Business-Focused Technology Partnership",
@@ -358,13 +358,13 @@ const content: any = {
     {
       title: "Transparent Collaboration & Long-Term Support",
       desc:
-        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution, and long-term maintenance commitment to deliver reliability and continuous improvement.",
+        "We ensure transparent communication throughout development, customer-focused execution, strong post-deployment support, issue resolution and long-term maintenance commitment to deliver reliability and continuous improvement.",
     },
   ],
   contactTitle: "Start Your iOS App Development Project",
 
   contactSubtitle:
-    "Have an idea for an iPhone or iPad app? Share your requirements with our experts and get a secure, scalable, and high-performance iOS application tailored to your business needs.",
+    "Have an idea for an iPhone or iPad app? Share your requirements with our experts and get a secure, scalable and high-performance iOS application tailored to your business needs.",
 
   messageLabel: "Describe your iOS app idea...",
   submitLabel: "Get Free Consultation",
@@ -451,7 +451,7 @@ const ItMobileApplicationDevelopmentIosAppDevelopment: React.FC = () => {
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

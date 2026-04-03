@@ -10,7 +10,7 @@ const item = {
   slug: "ui-ux-creative-design",
   title: "UI/UX Design Services",
   shortDesc:
-    "User-focused digital experiences that improve usability, engagement, conversions, and brand perception.",
+    "User-focused digital experiences that improve usability, engagement, conversions and brand perception.",
 };
 
 const heroImage = "/non-it-hero/ui-ux-creative-design.png";
@@ -102,7 +102,7 @@ const renderTechnologyIcon = (icon: string, accent: "blue" | "purple") => {
 const content: any = {
   heroTitle: "UI/UX Design Services",
   heroSubtitle:
-    "Zora Global AI delivers UI/UX design services that help businesses create intuitive, engaging, and conversion-focused digital experiences. Our approach improves usability, simplifies user journeys, strengthens customer satisfaction, and enhances brand perception across websites, web applications, mobile apps, and other digital platforms.",
+    "Zora Global AI delivers UI/UX design services that help businesses create intuitive, engaging and conversion-focused digital experiences. Our approach improves usability, simplifies user journeys, strengthens customer satisfaction and enhances brand perception across websites, web applications, mobile apps and other digital platforms.",
 
   primaryCta: "Explore UI/UX Services",
   secondaryCta: "Talk to Us",
@@ -110,25 +110,25 @@ const content: any = {
   topBlocks: [
     {
       title: "User Research & Analysis",
-      desc: "We study user behavior, audience expectations, navigation patterns, pain points, and market trends to create experience strategies that are rooted in real user needs and business goals.",
+      desc: "We study user behavior, audience expectations, navigation patterns, pain points and market trends to create experience strategies that are rooted in real user needs and business goals.",
     },
     {
       title: "Interface Design",
-      desc: "We design visually engaging, easy-to-use, and brand-aligned digital interfaces that improve clarity, strengthen usability, and create smoother interactions across every important touchpoint.",
+      desc: "We design visually engaging, easy-to-use and brand-aligned digital interfaces that improve clarity, strengthen usability and create smoother interactions across every important touchpoint.",
     },
     {
       title: "Usability Testing",
-      desc: "We validate design decisions through structured testing, feedback loops, and iterative refinement to improve usability, reduce friction, and deliver more effective user experiences.",
+      desc: "We validate design decisions through structured testing, feedback loops and iterative refinement to improve usability, reduce friction and deliver more effective user experiences.",
     },
   ],
 
   overview:
-    "Our UI/UX design services combine research, strategy, user-centered thinking, and creative execution to build seamless digital experiences across web and mobile platforms. We help businesses improve usability, reduce user friction, strengthen digital engagement, and increase conversions through interfaces that are functional, attractive, and aligned with business objectives. From wireframes and workflows to prototypes and polished visual design, our process focuses on creating digital experiences that are easy to understand, enjoyable to use, and built to support long-term product growth.",
+    "Our UI/UX design services combine research, strategy, user-centered thinking and creative execution to build seamless digital experiences across web and mobile platforms. We help businesses improve usability, reduce user friction, strengthen digital engagement and increase conversions through interfaces that are functional, attractive and aligned with business objectives. From wireframes and workflows to prototypes and polished visual design, our process focuses on creating digital experiences that are easy to understand, enjoyable to use and built to support long-term product growth.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver strategy-led UI/UX solutions focused on usability improvement, seamless user journeys, and scalable digital growth.",
+      "We deliver strategy-led UI/UX solutions focused on usability improvement, seamless user journeys and scalable digital growth.",
     cards: [
       {
         title: "Fast & Strategic Execution",
@@ -140,13 +140,13 @@ const content: any = {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "User research, journey mapping, interface design, prototyping, and testing for focused design delivery.",
+          "User research, journey mapping, interface design, prototyping and testing for focused design delivery.",
       },
       {
         title: "Why Businesses Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert UI/UX guidance, transparent collaboration, and scalable design systems built for long-term product growth.",
+          "Expert UI/UX guidance, transparent collaboration and scalable design systems built for long-term product growth.",
       },
     ],
   },
@@ -155,55 +155,55 @@ const content: any = {
   deliverySteps: [
     {
       title: "Research — User & Market Insights",
-      desc: "We analyze users, competitors, business objectives, user journeys, and digital behavior patterns to define a strong design direction that supports both usability and business performance.",
+      desc: "We analyze users, competitors, business objectives, user journeys and digital behavior patterns to define a strong design direction that supports both usability and business performance.",
     },
     {
       title: "Design — Wireframes & Visual Design",
-      desc: "We create structured wireframes, interactive prototypes, layout systems, and high-fidelity interface designs that improve navigation clarity, visual consistency, and overall user experience.",
+      desc: "We create structured wireframes, interactive prototypes, layout systems and high-fidelity interface designs that improve navigation clarity, visual consistency and overall user experience.",
     },
     {
       title: "Validate — Testing & Refinement",
-      desc: "We test flows, gather feedback, identify usability gaps, and refine the design to ensure the final experience performs better in terms of engagement, accessibility, and conversion outcomes.",
+      desc: "We test flows, gather feedback, identify usability gaps and refine the design to ensure the final experience performs better in terms of engagement, accessibility and conversion outcomes.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies delivers structured non-IT UI/UX and creative design services that improve usability, digital clarity, and long-term customer experience. We combine research, strategy, interface design, and practical execution to build experiences that perform across digital touchpoints.",
+    "Zora Global AI Technologies delivers structured non-IT UI/UX and creative design services that improve usability, digital clarity and long-term customer experience. We combine research, strategy, interface design and practical execution to build experiences that perform across digital touchpoints.",
   whoWeAreCards: [
     {
       title: "User-Centered Execution",
       desc:
-        "We align every design engagement with user needs, business objectives, and measurable experience outcomes.",
+        "We align every design engagement with user needs, business objectives and measurable experience outcomes.",
     },
     {
       title: "Research & Interface Expertise",
       desc:
-        "Our team combines UX strategy, interaction thinking, and visual design to create intuitive and scalable digital experiences.",
+        "Our team combines UX strategy, interaction thinking and visual design to create intuitive and scalable digital experiences.",
     },
     {
       title: "Long-Term Experience Improvement",
       desc:
-        "We support sustainable product growth through testing, refinement, consistency, and practical design guidance.",
+        "We support sustainable product growth through testing, refinement, consistency and practical design guidance.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven UX research methods, interface design platforms, collaboration tools, and analytics systems to deliver practical, scalable, and measurable digital experiences.",
+    "We use proven UX research methods, interface design platforms, collaboration tools and analytics systems to deliver practical, scalable and measurable digital experiences.",
   technologies: [
     {
       icon: "strategy",
       title: "UX Research & Strategy Tools",
       desc:
-        "We use structured discovery and research frameworks to evaluate user behavior, design direction, and digital experience priorities.",
+        "We use structured discovery and research frameworks to evaluate user behavior, design direction and digital experience priorities.",
       items: ["User Journey Mapping", "Persona Development", "Heuristic Evaluation"],
     },
     {
       icon: "design",
       title: "UI Design & Prototyping Platforms",
       desc:
-        "We build wireframes, interface systems, and interactive prototypes using modern design and collaboration platforms.",
+        "We build wireframes, interface systems and interactive prototypes using modern design and collaboration platforms.",
       items: ["Figma", "Adobe XD", "Sketch"],
     },
     {
@@ -217,21 +217,21 @@ const content: any = {
       icon: "content",
       title: "Content & Experience Systems",
       desc:
-        "We organize content structure, message hierarchy, and interface clarity through practical UX content planning methods.",
+        "We organize content structure, message hierarchy and interface clarity through practical UX content planning methods.",
       items: ["Information Architecture", "Content Flow Mapping", "UX Writing Guidelines"],
     },
     {
       icon: "operations",
       title: "Design Operations & Collaboration",
       desc:
-        "We use delivery and collaboration systems that keep design reviews, handoffs, and team coordination clear and efficient.",
+        "We use delivery and collaboration systems that keep design reviews, handoffs and team coordination clear and efficient.",
       items: ["Notion", "Trello", "Asana"],
     },
     {
       icon: "analytics",
       title: "Reporting & UX Insights",
       desc:
-        "We track usability, engagement, and design performance through insight systems that support better product decisions.",
+        "We track usability, engagement and design performance through insight systems that support better product decisions.",
       items: ["Usability Reports", "Engagement Dashboards", "Conversion Tracking"],
     },
   ],
@@ -239,84 +239,84 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps businesses move from UX discovery to design execution, validation, and ongoing experience improvement with clear milestones and measurable progress.",
+      "Our structured delivery model helps businesses move from UX discovery to design execution, validation and ongoing experience improvement with clear milestones and measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Requirement gathering",
-        desc: "Understand product goals, user expectations, business objectives, and experience challenges",
+        desc: "Understand product goals, user expectations, business objectives and experience challenges",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Assess current journeys, usability gaps, competitor patterns, and key user experience priorities",
+        desc: "Assess current journeys, usability gaps, competitor patterns and key user experience priorities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define design direction, user flows, visual hierarchy, and structured execution priorities",
+        desc: "Define design direction, user flows, visual hierarchy and structured execution priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right UX strategists, UI designers, and creative delivery resources",
+        desc: "Assign the right UX strategists, UI designers and creative delivery resources",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Create wireframes, prototypes, and interface systems with structured design implementation",
+        desc: "Create wireframes, prototypes and interface systems with structured design implementation",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Review usability, feedback, and design performance to refine the final experience",
+        desc: "Review usability, feedback and design performance to refine the final experience",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide design documentation, usability insights, and ongoing support for experience improvement",
+      desc: "Provide design documentation, usability insights and ongoing support for experience improvement",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term digital growth through continuous UX refinement, performance improvement, and strategic guidance that strengthens usability and customer engagement.",
+      "We support long-term digital growth through continuous UX refinement, performance improvement and strategic guidance that strengthens usability and customer engagement.",
     cards: [
       {
         title: "Usability Optimization & Experience Quality",
         desc:
-          "Improve interface clarity, reduce friction, and strengthen user experience quality across digital touchpoints.",
+          "Improve interface clarity, reduce friction and strengthen user experience quality across digital touchpoints.",
       },
       {
         title: "Strategic Refinement & Product Alignment",
         desc:
-          "Refine design decisions based on feedback, goals, and user behavior to support product growth and adaptation.",
+          "Refine design decisions based on feedback, goals and user behavior to support product growth and adaptation.",
       },
       {
         title: "Performance Monitoring & UX Insights",
         desc:
-          "Track user behavior, engagement patterns, and usability outcomes to support better digital decisions.",
+          "Track user behavior, engagement patterns and usability outcomes to support better digital decisions.",
       },
       {
         title: "Consultation & Design Excellence",
         desc:
-          "Provide expert UX guidance to improve product direction, interaction quality, and design consistency.",
+          "Provide expert UX guidance to improve product direction, interaction quality and design consistency.",
       },
       {
         title: "Engagement & Conversion Support",
         desc:
-          "Support experience improvements that strengthen customer trust, engagement, and conversion performance.",
+          "Support experience improvements that strengthen customer trust, engagement and conversion performance.",
       },
     ],
   },
 
   frameworkTitle: "From Friction to Better User Experience",
   frameworkSubtitle:
-    "Transforming confusing digital interactions into intuitive, engaging, and high-performing user experiences that support usability, trust, and conversion growth.",
+    "Transforming confusing digital interactions into intuitive, engaging and high-performing user experiences that support usability, trust and conversion growth.",
 
   beforePoints: [
     "Confusing user interfaces that make navigation difficult",
@@ -337,23 +337,23 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We create scalable UI/UX systems aligned with business goals, user expectations, and long-term product growth.",
+        "We create scalable UI/UX systems aligned with business goals, user expectations and long-term product growth.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our process combines milestone-based delivery, research-backed design, and quality-driven execution for dependable outcomes.",
+        "Our process combines milestone-based delivery, research-backed design and quality-driven execution for dependable outcomes.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We support continuous improvement, usability refinement, and sustainable product success through a customer-focused approach.",
+        "We support continuous improvement, usability refinement and sustainable product success through a customer-focused approach.",
     },
   ],
 
   contactTitle: "Create Better User Experiences",
   contactSubtitle:
-    "Ready to improve your website, application, or digital platform with better UI/UX design? Let’s create intuitive, engaging, and user-focused experiences that support usability, strengthen brand perception, and drive better business results.",
+    "Ready to improve your website, application, or digital platform with better UI/UX design? Let’s create intuitive, engaging and user-focused experiences that support usability, strengthen brand perception and drive better business results.",
   messageLabel: "Tell us about your product or design needs...",
   submitLabel: "Request UI/UX Consultation",
 };
@@ -436,7 +436,7 @@ const NonItBrandingCreativeServicesUiUxCreativeDesign: React.FC = () => {
                 <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-lg leading-relaxed">
                   {content?.heroSubtitle ??
                     item.shortDesc ??
-                    "High-impact delivery with clarity, discipline, and measurable outcomes."}
+                    "High-impact delivery with clarity, discipline and measurable outcomes."}
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

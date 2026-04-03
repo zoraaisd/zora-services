@@ -30,7 +30,7 @@ const ITServices: React.FC = () => {
     <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-24 px-4 sm:px-6 lg:px-0">
       <PageSEO
         title="IT Services — Web, Mobile, AI, Cloud & Cybersecurity | Zora Global AI"
-        description="Expert IT services including website development, mobile apps, AI automation, cloud infrastructure, custom enterprise software, and cybersecurity solutions."
+        description="Expert IT services including website development, mobile apps, AI automation, cloud infrastructure, custom enterprise software and cybersecurity solutions."
         canonical="/services/it"
       />
       {/* Background */}
@@ -56,7 +56,7 @@ const ITServices: React.FC = () => {
 
           <p className="text-gray-400 mt-5 max-w-3xl mx-auto text-lg">
             Explore enterprise-grade solutions designed for scalability,
-            performance, and intelligent automation.
+            performance and intelligent automation.
           </p>
         </div>
 

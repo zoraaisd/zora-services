@@ -10,7 +10,7 @@ const item = {
   slug: "digital-transformation-consulting",
   title: "Digital Transformation Consulting",
   shortDesc:
-    "Modernize processes and technology ecosystems through strategy, cloud, automation, data, and AI initiatives.",
+    "Modernize processes and technology ecosystems through strategy, cloud, automation, data and AI initiatives.",
 };
 
 const heroImage = "/non-it-hero/digital-transformation-consulting.png";
@@ -173,7 +173,7 @@ const content: any = {
   heroTitle: "Digital Transformation Consulting",
 
   heroSubtitle:
-    "Zora Global AI delivers digital transformation consulting services that help organizations modernize business processes, operating models, and technology ecosystems for long-term growth.",
+    "Zora Global AI delivers digital transformation consulting services that help organizations modernize business processes, operating models and technology ecosystems for long-term growth.",
 
   primaryCta: "Explore Our Services",
   secondaryCta: "Talk to Us",
@@ -181,45 +181,45 @@ const content: any = {
     {
       title: "Strategy & Management Consulting",
       desc:
-        "Business and management consulting aligned with people, processes, and technology for long-term growth.",
+        "Business and management consulting aligned with people, processes and technology for long-term growth.",
     },
     {
       title: "Technology & Digital Solutions",
       desc:
-        "Cloud transformation, automation, data analytics, AI, and modern digital platforms enabling enterprise transformation.",
+        "Cloud transformation, automation, data analytics, AI and modern digital platforms enabling enterprise transformation.",
     },
     {
       title: "Operational Transformation",
       desc:
-        "Redesign operating models, optimize workflows, and modernize service delivery for efficiency and agility.",
+        "Redesign operating models, optimize workflows and modernize service delivery for efficiency and agility.",
     },
   ],
 
   overview:
-    "Our digital transformation consulting services combine management consulting, technology strategy, automation, and business modernization to help organizations adapt, innovate, and scale through enterprise transformation initiatives.",
+    "Our digital transformation consulting services combine management consulting, technology strategy, automation and business modernization to help organizations adapt, innovate and scale through enterprise transformation initiatives.",
 
   projectDuration: {
     title: "Project Execution Excellence",
     subtitle:
-      "We deliver digital transformation initiatives through a structured execution model focused on modernization, adoption, and measurable business outcomes.",
+      "We deliver digital transformation initiatives through a structured execution model focused on modernization, adoption and measurable business outcomes.",
     cards: [
       {
         title: "Strategic Transformation Delivery",
         label: "Best suited for",
         desc:
-          "Structured delivery that helps organizations modernize faster, improve decisions, and execute transformation with clarity.",
+          "Structured delivery that helps organizations modernize faster, improve decisions and execute transformation with clarity.",
       },
       {
         title: "What Our Execution Covers",
         label: "What is Included",
         desc:
-          "Digital assessment, roadmap planning, process redesign, technology enablement, and performance tracking for effective execution.",
+          "Digital assessment, roadmap planning, process redesign, technology enablement and performance tracking for effective execution.",
       },
       {
         title: "Why Organizations Choose Zora",
         label: "Requirement Condition",
         desc:
-          "Expert consulting, transparent execution, and scalable modernization strategies that support long-term transformation success.",
+          "Expert consulting, transparent execution and scalable modernization strategies that support long-term transformation success.",
       },
     ],
   },
@@ -229,51 +229,51 @@ const content: any = {
     {
       title: "Assessment",
       desc:
-        "Evaluate business processes, systems, and digital maturity to identify transformation priorities.",
+        "Evaluate business processes, systems and digital maturity to identify transformation priorities.",
     },
     {
       title: "Planning & Roadmap",
       desc:
-        "Define strategy, roadmap, governance, and implementation priorities aligned with business goals.",
+        "Define strategy, roadmap, governance and implementation priorities aligned with business goals.",
     },
     {
       title: "Execution & Optimization",
       desc:
-        "Support delivery, adoption, change enablement, and continuous improvement for long-term transformation impact.",
+        "Support delivery, adoption, change enablement and continuous improvement for long-term transformation impact.",
     },
   ],
 
   whoWeAreTitle: "Who We Are",
   whoWeAreText:
-    "Zora Global AI Technologies supports organizations with structured consulting and implementation services that modernize operations, strengthen execution quality, and improve long-term business performance.",
+    "Zora Global AI Technologies supports organizations with structured consulting and implementation services that modernize operations, strengthen execution quality and improve long-term business performance.",
   whoWeAreCards: [
     {
       title: "Transformation-Led Execution",
       desc:
-        "We align every engagement with business goals, modernization priorities, and measurable transformation outcomes.",
+        "We align every engagement with business goals, modernization priorities and measurable transformation outcomes.",
     },
     {
       title: "Cross-Functional Expertise",
       desc:
-        "Our work spans strategy, operations, cloud, automation, data, and change management across departments.",
+        "Our work spans strategy, operations, cloud, automation, data and change management across departments.",
     },
     {
       title: "Long-Term Partnership",
       desc:
-        "We stay focused on sustainable modernization through reporting, support, optimization, and practical implementation guidance.",
+        "We stay focused on sustainable modernization through reporting, support, optimization and practical implementation guidance.",
     },
   ],
 
   technologiesTitle: "Business Analysis, Platforms & Operational Tools",
   technologiesSubtitle:
-    "We use proven frameworks, cloud platforms, automation tools, analytics systems, and enterprise technologies to deliver practical and scalable digital transformation solutions.",
+    "We use proven frameworks, cloud platforms, automation tools, analytics systems and enterprise technologies to deliver practical and scalable digital transformation solutions.",
 
   technologies: [
     {
       icon: "strategy",
       title: "Transformation Strategy & Assessment",
       desc:
-        "We use structured frameworks to assess digital maturity, business priorities, and modernization opportunities.",
+        "We use structured frameworks to assess digital maturity, business priorities and modernization opportunities.",
       items: [
         "Digital Maturity Assessment",
         "Business Capability Mapping",
@@ -284,7 +284,7 @@ const content: any = {
       icon: "cloud",
       title: "Cloud & Platform Modernization",
       desc:
-        "We support migration, modernization, and platform adoption using cloud and enterprise technologies.",
+        "We support migration, modernization and platform adoption using cloud and enterprise technologies.",
       items: [
         "AWS",
         "Azure",
@@ -317,7 +317,7 @@ const content: any = {
       icon: "operations",
       title: "Process & Operating Model Transformation",
       desc:
-        "We redesign workflows and operating models to improve agility, governance, and execution quality.",
+        "We redesign workflows and operating models to improve agility, governance and execution quality.",
       items: [
         "Operating Model Design",
         "Process Re-engineering",
@@ -340,77 +340,77 @@ const content: any = {
   architecture: {
     title: "Non-IT Service Delivery Framework",
     intro:
-      "Our structured delivery model helps organizations move from transformation assessment to execution, optimization, and long-term support with measurable progress.",
+      "Our structured delivery model helps organizations move from transformation assessment to execution, optimization and long-term support with measurable progress.",
     processSteps: [
       {
         icon: "01",
         title: "Assessment",
-        desc: "Understand current systems, business priorities, and digital transformation goals",
+        desc: "Understand current systems, business priorities and digital transformation goals",
       },
       {
         icon: "02",
         title: "Analysis",
-        desc: "Review process gaps, technology maturity, and modernization opportunities",
+        desc: "Review process gaps, technology maturity and modernization opportunities",
       },
       {
         icon: "03",
         title: "Planning & strategy",
-        desc: "Define roadmap, governance, implementation phases, and execution priorities",
+        desc: "Define roadmap, governance, implementation phases and execution priorities",
       },
       {
         icon: "04",
         title: "Resource allocation",
-        desc: "Assign the right team, specialists, and technology resources for delivery",
+        desc: "Assign the right team, specialists and technology resources for delivery",
       },
     ],
     deliveryCards: [
       {
         icon: "05",
         title: "Execution",
-        desc: "Implement transformation initiatives, system improvements, and modernization tasks",
+        desc: "Implement transformation initiatives, system improvements and modernization tasks",
       },
       {
         icon: "06",
         title: "Monitoring & optimization",
-        desc: "Continuously measure adoption, performance, and optimization opportunities",
+        desc: "Continuously measure adoption, performance and optimization opportunities",
       },
     ],
     closureCard: {
       icon: "07",
       title: "Reporting & support",
-      desc: "Provide reporting, governance visibility, and ongoing transformation support",
+      desc: "Provide reporting, governance visibility and ongoing transformation support",
     },
   },
 
   maintenanceSupport: {
     title: "Continuous Business Growth & Support",
     subtitle:
-      "We support long-term transformation success through continuous optimization, adoption support, and performance improvement.",
+      "We support long-term transformation success through continuous optimization, adoption support and performance improvement.",
     cards: [
       {
         title: "Transformation Optimization",
         desc:
-          "Refine workflows, systems, and transformation initiatives to improve long-term business performance.",
+          "Refine workflows, systems and transformation initiatives to improve long-term business performance.",
       },
       {
         title: "Strategy Refinement & Alignment",
         desc:
-          "Refine modernization priorities based on performance insights, adoption, and evolving business needs.",
+          "Refine modernization priorities based on performance insights, adoption and evolving business needs.",
       },
       {
         title: "Performance Monitoring & Insights",
         desc:
-          "Track KPIs, review transformation progress, and deliver insights for stronger business decisions.",
+          "Track KPIs, review transformation progress and deliver insights for stronger business decisions.",
       },
       {
         title: "Consultation & Change Enablement",
         desc:
-          "Provide strategic guidance that improves execution, change adoption, and digital transformation outcomes.",
+          "Provide strategic guidance that improves execution, change adoption and digital transformation outcomes.",
       },
       {
         title: "Continuous Improvement Support",
         desc:
-          "Support continuous improvement initiatives that strengthen agility, innovation, and business readiness.",
+          "Support continuous improvement initiatives that strengthen agility, innovation and business readiness.",
       },
     ],
   },
@@ -419,7 +419,7 @@ const content: any = {
 
   frameworkTitle: "Digital Transformation Framework",
   frameworkSubtitle:
-    "Aligning strategy, technology, and operations for sustainable modernization, agility, and measurable business growth.",
+    "Aligning strategy, technology and operations for sustainable modernization, agility and measurable business growth.",
   beforePoints: [
     "Legacy systems and disconnected business processes",
     "Manual operations with limited digital visibility",
@@ -427,7 +427,7 @@ const content: any = {
   ],
   afterPoints: [
     "Integrated digital operations with stronger workflow visibility",
-    "Improved agility, scalability, and execution quality",
+    "Improved agility, scalability and execution quality",
     "Data-driven decisions with modernized systems",
   ],
 
@@ -436,17 +436,17 @@ const content: any = {
     {
       title: "Scalable & Business-Aligned Solutions",
       desc:
-        "We deliver future-ready transformation solutions aligned with strategic goals, agility, and measurable business outcomes.",
+        "We deliver future-ready transformation solutions aligned with strategic goals, agility and measurable business outcomes.",
     },
     {
       title: "Structured & Transparent Execution",
       desc:
-        "Our approach combines milestone-based delivery, governance clarity, and transparent execution for reliable transformation progress.",
+        "Our approach combines milestone-based delivery, governance clarity and transparent execution for reliable transformation progress.",
     },
     {
       title: "Long-Term Growth & Partnership",
       desc:
-        "We provide continuous support through a customer-focused approach centered on innovation, sustainability, and long-term business success.",
+        "We provide continuous support through a customer-focused approach centered on innovation, sustainability and long-term business success.",
     },
   ],
   contactTitle: "Start Your Digital Transformation",
@@ -488,7 +488,7 @@ const NonItBusinessStrategyConsultingDigitalTransformationConsulting: React.FC =
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       setSubmitStatus({
         type: "error",
-        message: "Please fill in your name, email, and project details.",
+        message: "Please fill in your name, email and project details.",
       });
       return;
     }
@@ -560,7 +560,7 @@ const NonItBusinessStrategyConsultingDigitalTransformationConsulting: React.FC =
 
               <p className="text-gray-300 mt-6 max-w-4xl mx-auto text-base md:text-xl leading-8">
                 {content?.heroSubtitle ??
-                  "High-impact delivery with security, performance, and enterprise scalability built in."}
+                  "High-impact delivery with security, performance and enterprise scalability built in."}
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

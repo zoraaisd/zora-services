@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
 
             <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-md">
               Empowering enterprises with AI-driven solutions, cloud
-              transformation, and strategic consulting.
+              transformation and strategic consulting.
             </p>
 
             <div className="mb-6 space-y-4">

@@ -15,7 +15,7 @@ const Services: React.FC = () => {
     <section className="relative min-h-screen bg-[#020010] text-white overflow-hidden">
       <PageSEO
         title="IT & Business Services — Software, AI, Marketing & More | Zora Global AI"
-        description="Explore Zora Global AI's full range of IT and non-IT services: web development, AI automation, mobile apps, branding, digital marketing, and business consulting."
+        description="Explore Zora Global AI's full range of IT and non-IT services: web development, AI automation, mobile apps, branding, digital marketing and business consulting."
         canonical="/services"
       />
       {/* ===== BACKGROUND ===== */}
