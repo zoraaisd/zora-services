@@ -5,9 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
 
 /* ================= MAIN PAGES ================= */
-const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/services"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -27,6 +27,10 @@ const NonITServices = lazy(() => import("./pages/services/non-it"));
 const NonITServiceCategoryPage = lazy(() => import("./pages/services/non-it/CategoryPage"));
 const NonITServiceItemPage = lazy(() => import("./pages/services/non-it/ItemPage"));
 
+const RouteFallback: React.FC = () => (
+  <div className="min-h-[85vh] bg-gradient-to-b from-[#0b0318] via-[#120424] to-[#16062d]" />
+);
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -40,7 +44,7 @@ const App: React.FC = () => {
 
         {/* MAIN CONTENT */}
         <main className="flex-grow">
-          <Suspense fallback={null}>
+          <Suspense fallback={<RouteFallback />}>
           <Routes>
 
             {/* ---------- MAIN PAGES ---------- */}

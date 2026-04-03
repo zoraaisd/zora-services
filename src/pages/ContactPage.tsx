@@ -29,24 +29,22 @@ const ContactPage: React.FC = () => {
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    if (value.length > 25) return;
-    setName(value);
     if (!/^[a-zA-Z\s]*$/.test(value)) {
-      setNameError("Only letters are allowed");
-    } else {
-      setNameError("");
+      setNameError("Only letters and spaces are allowed");
+      return;
     }
+    setName(value.slice(0, 30));
+    setNameError("");
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    if (value.length > 10) return;
-    setPhone(value);
     if (!/^\d*$/.test(value)) {
-      setPhoneError("Invalid type of character");
-    } else {
-      setPhoneError("");
+      setPhoneError("Only numbers are allowed");
+      return;
     }
+    setPhone(value.slice(0, 10));
+    setPhoneError("");
   };
 
   const openMail = (event: React.MouseEvent<HTMLParagraphElement>) => {
@@ -275,6 +273,7 @@ const ContactPage: React.FC = () => {
                           name="name"
                           value={name}
                           onChange={handleNameChange}
+                          maxLength={30}
                           required
                           className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
                           placeholder="Enter Your Name"
@@ -291,6 +290,8 @@ const ContactPage: React.FC = () => {
                           name="phone"
                           value={phone}
                           onChange={handlePhoneChange}
+                          inputMode="numeric"
+                          maxLength={10}
                           required
                           className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
                           placeholder="Mobile no"

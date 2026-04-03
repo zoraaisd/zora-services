@@ -135,8 +135,8 @@ const Hero: React.FC = () => {
                 [&>*]:pb-[0.08em]
               "
               style={{ transitionDuration: "400ms" }}
-              delay={50}
-              duration={1.25}
+              delay={28}
+              duration={0.85}
               ease="power3.out"
               splitType="chars"
               from={{ opacity: 0, y: 40 }}
