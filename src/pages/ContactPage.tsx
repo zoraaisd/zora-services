@@ -6,15 +6,67 @@ import { Helmet } from "react-helmet";
 import PageSEO from "../components/PageSEO";
 
 const ContactPage: React.FC = () => {
+  const EMAIL = "info@zoraglobalai.com";
+  const PHONE = "9087000345";
+  const OFFICE_ADDRESS =
+    "Ground Floor, 12, Rajiv Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096";
+  const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/${encodeURIComponent(
+    OFFICE_ADDRESS
+  )}`;
+  const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+    EMAIL
+  )}`;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
   }, []);
 
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value.length > 25) return;
+    setName(value);
+    if (!/^[a-zA-Z\s]*$/.test(value)) {
+      setNameError("Only letters are allowed");
+    } else {
+      setNameError("");
+    }
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value.length > 10) return;
+    setPhone(value);
+    if (!/^\d*$/.test(value)) {
+      setPhoneError("Invalid type of character");
+    } else {
+      setPhoneError("");
+    }
+  };
+
+  const openMail = (event: React.MouseEvent<HTMLParagraphElement>) => {
+    event.preventDefault();
+    window.open(GMAIL_COMPOSE_URL, "_blank", "noopener,noreferrer");
+  };
+
+  const openPhoneDialpad = (event: React.MouseEvent<HTMLParagraphElement>) => {
+    event.preventDefault();
+    window.location.href = `tel:+91${PHONE}`;
+  };
+
+  const openGoogleMaps = (event: React.MouseEvent<HTMLParagraphElement>) => {
+    event.preventDefault();
+    window.open(GOOGLE_MAPS_URL, "_blank", "noopener,noreferrer");
+  };
+
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (nameError || phoneError || !name || !phone) return;
     setIsSubmitting(true);
 
     try {
@@ -27,6 +79,10 @@ const ContactPage: React.FC = () => {
 
       if (response.ok) {
         setSubmitSuccess(true);
+        setName("");
+        setPhone("");
+        setNameError("");
+        setPhoneError("");
         e.currentTarget.reset();
       }
     } catch (error) {
@@ -55,8 +111,7 @@ const ContactPage: React.FC = () => {
     {
       icon: MapPin,
       title: "Office",
-      details:
-        "Ground Floor, 12, Rajiv Gandhi Salai, Srinivasa Nagar, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096",
+      details: OFFICE_ADDRESS,
       description: "",
       color: "from-emerald-500 to-teal-500",
     },
@@ -218,10 +273,13 @@ const ContactPage: React.FC = () => {
                         <input
                           type="text"
                           name="name"
+                          value={name}
+                          onChange={handleNameChange}
                           required
                           className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
                           placeholder="Enter Your Name"
                         />
+                        {nameError && <p className="text-red-500 text-xs mt-1">{nameError}</p>}
                       </div>
 
                       <div>
@@ -231,10 +289,13 @@ const ContactPage: React.FC = () => {
                         <input
                           type="tel"
                           name="phone"
+                          value={phone}
+                          onChange={handlePhoneChange}
                           required
                           className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500/50 transition-all duration-300"
                           placeholder="Mobile no"
                         />
+                        {phoneError && <p className="text-red-500 text-xs mt-1">{phoneError}</p>}
                       </div>
                     </div>
 
@@ -321,7 +382,12 @@ const ContactPage: React.FC = () => {
                         <h3 className="text-lg font-bold text-white mb-1">
                           {info.title}
                         </h3>
-                        <p className="text-purple-300 font-medium mb-1 break-words">
+                        <p 
+                          onClick={info.title === "Email" ? openMail : info.title === "Phone" ? openPhoneDialpad : info.title === "Office" ? openGoogleMaps : undefined}
+                          className={`text-purple-300 font-medium mb-1 break-words ${
+                            (info.title === "Email" || info.title === "Phone" || info.title === "Office") ? "cursor-pointer hover:text-purple-400 transition-colors" : ""
+                          }`}
+                        >
                           {info.details}
                         </p>
                         {info.description ? (

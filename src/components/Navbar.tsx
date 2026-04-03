@@ -16,6 +16,40 @@ const Navbar: React.FC = () => {
     setMenuOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (!target) return;
+
+      if (navRef.current?.contains(target)) return;
+      setMenuOpen(false);
+    };
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      setMenuOpen(false);
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+    document.addEventListener("keydown", handleEscape);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+      document.removeEventListener("keydown", handleEscape);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [menuOpen]);
+
   useLayoutEffect(() => {
     const el = navRef.current;
     if (!el) return;
@@ -44,7 +78,7 @@ const Navbar: React.FC = () => {
   const desktopBtnActive =
     "-translate-y-[2px] bg-[#fffcf0] text-black border border-white/75 [box-shadow:inset_0_2px_0_rgba(255,255,255,0.72),0_12px_24px_rgba(0,0,0,0.28),0_0_24px_rgba(167,139,250,0.45)] after:w-[72%] after:opacity-100";
   const mobileBtn =
-    "flex items-center gap-3 px-5 py-3 rounded-full text-base font-semibold transition-all transform-gpu active:scale-[0.99] backdrop-blur-md min-h-[52px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90";
+    "flex items-center justify-center gap-3 px-5 py-3.5 rounded-full text-lg font-bold tracking-[0.01em] whitespace-nowrap transition-all transform-gpu active:scale-[0.99] backdrop-blur-md min-h-[56px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90";
   const mobileBtnInactive =
     "text-[#fffcf0] bg-[#fffcf0]/14 border border-white/35 shadow-[0_10px_24px_rgba(0,0,0,0.3)]";
 
@@ -69,7 +103,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* ================= DESKTOP NAV ================= */}
-        <div className="hidden md:flex items-center space-x-2 md:space-x-3 lg:space-x-4 ml-2 md:ml-3 lg:ml-6">
+        <div className="hidden lg:flex items-center space-x-2 md:space-x-3 lg:space-x-4 ml-2 md:ml-3 lg:ml-6">
 
           <Link
             to="/"
@@ -148,31 +182,31 @@ const Navbar: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden bg-[#1a1a40]/88 backdrop-blur-xl px-6 py-6 space-y-3 border-t border-white/10">
+        <div className="lg:hidden bg-[#1a1a40]/88 backdrop-blur-xl px-6 py-6 space-y-3 border-t border-white/10 md:px-8 md:py-7">
           <Link
             to="/"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={scrollTop}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={scrollTop}
           >
             About
           </Link>
           <Link
             to="/blog"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={scrollTop}
           >
             Blog
           </Link>
           <Link
             to="/services"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={scrollTop}
           >
             Services
@@ -181,20 +215,20 @@ const Navbar: React.FC = () => {
             href="https://www.zoraai.us/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
           >
             Products
           </a>
           <Link
             to="/contact"
-            className={`${mobileBtn} ${mobileBtnInactive}`}
+            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={scrollTop}
           >
             Contact Us
           </Link>
           <Link
             to="/book-appointment"
-            className="block bg-violet-500 text-white px-4 py-3 rounded-lg text-center font-extrabold"
+            className="block bg-violet-500 text-white px-5 py-3.5 rounded-lg text-center text-lg font-extrabold tracking-[0.01em] whitespace-nowrap md:w-fit md:min-w-[220px]"
             onClick={scrollTop}
           >
             <span className="font-bold">Book Appointment</span>

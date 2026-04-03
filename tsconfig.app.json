@@ -25,7 +25,6 @@
     "noUncheckedSideEffectImports": true,
 
     /* ✅ shadcn/ui import alias */
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
