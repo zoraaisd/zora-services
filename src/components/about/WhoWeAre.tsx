@@ -24,7 +24,7 @@ const WhoWeAre: React.FC = () => {
               Who We Are
             </h2>
 
-            <p className="text-white/80 text-lg leading-relaxed">
+            <p className="text-white/80 text-lg leading-relaxed text-justify">
               At <strong>Zora Global AI Technologies Pvt Ltd</strong>, we
               provide{" "}
               <strong>
@@ -34,7 +34,7 @@ const WhoWeAre: React.FC = () => {
               fast, accurate and complete end-to-end business solutions.
             </p>
 
-            <p className="text-white/75 leading-relaxed">
+            <p className="text-white/75 leading-relaxed text-justify">
               Our approach integrates advanced artificial intelligence,
               enterprise automation and strategic consulting to help
               organizations scale efficiently while maintaining operational

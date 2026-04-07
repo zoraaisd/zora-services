@@ -375,58 +375,62 @@ export default function BlogPost() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[360px] bg-purple-600/15 blur-[100px] rounded-full" />
         </div>
         <div className="mx-auto max-w-[1440px] relative z-10 px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <Link
-              to="/blog"
-              className="mb-8 inline-flex items-center gap-2 text-sm text-gray-400 transition-colors group hover:text-purple-300"
-            >
-              <ArrowLeft
-                size={15}
-                className="group-hover:-translate-x-1 transition-transform duration-200"
-              />
-              Back to Blog
-            </Link>
-          </motion.div>
+          <div className="lg:grid lg:grid-cols-[minmax(0,840px)_420px] lg:items-start lg:gap-28">
+            <div className="min-w-0">
+              <motion.div
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                <Link
+                  to="/blog"
+                  className="mb-8 inline-flex items-center gap-2 text-sm text-gray-400 transition-colors group hover:text-purple-300"
+                >
+                  <ArrowLeft
+                    size={15}
+                    className="group-hover:-translate-x-1 transition-transform duration-200"
+                  />
+                  Back to Blog
+                </Link>
+              </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.05 }}
-            className="mb-5 flex flex-wrap items-center gap-5"
-          >
-            {activePost.category && (
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/25 bg-purple-500/12 px-3 py-1 text-xs font-semibold text-purple-200">
-                <Tag size={11} />
-                {activePost.category}
-              </span>
-            )}
-            <span className="flex items-center gap-2 text-sm text-gray-400">
-              <User size={14} className="text-purple-300" />
-              Zora Global AI Team
-            </span>
-            {readTime && (
-              <span className="flex items-center gap-2 text-sm text-gray-400">
-                <Clock size={14} className="text-purple-300" />
-                {readTime}
-              </span>
-            )}
-          </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.05 }}
+                className="mb-5 flex flex-wrap items-center gap-5"
+              >
+                {activePost.category && (
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/25 bg-purple-500/12 px-3 py-1 text-xs font-semibold text-purple-200">
+                    <Tag size={11} />
+                    {activePost.category}
+                  </span>
+                )}
+                <span className="flex items-center gap-2 text-sm text-gray-400">
+                  <User size={14} className="text-purple-300" />
+                  Zora Global AI Team
+                </span>
+                {readTime && (
+                  <span className="flex items-center gap-2 text-sm text-gray-400">
+                    <Clock size={14} className="text-purple-300" />
+                    {readTime}
+                  </span>
+                )}
+              </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-5 max-w-[880px] text-4xl font-extrabold leading-tight tracking-tight text-white md:text-[3.2rem]"
-          >
-            {title}
-          </motion.h1>
-          <p className="mb-6 max-w-[820px] text-left text-base leading-relaxed text-gray-300 md:text-[1.05rem]">
-            {description}
-          </p>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="mb-5 max-w-full text-4xl font-extrabold leading-tight tracking-tight text-white md:text-[3.2rem]"
+              >
+                {title}
+              </motion.h1>
+              <p className="mb-6 max-w-full text-left text-base leading-relaxed text-gray-300 md:text-[1.05rem]">
+                {description}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
