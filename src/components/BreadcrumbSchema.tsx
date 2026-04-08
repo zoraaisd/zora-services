@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import DocumentHead from "./DocumentHead";
 
 const BASE_URL = "https://www.zoraglobalai.com";
 
@@ -25,9 +25,9 @@ const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ crumbs }) => {
   };
 
   return (
-    <Helmet>
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+    <DocumentHead
+      scripts={[{ type: "application/ld+json", content: JSON.stringify(schema) }]}
+    />
   );
 };
 

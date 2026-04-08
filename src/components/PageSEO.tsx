@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import DocumentHead from "./DocumentHead";
 
 const BASE_URL = "https://www.zoraglobalai.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
@@ -45,51 +45,52 @@ const PageSEO: React.FC<PageSEOProps> = ({
     : `${BASE_URL}${canonical}`;
 
   return (
-    <Helmet>
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="robots" content={robots} />
-      <link rel="canonical" href={fullCanonical} />
-
-      {/* Open Graph */}
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={fullCanonical} />
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content={String(ogImageWidth)} />
-      <meta property="og:image:height" content={String(ogImageHeight)} />
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:locale" content="en_US" />
-
-      {/* Service Schema */}
-      {serviceSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: serviceSchema.name,
-            provider: {
-              "@type": "Organization",
-              name: SITE_NAME,
-              url: BASE_URL,
-            },
-            description: serviceSchema.description,
-            areaServed: "Worldwide",
-            url: serviceSchema.url,
-          })}
-        </script>
-      )}
-
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={TWITTER_HANDLE} />
-      <meta name="twitter:creator" content={TWITTER_HANDLE} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
-    </Helmet>
+    <DocumentHead
+      title={fullTitle}
+      metas={[
+        { name: "description", content: description },
+        { name: "robots", content: robots },
+        { property: "og:title", content: fullTitle },
+        { property: "og:description", content: description },
+        { property: "og:type", content: ogType },
+        { property: "og:url", content: fullCanonical },
+        { property: "og:image", content: ogImage },
+        { property: "og:image:width", content: String(ogImageWidth) },
+        { property: "og:image:height", content: String(ogImageHeight) },
+        { property: "og:image:type", content: "image/jpeg" },
+        { property: "og:site_name", content: SITE_NAME },
+        { property: "og:locale", content: "en_US" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: TWITTER_HANDLE },
+        { name: "twitter:creator", content: TWITTER_HANDLE },
+        { name: "twitter:title", content: fullTitle },
+        { name: "twitter:description", content: description },
+        { name: "twitter:image", content: ogImage }
+      ]}
+      links={[{ rel: "canonical", href: fullCanonical }]}
+      scripts={
+        serviceSchema
+          ? [
+              {
+                type: "application/ld+json",
+                content: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Service",
+                  name: serviceSchema.name,
+                  provider: {
+                    "@type": "Organization",
+                    name: SITE_NAME,
+                    url: BASE_URL
+                  },
+                  description: serviceSchema.description,
+                  areaServed: "Worldwide",
+                  url: serviceSchema.url
+                })
+              }
+            ]
+          : []
+      }
+    />
   );
 };
 
