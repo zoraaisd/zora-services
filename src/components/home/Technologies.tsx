@@ -1,139 +1,116 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
 import awsImage from "../../assets/amazonwebservice.webp";
+import angularImage from "../../assets/angular.webp";
+import dockerImage from "../../assets/doctor.webp";
 import azureImage from "../../assets/microsoftazure.webp";
+import flutterImage from "../../assets/flutter.webp";
 import gcpImage from "../../assets/googlecloudplatform.webp";
 import firebaseImage from "../../assets/firebase.webp";
+import javaImage from "../../assets/java.webp";
+import kubernetesImage from "../../assets/kubernetes.webp";
+import nextjsImage from "../../assets/nextjs.webp";
+import nodejsImage from "../../assets/nodejs.webp";
+import pythonImage from "../../assets/python.webp";
+import reactImage from "../../assets/react.svg";
 
-const TECH_STACK = [
+type TechItem = {
+  name: string;
+  image?: string;
+  badge?: string;
+  badgeClassName?: string;
+};
+
+const TECH_STACK: TechItem[] = [
   { name: "Amazon Web Services", image: awsImage },
   { name: "Microsoft Azure", image: azureImage },
   { name: "Google Cloud Platform", image: gcpImage },
   { name: "Firebase", image: firebaseImage },
+  { name: "React", image: reactImage },
+  { name: "Next.js", image: nextjsImage },
+  { name: "Angular", image: angularImage },
+  { name: "Node.js", image: nodejsImage },
+  { name: "Python", image: pythonImage },
+  { name: "Java", image: javaImage },
+  { name: "Flutter", image: flutterImage },
+  { name: "Docker", image: dockerImage },
+  { name: "Kubernetes", image: kubernetesImage },
 ];
 
+const TechCard: React.FC<{ tool: TechItem }> = ({ tool }) => (
+  <div
+    className="relative flex h-[220px] flex-none flex-col overflow-hidden rounded-[22px] sm:h-[240px] sm:rounded-[24px] lg:h-[260px] lg:rounded-[26px]"
+    style={{ width: "240px", minWidth: "240px", maxWidth: "240px" }}
+  >
+    <div className="flex h-full flex-col overflow-hidden rounded-[22px] border border-violet-100 bg-white shadow-[0_18px_50px_rgba(31,41,55,0.08)] sm:rounded-[24px] lg:rounded-[26px]">
+      <div className="relative flex h-[150px] items-center justify-center overflow-hidden rounded-t-[22px] bg-white sm:h-[165px] sm:rounded-t-[24px] lg:h-[180px] lg:rounded-t-[26px]">
+        {tool.image ? (
+          <img
+            src={tool.image}
+            alt={tool.name}
+            className="absolute inset-0 h-full w-full rounded-t-[22px] object-contain p-6 sm:rounded-t-[24px] sm:p-7 lg:rounded-t-[26px] lg:p-8"
+            loading="lazy"
+            draggable={false}
+          />
+        ) : (
+          <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 px-5 sm:gap-4 sm:px-6">
+            <div
+              className={`flex h-20 w-20 items-center justify-center rounded-[24px] text-2xl font-black shadow-[0_18px_40px_rgba(0,0,0,0.12)] sm:h-24 sm:w-24 sm:rounded-[28px] sm:text-3xl ${tool.badgeClassName}`}
+            >
+              {tool.badge}
+            </div>
+            <p className="max-w-[180px] text-center text-xs font-semibold uppercase tracking-[0.16em] text-slate-600 sm:text-sm sm:tracking-[0.18em]">
+              {tool.name}
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div className="flex h-[70px] items-center justify-center border-t border-violet-100 bg-[#f5efff]/92 px-4 text-center sm:h-[78px] lg:h-[90px]">
+        <p className="text-base font-serif font-semibold leading-snug tracking-wide text-slate-900 sm:text-lg lg:text-xl">
+          {tool.name}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 const Technologies: React.FC = () => {
-  const sectionRef = useRef<HTMLElement | null>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const bgY = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
-  const glowY = useTransform(scrollYProgress, [0, 1], ["-7%", "7%"]);
-  const tintY = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"]);
-
   return (
-    <section
-      ref={sectionRef}
-      className="relative py-28 px-6 overflow-hidden isolate"
-    >
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] h-16 bg-gradient-to-b from-[#020010] to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[5] h-16 bg-gradient-to-t from-[#020010] to-transparent" />
+    <section className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <div className="relative mx-auto max-w-7xl text-center">
+        <style>{`
+          @keyframes tech-marquee-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
 
-      {/* Background Image */}
-      <motion.div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat will-change-transform"
-        style={{
-          backgroundImage: "url('/backgrounds/technologies-bg.webp')",
-          y: bgY,
-        }}
-      />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 z-[1] bg-[#020010]/45" />
-
-      {/* Glow */}
-      <motion.div
-        className="absolute inset-0 z-[2] pointer-events-none mix-blend-screen opacity-70 will-change-transform"
-        style={{
-          y: glowY,
-          background:
-            "radial-gradient(circle at 55% 55%, rgba(255,255,255,0.20), transparent 55%)",
-        }}
-      />
-
-      {/* Brand Tint */}
-      <motion.div
-        className="absolute inset-0 z-[3] pointer-events-none opacity-100 will-change-transform"
-        style={{
-          y: tintY,
-          background:
-            "radial-gradient(circle at 18% 22%, rgba(125,69,150,0.45), transparent 55%)," +
-            "radial-gradient(circle at 85% 70%, rgba(42,237,243,0.35), transparent 60%)," +
-            "linear-gradient(to bottom, rgba(2,0,16,0.15), rgba(2,0,16,0.55))",
-        }}
-      />
-
-      {/* Depth */}
-      <div className="absolute inset-0 z-[4] pointer-events-none backdrop-blur-[0.6px]" />
-
-      {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl mx-auto text-center">
-        {/* ✅ CHANGED TO WHITE */}
-        <h2 className="text-[clamp(1.2rem,6vw,1.65rem)] sm:text-4xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+        <h2 className="mb-6 text-[clamp(1.2rem,6vw,1.65rem)] font-serif font-bold leading-tight text-slate-950 sm:text-4xl">
           <span className="block sm:hidden">
             <span className="block whitespace-nowrap">Built on a foundation</span>
             <span className="block whitespace-nowrap">of trusted technologies</span>
           </span>
-          <span className="hidden sm:inline">Built on a foundation of trusted technologies</span>
+          <span className="hidden sm:inline">
+            Built on a foundation of trusted technologies
+          </span>
         </h2>
 
-        <p className="text-gray-200/90 max-w-3xl mx-auto mb-12 leading-relaxed">
-          We use proven cloud platforms and dependable tools to deliver secure,
-          scalable and future-ready digital solutions.
+        <p className="mx-auto mb-10 max-w-3xl text-sm leading-7 text-slate-600 sm:mb-14 sm:text-base sm:leading-8">
+          We use proven platforms, frameworks and infrastructure tools to
+          deliver secure, scalable and future-ready digital solutions.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-          {TECH_STACK.map((tool) => (
-            <div
-              key={tool.name}
-              className="
-                group relative isolate
-                rounded-[26px]
-                overflow-hidden
-                h-[260px] sm:h-[300px]
-                p-0
-                flex flex-col
-                hover:-translate-y-1
-                transition-all duration-300
-                max-w-[280px] sm:max-w-[300px]
-                mx-auto
-                w-full
-              "
-            >
-              <div className="relative z-10 flex h-full flex-col overflow-hidden rounded-[26px] border border-indigo-300/20">
-                <div className="relative h-[180px] sm:h-[210px] overflow-hidden rounded-t-[26px]">
-                  <img
-                    src={tool.image}
-                    alt={tool.name}
-                    className="absolute inset-0 h-full w-full rounded-t-[26px] object-cover opacity-68 brightness-95 contrast-100 saturate-95 transition-all duration-500 group-hover:scale-[1.04]"
-                    loading="lazy"
-                    draggable={false}
-                  />
-                  <div className="absolute inset-0 rounded-t-[26px] bg-gradient-to-t from-[#020010]/42 via-[#0a041f]/22 to-transparent" />
-                  <div className="absolute inset-0 rounded-t-[26px] bg-white/2 mix-blend-screen" />
-                  <div className="pointer-events-none absolute -inset-y-10 -left-1/2 w-1/2 rotate-12 bg-gradient-to-r from-transparent via-white/35 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
-                </div>
-
-                <div className="relative -mt-px flex h-[80px] sm:h-[90px] items-center justify-center border-t border-indigo-300/25 bg-[#070b18]/65 px-4 text-center backdrop-blur-md">
-                  <p className="text-lg sm:text-xl text-indigo-100 font-serif font-semibold tracking-wide leading-snug transition-all duration-300 group-hover:text-violet-100 group-hover:drop-shadow-[0_0_16px_rgba(196,181,253,0.65)]">
-                    {tool.name}
-                  </p>
-                </div>
-              </div>
-              <div
-                className="pointer-events-none absolute inset-0 rounded-[26px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  boxShadow:
-                    "0 0 0 1px rgba(99,102,241,0.30), 0 0 60px rgba(79,70,229,0.28)",
-                }}
-              />
-              <div className="pointer-events-none absolute inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent via-indigo-300/80 to-transparent scale-x-0 transition-transform duration-500 group-hover:scale-x-100" />
-              <div className="pointer-events-none absolute -inset-3 rounded-[26px] opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(circle at 50% 35%, rgba(129,140,248,0.24), transparent 65%)" }} />
-            </div>
-          ))}
+        <div className="relative overflow-hidden">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-20 w-16 bg-gradient-to-r from-white to-transparent sm:w-24" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 bg-gradient-to-l from-white to-transparent sm:w-24" />
+          <div
+            className="flex w-max gap-4 sm:gap-6"
+            style={{ animation: "tech-marquee-left 58s linear infinite" }}
+          >
+            {[...TECH_STACK, ...TECH_STACK].map((tool, index) => (
+              <TechCard key={`${tool.name}-${index}`} tool={tool} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

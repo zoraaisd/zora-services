@@ -65,8 +65,6 @@ function getPublishedDate(post: BlogPost) {
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [page, setPage] = useState(1);
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -118,16 +116,16 @@ export default function Blog() {
   );
 
   return (
-    <div className="min-h-screen bg-[#0b0618] text-white">
+    <div className="min-h-screen bg-[#fcfbff] text-slate-900">
       <PageSEO
-        title="Blog - AI, Technology & Business Insights | Zora Global AI"
-        description="Read Zora Global AI's latest articles on AI automation, software development trends, digital transformation and technology strategy for modern businesses."
+        title="Blog - SEO, Web & App Development Insights | Zora Global AI"
+        description="Read Zora Global AI articles on SEO, website development, mobile app development, custom software and digital growth for modern businesses."
         canonical="/blog"
       />
 
       <section className="relative overflow-hidden px-6 pb-20 pt-40">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute left-1/2 top-0 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-purple-600/20 blur-[120px]" />
+          <div className="absolute left-1/2 top-0 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-violet-300/30 blur-[120px]" />
         </div>
         <motion.div
           initial="hidden"
@@ -135,29 +133,23 @@ export default function Blog() {
           variants={heroContainer}
           className="relative z-10 mx-auto max-w-5xl text-center"
         >
-          <motion.span
-            variants={heroItem}
-            className="mb-6 inline-block rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium uppercase tracking-wide text-purple-300"
-          >
-            Insights & Ideas
-          </motion.span>
           <motion.h1
             variants={heroItem}
             className="mb-5 text-5xl font-extrabold leading-tight tracking-tight md:text-6xl"
           >
-            <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-700 via-violet-600 to-fuchsia-500 bg-clip-text text-transparent">
               Insights That Drive
             </span>{" "}
-            <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-700 via-violet-600 to-fuchsia-500 bg-clip-text text-transparent">
               Smarter Growth
             </span>
           </motion.h1>
           <motion.p
             variants={heroItem}
-            className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-400 md:text-xl"
+            className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl"
           >
             Explore practical articles on AI, software engineering, automation,
-            digital strategy, and business transformation designed to help teams
+            digital strategy and business transformation designed to help teams
             make better technology decisions with confidence.
           </motion.p>
         </motion.div>
@@ -167,10 +159,10 @@ export default function Blog() {
         {sortedPosts.length > 0 && (
           <div className="mb-10 mt-8">
             <div className="inline-flex flex-col">
-              <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
                 Latest Blogs
               </h2>
-              <span className="mt-3 h-[3px] w-24 rounded-full bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400" />
+              <span className="mt-3 h-[3px] w-24 rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500" />
             </div>
           </div>
         )}
@@ -189,7 +181,7 @@ export default function Blog() {
                 >
                   <Link
                     to={`/blog/${post.slug}`}
-                    className="group flex h-full min-h-[500px] flex-col overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.03] p-2 shadow-[0_0_20px_rgba(34,211,238,0.12),0_0_34px_rgba(168,85,247,0.14),0_24px_54px_rgba(7,4,22,0.55)] transition-all duration-300 hover:-translate-y-1 hover:border-fuchsia-400/40 hover:bg-purple-500/5 hover:shadow-[0_0_24px_rgba(34,211,238,0.18),0_0_42px_rgba(236,72,153,0.2),0_30px_70px_rgba(7,4,22,0.62)]"
+                    className="group flex h-full min-h-[500px] flex-col overflow-hidden rounded-[28px] border border-violet-100 bg-white p-2 shadow-[0_18px_40px_rgba(148,163,184,0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:bg-violet-50/40 hover:shadow-[0_24px_54px_rgba(167,139,250,0.16)]"
                   >
                     <div className="h-56 w-full overflow-hidden rounded-[22px]">
                       <img
@@ -200,17 +192,17 @@ export default function Blog() {
                     </div>
 
                     <div className="flex flex-grow flex-col px-5 pb-5 pt-6 md:px-6 md:pb-6 md:pt-7">
-                      <h2 className="mb-4 text-xl font-semibold leading-snug text-white transition-colors duration-300 group-hover:text-purple-300">
+                      <h2 className="mb-4 text-xl font-semibold leading-snug text-slate-900 transition-colors duration-300 group-hover:text-violet-700">
                         {getCardTitle(post)}
                       </h2>
-                      <p className="mb-5 line-clamp-3 text-sm leading-relaxed text-gray-400">
+                      <p className="mb-5 line-clamp-3 text-sm leading-relaxed text-slate-500">
                         {getBlogDescription(post)}
                       </p>
 
-                      <div className="mt-auto flex flex-wrap items-center gap-3 text-sm text-gray-400">
+                      <div className="mt-auto flex flex-wrap items-center gap-3 text-sm text-slate-500">
                         <div className="flex items-center gap-2">
-                          <Calendar size={14} className="text-purple-400" />
-                          <span className="font-medium text-gray-300">
+                          <Calendar size={14} className="text-violet-500" />
+                          <span className="font-medium text-slate-600">
                             Published:
                           </span>
                           <span>
@@ -219,13 +211,13 @@ export default function Blog() {
                               : "N/A"}
                           </span>
                         </div>
-                        <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-gray-300">
+                        <span className="rounded-full border border-violet-100 bg-violet-50 px-2.5 py-1 text-xs text-slate-600">
                           {estimateReadTime(post.content)}
                         </span>
                       </div>
 
                       <div className="mt-6">
-                        <span className="inline-flex items-center justify-center gap-2 rounded-full border border-fuchsia-400/40 bg-gradient-to-r from-purple-500/20 via-fuchsia-500/20 to-pink-500/20 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 group-hover:border-fuchsia-300 group-hover:from-purple-500/35 group-hover:via-fuchsia-500/35 group-hover:to-pink-500/35 group-hover:text-fuchsia-100 group-hover:shadow-[0_0_20px_rgba(217,70,239,0.28)]">
+                        <span className="inline-flex items-center justify-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-sm font-semibold text-violet-700 transition-all duration-300 group-hover:border-violet-300 group-hover:bg-violet-100 group-hover:text-violet-800">
                           <span>Read More</span>
                           <span aria-hidden="true">{"->"}</span>
                         </span>
@@ -241,7 +233,7 @@ export default function Blog() {
                 <button
                   onClick={() => setPage((p) => Math.max(1, p - 1))}
                   disabled={currentPage === 1}
-                  className="rounded-lg border border-white/[0.08] px-4 py-2 text-sm text-gray-400 transition-all hover:border-purple-500/40 hover:text-purple-300 disabled:cursor-not-allowed disabled:opacity-30"
+                  className="rounded-lg border border-violet-100 bg-white px-4 py-2 text-sm text-slate-500 transition-all hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-30"
                 >
                   {"<- Prev"}
                 </button>
@@ -251,8 +243,8 @@ export default function Blog() {
                     onClick={() => setPage(n)}
                     className={`h-9 w-9 rounded-lg border text-sm font-semibold transition-all ${
                       currentPage === n
-                        ? "border-purple-500 bg-purple-600 text-white"
-                        : "border-white/[0.08] text-gray-400 hover:border-purple-500/40 hover:text-purple-300"
+                        ? "border-violet-600 bg-violet-600 text-white"
+                        : "border-violet-100 bg-white text-slate-500 hover:border-violet-300 hover:text-violet-700"
                     }`}
                   >
                     {n}
@@ -261,7 +253,7 @@ export default function Blog() {
                 <button
                   onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                   disabled={currentPage === totalPages}
-                  className="rounded-lg border border-white/[0.08] px-4 py-2 text-sm text-gray-400 transition-all hover:border-purple-500/40 hover:text-purple-300 disabled:cursor-not-allowed disabled:opacity-30"
+                  className="rounded-lg border border-violet-100 bg-white px-4 py-2 text-sm text-slate-500 transition-all hover:border-violet-300 hover:text-violet-700 disabled:cursor-not-allowed disabled:opacity-30"
                 >
                   {"Next ->"}
                 </button>
@@ -269,60 +261,18 @@ export default function Blog() {
             )}
           </>
         ) : !loading && !error ? (
-          <p className="mt-12 text-center text-gray-500">
+          <p className="mt-12 text-center text-slate-500">
             No blogs are available yet.
           </p>
         ) : null}
 
         {loading && (
-          <p className="mt-20 text-center text-gray-500">Loading posts...</p>
+          <p className="mt-20 text-center text-slate-500">Loading posts...</p>
         )}
 
         {!loading && error && (
-          <p className="mt-20 text-center text-gray-500">{error}</p>
+          <p className="mt-20 text-center text-slate-500">{error}</p>
         )}
-
-        <div className="mt-24 rounded-2xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-[#110b22] to-[#0b0618] p-10 text-center">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-purple-400">
-            Stay Updated
-          </p>
-          <h3 className="mb-3 text-2xl font-bold text-white md:text-3xl">
-            Get the latest insights in your inbox
-          </h3>
-          <p className="mx-auto mb-8 max-w-md text-sm leading-relaxed text-gray-400">
-            No spam. Just expert articles on AI, software and digital
-            transformation delivered when we publish.
-          </p>
-          {subscribed ? (
-            <p className="font-semibold text-purple-400">
-              You're subscribed! Thanks for joining.
-            </p>
-          ) : (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubscribed(true);
-                setEmail("");
-              }}
-              className="mx-auto flex max-w-md flex-col gap-3 sm:flex-row"
-            >
-              <input
-                type="email"
-                required
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow rounded-xl border border-white/[0.1] bg-white/[0.05] px-4 py-3 text-sm text-white placeholder:text-gray-500 transition-colors focus:border-purple-500/50 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="whitespace-nowrap rounded-xl bg-purple-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-purple-500"
-              >
-                Subscribe
-              </button>
-            </form>
-          )}
-        </div>
       </div>
     </div>
   );

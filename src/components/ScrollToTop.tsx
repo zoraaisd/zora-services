@@ -20,19 +20,44 @@ function scrollAllToTop() {
   }
 }
 
+function scrollToHashTarget(hash: string) {
+  const id = hash.replace(/^#/, "");
+  if (!id) return false;
+
+  const element = document.getElementById(id);
+  if (!element) return false;
+
+  element.scrollIntoView({ block: "start" });
+  return true;
+}
+
 const ScrollToTop = () => {
   const location = useLocation();
 
   useLayoutEffect(() => {
+    if (location.hash) {
+      if (scrollToHashTarget(location.hash)) return;
+
+      requestAnimationFrame(() => {
+        if (scrollToHashTarget(location.hash)) return;
+
+        setTimeout(() => {
+          scrollToHashTarget(location.hash);
+        }, 0);
+      });
+
+      return;
+    }
+
     // run immediately
     scrollAllToTop();
 
-    // run again after next paint (fixes “starts from middle” due to re-render)
+    // run again after next paint to avoid landing mid-page after re-render
     requestAnimationFrame(() => {
       scrollAllToTop();
     });
 
-    // one more safety after route content mounts
+    // one more safety pass after route content mounts
     setTimeout(() => {
       scrollAllToTop();
     }, 0);

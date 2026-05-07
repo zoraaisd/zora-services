@@ -31,9 +31,9 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "modern-website-engineering-playbook-2026",
     title: "Modern Website Engineering Playbook for 2026",
     description:
-      "A practical blueprint to design, build, and optimize websites that improve SEO visibility and conversion rates.",
+      "A practical blueprint to design, build and optimize websites that improve SEO visibility and conversion rates.",
     department: "Website & Web Application Services",
-    image: "/it-hero/website.webp",
+    image: "/insights/web-application-services.webp",
     date: "2026-03-29",
     readTime: "6 min read",
     sections: [
@@ -48,7 +48,7 @@ export const mockBlogPosts: MockBlogPost[] = [
         subtitle: "SEO and UX Together",
         paragraphs: [
           "Search visibility and user experience must be planned together from day one.",
-          "Structured content, internal linking, and clean page hierarchy improve discoverability.",
+          "Structured content, internal linking and clean page hierarchy improve discoverability.",
         ],
       },
     ],
@@ -57,9 +57,9 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "mobile-app-growth-strategies-for-service-brands",
     title: "Mobile App Growth Strategies for Service Brands",
     description:
-      "How to build mobile applications that improve retention, engagement, and recurring customer interactions.",
+      "How to build mobile applications that improve retention, engagement and recurring customer interactions.",
     department: "Mobile Application Development",
-    image: "/it-hero/cross-platform.webp",
+    image: "/insights/mobile-application-development.webp",
     date: "2026-03-27",
     readTime: "5 min read",
     sections: [
@@ -83,16 +83,16 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "ai-automation-workflows-for-growing-teams",
     title: "AI Automation Workflows for Growing Teams: Where to Start and What to Measure",
     description:
-      "Learn how small and mid-sized teams can use AI automation across support, sales, and operations without creating process chaos.",
+      "Learn how small and mid-sized teams can use AI automation across support, sales and operations without creating process chaos.",
     department: "AI & Automation Solutions",
-    image: "/it-hero/recommendation.webp",
+    image: "/insights/automation-solutions.webp",
     date: "2026-03-24",
     readTime: "5 min read",
     sections: [
       {
         subtitle: "Start with Repeatable Tasks",
         paragraphs: [
-          "Support triage, lead routing, and document handling are ideal first workflows because they are repetitive and easy to measure.",
+          "Support triage, lead routing and document handling are ideal first workflows because they are repetitive and easy to measure.",
           "These tasks create quick wins, helping teams build confidence in automation before extending it into more complex business processes.",
         ],
       },
@@ -115,14 +115,14 @@ export const mockBlogPosts: MockBlogPost[] = [
       {
         subtitle: "Connect Systems Gradually",
         paragraphs: [
-          "After initial success, teams can chain CRM updates, task creation, and follow-up actions to remove delays across departments.",
+          "After initial success, teams can chain CRM updates, task creation and follow-up actions to remove delays across departments.",
           "Incremental integration lowers risk and gives stakeholders time to validate outcomes at each stage of automation maturity.",
         ],
       },
       {
         subtitle: "Measure Operational Impact",
         paragraphs: [
-          "Track time saved, error rates, and completion speed to understand whether automation is improving both quality and efficiency.",
+          "Track time saved, error rates and completion speed to understand whether automation is improving both quality and efficiency.",
           "When metrics are reviewed weekly, teams can spot process drift early and refine automation rules before service quality drops.",
         ],
       },
@@ -158,7 +158,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "cloud-infrastructure-priorities-for-growing-companies",
     title: "Cloud Infrastructure Priorities for Growing Companies",
     description:
-      "Core infrastructure decisions that improve uptime, reduce operational risk, and support scaling.",
+      "Core infrastructure decisions that improve uptime, reduce operational risk and support scaling.",
     department: "Cloud & Infrastructure Services",
     image: "/it-hero/cloud-migration.webp",
     date: "2026-03-20",
@@ -174,7 +174,7 @@ export const mockBlogPosts: MockBlogPost[] = [
       {
         subtitle: "Security and Compliance Baselines",
         paragraphs: [
-          "Infrastructure security must be embedded through policy, access control, and monitoring.",
+          "Infrastructure security must be embedded through policy, access control and monitoring.",
           "Compliance-ready configurations simplify audits and reduce long-term risk.",
         ],
       },
@@ -184,7 +184,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "cybersecurity-controls-every-scaling-business-needs",
     title: "Cybersecurity Controls Every Scaling Business Needs",
     description:
-      "A focused checklist of controls to protect systems, customer data, and internal operations.",
+      "A focused checklist of controls to protect systems, customer data and internal operations.",
     department: "Cybersecurity Solutions",
     image: "/it-hero/data-protection.webp",
     date: "2026-03-19",
@@ -210,7 +210,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "digital-marketing-playbook-for-service-businesses",
     title: "Digital Marketing Playbook for Service Businesses in 2026",
     description:
-      "A focused playbook for building predictable lead flow through content strategy, performance campaigns, and conversion-ready landing pages.",
+      "A focused playbook for building predictable lead flow through content strategy, performance campaigns and conversion-ready landing pages.",
     department: "Digital Marketing Services",
     image: "/it-hero/crm.webp",
     date: "2026-03-18",
@@ -252,7 +252,7 @@ export const mockBlogPosts: MockBlogPost[] = [
       {
         subtitle: "Creative and Funnel Alignment",
         paragraphs: [
-          "Campaigns improve when ad messaging, page content, and follow-up sequences are tested as one connected journey.",
+          "Campaigns improve when ad messaging, page content and follow-up sequences are tested as one connected journey.",
           "When messaging stays consistent from ad click to email follow-up, trust increases and conversion cycles become shorter.",
         ],
         media: [
@@ -260,7 +260,7 @@ export const mockBlogPosts: MockBlogPost[] = [
             type: "image",
             src: "/it-hero/crm.webp",
             alt: "Campaign and funnel alignment dashboard",
-            caption: "Consistent messaging across ad, page, and follow-up increases trust.",
+            caption: "Consistent messaging across ad, page and follow-up increases trust.",
             afterParagraph: 0,
           },
         ],
@@ -268,7 +268,7 @@ export const mockBlogPosts: MockBlogPost[] = [
       {
         subtitle: "Balanced Multi-Channel Growth",
         paragraphs: [
-          "Combining SEO, paid media, and lifecycle nurturing protects lead flow and reduces dependence on a single acquisition source.",
+          "Combining SEO, paid media and lifecycle nurturing protects lead flow and reduces dependence on a single acquisition source.",
           "A balanced channel mix also gives businesses more control when platform costs rise or algorithm changes affect visibility.",
         ],
       },
@@ -278,7 +278,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "business-strategy-frameworks-for-service-expansion",
     title: "Business Strategy Frameworks for Service Expansion",
     description:
-      "How leadership teams can prioritize services, markets, and operating models for predictable growth.",
+      "How leadership teams can prioritize services, markets and operating models for predictable growth.",
     department: "Business & Strategy Consulting",
     image: "/it-hero/custom-software.webp",
     date: "2026-03-16",
@@ -304,7 +304,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "brand-positioning-systems-for-modern-service-companies",
     title: "Brand Positioning Systems for Modern Service Companies",
     description:
-      "A guide to building clear brand positioning, voice, and creative consistency across channels.",
+      "A guide to building clear brand positioning, voice and creative consistency across channels.",
     department: "Branding & Creative Services",
     image: "/it-hero/website.webp",
     date: "2026-03-14",
@@ -320,7 +320,7 @@ export const mockBlogPosts: MockBlogPost[] = [
       {
         subtitle: "Consistent Creative Systems",
         paragraphs: [
-          "Design consistency across web, social, and sales assets strengthens recall.",
+          "Design consistency across web, social and sales assets strengthens recall.",
           "A reusable creative system helps teams move faster without losing brand identity.",
         ],
       },
@@ -330,7 +330,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     slug: "finance-operations-workflows-for-growing-businesses",
     title: "Finance Operations Workflows for Growing Businesses",
     description:
-      "Practical frameworks for managing bookkeeping, reporting, and financial operations at scale.",
+      "Practical frameworks for managing bookkeeping, reporting and financial operations at scale.",
     department: "Accounting & Financial Operations",
     image: "/it-hero/crm.webp",
     date: "2026-03-12",

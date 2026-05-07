@@ -1,96 +1,63 @@
-// src/components/home/GlobalImpact.tsx
 import React from "react";
-import Counter from "./Counter";
 
 const GlobalImpact: React.FC = () => {
-  const impactMetrics = [
-    { id: 1, target: 850, suffix: "+", label: "Projects Delivered" },
-    { id: 2, target: 900, suffix: "+", label: "Clients" },
-    { id: 3, target: 45, suffix: "+", label: "Countries" },
-    { id: 4, target: 2015, suffix: "", label: "Established" },
-    { id: 5, target: 11, suffix: "+", label: "Years of Excellence" },
-    { id: 6, target: 20, suffix: "+", label: "Ongoing Projects" },
-  ];
-
   const valuePoints = [
-    "",
     "Enterprise-grade architecture designed for scalability, resilience and security.",
     "AI-powered automation and analytics that improve operational efficiency and accelerate growth.",
   ];
 
   return (
-    <section
-      className="
-        relative bg-transparent text-white overflow-hidden isolate
-        mt-0
-        pt-2 sm:pt-4 md:pt-6
-        pb-20 sm:pb-24 md:pb-28
-      "
-    >
-      {/* ================= BACKGROUND (CLIPPED + SAFE) ================= */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(67,56,202,0.18),transparent_58%),radial-gradient(circle_at_80%_80%,rgba(124,58,237,0.16),transparent_58%)]" />
-        <div className="absolute -top-32 -left-32 w-[520px] h-[520px] bg-indigo-700/14 rounded-full blur-[140px]" />
-        <div className="absolute bottom-0 right-0 w-[520px] h-[520px] bg-purple-800/14 rounded-full blur-[140px]" />
+    <section className="relative isolate mt-0 overflow-hidden bg-transparent pb-16 pt-4 text-slate-900 sm:pb-20 sm:pt-6 md:pb-24 md:pt-8">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(196,181,253,0.24),transparent_58%),radial-gradient(circle_at_80%_80%,rgba(216,180,254,0.2),transparent_58%)]" />
+        <div className="absolute -left-32 -top-32 h-[520px] w-[520px] rounded-full bg-violet-300/14 blur-[140px]" />
+        <div className="absolute bottom-0 right-0 h-[520px] w-[520px] rounded-full bg-fuchsia-200/14 blur-[140px]" />
       </div>
 
-      {/* ================= CONTENT ================= */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        {/* ✅ LABEL */}
-        <div className="mb-10 lg:mb-12 text-center lg:text-left">
-          <span className="inline-block px-4 py-2 bg-indigo-900/40 border border-indigo-500/30 rounded-full text-indigo-300 text-sm font-semibold">
-            Our Global Impact
-          </span>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-14 items-start">
-          {/* ================= LEFT ================= */}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">
           <div className="text-center lg:text-left">
-            <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)]">
+            <h2 className="font-serif text-3xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl md:text-6xl">
               Intelligent Digital Transformation
             </h2>
 
-            <p className="mt-5 sm:mt-6 text-justify text-gray-300 text-sm sm:text-lg leading-relaxed">
-            Zora Global AI Technologies Pvt. Ltd. delivers cutting-edge AI-driven solutions, enterprise platforms and scalable digital transformation initiatives tailored for modern businesses.
-            Our intelligent automation frameworks enable organizations to accelerate innovation, enhance agility and maintain a competitive edge in an evolving digital landscape.
+            <p className="mt-5 text-left text-sm leading-7 text-slate-600 sm:mt-6 sm:text-lg sm:leading-8">
+              Zora Global AI Technologies Pvt. Ltd. delivers cutting-edge
+              AI-driven solutions, enterprise platforms and scalable digital
+              transformation initiatives tailored for modern businesses. Our
+              intelligent automation frameworks enable organizations to
+              accelerate innovation, enhance agility and maintain a competitive
+              edge in an evolving digital landscape.
             </p>
 
-            <p className="mt-4 text-justify text-gray-200 text-sm sm:text-lg leading-relaxed font-semibold">
+            <p className="mt-4 text-left text-sm font-semibold leading-7 text-slate-700 sm:text-lg sm:leading-8">
               Zora Global AI Technologies provides{" "}
-              <span className="text-white font-extrabold">48+ services</span> within{" "}
-              <span className="text-white font-extrabold">48 hours</span> using{" "}
-              <span className="text-white font-extrabold">AI automation</span>.
+              <span className="font-extrabold text-violet-700">48+ services</span>{" "}
+              within <span className="font-extrabold text-violet-700">48 hours</span>{" "}
+              using <span className="font-extrabold text-violet-700">AI automation</span>.
             </p>
 
-            <div className="mt-6 sm:mt-7 space-y-3 sm:space-y-4">
+            <div className="mt-6 space-y-3 sm:mt-7 sm:space-y-4">
               {valuePoints.map((text, idx) => (
-                <p key={idx} className="text-justify text-gray-300 text-sm sm:text-base leading-relaxed">
+                <p key={idx} className="text-left text-sm leading-7 text-slate-600 sm:text-base">
                   {text}
                 </p>
               ))}
             </div>
           </div>
 
-          {/* ================= RIGHT ================= */}
-          <div className="flex flex-col gap-6">
-            <div className="grid grid-cols-2 gap-3 sm:gap-5">
-              {impactMetrics.map((metric) => (
-                <div key={metric.id} className="relative group">
-                  <div className="relative overflow-hidden rounded-2xl p-4 sm:p-6 min-h-[120px] sm:min-h-[145px] flex flex-col items-center justify-center text-center border border-blue-900/40 bg-[#0e1626]/70 backdrop-blur-sm transition-all duration-300 transform-gpu group-hover:border-[#2aedf3]/55 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgba(42,237,243,0.18)]">
-                    <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 via-white/0 to-cyan-200/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <span className="pointer-events-none absolute -left-16 top-0 h-full w-14 -skew-x-12 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-700 group-hover:left-[120%] group-hover:opacity-100" />
-                    <p className="relative text-3xl sm:text-4xl font-black text-blue-100 leading-none transition duration-300 group-hover:text-cyan-100">
-                      <Counter target={metric.target} suffix={metric.suffix} startFrom={1} />
-                    </p>
-                    <h3 className="relative mt-2 text-sm sm:text-base font-semibold text-blue-100/90 leading-snug transition duration-300 group-hover:text-cyan-100">
-                      {metric.label}
-                    </h3>
-                  </div>
-                </div>
-              ))}
+          <div className="relative mx-auto w-full max-w-[620px] lg:mx-0 lg:ml-auto">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(216,180,254,0.20),transparent_60%)] blur-3xl" />
+            <div className="relative">
+              <img
+                src="/global-impact/transformation.webp"
+                alt="Digital transformation dashboard preview"
+                className="w-full object-cover"
+                loading="lazy"
+                draggable={false}
+              />
             </div>
           </div>
-          {/* end right */}
         </div>
       </div>
     </section>

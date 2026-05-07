@@ -2,7 +2,7 @@ import React from "react";
 import DocumentHead from "./DocumentHead";
 
 const BASE_URL = "https://www.zoraglobalai.com";
-const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.webp`;
 const DEFAULT_OG_IMAGE_WIDTH = 1200;
 const DEFAULT_OG_IMAGE_HEIGHT = 630;
 const SITE_NAME = "Zora Global AI";
@@ -57,7 +57,7 @@ const PageSEO: React.FC<PageSEOProps> = ({
         { property: "og:image", content: ogImage },
         { property: "og:image:width", content: String(ogImageWidth) },
         { property: "og:image:height", content: String(ogImageHeight) },
-        { property: "og:image:type", content: "image/jpeg" },
+        { property: "og:image:type", content: "image/webp" },
         { property: "og:site_name", content: SITE_NAME },
         { property: "og:locale", content: "en_US" },
         { name: "twitter:card", content: "summary_large_image" },

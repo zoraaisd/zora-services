@@ -1,148 +1,149 @@
+import React from "react";
+import {
+  Building2,
+  Factory,
+  HeartPulse,
+  Landmark,
+  ShoppingCart,
+  TowerControl,
+  type LucideIcon,
+} from "lucide-react";
 import { motion, type Variants } from "framer-motion";
+import SectionReveal from "./SectionReveal";
 
-const Industries: React.FC = () => {
-  const industries = [
-    {
-      step: "01",
-      title: "Banking & Financial Services",
-      desc: "Secure digital products and workflow automation",
-    },
-    {
-      step: "02",
-      title: "Healthcare & Life Sciences",
-      desc: "Compliant platforms and patient-centered experiences",
-    },
-    {
-      step: "03",
-      title: "Manufacturing & Supply Chain",
-      desc: "Operational visibility and process optimization",
-    },
-    {
-      step: "04",
-      title: "Retail & E-Commerce",
-      desc: "Conversion-focused commerce and customer journeys",
-    },
-    {
-      step: "05",
-      title: "Telecommunications",
-      desc: "Scalable systems for service delivery and support",
-    },
-    {
-      step: "06",
-      title: "Enterprise SaaS",
-      desc: "Reliable multi-tenant products built for growth",
-    },
-  ];
+type Industry = {
+  title: string;
+  desc: string;
+  Icon: LucideIcon;
+  image: string;
+};
 
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.12 },
-    },
-  };
+const cardsContainerVariants: Variants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.16, delayChildren: 0.12 },
+  },
+};
 
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    scale: 0.97,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
+const industries: Industry[] = [
+  {
+    title: "Banking & Financial Services",
+    desc: "Secure digital products and workflow automation that improve service delivery, compliance and customer trust.",
+    Icon: Landmark,
+    image: "/industries/banking.webp",
+  },
+  {
+    title: "Healthcare & Life Sciences",
+    desc: "Connected healthcare platforms that improve outcomes, streamline care and support clinical innovation.",
+    Icon: HeartPulse,
+    image: "/industries/healthcare.webp",
+  },
+  {
+    title: "Manufacturing & Supply Chain",
+    desc: "Operational visibility and automation that improve efficiency, reduce bottlenecks and strengthen performance.",
+    Icon: Factory,
+    image: "/industries/manufacture.webp",
+  },
+  {
+    title: "Retail & E-Commerce",
+    desc: "Commerce solutions and scalable storefronts that improve engagement, retention and digital growth.",
+    Icon: ShoppingCart,
+    image: "/industries/retail.webp",
+  },
+  {
+    title: "Telecommunications",
+    desc: "Scalable systems that improve service delivery, simplify operations and support reliable customer experiences.",
+    Icon: TowerControl,
+    image: "/industries/Telecommunications.webp",
+  },
+  {
+    title: "Enterprise SaaS",
+    desc: "Reliable SaaS products and scalable architectures that support growth and faster delivery.",
+    Icon: Building2,
+    image: "/industries/saas.webp",
+  },
+];
+
+const IndustryCard: React.FC<{ industry: Industry }> = ({ industry }) => {
+  const Icon = industry.Icon;
 
   return (
-    <section className="relative py-20 md:py-32 bg-transparent overflow-hidden isolate">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <motion.article
+      variants={cardVariants}
+      tabIndex={0}
+      className="group relative min-h-[310px] overflow-hidden border border-slate-200 bg-white outline-none"
+    >
+      <img
+        src={industry.image}
+        alt={industry.title}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 sm:group-hover:scale-105 sm:group-focus:scale-105"
+      />
+
+      <div className="absolute inset-0 bg-black/55 transition-colors duration-300 sm:bg-black/10 sm:group-hover:bg-black/55 sm:group-focus:bg-black/55" />
+
+      <div className="absolute inset-0 flex items-end p-5 sm:p-6">
+        <div className="translate-y-0 opacity-100 transition-all duration-300 sm:translate-y-24 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus:translate-y-0 sm:group-focus:opacity-100">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-100 sm:h-16 sm:w-16">
+            <Icon className="h-6 w-6 text-violet-700 sm:h-7 sm:w-7" strokeWidth={1.9} />
+          </div>
+
+          <h3 className="mt-4 text-lg font-bold leading-tight text-white sm:text-2xl">
+            {industry.title}
+          </h3>
+          <p className="mt-3 max-w-[26ch] text-sm leading-7 text-white/90 sm:text-base sm:leading-7">
+            {industry.desc}
+          </p>
+        </div>
+      </div>
+    </motion.article>
+  );
+};
+
+const Industries: React.FC = () => {
+  return (
+    <section className="relative bg-white py-14 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <SectionReveal className="text-center">
+          <h2 className="font-serif text-2xl font-bold leading-tight tracking-tight text-slate-950 sm:text-4xl lg:text-5xl xl:text-[4rem]">
+            Industries <span className="text-violet-700">We Serve</span>
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-4xl px-2 text-left text-sm leading-7 text-slate-600 sm:mt-5 sm:px-0 sm:text-lg sm:leading-8">
+            We deliver tailored technology solutions across a wide range of
+            industries, helping businesses streamline operations, improve
+            efficiency and accelerate digital transformation. Our scalable,
+            innovation-driven approach empowers organizations to adapt faster,
+            enhance customer experiences and achieve sustainable long-term growth
+            in an evolving digital landscape.
+          </p>
+        </SectionReveal>
+
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
-          variants={containerVariants}
-          className="text-center mb-16 md:mb-24"
+          viewport={{ once: false, amount: 0.14 }}
+          variants={cardsContainerVariants}
+          className="mt-12 grid gap-5 sm:mt-14 lg:grid-cols-3"
         >
-          <motion.div variants={itemVariants} className="inline-block mb-4">
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-purple-500/10 border border-purple-300/25 text-purple-200 font-medium">
-              Industries
-            </span>
-          </motion.div>
-
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl md:text-6xl font-serif font-bold mb-6 bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)]"
-          >
-            Industries We Serve
-          </motion.h2>
-
-          <motion.p variants={itemVariants} className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Focused domain expertise and AI-first execution across high-impact sectors
-          </motion.p>
+          {industries.map((industry) => (
+            <IndustryCard key={industry.title} industry={industry} />
+          ))}
         </motion.div>
-
-        <div className="relative">
-          <div className="pointer-events-none absolute left-1/2 top-0 bottom-0 hidden lg:block w-px -translate-x-1/2 bg-gradient-to-b from-purple-900/30 via-purple-400/45 to-white/40" />
-
-          <div className="relative space-y-8 md:space-y-10">
-            {industries.map((industry, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: i % 2 === 0 ? -90 : 90 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.35 }}
-                className="relative lg:grid lg:grid-cols-2 lg:items-center"
-              >
-                <div
-                  className={`hidden lg:block ${
-                    i % 2 === 0 ? "lg:pr-14" : "lg:col-start-2 lg:pl-14"
-                  }`}
-                >
-                  <div
-                    className={`relative group rounded-2xl w-full max-w-[500px] ${
-                      i % 2 === 0 ? "lg:ml-auto" : "lg:mr-auto"
-                    }`}
-                  >
-                    <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-400/30 via-violet-300/10 to-purple-600/25 opacity-40 transition duration-500 group-hover:opacity-100" />
-                    <div className="relative overflow-hidden p-4 sm:p-5 md:p-6 bg-gradient-to-br from-violet-700/85 via-violet-600/70 to-violet-500/45 border border-purple-200/25 rounded-2xl backdrop-blur-[2px] shadow-[0_10px_30px_rgba(91,33,182,0.3)] transition-all duration-500 transform-gpu group-hover:from-violet-600/90 group-hover:via-violet-500/78 group-hover:to-purple-500/56 group-hover:border-purple-200/45 group-hover:-translate-y-1 group-hover:shadow-[0_18px_44px_rgba(139,92,246,0.38)] group-active:scale-[0.99]">
-                      <div className="pointer-events-none absolute inset-0 rounded-2xl border border-white/10" />
-                      <h3 className="text-xl md:text-2xl font-bold text-white transition-colors duration-500 group-hover:text-purple-100">
-                        {industry.title}
-                      </h3>
-                      <p className="mt-3 text-base text-purple-100/90 transition-colors duration-500 group-hover:text-white">
-                        {industry.desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="lg:hidden flex items-start gap-4">
-                  <div className="relative w-8 shrink-0 flex justify-center">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-white text-[#1a1030] text-xs font-bold flex items-center justify-center border border-[#010409]">
-                      {industry.step}
-                    </div>
-                    {i !== industries.length - 1 && (
-                      <div className="absolute top-9 bottom-[-2.25rem] w-px bg-gradient-to-b from-purple-400/60 to-white/20" />
-                    )}
-                  </div>
-                  <div className="relative group rounded-2xl w-full pb-8">
-                    <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-400/30 via-violet-300/10 to-purple-600/25 opacity-40 transition duration-500 group-hover:opacity-100" />
-                    <div className="relative overflow-hidden p-4 sm:p-5 bg-gradient-to-br from-violet-700/85 via-violet-600/70 to-violet-500/45 border border-purple-200/25 rounded-2xl backdrop-blur-[2px] shadow-[0_10px_30px_rgba(91,33,182,0.3)] transition-all duration-500 transform-gpu group-hover:from-violet-600/90 group-hover:via-violet-500/78 group-hover:to-purple-500/56 group-hover:border-purple-200/45 group-active:scale-[0.99]">
-                      <div className="pointer-events-none absolute inset-0 rounded-2xl border border-white/10" />
-                      <h3 className="text-lg sm:text-xl font-bold text-white transition-colors duration-500 group-hover:text-purple-100">
-                        {industry.title}
-                      </h3>
-                      <p className="mt-2 text-sm sm:text-base text-purple-100/90 transition-colors duration-500 group-hover:text-white">
-                        {industry.desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-white text-[#1a1030] text-sm font-bold flex items-center justify-center border-2 border-[#010409] shadow-[0_0_0_6px_rgba(192,132,252,0.18)]">
-                    {industry.step}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

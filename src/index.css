@@ -15,6 +15,166 @@ body {
   color: white;
 }
 
+.services-theme {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #eef4ff 100%);
+  color: #0f172a;
+}
+
+.services-theme main section {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 48%, #eef4ff 100%) !important;
+  color: #0f172a !important;
+}
+
+.services-theme main [class*="border-white/10"] {
+  border-color: rgba(148, 163, 184, 0.28) !important;
+}
+
+.services-theme main [class*="bg-white/5"],
+.services-theme main [class*="bg-[#0b1220]"],
+.services-theme main [class*="bg-[#0f1829]"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(14,23,43"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(16,24,42"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(18,20,39"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(15,24,43"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(10,16,28"],
+.services-theme main [class*="bg-[linear-gradient(180deg,rgba(8,13,24"] {
+  background: rgba(255, 255, 255, 0.92) !important;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08) !important;
+}
+
+.services-theme main [class*="text-gray-100"],
+.services-theme main [class*="text-gray-200"],
+.services-theme main [class*="text-white"] h1,
+.services-theme main [class*="text-white"] h2,
+.services-theme main [class*="text-white"] h3,
+.services-theme main [class*="text-white"] h4 {
+  color: #0f172a !important;
+}
+
+.services-theme main [class*="text-gray-300"],
+.services-theme main [class*="text-gray-400"],
+.services-theme main [class*="text-blue-200"],
+.services-theme main [class*="text-blue-300"],
+.services-theme main [class*="text-purple-200"],
+.services-theme main [class*="text-purple-300"] {
+  color: #475569 !important;
+}
+
+.services-theme main h1,
+.services-theme main h2,
+.services-theme main h3,
+.services-theme main h4,
+.services-theme main h5,
+.services-theme main h6 {
+  color: #0f172a;
+}
+
+.services-theme main p,
+.services-theme main li {
+  color: #475569;
+}
+
+.services-theme main .services-section-label {
+  color: #6d28d9 !important;
+  font-weight: 700 !important;
+}
+
+.services-theme main [class*="stroke-blue-200"],
+.services-theme main [class*="stroke-purple-200"] {
+  stroke: #6366f1 !important;
+}
+
+.services-theme main input,
+.services-theme main textarea,
+.services-theme main select {
+  background: #ffffff !important;
+  border-color: rgba(148, 163, 184, 0.32) !important;
+  color: #0f172a !important;
+}
+
+.services-theme main section > .absolute.inset-0.-z-10 {
+  opacity: 0.55;
+}
+
+.services-theme main .restore-architecture {
+  background: linear-gradient(180deg, rgba(18, 20, 39, 0.96), rgba(10, 16, 28, 0.98)) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.28) !important;
+  color: #ffffff !important;
+}
+
+.services-theme main .restore-architecture [class*="bg-white/5"] {
+  background: linear-gradient(180deg, rgba(18, 20, 39, 0.96), rgba(10, 16, 28, 0.98)) !important;
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.28) !important;
+}
+
+.services-theme main .restore-architecture [class*="bg-[#0b1220]"] {
+  background: #0b1220 !important;
+  box-shadow: none !important;
+}
+
+.services-theme main .restore-architecture [class*="bg-[#0f1829]"] {
+  background: #0f1829 !important;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.14) !important;
+}
+
+.services-theme main .restore-architecture [class*="bg-[#101a2c]"] {
+  background: #101a2c !important;
+}
+
+.services-theme main .restore-architecture [class*="bg-[linear-gradient(180deg,rgba(15,24,43"] {
+  background: linear-gradient(180deg, rgba(15, 24, 43, 0.98), rgba(9, 14, 24, 0.99)) !important;
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.4) !important;
+}
+
+.services-theme main .restore-architecture [class*="text-gray-300"] {
+  color: rgb(209 213 219) !important;
+}
+
+.services-theme main .restore-architecture [class*="text-gray-400"] {
+  color: rgb(156 163 175) !important;
+}
+
+.services-theme main .restore-architecture [class*="text-white"] {
+  color: #ffffff !important;
+}
+
+.services-theme main .restore-architecture [class*="text-blue-200"] {
+  color: rgb(191 219 254) !important;
+}
+
+.services-theme main .restore-architecture [class*="text-blue-300"] {
+  color: rgb(147 197 253) !important;
+}
+
+.services-theme main .restore-architecture [class*="text-purple-200"] {
+  color: rgb(233 213 255) !important;
+}
+
+.services-theme main .restore-contact {
+  background: linear-gradient(135deg, rgba(14, 23, 43, 0.98), rgba(20, 14, 40, 0.95)) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.28) !important;
+}
+
+.services-theme main .restore-contact h2 {
+  color: rgb(191 219 254) !important;
+}
+
+.services-theme main .restore-contact p {
+  color: rgb(209 213 219) !important;
+}
+
+.services-theme main .restore-hero h1 {
+  color: #ffffff !important;
+}
+
+.services-theme main .restore-hero p {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 /* ✅ IMPORTANT: ensure React root is full width and not constrained */
 #root {
   width: 100%;
@@ -79,4 +239,49 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+
+.section-text-reveal :is(h1, h2, h3, h4, h5, h6, p, li, a, span) {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.section-text-reveal.is-visible :is(h1, h2, h3, h4, h5, h6, p, li, a, span) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-text-reveal :is(h1, h2, h3, h4, h5, h6):nth-of-type(1),
+.section-text-reveal p:nth-of-type(1),
+.section-text-reveal a:nth-of-type(1),
+.section-text-reveal li:nth-of-type(1),
+.section-text-reveal span:nth-of-type(1) {
+  transition-delay: 0.08s;
+}
+
+.section-text-reveal :is(h1, h2, h3, h4, h5, h6):nth-of-type(2),
+.section-text-reveal p:nth-of-type(2),
+.section-text-reveal a:nth-of-type(2),
+.section-text-reveal li:nth-of-type(2),
+.section-text-reveal span:nth-of-type(2) {
+  transition-delay: 0.16s;
+}
+
+.section-text-reveal :is(h1, h2, h3, h4, h5, h6):nth-of-type(3),
+.section-text-reveal p:nth-of-type(3),
+.section-text-reveal a:nth-of-type(3),
+.section-text-reveal li:nth-of-type(3),
+.section-text-reveal span:nth-of-type(3) {
+  transition-delay: 0.24s;
+}
+
+.section-text-reveal :is(h1, h2, h3, h4, h5, h6):nth-of-type(4),
+.section-text-reveal p:nth-of-type(4),
+.section-text-reveal a:nth-of-type(4),
+.section-text-reveal li:nth-of-type(4),
+.section-text-reveal span:nth-of-type(4) {
+  transition-delay: 0.32s;
 }

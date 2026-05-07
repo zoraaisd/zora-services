@@ -23,13 +23,6 @@ const Footer: React.FC = () => {
   const YOUTUBE_URL = "https://www.youtube.com/@zoraglobalaitechnologies";
   const TWITTER_URL = "https://x.com/zoraglobalai";
   const FACEBOOK_URL = "https://www.facebook.com/ZoraGlobalAiTechnologies/";
-  const PRODUCTS_URL = "https://www.zoraai.us/";
-  const hrms_URL ="https://www.zoraai.us/products/hrms";
-  const crms_URL ="https://www.zoraai.us/products/crms";
-  const chatbot_URL = "https://www.zoraai.us/products/chat-bot";
-  const securityshield_URL ="https://www.zoraai.us/products/security-shield";
-  const emailautomation_URL = "https://www.zoraai.us/products/email-automation";
-
   const EMAIL = "info@zoraglobalai.com";
   const PHONE = "9087000345";
   const TEl_PHONE="044-4625-4744";
@@ -42,9 +35,9 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative isolate mt-auto bg-[#0b0618] text-gray-300 border-t border-white/10">
+    <footer className="relative isolate border-t border-violet-100 bg-[linear-gradient(180deg,#fcfbff_0%,#f7f4ff_100%)] pt-10 text-slate-600">
       {/* Top glow divider */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-200 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-14">
         {/* ✅ MAIN GRID */}
@@ -60,59 +53,59 @@ const Footer: React.FC = () => {
               loading="lazy"
             />
 
-            <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-md">
+            <p className="mb-6 max-w-md text-sm leading-relaxed text-slate-500">
               Empowering enterprises with AI-driven solutions, cloud
               transformation and strategic consulting.
             </p>
 
             <div className="mb-6 space-y-4">
               <div>
-                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-white">
-                  <FaMapMarkerAlt className="text-purple-400" />
+                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-900">
+                  <FaMapMarkerAlt className="text-violet-500" />
                   <span>Headquarters</span>
                 </h4>
-                <p className="text-sm leading-6 text-gray-300 max-w-md">
+                <p className="max-w-md text-sm leading-6 text-slate-600">
                   {HEADQUARTERS_ADDRESS}
                 </p>
               </div>
 
               <div>
-                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-white">
-                  <FaMapMarkerAlt className="text-purple-400" />
+                <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-900">
+                  <FaMapMarkerAlt className="text-violet-500" />
                   <span>Regional Office</span>
                 </h4>
-                <p className="text-sm leading-6 text-gray-300 max-w-md">
+                <p className="max-w-md text-sm leading-6 text-slate-600">
                   {OFFICE_ADDRESS}
                 </p>
               </div>
             </div>
 
-            <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
+            <h3 className="mb-3 text-lg font-semibold text-slate-900">Contact</h3>
 
             <div className="space-y-3 text-sm">
               {/* ✅ Gmail (click opens mail) */}
               <a
                 href={`mailto:${EMAIL}`}
                 onClick={openMail}
-                className="flex items-center gap-2 text-gray-400 hover:text-purple-400 transition"
+                className="flex items-center gap-2 text-slate-500 transition hover:text-violet-600"
               >
-                <FaEnvelope className="text-purple-400" />
+                <FaEnvelope className="text-violet-500" />
                 <span>{EMAIL}</span>
               </a>
 
               {/* ✅ Phone (click to call) */}
               <a
                 href={`tel:${PHONE}`}
-                className="flex items-center gap-2 text-gray-400 hover:text-purple-400 transition"
+                className="flex items-center gap-2 text-slate-500 transition hover:text-violet-600"
               >
-                <FaPhoneAlt className="text-purple-400" />
+                <FaPhoneAlt className="text-violet-500" />
                 <span>{PHONE}</span>
               </a>
               <a
                 href={`tel:${PHONE}`}
-                className="flex items-center gap-2 text-gray-400 hover:text-purple-400 transition"
+                className="flex items-center gap-2 text-slate-500 transition hover:text-violet-600"
               >
-                <FaPhoneAlt className="text-purple-400" />
+                <FaPhoneAlt className="text-violet-500" />
                 <span>{TEl_PHONE}</span>
               </a>
 
@@ -122,7 +115,7 @@ const Footer: React.FC = () => {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-400 transition"
+                  className="text-slate-500 transition hover:text-violet-600"
                   aria-label="LinkedIn"
                 >
                   <FaLinkedinIn size={18} />
@@ -132,7 +125,7 @@ const Footer: React.FC = () => {
                   href={FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-400 transition"
+                  className="text-slate-500 transition hover:text-violet-600"
                   aria-label="Facebook"
                 >
                   <FaFacebookF size={18} />
@@ -142,7 +135,7 @@ const Footer: React.FC = () => {
                   href={TWITTER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-400 transition"
+                  className="text-slate-500 transition hover:text-violet-600"
                   aria-label="X"
                 >
                   <FaXTwitter size={18} />
@@ -152,7 +145,7 @@ const Footer: React.FC = () => {
                   href={YOUTUBE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-purple-400 transition"
+                  className="text-slate-500 transition hover:text-violet-600"
                   aria-label="YouTube"
                 >
                   <FaYoutube size={18} />
@@ -167,17 +160,17 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-3 gap-6 sm:gap-8 lg:col-span-2 lg:grid-cols-3 lg:pt-24">
             {/* Company */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
+              <h3 className="mb-4 text-lg font-semibold text-slate-900">Company</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link to="/about" className="hover:text-purple-400 transition">
+                  <Link to="/about" className="transition hover:text-violet-600">
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-purple-400 transition"
+                    className="transition hover:text-violet-600"
                   >
                     Services
                   </Link>
@@ -185,102 +178,62 @@ const Footer: React.FC = () => {
 
                 {/* ✅ Products should open external site (same as navbar behavior) */}
                 <li>
-                  <a
-                    href={PRODUCTS_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
+                  <Link to="/products" className="transition hover:text-violet-600">
                     Products
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
             {/* Products */}
             <div className="text-center lg:text-left">
-              <h3 className="text-lg font-semibold text-white mb-4">Products</h3>
+              <h3 className="mb-4 text-lg font-semibold text-slate-900">Products</h3>
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
                 <li>
-                  <a
-                    href={hrms_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
-                    HRMS
-                  </a>
+                  <Link to="/products#zora-hrms" className="transition hover:text-violet-600">ZORA HRMS</Link>
                 </li>
                 <li>
-                  <a
-                    href={crms_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
-                    CRMS
-                  </a>
+                  <Link to="/products#zora-crm" className="transition hover:text-violet-600">ZORA CRM</Link>
                 </li>
                 <li>
-                  <a
-                    href={chatbot_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Chat Bot
-                  </a>
+                  <Link to="/products" className="transition hover:text-violet-600">CareLoop</Link>
                 </li>
                 <li>
-                  <a
-                    href={emailautomation_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Email Automation
-                  </a>
+                  <Link to="/products" className="transition hover:text-violet-600">Groomvy</Link>
                 </li>
                 <li>
-                  <a
-                    href={securityshield_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-purple-400 transition"
-                  >
-                    Security shield
-                  </a>
+                  <Link to="/products" className="transition hover:text-violet-600">ERP</Link>
                 </li>
               </ul>
             </div>
 
             {/* Solutions */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-4">
+              <h3 className="mb-4 text-lg font-semibold text-slate-900">
                 Solutions
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
-                    to="/services/it"
-                    className="hover:text-purple-400 transition"
+                    to="/services/website-web-application-services"
+                    className="transition hover:text-violet-600"
                   >
-                    IT Services
+                    Website Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services/non-it"
-                    className="hover:text-purple-400 transition"
+                    to="/services/business-strategy-consulting"
+                    className="transition hover:text-violet-600"
                   >
-                    Non-IT Services
+                    Business Consulting
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/book-appointment"
-                    className="hover:text-purple-400 transition"
+                    className="transition hover:text-violet-600"
                   >
                     Book Appointment
                   </Link>
@@ -293,9 +246,9 @@ const Footer: React.FC = () => {
           {/* 5️⃣ Location */}
           {/* ================================================= */}
           <div className="lg:col-span-2 lg:pt-24">
-            <h3 className="text-lg font-semibold text-white mb-4">Location</h3>
+            <h3 className="mb-4 text-lg font-semibold text-slate-900">Location</h3>
 
-            <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <div className="overflow-hidden rounded-2xl border border-violet-100 bg-white/70 shadow-[0_14px_32px_rgba(148,163,184,0.1)]">
               <iframe
                 title="Zora Global AI Location"
                 src={`https://www.google.com/maps?output=embed&q=${encodeURIComponent(
@@ -306,7 +259,7 @@ const Footer: React.FC = () => {
               />
             </div>
 
-            <p className="mt-3 text-xs text-gray-500">
+            <p className="mt-3 text-xs text-slate-400">
               Zora Global AI Technologies, London and Chennai
             </p>
 
@@ -316,7 +269,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-white/10 py-6 text-center text-sm text-gray-500">
+      <div className="border-t border-violet-100 py-6 text-center text-sm text-slate-400">
         © {new Date().getFullYear()} Zora Global AI Technologies. All rights
         reserved.
       </div>
