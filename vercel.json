@@ -1,0 +1,98 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/services",
+      "destination": "/services/website-web-application-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/it",
+      "destination": "/services/website-web-application-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/non-it",
+      "destination": "/services/website-web-application-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/it/:category/:item",
+      "destination": "/services/:category",
+      "permanent": true
+    },
+    {
+      "source": "/services/non-it/:category/:item",
+      "destination": "/services/:category",
+      "permanent": true
+    },
+    {
+      "source": "/services/it/:category",
+      "destination": "/services/:category",
+      "permanent": true
+    },
+    {
+      "source": "/services/non-it/:category",
+      "destination": "/services/:category",
+      "permanent": true
+    },
+    {
+      "source": "/services/website-web-application-services/:item",
+      "destination": "/services/website-web-application-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/mobile-application-development/:item",
+      "destination": "/services/mobile-application-development",
+      "permanent": true
+    },
+    {
+      "source": "/services/custom-enterprise-software/:item",
+      "destination": "/services/custom-enterprise-software",
+      "permanent": true
+    },
+    {
+      "source": "/services/digital-marketing-services/:item",
+      "destination": "/services/digital-marketing-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-automation-solutions/:item",
+      "destination": "/services/ai-automation-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/services/cloud-infrastructure-services/:item",
+      "destination": "/services/cloud-infrastructure-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/business-strategy-consulting/:item",
+      "destination": "/services/business-strategy-consulting",
+      "permanent": true
+    },
+    {
+      "source": "/services/staff-augmentation-workforce-solutions/:item",
+      "destination": "/services/staff-augmentation-workforce-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/services/accounting-financial-operations/:item",
+      "destination": "/services/accounting-financial-operations",
+      "permanent": true
+    },
+    {
+      "source": "/services/branding-creative-services/:item",
+      "destination": "/services/branding-creative-services",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
